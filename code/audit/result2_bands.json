@@ -1,0 +1,182 @@
+{
+  "seed": 20260913,
+  "bootstrap_B": 4000,
+  "n_selected_configs": 12,
+  "selected_configs_json_md5": "32d6a021400e97e7040e0963449761f9",
+  "snapshot_commit": "b61c48aa3197a1a111e405c0e6f600128a1efee3",
+  "snapshot_root": "<REDACTED_PATH>/snapshot_2026-09-07",
+  "selected_configs": [
+    "bizitobs_service/10S/short",
+    "m4_daily/D/short",
+    "m_dense/H/short",
+    "solar/10T/short",
+    "us_births/W/short",
+    "bizitobs_application/10S/medium",
+    "ett1/H/medium",
+    "jena_weather/10T/medium",
+    "bizitobs_l2c/H/long",
+    "electricity/H/long",
+    "ett2/15T/long",
+    "loop_seattle/5T/long"
+  ],
+  "resampling_note": "The 12 selected configs come from 12 distinct base datasets, so resampling configs with replacement and resampling dataset-clusters with replacement are the same operation here -- no separate iid/cluster scheme is used (contrast with the 97-config universe in run_audit.py, where several configs share a base dataset).",
+  "target_models": [
+    {
+      "label": "chronos_bolt_base",
+      "snapshot_dir": "chronos_bolt_base",
+      "n_configs_used": 12,
+      "missing_configs": [],
+      "aggregation_A_mean_insertion_rank": {
+        "point": 79.58333333333333,
+        "ci_2.5_97.5": [
+          61.916666666666664,
+          97.58333333333333
+        ],
+        "half_width": 17.833333333333332
+      },
+      "aggregation_B_gmean_scaled_mase": {
+        "point": 0.9675848596481466,
+        "ci_2.5_97.5": [
+          0.7080543505607869,
+          1.3672756633313847
+        ],
+        "half_width": 0.3296106563852989
+      }
+    },
+    {
+      "label": "Moirai-2.0-R-small",
+      "snapshot_dir": "Moirai2",
+      "n_configs_used": 12,
+      "missing_configs": [],
+      "aggregation_A_mean_insertion_rank": {
+        "point": 62.833333333333336,
+        "ci_2.5_97.5": [
+          43.75,
+          80.16666666666667
+        ],
+        "half_width": 18.208333333333336
+      },
+      "aggregation_B_gmean_scaled_mase": {
+        "point": 0.7233046723900788,
+        "ci_2.5_97.5": [
+          0.6258149777528139,
+          0.8303372437598271
+        ],
+        "half_width": 0.10226113300350659
+      }
+    },
+    {
+      "label": "TimesFM-2.5 (200m)",
+      "snapshot_dir": "TimesFM-2.5",
+      "n_configs_used": 12,
+      "missing_configs": [],
+      "aggregation_A_mean_insertion_rank": {
+        "point": 61.75,
+        "ci_2.5_97.5": [
+          49.583333333333336,
+          73.33333333333333
+        ],
+        "half_width": 11.874999999999996
+      },
+      "aggregation_B_gmean_scaled_mase": {
+        "point": 0.7347709804638404,
+        "ci_2.5_97.5": [
+          0.6292635478118054,
+          0.8428053825760692
+        ],
+        "half_width": 0.1067709173821319
+      }
+    },
+    {
+      "label": "Toto-Open-Base-1.0",
+      "snapshot_dir": "Toto_Open_Base_1.0",
+      "n_configs_used": 12,
+      "missing_configs": [],
+      "aggregation_A_mean_insertion_rank": {
+        "point": 69.08333333333333,
+        "ci_2.5_97.5": [
+          57.416666666666664,
+          81.08333333333333
+        ],
+        "half_width": 11.833333333333332
+      },
+      "aggregation_B_gmean_scaled_mase": {
+        "point": 0.7699474689886454,
+        "ci_2.5_97.5": [
+          0.6938139327754674,
+          0.848798985337902
+        ],
+        "half_width": 0.07749252628121728
+      }
+    }
+  ],
+  "reference_top3_displayed": [
+    {
+      "label": "STRIDE w/ Synapse",
+      "snapshot_dir": "STRIDE w/ Synapse",
+      "n_configs_used": 12,
+      "missing_configs": [],
+      "aggregation_A_mean_insertion_rank": {
+        "point": 10.333333333333334,
+        "ci_2.5_97.5": [
+          5.916666666666667,
+          15.916666666666666
+        ],
+        "half_width": 5.0
+      },
+      "aggregation_B_gmean_scaled_mase": {
+        "point": 0.6261057471848447,
+        "ci_2.5_97.5": [
+          0.5372974762320752,
+          0.7294956732180086
+        ],
+        "half_width": 0.09609909849296666
+      }
+    },
+    {
+      "label": "EXAONE-Forecast-Agent",
+      "snapshot_dir": "EXAONE-Forecast-Agent",
+      "n_configs_used": 12,
+      "missing_configs": [],
+      "aggregation_A_mean_insertion_rank": {
+        "point": 25.916666666666668,
+        "ci_2.5_97.5": [
+          16.333333333333332,
+          37
+        ],
+        "half_width": 10.333333333333334
+      },
+      "aggregation_B_gmean_scaled_mase": {
+        "point": 0.6353275986150265,
+        "ci_2.5_97.5": [
+          0.5476868597223514,
+          0.7393873487355702
+        ],
+        "half_width": 0.0958502445066094
+      }
+    },
+    {
+      "label": "LS-MoE",
+      "snapshot_dir": "LS-MoE",
+      "n_configs_used": 12,
+      "missing_configs": [],
+      "aggregation_A_mean_insertion_rank": {
+        "point": 21.916666666666668,
+        "ci_2.5_97.5": [
+          16.583333333333332,
+          27.833333333333332
+        ],
+        "half_width": 5.625
+      },
+      "aggregation_B_gmean_scaled_mase": {
+        "point": 0.6773788451642346,
+        "ci_2.5_97.5": [
+          0.5829459325467825,
+          0.7810655274042381
+        ],
+        "half_width": 0.09905979742872778
+      }
+    }
+  ],
+  "warnings": []
+}

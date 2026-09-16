@@ -1,0 +1,116 @@
+{
+  "meta": {
+    "source": "poolcheck/pivot_SQL.csv, poolcheck/leaderboard_SQL.csv",
+    "logic": "extends poolcheck/fev_resolution.py (win rate, displayed sort)",
+    "B": 4000,
+    "seed": 20260907,
+    "scheme": "family-clustered bootstrap (block bootstrap over task families), 95% percentile CI",
+    "metric": "win_rate (0-100 points)",
+    "top10_win_rate_order": [
+      "TimesFM-3",
+      "Chronos-2",
+      "TiRex-2",
+      "Toto-2.0-2.5B",
+      "Toto-2.0-1B",
+      "Toto-2.0-313m",
+      "TiRex",
+      "Toto-2.0-22m",
+      "TimesFM-2.5",
+      "TS-ICL"
+    ],
+    "mde80_computed": 9.522040696767428,
+    "mde80_reported": 9.52
+  },
+  "pairs": [
+    {
+      "pair": "1-2",
+      "modelA": "TimesFM-3",
+      "modelB": "Chronos-2",
+      "delta_win_rate": 5.033333333333332,
+      "clustered_ci": [
+        0.6521530901216036,
+        8.565279091769161
+      ]
+    },
+    {
+      "pair": "2-3",
+      "modelA": "Chronos-2",
+      "modelB": "TiRex-2",
+      "delta_win_rate": 3.2000000000000015,
+      "clustered_ci": [
+        -0.8555229416746967,
+        7.520552367288381
+      ]
+    },
+    {
+      "pair": "3-4",
+      "modelA": "TiRex-2",
+      "modelB": "Toto-2.0-2.5B",
+      "delta_win_rate": 0.6000000000000002,
+      "clustered_ci": [
+        -8.423927086844174,
+        10.529278990158327
+      ]
+    },
+    {
+      "pair": "4-5",
+      "modelA": "Toto-2.0-2.5B",
+      "modelB": "Toto-2.0-1B",
+      "delta_win_rate": 0.7000000000000003,
+      "clustered_ci": [
+        -1.6491645781119462,
+        2.815079365079367
+      ]
+    },
+    {
+      "pair": "5-6",
+      "modelA": "Toto-2.0-1B",
+      "modelB": "Toto-2.0-313m",
+      "delta_win_rate": 1.700000000000001,
+      "clustered_ci": [
+        -0.6666666666666657,
+        3.7806258155174155
+      ]
+    },
+    {
+      "pair": "6-7",
+      "modelA": "Toto-2.0-313m",
+      "modelB": "TiRex",
+      "delta_win_rate": 4.533333333333332,
+      "clustered_ci": [
+        -3.509067612852356,
+        12.010798229548229
+      ]
+    },
+    {
+      "pair": "7-8",
+      "modelA": "TiRex",
+      "modelB": "Toto-2.0-22m",
+      "delta_win_rate": 2.1666666666666665,
+      "clustered_ci": [
+        -5.322140146381135,
+        10.068199189788276
+      ]
+    },
+    {
+      "pair": "8-9",
+      "modelA": "Toto-2.0-22m",
+      "modelB": "TimesFM-2.5",
+      "delta_win_rate": 1.8000000000000005,
+      "clustered_ci": [
+        -7.1654567453115545,
+        9.423650643052927
+      ]
+    },
+    {
+      "pair": "9-10",
+      "modelA": "TimesFM-2.5",
+      "modelB": "TS-ICL",
+      "delta_win_rate": 3.4,
+      "clustered_ci": [
+        -2.9060778093170816,
+        10.361920508119436
+      ]
+    }
+  ]
+}

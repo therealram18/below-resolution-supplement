@@ -1,0 +1,5270 @@
+{
+  "meta": {
+    "snapshot_commit": "b61c48aa3197a1a111e405c0e6f600128a1efee3",
+    "snapshot_root": "<WORKDIR>/snapshot_2026-09-07",
+    "seed_main": 20260907,
+    "seeds_200k": [
+      20260907,
+      20260908,
+      20260909
+    ],
+    "paired_diff_seed": 20260914,
+    "B_small": 4000,
+    "B_med": 100000,
+    "B_large": 200000,
+    "holm_alpha": 0.05
+  },
+  "claim1_crps_rank_audit": {
+    "top10_crps_rank": [
+      "STRIDE w/ Synapse",
+      "EXAONE-Forecast-Agent",
+      "LS-MoE",
+      "CastStar",
+      "LS-Agent",
+      "TIMEHEDGE",
+      "Falcon-Agent",
+      "RegLab-AH-1",
+      "limix_moe",
+      "RacineCast-1-NC"
+    ],
+    "top10_mase_rank": [
+      "STRIDE w/ Synapse",
+      "EXAONE-Forecast-Agent",
+      "LS-MoE",
+      "LS-Agent",
+      "Falcon-Agent",
+      "CastStar",
+      "limix_moe",
+      "TIMEHEDGE",
+      "RegLab-AH-1",
+      "RacineCast-1-NC"
+    ],
+    "same_top10_set": true,
+    "caststar_position_under_crps": 4,
+    "timehedge_position_under_crps": 6,
+    "caststar_4th_claim_matches": true,
+    "timehedge_6th_claim_matches": true,
+    "both_schemes_survive_adjacent_B4000": 0,
+    "both_schemes_survive_all45_B4000": 16,
+    "both_schemes_survive_adjacent_B100000": 0,
+    "both_schemes_survive_all45_B100000": 16,
+    "exactly_1_of_9_both_schemes_at_B100000": false,
+    "ls_moe_vs_ls_agent_pair_B100000": {
+      "posA": 3,
+      "posB": 5,
+      "modelA": "LS-MoE",
+      "modelB": "LS-Agent",
+      "MASE_Rank": {
+        "point_gap": 2.2474226804123703,
+        "iid": {
+          "ci": [
+            0.22680412371134295,
+            4.319587628865978
+          ],
+          "survives": true,
+          "p_value": 0.02918
+        },
+        "cluster": {
+          "ci": [
+            0.43434343434343603,
+            4.200000000000003
+          ],
+          "survives": true,
+          "p_value": 0.01528
+        }
+      },
+      "gmean": {
+        "point_gap": 0.002914092250767053,
+        "iid": {
+          "ci": [
+            5.104669718292154e-05,
+            0.006850645679788991
+          ],
+          "survives": true,
+          "p_value": 0.0448
+        },
+        "cluster": {
+          "ci": [
+            0.0004189474517284908,
+            0.00648878427389904
+          ],
+          "survives": true,
+          "p_value": 0.01736
+        }
+      }
+    },
+    "stride_vs_exaone_pair_B100000": {
+      "posA": 1,
+      "posB": 2,
+      "modelA": "STRIDE w/ Synapse",
+      "modelB": "EXAONE-Forecast-Agent",
+      "MASE_Rank": {
+        "point_gap": 5.865979381443298,
+        "iid": {
+          "ci": [
+            1.144329896907216,
+            10.835051546391751
+          ],
+          "survives": true,
+          "p_value": 0.01394
+        },
+        "cluster": {
+          "ci": [
+            -1.2735849056603783,
+            14.216981132075471
+          ],
+          "survives": false,
+          "p_value": 0.111
+        }
+      },
+      "gmean": {
+        "point_gap": -0.004750820649484289,
+        "iid": {
+          "ci": [
+            -0.023985323460661623,
+            0.014682344281981174
+          ],
+          "survives": false,
+          "p_value": 0.63456
+        },
+        "cluster": {
+          "ci": [
+            -0.04532855162754956,
+            0.032494690768410106
+          ],
+          "survives": false,
+          "p_value": 0.86282
+        }
+      }
+    },
+    "all_45_pairs_B4000": [
+      {
+        "posA": 1,
+        "posB": 2,
+        "modelA": "STRIDE w/ Synapse",
+        "modelB": "EXAONE-Forecast-Agent",
+        "MASE_Rank": {
+          "point_gap": 5.865979381443298,
+          "iid": {
+            "ci": [
+              1.1958762886597931,
+              10.969072164948454
+            ],
+            "survives": true,
+            "p_value": 0.016
+          },
+          "cluster": {
+            "ci": [
+              -1.3956043956043942,
+              13.946236559139786
+            ],
+            "survives": false,
+            "p_value": 0.118
+          }
+        },
+        "gmean": {
+          "point_gap": -0.004750820649484289,
+          "iid": {
+            "ci": [
+              -0.023895469313607032,
+              0.015289431370544837
+            ],
+            "survives": false,
+            "p_value": 0.6435
+          },
+          "cluster": {
+            "ci": [
+              -0.04566500676725205,
+              0.03213701969932842
+            ],
+            "survives": false,
+            "p_value": 0.855
+          }
+        }
+      },
+      {
+        "posA": 1,
+        "posB": 3,
+        "modelA": "STRIDE w/ Synapse",
+        "modelB": "LS-MoE",
+        "MASE_Rank": {
+          "point_gap": 6.536082474226804,
+          "iid": {
+            "ci": [
+              2.268041237113401,
+              10.649484536082474
+            ],
+            "survives": true,
+            "p_value": 0.004
+          },
+          "cluster": {
+            "ci": [
+              0.1855670103092777,
+              12.148148148148149
+            ],
+            "survives": true,
+            "p_value": 0.047
+          }
+        },
+        "gmean": {
+          "point_gap": 0.021412436196245832,
+          "iid": {
+            "ci": [
+              0.0100652489305047,
+              0.033483869461143234
+            ],
+            "survives": true,
+            "p_value": 0.0
+          },
+          "cluster": {
+            "ci": [
+              0.007254299484634297,
+              0.03684700346910369
+            ],
+            "survives": true,
+            "p_value": 0.002
+          }
+        }
+      },
+      {
+        "posA": 1,
+        "posB": 4,
+        "modelA": "STRIDE w/ Synapse",
+        "modelB": "CastStar",
+        "MASE_Rank": {
+          "point_gap": 7.164948453608249,
+          "iid": {
+            "ci": [
+              2.979381443298969,
+              11.432989690721648
+            ],
+            "survives": true,
+            "p_value": 0.004
+          },
+          "cluster": {
+            "ci": [
+              0.33333333333333215,
+              12.905172413793105
+            ],
+            "survives": true,
+            "p_value": 0.04
+          }
+        },
+        "gmean": {
+          "point_gap": 0.02204819256411311,
+          "iid": {
+            "ci": [
+              0.011377044774937062,
+              0.0339049827818898
+            ],
+            "survives": true,
+            "p_value": 0.0
+          },
+          "cluster": {
+            "ci": [
+              0.007085511887037599,
+              0.03791281280906117
+            ],
+            "survives": true,
+            "p_value": 0.0005
+          }
+        }
+      },
+      {
+        "posA": 1,
+        "posB": 5,
+        "modelA": "STRIDE w/ Synapse",
+        "modelB": "LS-Agent",
+        "MASE_Rank": {
+          "point_gap": 8.783505154639174,
+          "iid": {
+            "ci": [
+              4.783505154639174,
+              12.75257731958763
+            ],
+            "survives": true,
+            "p_value": 0.0
+          },
+          "cluster": {
+            "ci": [
+              2.6538461538461533,
+              14.23
+            ],
+            "survives": true,
+            "p_value": 0.0045
+          }
+        },
+        "gmean": {
+          "point_gap": 0.024326528447012885,
+          "iid": {
+            "ci": [
+              0.013430812319007113,
+              0.036439899426432165
+            ],
+            "survives": true,
+            "p_value": 0.0
+          },
+          "cluster": {
+            "ci": [
+              0.010216225814966673,
+              0.03998686485377878
+            ],
+            "survives": true,
+            "p_value": 0.0
+          }
+        }
+      },
+      {
+        "posA": 1,
+        "posB": 6,
+        "modelA": "STRIDE w/ Synapse",
+        "modelB": "TIMEHEDGE",
+        "MASE_Rank": {
+          "point_gap": 9.175257731958764,
+          "iid": {
+            "ci": [
+              4.587628865979381,
+              13.8659793814433
+            ],
+            "survives": true,
+            "p_value": 0.0
+          },
+          "cluster": {
+            "ci": [
+              0.9615384615384635,
+              16.377551020408163
+            ],
+            "survives": true,
+            "p_value": 0.0305
+          }
+        },
+        "gmean": {
+          "point_gap": 0.02050315673536085,
+          "iid": {
+            "ci": [
+              0.009522018149496103,
+              0.03225122373097428
+            ],
+            "survives": true,
+            "p_value": 0.0
+          },
+          "cluster": {
+            "ci": [
+              0.007676391100003788,
+              0.034194525933375186
+            ],
+            "survives": true,
+            "p_value": 0.001
+          }
+        }
+      },
+      {
+        "posA": 1,
+        "posB": 7,
+        "modelA": "STRIDE w/ Synapse",
+        "modelB": "Falcon-Agent",
+        "MASE_Rank": {
+          "point_gap": 9.556701030927835,
+          "iid": {
+            "ci": [
+              4.690721649484537,
+              14.597938144329898
+            ],
+            "survives": true,
+            "p_value": 0.0
+          },
+          "cluster": {
+            "ci": [
+              2.413333333333332,
+              16.313253012048193
+            ],
+            "survives": true,
+            "p_value": 0.01
+          }
+        },
+        "gmean": {
+          "point_gap": 0.031186991817393372,
+          "iid": {
+            "ci": [
+              0.019043082246492593,
+              0.044360690726629126
+            ],
+            "survives": true,
+            "p_value": 0.0
+          },
+          "cluster": {
+            "ci": [
+              0.0106018254477811,
+              0.05432156638365487
+            ],
+            "survives": true,
+            "p_value": 0.001
+          }
+        }
+      },
+      {
+        "posA": 1,
+        "posB": 8,
+        "modelA": "STRIDE w/ Synapse",
+        "modelB": "RegLab-AH-1",
+        "MASE_Rank": {
+          "point_gap": 11.381443298969073,
+          "iid": {
+            "ci": [
+              6.608247422680414,
+              16.2680412371134
+            ],
+            "survives": true,
+            "p_value": 0.0
+          },
+          "cluster": {
+            "ci": [
+              3.517241379310347,
+              19.160000000000004
+            ],
+            "survives": true,
+            "p_value": 0.0055
+          }
+        },
+        "gmean": {
+          "point_gap": 0.0310571839362328,
+          "iid": {
+            "ci": [
+              0.019807821008028748,
+              0.0433787463410642
+            ],
+            "survives": true,
+            "p_value": 0.0
+          },
+          "cluster": {
+            "ci": [
+              0.01315738605169764,
+              0.04987968586021252
+            ],
+            "survives": true,
+            "p_value": 0.0
+          }
+        }
+      },
+      {
+        "posA": 1,
+        "posB": 9,
+        "modelA": "STRIDE w/ Synapse",
+        "modelB": "limix_moe",
+        "MASE_Rank": {
+          "point_gap": 11.381443298969073,
+          "iid": {
+            "ci": [
+              6.587628865979379,
+              16.34020618556701
+            ],
+            "survives": true,
+            "p_value": 0.0
+          },
+          "cluster": {
+            "ci": [
+              3.645569620253166,
+              19.723684210526315
+            ],
+            "survives": true,
+            "p_value": 0.003
+          }
+        },
+        "gmean": {
+          "point_gap": 0.0295245236919896,
+          "iid": {
+            "ci": [
+              0.019021620679167073,
+              0.04086220589502487
+            ],
+            "survives": true,
+            "p_value": 0.0
+          },
+          "cluster": {
+            "ci": [
+              0.013379119971021036,
+              0.04710128833172261
+            ],
+            "survives": true,
+            "p_value": 0.0
+          }
+        }
+      },
+      {
+        "posA": 1,
+        "posB": 10,
+        "modelA": "STRIDE w/ Synapse",
+        "modelB": "RacineCast-1-NC",
+        "MASE_Rank": {
+          "point_gap": 12.278350515463918,
+          "iid": {
+            "ci": [
+              7.6494845360824755,
+              17.15463917525773
+            ],
+            "survives": true,
+            "p_value": 0.0
+          },
+          "cluster": {
+            "ci": [
+              4.175257731958762,
+              20.11340206185567
+            ],
+            "survives": true,
+            "p_value": 0.003
+          }
+        },
+        "gmean": {
+          "point_gap": 0.036331493489812905,
+          "iid": {
+            "ci": [
+              0.024600816048478136,
+              0.049234879332313575
+            ],
+            "survives": true,
+            "p_value": 0.0
+          },
+          "cluster": {
+            "ci": [
+              0.014764561259588749,
+              0.060182255389744144
+            ],
+            "survives": true,
+            "p_value": 0.0
+          }
+        }
+      },
+      {
+        "posA": 2,
+        "posB": 3,
+        "modelA": "EXAONE-Forecast-Agent",
+        "modelB": "LS-MoE",
+        "MASE_Rank": {
+          "point_gap": 0.6701030927835063,
+          "iid": {
+            "ci": [
+              -3.8659793814432994,
+              4.979381443298969
+            ],
+            "survives": false,
+            "p_value": 0.7755
+          },
+          "cluster": {
+            "ci": [
+              -6.587499999999999,
+              6.602272727272728
+            ],
+            "survives": false,
+            "p_value": 0.8555
+          }
+        },
+        "gmean": {
+          "point_gap": 0.02616325684573012,
+          "iid": {
+            "ci": [
+              0.009082365430578887,
+              0.04431343616861877
+            ],
+            "survives": true,
+            "p_value": 0.002
+          },
+          "cluster": {
+            "ci": [
+              -0.007254521027807159,
+              0.06418909091316999
+            ],
+            "survives": false,
+            "p_value": 0.153
+          }
+        }
+      },
+      {
+        "posA": 2,
+        "posB": 4,
+        "modelA": "EXAONE-Forecast-Agent",
+        "modelB": "CastStar",
+        "MASE_Rank": {
+          "point_gap": 1.298969072164951,
+          "iid": {
+            "ci": [
+              -3.855670103092784,
+              6.2783505154639165
+            ],
+            "survives": false,
+            "p_value": 0.6325
+          },
+          "cluster": {
+            "ci": [
+              -7.123456790123459,
+              8.347368421052632
+            ],
+            "survives": false,
+            "p_value": 0.7415
+          }
+        },
+        "gmean": {
+          "point_gap": 0.0267990132135974,
+          "iid": {
+            "ci": [
+              0.009733398192355858,
+              0.04538261182536879
+            ],
+            "survives": true,
+            "p_value": 0.0015
+          },
+          "cluster": {
+            "ci": [
+              -0.008376203226140078,
+              0.06577545606770696
+            ],
+            "survives": false,
+            "p_value": 0.1585
+          }
+        }
+      },
+      {
+        "posA": 2,
+        "posB": 5,
+        "modelA": "EXAONE-Forecast-Agent",
+        "modelB": "LS-Agent",
+        "MASE_Rank": {
+          "point_gap": 2.9175257731958766,
+          "iid": {
+            "ci": [
+              -1.4639175257731942,
+              7.144329896907216
+            ],
+            "survives": false,
+            "p_value": 0.1905
+          },
+          "cluster": {
+            "ci": [
+              -4.414634146341463,
+              8.97345132743363
+            ],
+            "survives": false,
+            "p_value": 0.394
+          }
+        },
+        "gmean": {
+          "point_gap": 0.029077349096497174,
+          "iid": {
+            "ci": [
+              0.012881885617275823,
+              0.04694408698652852
+            ],
+            "survives": true,
+            "p_value": 0.0
+          },
+          "cluster": {
+            "ci": [
+              -0.004479947063344092,
+              0.06762584584981302
+            ],
+            "survives": false,
+            "p_value": 0.11
+          }
+        }
+      },
+      {
+        "posA": 2,
+        "posB": 6,
+        "modelA": "EXAONE-Forecast-Agent",
+        "modelB": "TIMEHEDGE",
+        "MASE_Rank": {
+          "point_gap": 3.3092783505154664,
+          "iid": {
+            "ci": [
+              -2.144329896907216,
+              8.649484536082475
+            ],
+            "survives": false,
+            "p_value": 0.2445
+          },
+          "cluster": {
+            "ci": [
+              -5.336842105263159,
+              11.107526881720432
+            ],
+            "survives": false,
+            "p_value": 0.4375
+          }
+        },
+        "gmean": {
+          "point_gap": 0.02525397738484514,
+          "iid": {
+            "ci": [
+              0.007305907966344005,
+              0.04444131257852901
+            ],
+            "survives": true,
+            "p_value": 0.004
+          },
+          "cluster": {
+            "ci": [
+              -0.009491234197268772,
+              0.06507388295797228
+            ],
+            "survives": false,
+            "p_value": 0.194
+          }
+        }
+      },
+      {
+        "posA": 2,
+        "posB": 7,
+        "modelA": "EXAONE-Forecast-Agent",
+        "modelB": "Falcon-Agent",
+        "MASE_Rank": {
+          "point_gap": 3.690721649484537,
+          "iid": {
+            "ci": [
+              -1.7628865979381452,
+              9.144329896907216
+            ],
+            "survives": false,
+            "p_value": 0.184
+          },
+          "cluster": {
+            "ci": [
+              -3.3684210526315788,
+              9.516483516483515
+            ],
+            "survives": false,
+            "p_value": 0.284
+          }
+        },
+        "gmean": {
+          "point_gap": 0.03593781246687766,
+          "iid": {
+            "ci": [
+              0.015907836417894394,
+              0.05709475308409806
+            ],
+            "survives": true,
+            "p_value": 0.0
+          },
+          "cluster": {
+            "ci": [
+              -0.0012840873599181957,
+              0.07485041527216846
+            ],
+            "survives": false,
+            "p_value": 0.0635
+          }
+        }
+      },
+      {
+        "posA": 2,
+        "posB": 8,
+        "modelA": "EXAONE-Forecast-Agent",
+        "modelB": "RegLab-AH-1",
+        "MASE_Rank": {
+          "point_gap": 5.515463917525775,
+          "iid": {
+            "ci": [
+              1.0618556701030926,
+              9.845360824742269
+            ],
+            "survives": true,
+            "p_value": 0.016
+          },
+          "cluster": {
+            "ci": [
+              -0.648351648351646,
+              11.72549019607843
+            ],
+            "survives": false,
+            "p_value": 0.0845
+          }
+        },
+        "gmean": {
+          "point_gap": 0.03580800458571709,
+          "iid": {
+            "ci": [
+              0.01913225147335862,
+              0.053828335524391646
+            ],
+            "survives": true,
+            "p_value": 0.0
+          },
+          "cluster": {
+            "ci": [
+              0.002517247660084876,
+              0.07283043264269834
+            ],
+            "survives": true,
+            "p_value": 0.0295
+          }
+        }
+      },
+      {
+        "posA": 2,
+        "posB": 9,
+        "modelA": "EXAONE-Forecast-Agent",
+        "modelB": "limix_moe",
+        "MASE_Rank": {
+          "point_gap": 5.515463917525775,
+          "iid": {
+            "ci": [
+              0.5876288659793829,
+              10.195876288659797
+            ],
+            "survives": true,
+            "p_value": 0.0295
+          },
+          "cluster": {
+            "ci": [
+              -1.756756756756758,
+              12.274509803921568
+            ],
+            "survives": false,
+            "p_value": 0.1325
+          }
+        },
+        "gmean": {
+          "point_gap": 0.03427534434147389,
+          "iid": {
+            "ci": [
+              0.016973631743419593,
+              0.052738109560683366
+            ],
+            "survives": true,
+            "p_value": 0.0
+          },
+          "cluster": {
+            "ci": [
+              0.0007892328505219037,
+              0.07187933338213226
+            ],
+            "survives": true,
+            "p_value": 0.042
+          }
+        }
+      },
+      {
+        "posA": 2,
+        "posB": 10,
+        "modelA": "EXAONE-Forecast-Agent",
+        "modelB": "RacineCast-1-NC",
+        "MASE_Rank": {
+          "point_gap": 6.412371134020621,
+          "iid": {
+            "ci": [
+              1.9896907216494846,
+              10.628865979381445
+            ],
+            "survives": true,
+            "p_value": 0.0045
+          },
+          "cluster": {
+            "ci": [
+              0.31632653061224403,
+              12.369565217391301
+            ],
+            "survives": true,
+            "p_value": 0.0395
+          }
+        },
+        "gmean": {
+          "point_gap": 0.041082314139297194,
+          "iid": {
+            "ci": [
+              0.02229802134294484,
+              0.06066691345262559
+            ],
+            "survives": true,
+            "p_value": 0.0
+          },
+          "cluster": {
+            "ci": [
+              0.005102536061205032,
+              0.07999093670335516
+            ],
+            "survives": true,
+            "p_value": 0.021
+          }
+        }
+      },
+      {
+        "posA": 3,
+        "posB": 4,
+        "modelA": "LS-MoE",
+        "modelB": "CastStar",
+        "MASE_Rank": {
+          "point_gap": 0.6288659793814446,
+          "iid": {
+            "ci": [
+              -3.0412371134020617,
+              4.237113402061855
+            ],
+            "survives": false,
+            "p_value": 0.7235
+          },
+          "cluster": {
+            "ci": [
+              -4.153846153846153,
+              5.076271186440678
+            ],
+            "survives": false,
+            "p_value": 0.7625
+          }
+        },
+        "gmean": {
+          "point_gap": 0.0006357563678672795,
+          "iid": {
+            "ci": [
+              -0.004482762828362352,
+              0.0065788285669874935
+            ],
+            "survives": false,
+            "p_value": 0.8325
+          },
+          "cluster": {
+            "ci": [
+              -0.006063341965505897,
+              0.007479391064077745
+            ],
+            "survives": false,
+            "p_value": 0.8565
+          }
+        }
+      },
+      {
+        "posA": 3,
+        "posB": 5,
+        "modelA": "LS-MoE",
+        "modelB": "LS-Agent",
+        "MASE_Rank": {
+          "point_gap": 2.2474226804123703,
+          "iid": {
+            "ci": [
+              0.3092783505154628,
+              4.309278350515466
+            ],
+            "survives": true,
+            "p_value": 0.0215
+          },
+          "cluster": {
+            "ci": [
+              0.4299999999999997,
+              4.147368421052629
+            ],
+            "survives": true,
+            "p_value": 0.0155
+          }
+        },
+        "gmean": {
+          "point_gap": 0.002914092250767053,
+          "iid": {
+            "ci": [
+              8.495349965631505e-05,
+              0.006974182210272795
+            ],
+            "survives": true,
+            "p_value": 0.0385
+          },
+          "cluster": {
+            "ci": [
+              0.00043578056083337646,
+              0.006372130963343159
+            ],
+            "survives": true,
+            "p_value": 0.016
+          }
+        }
+      },
+      {
+        "posA": 3,
+        "posB": 6,
+        "modelA": "LS-MoE",
+        "modelB": "TIMEHEDGE",
+        "MASE_Rank": {
+          "point_gap": 2.63917525773196,
+          "iid": {
+            "ci": [
+              -1.2577319587628857,
+              6.7216494845360835
+            ],
+            "survives": false,
+            "p_value": 0.1905
+          },
+          "cluster": {
+            "ci": [
+              -1.9646017699115035,
+              7.697674418604652
+            ],
+            "survives": false,
+            "p_value": 0.2805
+          }
+        },
+        "gmean": {
+          "point_gap": -0.0009092794608849819,
+          "iid": {
+            "ci": [
+              -0.007673623550308095,
+              0.005547245273334056
+            ],
+            "survives": false,
+            "p_value": 0.8095
+          },
+          "cluster": {
+            "ci": [
+              -0.011759749048675106,
+              0.00817678245055925
+            ],
+            "survives": false,
+            "p_value": 0.9105
+          }
+        }
+      },
+      {
+        "posA": 3,
+        "posB": 7,
+        "modelA": "LS-MoE",
+        "modelB": "Falcon-Agent",
+        "MASE_Rank": {
+          "point_gap": 3.020618556701031,
+          "iid": {
+            "ci": [
+              -1.288659793814432,
+              7.340206185567013
+            ],
+            "survives": false,
+            "p_value": 0.164
+          },
+          "cluster": {
+            "ci": [
+              -0.9882352941176471,
+              7.233333333333334
+            ],
+            "survives": false,
+            "p_value": 0.136
+          }
+        },
+        "gmean": {
+          "point_gap": 0.00977455562114754,
+          "iid": {
+            "ci": [
+              -0.0008155882756479826,
+              0.02150004196111094
+            ],
+            "survives": false,
+            "p_value": 0.0705
+          },
+          "cluster": {
+            "ci": [
+              -0.0034114690491603428,
+              0.02601731365583565
+            ],
+            "survives": false,
+            "p_value": 0.209
+          }
+        }
+      },
+      {
+        "posA": 3,
+        "posB": 8,
+        "modelA": "LS-MoE",
+        "modelB": "RegLab-AH-1",
+        "MASE_Rank": {
+          "point_gap": 4.845360824742269,
+          "iid": {
+            "ci": [
+              1.7731958762886606,
+              8.154639175257731
+            ],
+            "survives": true,
+            "p_value": 0.0015
+          },
+          "cluster": {
+            "ci": [
+              0.9509803921568611,
+              9.720338983050848
+            ],
+            "survives": true,
+            "p_value": 0.0125
+          }
+        },
+        "gmean": {
+          "point_gap": 0.00964474773998697,
+          "iid": {
+            "ci": [
+              0.004783983117540691,
+              0.015758414993316483
+            ],
+            "survives": true,
+            "p_value": 0.0
+          },
+          "cluster": {
+            "ci": [
+              0.002997793263610049,
+              0.017764433906576893
+            ],
+            "survives": true,
+            "p_value": 0.0005
+          }
+        }
+      },
+      {
+        "posA": 3,
+        "posB": 9,
+        "modelA": "LS-MoE",
+        "modelB": "limix_moe",
+        "MASE_Rank": {
+          "point_gap": 4.845360824742269,
+          "iid": {
+            "ci": [
+              1.6391752577319565,
+              8.268041237113401
+            ],
+            "survives": true,
+            "p_value": 0.001
+          },
+          "cluster": {
+            "ci": [
+              0.6372549019607838,
+              10.106666666666666
+            ],
+            "survives": true,
+            "p_value": 0.023
+          }
+        },
+        "gmean": {
+          "point_gap": 0.00811208749574377,
+          "iid": {
+            "ci": [
+              0.002879937818731304,
+              0.01406199793833618
+            ],
+            "survives": true,
+            "p_value": 0.0005
+          },
+          "cluster": {
+            "ci": [
+              0.0017122373192524076,
+              0.01537542639009526
+            ],
+            "survives": true,
+            "p_value": 0.008
+          }
+        }
+      },
+      {
+        "posA": 3,
+        "posB": 10,
+        "modelA": "LS-MoE",
+        "modelB": "RacineCast-1-NC",
+        "MASE_Rank": {
+          "point_gap": 5.742268041237114,
+          "iid": {
+            "ci": [
+              2.9381443298969074,
+              8.917525773195877
+            ],
+            "survives": true,
+            "p_value": 0.0
+          },
+          "cluster": {
+            "ci": [
+              2.047169811320753,
+              10.294736842105262
+            ],
+            "survives": true,
+            "p_value": 0.0005
+          }
+        },
+        "gmean": {
+          "point_gap": 0.014919057293567073,
+          "iid": {
+            "ci": [
+              0.006867164006879534,
+              0.024370003821153785
+            ],
+            "survives": true,
+            "p_value": 0.0
+          },
+          "cluster": {
+            "ci": [
+              0.004373964458740609,
+              0.030163957249474405
+            ],
+            "survives": true,
+            "p_value": 0.0
+          }
+        }
+      },
+      {
+        "posA": 4,
+        "posB": 5,
+        "modelA": "CastStar",
+        "modelB": "LS-Agent",
+        "MASE_Rank": {
+          "point_gap": 1.6185567010309256,
+          "iid": {
+            "ci": [
+              -1.5876288659793794,
+              4.989690721649485
+            ],
+            "survives": false,
+            "p_value": 0.347
+          },
+          "cluster": {
+            "ci": [
+              -2.30188679245283,
+              5.739999999999998
+            ],
+            "survives": false,
+            "p_value": 0.4295
+          }
+        },
+        "gmean": {
+          "point_gap": 0.0022783358828997735,
+          "iid": {
+            "ci": [
+              -0.0017083912056227168,
+              0.0064020698438618795
+            ],
+            "survives": false,
+            "p_value": 0.262
+          },
+          "cluster": {
+            "ci": [
+              -0.0030712809575474953,
+              0.008170246883277776
+            ],
+            "survives": false,
+            "p_value": 0.3975
+          }
+        }
+      },
+      {
+        "posA": 4,
+        "posB": 6,
+        "modelA": "CastStar",
+        "modelB": "TIMEHEDGE",
+        "MASE_Rank": {
+          "point_gap": 2.0103092783505154,
+          "iid": {
+            "ci": [
+              -2.9896907216494846,
+              6.7938144329896915
+            ],
+            "survives": false,
+            "p_value": 0.4015
+          },
+          "cluster": {
+            "ci": [
+              -2.950980392156861,
+              7.7127659574468055
+            ],
+            "survives": false,
+            "p_value": 0.4545
+          }
+        },
+        "gmean": {
+          "point_gap": -0.0015450358287522614,
+          "iid": {
+            "ci": [
+              -0.010242948319132361,
+              0.006401099637237784
+            ],
+            "survives": false,
+            "p_value": 0.728
+          },
+          "cluster": {
+            "ci": [
+              -0.013701770787410916,
+              0.00862630457530672
+            ],
+            "survives": false,
+            "p_value": 0.83
+          }
+        }
+      },
+      {
+        "posA": 4,
+        "posB": 7,
+        "modelA": "CastStar",
+        "modelB": "Falcon-Agent",
+        "MASE_Rank": {
+          "point_gap": 2.3917525773195862,
+          "iid": {
+            "ci": [
+              -2.979381443298969,
+              7.546391752577321
+            ],
+            "survives": false,
+            "p_value": 0.3645
+          },
+          "cluster": {
+            "ci": [
+              -3.25531914893617,
+              8.925925925925927
+            ],
+            "survives": false,
+            "p_value": 0.4415
+          }
+        },
+        "gmean": {
+          "point_gap": 0.009138799253280261,
+          "iid": {
+            "ci": [
+              -0.0008254389172728804,
+              0.02014515207734524
+            ],
+            "survives": false,
+            "p_value": 0.076
+          },
+          "cluster": {
+            "ci": [
+              -0.003991146833040471,
+              0.024712154028798172
+            ],
+            "survives": false,
+            "p_value": 0.245
+          }
+        }
+      },
+      {
+        "posA": 4,
+        "posB": 8,
+        "modelA": "CastStar",
+        "modelB": "RegLab-AH-1",
+        "MASE_Rank": {
+          "point_gap": 4.216494845360824,
+          "iid": {
+            "ci": [
+              0.49484536082474406,
+              7.804123711340207
+            ],
+            "survives": true,
+            "p_value": 0.031
+          },
+          "cluster": {
+            "ci": [
+              0.00813008130081272,
+              8.905882352941177
+            ],
+            "survives": true,
+            "p_value": 0.05
+          }
+        },
+        "gmean": {
+          "point_gap": 0.00900899137211969,
+          "iid": {
+            "ci": [
+              0.0047507784692136235,
+              0.013690269177462466
+            ],
+            "survives": true,
+            "p_value": 0.0
+          },
+          "cluster": {
+            "ci": [
+              0.003263861181302119,
+              0.01577960388440225
+            ],
+            "survives": true,
+            "p_value": 0.0
+          }
+        }
+      },
+      {
+        "posA": 4,
+        "posB": 9,
+        "modelA": "CastStar",
+        "modelB": "limix_moe",
+        "MASE_Rank": {
+          "point_gap": 4.216494845360824,
+          "iid": {
+            "ci": [
+              0.3092783505154628,
+              8.453608247422682
+            ],
+            "survives": true,
+            "p_value": 0.0345
+          },
+          "cluster": {
+            "ci": [
+              -0.7663551401869171,
+              11.094594594594593
+            ],
+            "survives": false,
+            "p_value": 0.105
+          }
+        },
+        "gmean": {
+          "point_gap": 0.00747633112787649,
+          "iid": {
+            "ci": [
+              0.0026681682837861875,
+              0.01257909317111533
+            ],
+            "survives": true,
+            "p_value": 0.002
+          },
+          "cluster": {
+            "ci": [
+              0.0009070751442094016,
+              0.0150392816034004
+            ],
+            "survives": true,
+            "p_value": 0.021
+          }
+        }
+      },
+      {
+        "posA": 4,
+        "posB": 10,
+        "modelA": "CastStar",
+        "modelB": "RacineCast-1-NC",
+        "MASE_Rank": {
+          "point_gap": 5.11340206185567,
+          "iid": {
+            "ci": [
+              1.134020618556704,
+              9.0
+            ],
+            "survives": true,
+            "p_value": 0.0095
+          },
+          "cluster": {
+            "ci": [
+              0.7155963302752291,
+              10.46341463414634
+            ],
+            "survives": true,
+            "p_value": 0.0185
+          }
+        },
+        "gmean": {
+          "point_gap": 0.014283300925699793,
+          "iid": {
+            "ci": [
+              0.006720295070568538,
+              0.023087521296133173
+            ],
+            "survives": true,
+            "p_value": 0.0
+          },
+          "cluster": {
+            "ci": [
+              0.0039771147100671755,
+              0.02840542675297969
+            ],
+            "survives": true,
+            "p_value": 0.0
+          }
+        }
+      },
+      {
+        "posA": 5,
+        "posB": 6,
+        "modelA": "LS-Agent",
+        "modelB": "TIMEHEDGE",
+        "MASE_Rank": {
+          "point_gap": 0.3917525773195898,
+          "iid": {
+            "ci": [
+              -3.453608247422679,
+              4.309278350515463
+            ],
+            "survives": false,
+            "p_value": 0.8495
+          },
+          "cluster": {
+            "ci": [
+              -3.9207920792079225,
+              4.782608695652176
+            ],
+            "survives": false,
+            "p_value": 0.854
+          }
+        },
+        "gmean": {
+          "point_gap": -0.003823371711652035,
+          "iid": {
+            "ci": [
+              -0.011326683741590016,
+              0.0030074823909667092
+            ],
+            "survives": false,
+            "p_value": 0.2885
+          },
+          "cluster": {
+            "ci": [
+              -0.014861884053889718,
+              0.004954013799798596
+            ],
+            "survives": false,
+            "p_value": 0.447
+          }
+        }
+      },
+      {
+        "posA": 5,
+        "posB": 7,
+        "modelA": "LS-Agent",
+        "modelB": "Falcon-Agent",
+        "MASE_Rank": {
+          "point_gap": 0.7731958762886606,
+          "iid": {
+            "ci": [
+              -3.907216494845361,
+              5.556701030927833
+            ],
+            "survives": false,
+            "p_value": 0.7555
+          },
+          "cluster": {
+            "ci": [
+              -4.22972972972973,
+              5.626262626262626
+            ],
+            "survives": false,
+            "p_value": 0.741
+          }
+        },
+        "gmean": {
+          "point_gap": 0.006860463370380487,
+          "iid": {
+            "ci": [
+              -0.0034426352885143507,
+              0.018372630443855453
+            ],
+            "survives": false,
+            "p_value": 0.2225
+          },
+          "cluster": {
+            "ci": [
+              -0.006770564349794839,
+              0.023083288324193096
+            ],
+            "survives": false,
+            "p_value": 0.454
+          }
+        }
+      },
+      {
+        "posA": 5,
+        "posB": 8,
+        "modelA": "LS-Agent",
+        "modelB": "RegLab-AH-1",
+        "MASE_Rank": {
+          "point_gap": 2.5979381443298983,
+          "iid": {
+            "ci": [
+              -0.48453608247422864,
+              5.948453608247423
+            ],
+            "survives": false,
+            "p_value": 0.1
+          },
+          "cluster": {
+            "ci": [
+              -1.0322580645161317,
+              6.828947368421051
+            ],
+            "survives": false,
+            "p_value": 0.1705
+          }
+        },
+        "gmean": {
+          "point_gap": 0.006730655489219917,
+          "iid": {
+            "ci": [
+              0.002698696170103765,
+              0.011020887314861061
+            ],
+            "survives": true,
+            "p_value": 0.0005
+          },
+          "cluster": {
+            "ci": [
+              0.0008333835665560452,
+              0.013569045941094426
+            ],
+            "survives": true,
+            "p_value": 0.0235
+          }
+        }
+      },
+      {
+        "posA": 5,
+        "posB": 9,
+        "modelA": "LS-Agent",
+        "modelB": "limix_moe",
+        "MASE_Rank": {
+          "point_gap": 2.5979381443298983,
+          "iid": {
+            "ci": [
+              -0.7010309278350526,
+              6.164948453608247
+            ],
+            "survives": false,
+            "p_value": 0.135
+          },
+          "cluster": {
+            "ci": [
+              -1.6071428571428577,
+              7.835164835164836
+            ],
+            "survives": false,
+            "p_value": 0.252
+          }
+        },
+        "gmean": {
+          "point_gap": 0.005197995244976716,
+          "iid": {
+            "ci": [
+              0.0004790448892003085,
+              0.009925692084314486
+            ],
+            "survives": true,
+            "p_value": 0.0265
+          },
+          "cluster": {
+            "ci": [
+              -0.0005433187003532902,
+              0.011454213777844002
+            ],
+            "survives": false,
+            "p_value": 0.0765
+          }
+        }
+      },
+      {
+        "posA": 5,
+        "posB": 10,
+        "modelA": "LS-Agent",
+        "modelB": "RacineCast-1-NC",
+        "MASE_Rank": {
+          "point_gap": 3.494845360824744,
+          "iid": {
+            "ci": [
+              0.5257731958762903,
+              6.731958762886595
+            ],
+            "survives": true,
+            "p_value": 0.02
+          },
+          "cluster": {
+            "ci": [
+              0.01923076923077005,
+              7.618421052631579
+            ],
+            "survives": true,
+            "p_value": 0.0495
+          }
+        },
+        "gmean": {
+          "point_gap": 0.01200496504280002,
+          "iid": {
+            "ci": [
+              0.004571375118938181,
+              0.020844377425941973
+            ],
+            "survives": true,
+            "p_value": 0.0
+          },
+          "cluster": {
+            "ci": [
+              0.0019779716096303135,
+              0.0265802169325276
+            ],
+            "survives": true,
+            "p_value": 0.007
+          }
+        }
+      },
+      {
+        "posA": 6,
+        "posB": 7,
+        "modelA": "TIMEHEDGE",
+        "modelB": "Falcon-Agent",
+        "MASE_Rank": {
+          "point_gap": 0.3814432989690708,
+          "iid": {
+            "ci": [
+              -5.010309278350515,
+              5.6391752577319565
+            ],
+            "survives": false,
+            "p_value": 0.8805
+          },
+          "cluster": {
+            "ci": [
+              -5.800000000000001,
+              6.26923076923077
+            ],
+            "survives": false,
+            "p_value": 0.8885
+          }
+        },
+        "gmean": {
+          "point_gap": 0.010683835082032522,
+          "iid": {
+            "ci": [
+              -0.0013603369238489038,
+              0.023348991575975697
+            ],
+            "survives": false,
+            "p_value": 0.0845
+          },
+          "cluster": {
+            "ci": [
+              -0.00227627110266454,
+              0.02397492173117638
+            ],
+            "survives": false,
+            "p_value": 0.118
+          }
+        }
+      },
+      {
+        "posA": 6,
+        "posB": 8,
+        "modelA": "TIMEHEDGE",
+        "modelB": "RegLab-AH-1",
+        "MASE_Rank": {
+          "point_gap": 2.2061855670103085,
+          "iid": {
+            "ci": [
+              -2.237113402061855,
+              6.824742268041234
+            ],
+            "survives": false,
+            "p_value": 0.321
+          },
+          "cluster": {
+            "ci": [
+              -3.170731707317074,
+              8.283950617283953
+            ],
+            "survives": false,
+            "p_value": 0.4485
+          }
+        },
+        "gmean": {
+          "point_gap": 0.010554027200871952,
+          "iid": {
+            "ci": [
+              0.0024428237361239225,
+              0.01926845651152881
+            ],
+            "survives": true,
+            "p_value": 0.01
+          },
+          "cluster": {
+            "ci": [
+              0.0012924156965408162,
+              0.02220455597561738
+            ],
+            "survives": true,
+            "p_value": 0.0205
+          }
+        }
+      },
+      {
+        "posA": 6,
+        "posB": 9,
+        "modelA": "TIMEHEDGE",
+        "modelB": "limix_moe",
+        "MASE_Rank": {
+          "point_gap": 2.2061855670103085,
+          "iid": {
+            "ci": [
+              -1.9587628865979383,
+              6.463917525773194
+            ],
+            "survives": false,
+            "p_value": 0.282
+          },
+          "cluster": {
+            "ci": [
+              -2.741071428571427,
+              7.608695652173914
+            ],
+            "survives": false,
+            "p_value": 0.3655
+          }
+        },
+        "gmean": {
+          "point_gap": 0.009021366956628751,
+          "iid": {
+            "ci": [
+              0.0015045317143240755,
+              0.01690380847100531
+            ],
+            "survives": true,
+            "p_value": 0.0225
+          },
+          "cluster": {
+            "ci": [
+              0.0017404715214944244,
+              0.01907984735422169
+            ],
+            "survives": true,
+            "p_value": 0.011
+          }
+        }
+      },
+      {
+        "posA": 6,
+        "posB": 10,
+        "modelA": "TIMEHEDGE",
+        "modelB": "RacineCast-1-NC",
+        "MASE_Rank": {
+          "point_gap": 3.1030927835051543,
+          "iid": {
+            "ci": [
+              -1.144329896907216,
+              7.402061855670102
+            ],
+            "survives": false,
+            "p_value": 0.1535
+          },
+          "cluster": {
+            "ci": [
+              -2.0714285714285694,
+              8.673913043478262
+            ],
+            "survives": false,
+            "p_value": 0.2535
+          }
+        },
+        "gmean": {
+          "point_gap": 0.015828336754452055,
+          "iid": {
+            "ci": [
+              0.005504363644563637,
+              0.02678929878536984
+            ],
+            "survives": true,
+            "p_value": 0.002
+          },
+          "cluster": {
+            "ci": [
+              0.0035089210989243114,
+              0.029411810114741144
+            ],
+            "survives": true,
+            "p_value": 0.0025
+          }
+        }
+      },
+      {
+        "posA": 7,
+        "posB": 8,
+        "modelA": "Falcon-Agent",
+        "modelB": "RegLab-AH-1",
+        "MASE_Rank": {
+          "point_gap": 1.8247422680412377,
+          "iid": {
+            "ci": [
+              -2.0,
+              5.793814432989688
+            ],
+            "survives": false,
+            "p_value": 0.342
+          },
+          "cluster": {
+            "ci": [
+              -2.7303370786516865,
+              7.919191919191917
+            ],
+            "survives": false,
+            "p_value": 0.494
+          }
+        },
+        "gmean": {
+          "point_gap": -0.00012980788116057074,
+          "iid": {
+            "ci": [
+              -0.008541727818324851,
+              0.0077248536636784215
+            ],
+            "survives": false,
+            "p_value": 0.9675
+          },
+          "cluster": {
+            "ci": [
+              -0.010870714456724218,
+              0.010530154046263396
+            ],
+            "survives": false,
+            "p_value": 0.954
+          }
+        }
+      },
+      {
+        "posA": 7,
+        "posB": 9,
+        "modelA": "Falcon-Agent",
+        "modelB": "limix_moe",
+        "MASE_Rank": {
+          "point_gap": 1.8247422680412377,
+          "iid": {
+            "ci": [
+              -2.4020618556701017,
+              6.24742268041237
+            ],
+            "survives": false,
+            "p_value": 0.4095
+          },
+          "cluster": {
+            "ci": [
+              -3.1640625,
+              7.543209876543212
+            ],
+            "survives": false,
+            "p_value": 0.495
+          }
+        },
+        "gmean": {
+          "point_gap": -0.001662468125403771,
+          "iid": {
+            "ci": [
+              -0.010299486152074988,
+              0.006722771886608192
+            ],
+            "survives": false,
+            "p_value": 0.7545
+          },
+          "cluster": {
+            "ci": [
+              -0.014172402713652221,
+              0.010574876818051693
+            ],
+            "survives": false,
+            "p_value": 0.868
+          }
+        }
+      },
+      {
+        "posA": 7,
+        "posB": 10,
+        "modelA": "Falcon-Agent",
+        "modelB": "RacineCast-1-NC",
+        "MASE_Rank": {
+          "point_gap": 2.7216494845360835,
+          "iid": {
+            "ci": [
+              -0.7422680412371108,
+              6.4226804123711325
+            ],
+            "survives": false,
+            "p_value": 0.1215
+          },
+          "cluster": {
+            "ci": [
+              -1.262626262626263,
+              7.977011494252871
+            ],
+            "survives": false,
+            "p_value": 0.214
+          }
+        },
+        "gmean": {
+          "point_gap": 0.0051445016724195325,
+          "iid": {
+            "ci": [
+              -0.0001882932532500936,
+              0.010508345864480573
+            ],
+            "survives": false,
+            "p_value": 0.058
+          },
+          "cluster": {
+            "ci": [
+              0.00022473220061713928,
+              0.011900662692640784
+            ],
+            "survives": true,
+            "p_value": 0.0395
+          }
+        }
+      },
+      {
+        "posA": 8,
+        "posB": 9,
+        "modelA": "RegLab-AH-1",
+        "modelB": "limix_moe",
+        "MASE_Rank": {
+          "point_gap": 0.0,
+          "iid": {
+            "ci": [
+              -2.783505154639176,
+              2.7525773195876297
+            ],
+            "survives": false,
+            "p_value": 0.9845
+          },
+          "cluster": {
+            "ci": [
+              -4.366666666666664,
+              4.705263157894738
+            ],
+            "survives": false,
+            "p_value": 0.992
+          }
+        },
+        "gmean": {
+          "point_gap": -0.0015326602442432002,
+          "iid": {
+            "ci": [
+              -0.005062171254921255,
+              0.0016979132260572238
+            ],
+            "survives": false,
+            "p_value": 0.383
+          },
+          "cluster": {
+            "ci": [
+              -0.006267386158813726,
+              0.0035798314208979054
+            ],
+            "survives": false,
+            "p_value": 0.52
+          }
+        }
+      },
+      {
+        "posA": 8,
+        "posB": 10,
+        "modelA": "RegLab-AH-1",
+        "modelB": "RacineCast-1-NC",
+        "MASE_Rank": {
+          "point_gap": 0.8969072164948457,
+          "iid": {
+            "ci": [
+              -0.2680412371134011,
+              2.092783505154639
+            ],
+            "survives": false,
+            "p_value": 0.1545
+          },
+          "cluster": {
+            "ci": [
+              -0.4587155963302756,
+              2.3902439024390247
+            ],
+            "survives": false,
+            "p_value": 0.21
+          }
+        },
+        "gmean": {
+          "point_gap": 0.005274309553580103,
+          "iid": {
+            "ci": [
+              0.000784905318761131,
+              0.010625835278507134
+            ],
+            "survives": true,
+            "p_value": 0.0095
+          },
+          "cluster": {
+            "ci": [
+              0.00017320504247420043,
+              0.01381771361318046
+            ],
+            "survives": true,
+            "p_value": 0.0275
+          }
+        }
+      },
+      {
+        "posA": 9,
+        "posB": 10,
+        "modelA": "limix_moe",
+        "modelB": "RacineCast-1-NC",
+        "MASE_Rank": {
+          "point_gap": 0.8969072164948457,
+          "iid": {
+            "ci": [
+              -1.4845360824742286,
+              3.268041237113401
+            ],
+            "survives": false,
+            "p_value": 0.4635
+          },
+          "cluster": {
+            "ci": [
+              -3.0128205128205146,
+              4.440366972477065
+            ],
+            "survives": false,
+            "p_value": 0.644
+          }
+        },
+        "gmean": {
+          "point_gap": 0.0068069697978233035,
+          "iid": {
+            "ci": [
+              0.0013489263877149438,
+              0.0132319298726023
+            ],
+            "survives": true,
+            "p_value": 0.0095
+          },
+          "cluster": {
+            "ci": [
+              -0.001551759254300844,
+              0.01743288447468727
+            ],
+            "survives": false,
+            "p_value": 0.156
+          }
+        }
+      }
+    ],
+    "all_45_pairs_B100000": [
+      {
+        "posA": 1,
+        "posB": 2,
+        "modelA": "STRIDE w/ Synapse",
+        "modelB": "EXAONE-Forecast-Agent",
+        "MASE_Rank": {
+          "point_gap": 5.865979381443298,
+          "iid": {
+            "ci": [
+              1.144329896907216,
+              10.835051546391751
+            ],
+            "survives": true,
+            "p_value": 0.01394
+          },
+          "cluster": {
+            "ci": [
+              -1.2735849056603783,
+              14.216981132075471
+            ],
+            "survives": false,
+            "p_value": 0.111
+          }
+        },
+        "gmean": {
+          "point_gap": -0.004750820649484289,
+          "iid": {
+            "ci": [
+              -0.023985323460661623,
+              0.014682344281981174
+            ],
+            "survives": false,
+            "p_value": 0.63456
+          },
+          "cluster": {
+            "ci": [
+              -0.04532855162754956,
+              0.032494690768410106
+            ],
+            "survives": false,
+            "p_value": 0.86282
+          }
+        }
+      },
+      {
+        "posA": 1,
+        "posB": 3,
+        "modelA": "STRIDE w/ Synapse",
+        "modelB": "LS-MoE",
+        "MASE_Rank": {
+          "point_gap": 6.536082474226804,
+          "iid": {
+            "ci": [
+              2.3711340206185554,
+              10.804123711340207
+            ],
+            "survives": true,
+            "p_value": 0.00224
+          },
+          "cluster": {
+            "ci": [
+              0.2558139534883743,
+              12.402298850574713
+            ],
+            "survives": true,
+            "p_value": 0.04178
+          }
+        },
+        "gmean": {
+          "point_gap": 0.021412436196245832,
+          "iid": {
+            "ci": [
+              0.010212729550414634,
+              0.03380492345512082
+            ],
+            "survives": true,
+            "p_value": 2e-05
+          },
+          "cluster": {
+            "ci": [
+              0.007351078115608978,
+              0.037541570601780705
+            ],
+            "survives": true,
+            "p_value": 0.00208
+          }
+        }
+      },
+      {
+        "posA": 1,
+        "posB": 4,
+        "modelA": "STRIDE w/ Synapse",
+        "modelB": "CastStar",
+        "MASE_Rank": {
+          "point_gap": 7.164948453608249,
+          "iid": {
+            "ci": [
+              2.979381443298969,
+              11.43298969072165
+            ],
+            "survives": true,
+            "p_value": 0.00108
+          },
+          "cluster": {
+            "ci": [
+              0.6617647058823515,
+              13.000000000000002
+            ],
+            "survives": true,
+            "p_value": 0.03214
+          }
+        },
+        "gmean": {
+          "point_gap": 0.02204819256411311,
+          "iid": {
+            "ci": [
+              0.011463389875029872,
+              0.03371861303546764
+            ],
+            "survives": true,
+            "p_value": 0.0
+          },
+          "cluster": {
+            "ci": [
+              0.007205092938592228,
+              0.038548940485485794
+            ],
+            "survives": true,
+            "p_value": 0.00204
+          }
+        }
+      },
+      {
+        "posA": 1,
+        "posB": 5,
+        "modelA": "STRIDE w/ Synapse",
+        "modelB": "LS-Agent",
+        "MASE_Rank": {
+          "point_gap": 8.783505154639174,
+          "iid": {
+            "ci": [
+              4.783505154639174,
+              12.824742268041238
+            ],
+            "survives": true,
+            "p_value": 4e-05
+          },
+          "cluster": {
+            "ci": [
+              2.8444444444444414,
+              14.456896551724137
+            ],
+            "survives": true,
+            "p_value": 0.00484
+          }
+        },
+        "gmean": {
+          "point_gap": 0.024326528447012885,
+          "iid": {
+            "ci": [
+              0.013274104553510913,
+              0.03661160980868938
+            ],
+            "survives": true,
+            "p_value": 0.0
+          },
+          "cluster": {
+            "ci": [
+              0.01022427109955465,
+              0.040576300752335315
+            ],
+            "survives": true,
+            "p_value": 0.0002
+          }
+        }
+      },
+      {
+        "posA": 1,
+        "posB": 6,
+        "modelA": "STRIDE w/ Synapse",
+        "modelB": "TIMEHEDGE",
+        "MASE_Rank": {
+          "point_gap": 9.175257731958764,
+          "iid": {
+            "ci": [
+              4.525773195876287,
+              13.90721649484536
+            ],
+            "survives": true,
+            "p_value": 0.0001
+          },
+          "cluster": {
+            "ci": [
+              1.2826086956521738,
+              16.511111111111113
+            ],
+            "survives": true,
+            "p_value": 0.02398
+          }
+        },
+        "gmean": {
+          "point_gap": 0.02050315673536085,
+          "iid": {
+            "ci": [
+              0.009825947496754361,
+              0.03259712085006078
+            ],
+            "survives": true,
+            "p_value": 6e-05
+          },
+          "cluster": {
+            "ci": [
+              0.007710521235725132,
+              0.03406794553039638
+            ],
+            "survives": true,
+            "p_value": 0.00066
+          }
+        }
+      },
+      {
+        "posA": 1,
+        "posB": 7,
+        "modelA": "STRIDE w/ Synapse",
+        "modelB": "Falcon-Agent",
+        "MASE_Rank": {
+          "point_gap": 9.556701030927835,
+          "iid": {
+            "ci": [
+              4.680412371134022,
+              14.618556701030927
+            ],
+            "survives": true,
+            "p_value": 0.00014
+          },
+          "cluster": {
+            "ci": [
+              2.5462962962962976,
+              16.594059405940595
+            ],
+            "survives": true,
+            "p_value": 0.008
+          }
+        },
+        "gmean": {
+          "point_gap": 0.031186991817393372,
+          "iid": {
+            "ci": [
+              0.018848901459218803,
+              0.044298578653970244
+            ],
+            "survives": true,
+            "p_value": 0.0
+          },
+          "cluster": {
+            "ci": [
+              0.010371559224629512,
+              0.054791791885361874
+            ],
+            "survives": true,
+            "p_value": 0.00108
+          }
+        }
+      },
+      {
+        "posA": 1,
+        "posB": 8,
+        "modelA": "STRIDE w/ Synapse",
+        "modelB": "RegLab-AH-1",
+        "MASE_Rank": {
+          "point_gap": 11.381443298969073,
+          "iid": {
+            "ci": [
+              6.52577319587629,
+              16.329896907216494
+            ],
+            "survives": true,
+            "p_value": 0.0
+          },
+          "cluster": {
+            "ci": [
+              3.5930232558139537,
+              19.444444444444443
+            ],
+            "survives": true,
+            "p_value": 0.00418
+          }
+        },
+        "gmean": {
+          "point_gap": 0.0310571839362328,
+          "iid": {
+            "ci": [
+              0.01977322036640644,
+              0.043724647608360534
+            ],
+            "survives": true,
+            "p_value": 0.0
+          },
+          "cluster": {
+            "ci": [
+              0.013448789185934229,
+              0.05067687571303303
+            ],
+            "survives": true,
+            "p_value": 6e-05
+          }
+        }
+      },
+      {
+        "posA": 1,
+        "posB": 9,
+        "modelA": "STRIDE w/ Synapse",
+        "modelB": "limix_moe",
+        "MASE_Rank": {
+          "point_gap": 11.381443298969073,
+          "iid": {
+            "ci": [
+              6.546391752577318,
+              16.412371134020617
+            ],
+            "survives": true,
+            "p_value": 0.0
+          },
+          "cluster": {
+            "ci": [
+              3.7865168539325857,
+              19.972477064220186
+            ],
+            "survives": true,
+            "p_value": 0.00258
+          }
+        },
+        "gmean": {
+          "point_gap": 0.0295245236919896,
+          "iid": {
+            "ci": [
+              0.019011029633976884,
+              0.04118992213143835
+            ],
+            "survives": true,
+            "p_value": 0.0
+          },
+          "cluster": {
+            "ci": [
+              0.013328826272864414,
+              0.04753285557186715
+            ],
+            "survives": true,
+            "p_value": 6e-05
+          }
+        }
+      },
+      {
+        "posA": 1,
+        "posB": 10,
+        "modelA": "STRIDE w/ Synapse",
+        "modelB": "RacineCast-1-NC",
+        "MASE_Rank": {
+          "point_gap": 12.278350515463918,
+          "iid": {
+            "ci": [
+              7.484536082474227,
+              17.164948453608247
+            ],
+            "survives": true,
+            "p_value": 0.0
+          },
+          "cluster": {
+            "ci": [
+              4.329787234042556,
+              20.51851851851852
+            ],
+            "survives": true,
+            "p_value": 0.00246
+          }
+        },
+        "gmean": {
+          "point_gap": 0.036331493489812905,
+          "iid": {
+            "ci": [
+              0.024356453361116248,
+              0.04948448544141382
+            ],
+            "survives": true,
+            "p_value": 0.0
+          },
+          "cluster": {
+            "ci": [
+              0.014963213096004235,
+              0.06081739364410915
+            ],
+            "survives": true,
+            "p_value": 6e-05
+          }
+        }
+      },
+      {
+        "posA": 2,
+        "posB": 3,
+        "modelA": "EXAONE-Forecast-Agent",
+        "modelB": "LS-MoE",
+        "MASE_Rank": {
+          "point_gap": 0.6701030927835063,
+          "iid": {
+            "ci": [
+              -3.701030927835049,
+              5.020618556701031
+            ],
+            "survives": false,
+            "p_value": 0.75904
+          },
+          "cluster": {
+            "ci": [
+              -6.509803921568629,
+              6.570247933884296
+            ],
+            "survives": false,
+            "p_value": 0.85128
+          }
+        },
+        "gmean": {
+          "point_gap": 0.02616325684573012,
+          "iid": {
+            "ci": [
+              0.009450873868763476,
+              0.04390378233683695
+            ],
+            "survives": true,
+            "p_value": 0.00178
+          },
+          "cluster": {
+            "ci": [
+              -0.007414465805947512,
+              0.06451818670701698
+            ],
+            "survives": false,
+            "p_value": 0.14638
+          }
+        }
+      },
+      {
+        "posA": 2,
+        "posB": 4,
+        "modelA": "EXAONE-Forecast-Agent",
+        "modelB": "CastStar",
+        "MASE_Rank": {
+          "point_gap": 1.298969072164951,
+          "iid": {
+            "ci": [
+              -3.8144329896907223,
+              6.31958762886598
+            ],
+            "survives": false,
+            "p_value": 0.6125
+          },
+          "cluster": {
+            "ci": [
+              -7.183908045977013,
+              8.47787610619469
+            ],
+            "survives": false,
+            "p_value": 0.75194
+          }
+        },
+        "gmean": {
+          "point_gap": 0.0267990132135974,
+          "iid": {
+            "ci": [
+              0.009820462733695523,
+              0.04471892769862562
+            ],
+            "survives": true,
+            "p_value": 0.00152
+          },
+          "cluster": {
+            "ci": [
+              -0.008073298521137584,
+              0.06545519814999567
+            ],
+            "survives": false,
+            "p_value": 0.1481
+          }
+        }
+      },
+      {
+        "posA": 2,
+        "posB": 5,
+        "modelA": "EXAONE-Forecast-Agent",
+        "modelB": "LS-Agent",
+        "MASE_Rank": {
+          "point_gap": 2.9175257731958766,
+          "iid": {
+            "ci": [
+              -1.340206185567009,
+              7.144329896907216
+            ],
+            "survives": false,
+            "p_value": 0.17908
+          },
+          "cluster": {
+            "ci": [
+              -4.221153846153847,
+              8.999999999999998
+            ],
+            "survives": false,
+            "p_value": 0.40584
+          }
+        },
+        "gmean": {
+          "point_gap": 0.029077349096497174,
+          "iid": {
+            "ci": [
+              0.012769918096355526,
+              0.046472051540694725
+            ],
+            "survives": true,
+            "p_value": 0.00022
+          },
+          "cluster": {
+            "ci": [
+              -0.004480359201100237,
+              0.06775976703604325
+            ],
+            "survives": false,
+            "p_value": 0.10098
+          }
+        }
+      },
+      {
+        "posA": 2,
+        "posB": 6,
+        "modelA": "EXAONE-Forecast-Agent",
+        "modelB": "TIMEHEDGE",
+        "MASE_Rank": {
+          "point_gap": 3.3092783505154664,
+          "iid": {
+            "ci": [
+              -2.0618556701030926,
+              8.494845360824744
+            ],
+            "survives": false,
+            "p_value": 0.21912
+          },
+          "cluster": {
+            "ci": [
+              -5.358695652173914,
+              11.164835164835164
+            ],
+            "survives": false,
+            "p_value": 0.4468
+          }
+        },
+        "gmean": {
+          "point_gap": 0.02525397738484514,
+          "iid": {
+            "ci": [
+              0.008125151256194563,
+              0.043375625097252846
+            ],
+            "survives": true,
+            "p_value": 0.00348
+          },
+          "cluster": {
+            "ci": [
+              -0.009845328899482197,
+              0.06466299974945788
+            ],
+            "survives": false,
+            "p_value": 0.18274
+          }
+        }
+      },
+      {
+        "posA": 2,
+        "posB": 7,
+        "modelA": "EXAONE-Forecast-Agent",
+        "modelB": "Falcon-Agent",
+        "MASE_Rank": {
+          "point_gap": 3.690721649484537,
+          "iid": {
+            "ci": [
+              -1.5773195876288675,
+              8.948453608247423
+            ],
+            "survives": false,
+            "p_value": 0.16864
+          },
+          "cluster": {
+            "ci": [
+              -3.428571428571427,
+              9.5
+            ],
+            "survives": false,
+            "p_value": 0.28144
+          }
+        },
+        "gmean": {
+          "point_gap": 0.03593781246687766,
+          "iid": {
+            "ci": [
+              0.016293629481461958,
+              0.05654193187450046
+            ],
+            "survives": true,
+            "p_value": 0.00016
+          },
+          "cluster": {
+            "ci": [
+              -0.0015823844553606858,
+              0.07394837267894921
+            ],
+            "survives": false,
+            "p_value": 0.06184
+          }
+        }
+      },
+      {
+        "posA": 2,
+        "posB": 8,
+        "modelA": "EXAONE-Forecast-Agent",
+        "modelB": "RegLab-AH-1",
+        "MASE_Rank": {
+          "point_gap": 5.515463917525775,
+          "iid": {
+            "ci": [
+              1.144329896907216,
+              9.81443298969072
+            ],
+            "survives": true,
+            "p_value": 0.01452
+          },
+          "cluster": {
+            "ci": [
+              -0.7446808510638299,
+              11.695652173913043
+            ],
+            "survives": false,
+            "p_value": 0.08356
+          }
+        },
+        "gmean": {
+          "point_gap": 0.03580800458571709,
+          "iid": {
+            "ci": [
+              0.019192095373958662,
+              0.0533472463422483
+            ],
+            "survives": true,
+            "p_value": 0.0
+          },
+          "cluster": {
+            "ci": [
+              0.0025266363585575435,
+              0.07279062923012719
+            ],
+            "survives": true,
+            "p_value": 0.03272
+          }
+        }
+      },
+      {
+        "posA": 2,
+        "posB": 9,
+        "modelA": "EXAONE-Forecast-Agent",
+        "modelB": "limix_moe",
+        "MASE_Rank": {
+          "point_gap": 5.515463917525775,
+          "iid": {
+            "ci": [
+              0.6804123711340218,
+              10.154639175257735
+            ],
+            "survives": true,
+            "p_value": 0.02604
+          },
+          "cluster": {
+            "ci": [
+              -1.662650602409638,
+              12.280487804878048
+            ],
+            "survives": false,
+            "p_value": 0.12718
+          }
+        },
+        "gmean": {
+          "point_gap": 0.03427534434147389,
+          "iid": {
+            "ci": [
+              0.017043447222790276,
+              0.052231619793433104
+            ],
+            "survives": true,
+            "p_value": 2e-05
+          },
+          "cluster": {
+            "ci": [
+              0.00042940753200981785,
+              0.07175146851682446
+            ],
+            "survives": true,
+            "p_value": 0.04672
+          }
+        }
+      },
+      {
+        "posA": 2,
+        "posB": 10,
+        "modelA": "EXAONE-Forecast-Agent",
+        "modelB": "RacineCast-1-NC",
+        "MASE_Rank": {
+          "point_gap": 6.412371134020621,
+          "iid": {
+            "ci": [
+              2.051546391752577,
+              10.649484536082475
+            ],
+            "survives": true,
+            "p_value": 0.00438
+          },
+          "cluster": {
+            "ci": [
+              0.25,
+              12.25
+            ],
+            "survives": true,
+            "p_value": 0.04136
+          }
+        },
+        "gmean": {
+          "point_gap": 0.041082314139297194,
+          "iid": {
+            "ci": [
+              0.022774570559203844,
+              0.06041030316147811
+            ],
+            "survives": true,
+            "p_value": 0.0
+          },
+          "cluster": {
+            "ci": [
+              0.004924456638585206,
+              0.07920952892647226
+            ],
+            "survives": true,
+            "p_value": 0.02336
+          }
+        }
+      },
+      {
+        "posA": 3,
+        "posB": 4,
+        "modelA": "LS-MoE",
+        "modelB": "CastStar",
+        "MASE_Rank": {
+          "point_gap": 0.6288659793814446,
+          "iid": {
+            "ci": [
+              -3.1546391752577314,
+              4.309278350515463
+            ],
+            "survives": false,
+            "p_value": 0.73842
+          },
+          "cluster": {
+            "ci": [
+              -4.294736842105262,
+              5.128205128205128
+            ],
+            "survives": false,
+            "p_value": 0.7673
+          }
+        },
+        "gmean": {
+          "point_gap": 0.0006357563678672795,
+          "iid": {
+            "ci": [
+              -0.004558244666190592,
+              0.006345747432236704
+            ],
+            "survives": false,
+            "p_value": 0.84364
+          },
+          "cluster": {
+            "ci": [
+              -0.006267463344118429,
+              0.007508520277764663
+            ],
+            "survives": false,
+            "p_value": 0.86406
+          }
+        }
+      },
+      {
+        "posA": 3,
+        "posB": 5,
+        "modelA": "LS-MoE",
+        "modelB": "LS-Agent",
+        "MASE_Rank": {
+          "point_gap": 2.2474226804123703,
+          "iid": {
+            "ci": [
+              0.22680412371134295,
+              4.319587628865978
+            ],
+            "survives": true,
+            "p_value": 0.02918
+          },
+          "cluster": {
+            "ci": [
+              0.43434343434343603,
+              4.200000000000003
+            ],
+            "survives": true,
+            "p_value": 0.01528
+          }
+        },
+        "gmean": {
+          "point_gap": 0.002914092250767053,
+          "iid": {
+            "ci": [
+              5.104669718292154e-05,
+              0.006850645679788991
+            ],
+            "survives": true,
+            "p_value": 0.0448
+          },
+          "cluster": {
+            "ci": [
+              0.0004189474517284908,
+              0.00648878427389904
+            ],
+            "survives": true,
+            "p_value": 0.01736
+          }
+        }
+      },
+      {
+        "posA": 3,
+        "posB": 6,
+        "modelA": "LS-MoE",
+        "modelB": "TIMEHEDGE",
+        "MASE_Rank": {
+          "point_gap": 2.63917525773196,
+          "iid": {
+            "ci": [
+              -1.2886597938144355,
+              6.618556701030926
+            ],
+            "survives": false,
+            "p_value": 0.18946
+          },
+          "cluster": {
+            "ci": [
+              -2.010989010989011,
+              7.666666666666668
+            ],
+            "survives": false,
+            "p_value": 0.27476
+          }
+        },
+        "gmean": {
+          "point_gap": -0.0009092794608849819,
+          "iid": {
+            "ci": [
+              -0.007569310930644224,
+              0.005394531074354947
+            ],
+            "survives": false,
+            "p_value": 0.79642
+          },
+          "cluster": {
+            "ci": [
+              -0.01207874420448235,
+              0.008093084376800508
+            ],
+            "survives": false,
+            "p_value": 0.90518
+          }
+        }
+      },
+      {
+        "posA": 3,
+        "posB": 7,
+        "modelA": "LS-MoE",
+        "modelB": "Falcon-Agent",
+        "MASE_Rank": {
+          "point_gap": 3.020618556701031,
+          "iid": {
+            "ci": [
+              -1.2371134020618548,
+              7.36082474226804
+            ],
+            "survives": false,
+            "p_value": 0.16736
+          },
+          "cluster": {
+            "ci": [
+              -1.0373831775700921,
+              7.141414141414142
+            ],
+            "survives": false,
+            "p_value": 0.14098
+          }
+        },
+        "gmean": {
+          "point_gap": 0.00977455562114754,
+          "iid": {
+            "ci": [
+              -0.0005192538447504336,
+              0.021537364166373196
+            ],
+            "survives": false,
+            "p_value": 0.06536
+          },
+          "cluster": {
+            "ci": [
+              -0.0035601335995187333,
+              0.026456763219375568
+            ],
+            "survives": false,
+            "p_value": 0.21708
+          }
+        }
+      },
+      {
+        "posA": 3,
+        "posB": 8,
+        "modelA": "LS-MoE",
+        "modelB": "RegLab-AH-1",
+        "MASE_Rank": {
+          "point_gap": 4.845360824742269,
+          "iid": {
+            "ci": [
+              1.63917525773196,
+              8.144329896907216
+            ],
+            "survives": true,
+            "p_value": 0.00328
+          },
+          "cluster": {
+            "ci": [
+              1.0,
+              9.691358024691361
+            ],
+            "survives": true,
+            "p_value": 0.0106
+          }
+        },
+        "gmean": {
+          "point_gap": 0.00964474773998697,
+          "iid": {
+            "ci": [
+              0.004605492502720854,
+              0.01565243051537729
+            ],
+            "survives": true,
+            "p_value": 2e-05
+          },
+          "cluster": {
+            "ci": [
+              0.003015261038545547,
+              0.01774244714564971
+            ],
+            "survives": true,
+            "p_value": 0.00078
+          }
+        }
+      },
+      {
+        "posA": 3,
+        "posB": 9,
+        "modelA": "LS-MoE",
+        "modelB": "limix_moe",
+        "MASE_Rank": {
+          "point_gap": 4.845360824742269,
+          "iid": {
+            "ci": [
+              1.515463917525775,
+              8.175257731958762
+            ],
+            "survives": true,
+            "p_value": 0.00426
+          },
+          "cluster": {
+            "ci": [
+              0.5346534653465334,
+              9.927710843373493
+            ],
+            "survives": true,
+            "p_value": 0.0272
+          }
+        },
+        "gmean": {
+          "point_gap": 0.00811208749574377,
+          "iid": {
+            "ci": [
+              0.002846801428035506,
+              0.014023682447830477
+            ],
+            "survives": true,
+            "p_value": 0.00164
+          },
+          "cluster": {
+            "ci": [
+              0.0016339532340765017,
+              0.015427889658531146
+            ],
+            "survives": true,
+            "p_value": 0.01202
+          }
+        }
+      },
+      {
+        "posA": 3,
+        "posB": 10,
+        "modelA": "LS-MoE",
+        "modelB": "RacineCast-1-NC",
+        "MASE_Rank": {
+          "point_gap": 5.742268041237114,
+          "iid": {
+            "ci": [
+              2.7422680412371143,
+              8.824742268041238
+            ],
+            "survives": true,
+            "p_value": 0.0002
+          },
+          "cluster": {
+            "ci": [
+              2.0476190476190474,
+              10.19047619047619
+            ],
+            "survives": true,
+            "p_value": 0.00126
+          }
+        },
+        "gmean": {
+          "point_gap": 0.014919057293567073,
+          "iid": {
+            "ci": [
+              0.006782436963545968,
+              0.02452434334774789
+            ],
+            "survives": true,
+            "p_value": 0.0
+          },
+          "cluster": {
+            "ci": [
+              0.004316653673167914,
+              0.03027708508730803
+            ],
+            "survives": true,
+            "p_value": 6e-05
+          }
+        }
+      },
+      {
+        "posA": 4,
+        "posB": 5,
+        "modelA": "CastStar",
+        "modelB": "LS-Agent",
+        "MASE_Rank": {
+          "point_gap": 1.6185567010309256,
+          "iid": {
+            "ci": [
+              -1.6494845360824755,
+              5.020618556701031
+            ],
+            "survives": false,
+            "p_value": 0.34456
+          },
+          "cluster": {
+            "ci": [
+              -2.2857142857142847,
+              5.869565217391305
+            ],
+            "survives": false,
+            "p_value": 0.4361
+          }
+        },
+        "gmean": {
+          "point_gap": 0.0022783358828997735,
+          "iid": {
+            "ci": [
+              -0.0016800419113609522,
+              0.0064458513822158725
+            ],
+            "survives": false,
+            "p_value": 0.26566
+          },
+          "cluster": {
+            "ci": [
+              -0.003163260066778306,
+              0.008439367945493992
+            ],
+            "survives": false,
+            "p_value": 0.41242
+          }
+        }
+      },
+      {
+        "posA": 4,
+        "posB": 6,
+        "modelA": "CastStar",
+        "modelB": "TIMEHEDGE",
+        "MASE_Rank": {
+          "point_gap": 2.0103092783505154,
+          "iid": {
+            "ci": [
+              -2.7525773195876297,
+              6.762886597938145
+            ],
+            "survives": false,
+            "p_value": 0.40664
+          },
+          "cluster": {
+            "ci": [
+              -3.018691588785046,
+              7.705263157894738
+            ],
+            "survives": false,
+            "p_value": 0.44884
+          }
+        },
+        "gmean": {
+          "point_gap": -0.0015450358287522614,
+          "iid": {
+            "ci": [
+              -0.01000282007248815,
+              0.0063419863453624825
+            ],
+            "survives": false,
+            "p_value": 0.72314
+          },
+          "cluster": {
+            "ci": [
+              -0.013838858922851749,
+              0.008819060040808013
+            ],
+            "survives": false,
+            "p_value": 0.82324
+          }
+        }
+      },
+      {
+        "posA": 4,
+        "posB": 7,
+        "modelA": "CastStar",
+        "modelB": "Falcon-Agent",
+        "MASE_Rank": {
+          "point_gap": 2.3917525773195862,
+          "iid": {
+            "ci": [
+              -2.7731958762886606,
+              7.587628865979379
+            ],
+            "survives": false,
+            "p_value": 0.36204
+          },
+          "cluster": {
+            "ci": [
+              -3.491071428571427,
+              8.971830985915496
+            ],
+            "survives": false,
+            "p_value": 0.45452
+          }
+        },
+        "gmean": {
+          "point_gap": 0.009138799253280261,
+          "iid": {
+            "ci": [
+              -0.00067512444873713,
+              0.020269823055591385
+            ],
+            "survives": false,
+            "p_value": 0.07112
+          },
+          "cluster": {
+            "ci": [
+              -0.0039542657104674195,
+              0.024790481458905445
+            ],
+            "survives": false,
+            "p_value": 0.228
+          }
+        }
+      },
+      {
+        "posA": 4,
+        "posB": 8,
+        "modelA": "CastStar",
+        "modelB": "RegLab-AH-1",
+        "MASE_Rank": {
+          "point_gap": 4.216494845360824,
+          "iid": {
+            "ci": [
+              0.5670103092783485,
+              7.824742268041238
+            ],
+            "survives": true,
+            "p_value": 0.0243
+          },
+          "cluster": {
+            "ci": [
+              0.06481481481481666,
+              9.146666666666668
+            ],
+            "survives": true,
+            "p_value": 0.04648
+          }
+        },
+        "gmean": {
+          "point_gap": 0.00900899137211969,
+          "iid": {
+            "ci": [
+              0.00472261584503475,
+              0.013719734427687369
+            ],
+            "survives": true,
+            "p_value": 0.0
+          },
+          "cluster": {
+            "ci": [
+              0.003266764420359225,
+              0.015934486204071674
+            ],
+            "survives": true,
+            "p_value": 0.00056
+          }
+        }
+      },
+      {
+        "posA": 4,
+        "posB": 9,
+        "modelA": "CastStar",
+        "modelB": "limix_moe",
+        "MASE_Rank": {
+          "point_gap": 4.216494845360824,
+          "iid": {
+            "ci": [
+              0.23711340206185838,
+              8.36082474226804
+            ],
+            "survives": true,
+            "p_value": 0.0377
+          },
+          "cluster": {
+            "ci": [
+              -0.8500000000000014,
+              11.09210526315789
+            ],
+            "survives": false,
+            "p_value": 0.1189
+          }
+        },
+        "gmean": {
+          "point_gap": 0.00747633112787649,
+          "iid": {
+            "ci": [
+              0.0027057108264045837,
+              0.012580690597001565
+            ],
+            "survives": true,
+            "p_value": 0.00154
+          },
+          "cluster": {
+            "ci": [
+              0.000921372022494038,
+              0.015306198999320175
+            ],
+            "survives": true,
+            "p_value": 0.02492
+          }
+        }
+      },
+      {
+        "posA": 4,
+        "posB": 10,
+        "modelA": "CastStar",
+        "modelB": "RacineCast-1-NC",
+        "MASE_Rank": {
+          "point_gap": 5.11340206185567,
+          "iid": {
+            "ci": [
+              1.3092783505154628,
+              8.938144329896907
+            ],
+            "survives": true,
+            "p_value": 0.00858
+          },
+          "cluster": {
+            "ci": [
+              0.7011494252873582,
+              10.620253164556964
+            ],
+            "survives": true,
+            "p_value": 0.0209
+          }
+        },
+        "gmean": {
+          "point_gap": 0.014283300925699793,
+          "iid": {
+            "ci": [
+              0.006734350346379758,
+              0.023199482644608194
+            ],
+            "survives": true,
+            "p_value": 0.0
+          },
+          "cluster": {
+            "ci": [
+              0.004049092107873742,
+              0.02846764050023698
+            ],
+            "survives": true,
+            "p_value": 0.00036
+          }
+        }
+      },
+      {
+        "posA": 5,
+        "posB": 6,
+        "modelA": "LS-Agent",
+        "modelB": "TIMEHEDGE",
+        "MASE_Rank": {
+          "point_gap": 0.3917525773195898,
+          "iid": {
+            "ci": [
+              -3.4639175257731942,
+              4.298969072164947
+            ],
+            "survives": false,
+            "p_value": 0.85146
+          },
+          "cluster": {
+            "ci": [
+              -3.931623931623932,
+              4.837500000000002
+            ],
+            "survives": false,
+            "p_value": 0.85402
+          }
+        },
+        "gmean": {
+          "point_gap": -0.003823371711652035,
+          "iid": {
+            "ci": [
+              -0.011356070672435437,
+              0.003145262010551375
+            ],
+            "survives": false,
+            "p_value": 0.29862
+          },
+          "cluster": {
+            "ci": [
+              -0.015171116050901212,
+              0.004931198187690555
+            ],
+            "survives": false,
+            "p_value": 0.44656
+          }
+        }
+      },
+      {
+        "posA": 5,
+        "posB": 7,
+        "modelA": "LS-Agent",
+        "modelB": "Falcon-Agent",
+        "MASE_Rank": {
+          "point_gap": 0.7731958762886606,
+          "iid": {
+            "ci": [
+              -3.9587628865979383,
+              5.546391752577318
+            ],
+            "survives": false,
+            "p_value": 0.75178
+          },
+          "cluster": {
+            "ci": [
+              -4.289999999999999,
+              5.532608695652172
+            ],
+            "survives": false,
+            "p_value": 0.74808
+          }
+        },
+        "gmean": {
+          "point_gap": 0.006860463370380487,
+          "iid": {
+            "ci": [
+              -0.0034513570635238966,
+              0.01857988298044394
+            ],
+            "survives": false,
+            "p_value": 0.21764
+          },
+          "cluster": {
+            "ci": [
+              -0.006889222093071745,
+              0.02318751888809245
+            ],
+            "survives": false,
+            "p_value": 0.45032
+          }
+        }
+      },
+      {
+        "posA": 5,
+        "posB": 8,
+        "modelA": "LS-Agent",
+        "modelB": "RegLab-AH-1",
+        "MASE_Rank": {
+          "point_gap": 2.5979381443298983,
+          "iid": {
+            "ci": [
+              -0.5876288659793829,
+              5.845360824742269
+            ],
+            "survives": false,
+            "p_value": 0.11016
+          },
+          "cluster": {
+            "ci": [
+              -0.9299999999999997,
+              6.806122448979593
+            ],
+            "survives": false,
+            "p_value": 0.1572
+          }
+        },
+        "gmean": {
+          "point_gap": 0.006730655489219917,
+          "iid": {
+            "ci": [
+              0.0025187487472060344,
+              0.01121970278127038
+            ],
+            "survives": true,
+            "p_value": 0.00114
+          },
+          "cluster": {
+            "ci": [
+              0.0008719226473218322,
+              0.013628977443171653
+            ],
+            "survives": true,
+            "p_value": 0.01918
+          }
+        }
+      },
+      {
+        "posA": 5,
+        "posB": 9,
+        "modelA": "LS-Agent",
+        "modelB": "limix_moe",
+        "MASE_Rank": {
+          "point_gap": 2.5979381443298983,
+          "iid": {
+            "ci": [
+              -0.855670103092784,
+              6.072164948453608
+            ],
+            "survives": false,
+            "p_value": 0.14092
+          },
+          "cluster": {
+            "ci": [
+              -1.757009345794394,
+              7.7534246575342465
+            ],
+            "survives": false,
+            "p_value": 0.25536
+          }
+        },
+        "gmean": {
+          "point_gap": 0.005197995244976716,
+          "iid": {
+            "ci": [
+              0.00048568921469099857,
+              0.010087931641338477
+            ],
+            "survives": true,
+            "p_value": 0.02994
+          },
+          "cluster": {
+            "ci": [
+              -0.0005809671409880424,
+              0.011497432357839676
+            ],
+            "survives": false,
+            "p_value": 0.07936
+          }
+        }
+      },
+      {
+        "posA": 5,
+        "posB": 10,
+        "modelA": "LS-Agent",
+        "modelB": "RacineCast-1-NC",
+        "MASE_Rank": {
+          "point_gap": 3.494845360824744,
+          "iid": {
+            "ci": [
+              0.3814432989690708,
+              6.670103092783503
+            ],
+            "survives": true,
+            "p_value": 0.02778
+          },
+          "cluster": {
+            "ci": [
+              0.010526315789473273,
+              7.5735294117647065
+            ],
+            "survives": true,
+            "p_value": 0.04962
+          }
+        },
+        "gmean": {
+          "point_gap": 0.01200496504280002,
+          "iid": {
+            "ci": [
+              0.004395453199413091,
+              0.021088880498031204
+            ],
+            "survives": true,
+            "p_value": 0.00016
+          },
+          "cluster": {
+            "ci": [
+              0.0019330371044412598,
+              0.026658647535035385
+            ],
+            "survives": true,
+            "p_value": 0.00542
+          }
+        }
+      },
+      {
+        "posA": 6,
+        "posB": 7,
+        "modelA": "TIMEHEDGE",
+        "modelB": "Falcon-Agent",
+        "MASE_Rank": {
+          "point_gap": 0.3814432989690708,
+          "iid": {
+            "ci": [
+              -4.773195876288661,
+              5.494845360824744
+            ],
+            "survives": false,
+            "p_value": 0.879
+          },
+          "cluster": {
+            "ci": [
+              -5.979797979797979,
+              6.245454545454546
+            ],
+            "survives": false,
+            "p_value": 0.89974
+          }
+        },
+        "gmean": {
+          "point_gap": 0.010683835082032522,
+          "iid": {
+            "ci": [
+              -0.0009397661401382984,
+              0.023298323196642434
+            ],
+            "survives": false,
+            "p_value": 0.07416
+          },
+          "cluster": {
+            "ci": [
+              -0.0025255127322382775,
+              0.02436398785800331
+            ],
+            "survives": false,
+            "p_value": 0.11826
+          }
+        }
+      },
+      {
+        "posA": 6,
+        "posB": 8,
+        "modelA": "TIMEHEDGE",
+        "modelB": "RegLab-AH-1",
+        "MASE_Rank": {
+          "point_gap": 2.2061855670103085,
+          "iid": {
+            "ci": [
+              -2.144329896907216,
+              6.6391752577319565
+            ],
+            "survives": false,
+            "p_value": 0.32312
+          },
+          "cluster": {
+            "ci": [
+              -3.277777777777775,
+              8.287128712871286
+            ],
+            "survives": false,
+            "p_value": 0.44554
+          }
+        },
+        "gmean": {
+          "point_gap": 0.010554027200871952,
+          "iid": {
+            "ci": [
+              0.00261460685502074,
+              0.01920221941026723
+            ],
+            "survives": true,
+            "p_value": 0.00716
+          },
+          "cluster": {
+            "ci": [
+              0.001255897663099248,
+              0.022534610780788056
+            ],
+            "survives": true,
+            "p_value": 0.02376
+          }
+        }
+      },
+      {
+        "posA": 6,
+        "posB": 9,
+        "modelA": "TIMEHEDGE",
+        "modelB": "limix_moe",
+        "MASE_Rank": {
+          "point_gap": 2.2061855670103085,
+          "iid": {
+            "ci": [
+              -1.9175257731958766,
+              6.2783505154639165
+            ],
+            "survives": false,
+            "p_value": 0.29154
+          },
+          "cluster": {
+            "ci": [
+              -2.6886792452830193,
+              7.4556962025316444
+            ],
+            "survives": false,
+            "p_value": 0.37904
+          }
+        },
+        "gmean": {
+          "point_gap": 0.009021366956628751,
+          "iid": {
+            "ci": [
+              0.0015295887056791524,
+              0.017034252095384284
+            ],
+            "survives": true,
+            "p_value": 0.01744
+          },
+          "cluster": {
+            "ci": [
+              0.0017063495241493865,
+              0.019542640542520973
+            ],
+            "survives": true,
+            "p_value": 0.01036
+          }
+        }
+      },
+      {
+        "posA": 6,
+        "posB": 10,
+        "modelA": "TIMEHEDGE",
+        "modelB": "RacineCast-1-NC",
+        "MASE_Rank": {
+          "point_gap": 3.1030927835051543,
+          "iid": {
+            "ci": [
+              -1.0515463917525771,
+              7.298969072164947
+            ],
+            "survives": false,
+            "p_value": 0.1451
+          },
+          "cluster": {
+            "ci": [
+              -2.093457943925234,
+              8.764150943396228
+            ],
+            "survives": false,
+            "p_value": 0.24882
+          }
+        },
+        "gmean": {
+          "point_gap": 0.015828336754452055,
+          "iid": {
+            "ci": [
+              0.0057220801295943535,
+              0.027011541270265504
+            ],
+            "survives": true,
+            "p_value": 0.00086
+          },
+          "cluster": {
+            "ci": [
+              0.0037114985875966733,
+              0.030245502796651447
+            ],
+            "survives": true,
+            "p_value": 0.0054
+          }
+        }
+      },
+      {
+        "posA": 7,
+        "posB": 8,
+        "modelA": "Falcon-Agent",
+        "modelB": "RegLab-AH-1",
+        "MASE_Rank": {
+          "point_gap": 1.8247422680412377,
+          "iid": {
+            "ci": [
+              -1.9690721649484537,
+              5.659793814432987
+            ],
+            "survives": false,
+            "p_value": 0.34878
+          },
+          "cluster": {
+            "ci": [
+              -2.805084745762713,
+              7.908045977011497
+            ],
+            "survives": false,
+            "p_value": 0.49472
+          }
+        },
+        "gmean": {
+          "point_gap": -0.00012980788116057074,
+          "iid": {
+            "ci": [
+              -0.008671105954242753,
+              0.007680243573426004
+            ],
+            "survives": false,
+            "p_value": 0.98886
+          },
+          "cluster": {
+            "ci": [
+              -0.010945341362229466,
+              0.010648704586630142
+            ],
+            "survives": false,
+            "p_value": 0.9442
+          }
+        }
+      },
+      {
+        "posA": 7,
+        "posB": 9,
+        "modelA": "Falcon-Agent",
+        "modelB": "limix_moe",
+        "MASE_Rank": {
+          "point_gap": 1.8247422680412377,
+          "iid": {
+            "ci": [
+              -2.371134020618559,
+              6.092783505154639
+            ],
+            "survives": false,
+            "p_value": 0.40396
+          },
+          "cluster": {
+            "ci": [
+              -3.147286821705425,
+              7.802083333333332
+            ],
+            "survives": false,
+            "p_value": 0.49356
+          }
+        },
+        "gmean": {
+          "point_gap": -0.001662468125403771,
+          "iid": {
+            "ci": [
+              -0.010491838601425774,
+              0.00635947642847573
+            ],
+            "survives": false,
+            "p_value": 0.72904
+          },
+          "cluster": {
+            "ci": [
+              -0.014271922135305148,
+              0.010366652741548354
+            ],
+            "survives": false,
+            "p_value": 0.87272
+          }
+        }
+      },
+      {
+        "posA": 7,
+        "posB": 10,
+        "modelA": "Falcon-Agent",
+        "modelB": "RacineCast-1-NC",
+        "MASE_Rank": {
+          "point_gap": 2.7216494845360835,
+          "iid": {
+            "ci": [
+              -0.7525773195876297,
+              6.24742268041237
+            ],
+            "survives": false,
+            "p_value": 0.12632
+          },
+          "cluster": {
+            "ci": [
+              -1.3918918918918912,
+              8.08421052631579
+            ],
+            "survives": false,
+            "p_value": 0.22048
+          }
+        },
+        "gmean": {
+          "point_gap": 0.0051445016724195325,
+          "iid": {
+            "ci": [
+              -0.0001820179790812393,
+              0.010449769796052832
+            ],
+            "survives": false,
+            "p_value": 0.05776
+          },
+          "cluster": {
+            "ci": [
+              0.00015050049783110753,
+              0.012198122652731624
+            ],
+            "survives": true,
+            "p_value": 0.04232
+          }
+        }
+      },
+      {
+        "posA": 8,
+        "posB": 9,
+        "modelA": "RegLab-AH-1",
+        "modelB": "limix_moe",
+        "MASE_Rank": {
+          "point_gap": 0.0,
+          "iid": {
+            "ci": [
+              -2.6804123711340218,
+              2.6804123711340218
+            ],
+            "survives": false,
+            "p_value": 0.99436
+          },
+          "cluster": {
+            "ci": [
+              -4.337662337662341,
+              4.698630136986303
+            ],
+            "survives": false,
+            "p_value": 0.99502
+          }
+        },
+        "gmean": {
+          "point_gap": -0.0015326602442432002,
+          "iid": {
+            "ci": [
+              -0.005036394591732607,
+              0.0017019779869100193
+            ],
+            "survives": false,
+            "p_value": 0.36696
+          },
+          "cluster": {
+            "ci": [
+              -0.006345723044831719,
+              0.0035649130242405014
+            ],
+            "survives": false,
+            "p_value": 0.53548
+          }
+        }
+      },
+      {
+        "posA": 8,
+        "posB": 10,
+        "modelA": "RegLab-AH-1",
+        "modelB": "RacineCast-1-NC",
+        "MASE_Rank": {
+          "point_gap": 0.8969072164948457,
+          "iid": {
+            "ci": [
+              -0.28865979381443196,
+              2.1030927835051543
+            ],
+            "survives": false,
+            "p_value": 0.14292
+          },
+          "cluster": {
+            "ci": [
+              -0.49438202247191043,
+              2.4166666666666643
+            ],
+            "survives": false,
+            "p_value": 0.21254
+          }
+        },
+        "gmean": {
+          "point_gap": 0.005274309553580103,
+          "iid": {
+            "ci": [
+              0.0008422390672327973,
+              0.010750495539232519
+            ],
+            "survives": true,
+            "p_value": 0.00598
+          },
+          "cluster": {
+            "ci": [
+              0.00014502081916784038,
+              0.013729515512108104
+            ],
+            "survives": true,
+            "p_value": 0.03134
+          }
+        }
+      },
+      {
+        "posA": 9,
+        "posB": 10,
+        "modelA": "limix_moe",
+        "modelB": "RacineCast-1-NC",
+        "MASE_Rank": {
+          "point_gap": 0.8969072164948457,
+          "iid": {
+            "ci": [
+              -1.432989690721648,
+              3.2474226804123703
+            ],
+            "survives": false,
+            "p_value": 0.4505
+          },
+          "cluster": {
+            "ci": [
+              -3.049999999999997,
+              4.5
+            ],
+            "survives": false,
+            "p_value": 0.64104
+          }
+        },
+        "gmean": {
+          "point_gap": 0.0068069697978233035,
+          "iid": {
+            "ci": [
+              0.0014089993471271822,
+              0.013279718954933517
+            ],
+            "survives": true,
+            "p_value": 0.00762
+          },
+          "cluster": {
+            "ci": [
+              -0.0014059392033848872,
+              0.017625391679092828
+            ],
+            "survives": false,
+            "p_value": 0.14694
+          }
+        }
+      }
+    ]
+  },
+  "claim2_b200000_stability": {
+    "paper_B4000_pair_1_2_iid_lower_bound": 0.04,
+    "paper_B4000_pair_9_10_cluster_lower_bound": 0.14,
+    "critic_B200000_pair_1_2_iid_lower_bound_claim": 0.0,
+    "per_seed": [
+      {
+        "seed": 20260907,
+        "pair_1_2": {
+          "posA": 1,
+          "posB": 2,
+          "modelA": "STRIDE w/ Synapse",
+          "modelB": "EXAONE-Forecast-Agent",
+          "MASE_Rank": {
+            "point_gap": 4.247422680412372,
+            "iid": {
+              "ci": [
+                -0.010309278350515427,
+                8.50515463917526
+              ],
+              "survives": false,
+              "p_value": 0.05099
+            },
+            "cluster": {
+              "ci": [
+                -1.4186046511627914,
+                10.402597402597403
+              ],
+              "survives": false,
+              "p_value": 0.14211
+            }
+          },
+          "gmean": {
+            "point_gap": -0.015464719441530606,
+            "iid": {
+              "ci": [
+                -0.04177353519024252,
+                0.009535165353976471
+              ],
+              "survives": false,
+              "p_value": 0.23353
+            },
+            "cluster": {
+              "ci": [
+                -0.06980004873411305,
+                0.030758343001540456
+              ],
+              "survives": false,
+              "p_value": 0.62122
+            }
+          }
+        },
+        "pair_9_10": {
+          "posA": 9,
+          "posB": 10,
+          "modelA": "RegLab-AH-1",
+          "modelB": "RacineCast-1-NC",
+          "MASE_Rank": {
+            "point_gap": 1.3298969072164972,
+            "iid": {
+              "ci": [
+                -0.051546391752577136,
+                2.7010309278350526
+              ],
+              "survives": false,
+              "p_value": 0.05964
+            },
+            "cluster": {
+              "ci": [
+                0.1264367816091969,
+                2.4141414141414153
+              ],
+              "survives": true,
+              "p_value": 0.03222
+            }
+          },
+          "gmean": {
+            "point_gap": 0.0073057969042957804,
+            "iid": {
+              "ci": [
+                0.0007761102682181109,
+                0.01582041568574355
+              ],
+              "survives": true,
+              "p_value": 0.01207
+            },
+            "cluster": {
+              "ci": [
+                0.00013793653800919792,
+                0.02058001778568952
+              ],
+              "survives": true,
+              "p_value": 0.03294
+            }
+          }
+        }
+      },
+      {
+        "seed": 20260908,
+        "pair_1_2": {
+          "posA": 1,
+          "posB": 2,
+          "modelA": "STRIDE w/ Synapse",
+          "modelB": "EXAONE-Forecast-Agent",
+          "MASE_Rank": {
+            "point_gap": 4.247422680412372,
+            "iid": {
+              "ci": [
+                0.0,
+                8.50515463917526
+              ],
+              "survives": false,
+              "p_value": 0.05026
+            },
+            "cluster": {
+              "ci": [
+                -1.3669724770642215,
+                10.413793103448278
+              ],
+              "survives": false,
+              "p_value": 0.14014
+            }
+          },
+          "gmean": {
+            "point_gap": -0.015464719441530606,
+            "iid": {
+              "ci": [
+                -0.04166409499661328,
+                0.009521807266073101
+              ],
+              "survives": false,
+              "p_value": 0.2362
+            },
+            "cluster": {
+              "ci": [
+                -0.06984106082792974,
+                0.030736397386447734
+              ],
+              "survives": false,
+              "p_value": 0.62629
+            }
+          }
+        },
+        "pair_9_10": {
+          "posA": 9,
+          "posB": 10,
+          "modelA": "RegLab-AH-1",
+          "modelB": "RacineCast-1-NC",
+          "MASE_Rank": {
+            "point_gap": 1.3298969072164972,
+            "iid": {
+              "ci": [
+                -0.051546391752577136,
+                2.711340206185568
+              ],
+              "survives": false,
+              "p_value": 0.05931
+            },
+            "cluster": {
+              "ci": [
+                0.13888888888888573,
+                2.4204545454545467
+              ],
+              "survives": true,
+              "p_value": 0.03109
+            }
+          },
+          "gmean": {
+            "point_gap": 0.0073057969042957804,
+            "iid": {
+              "ci": [
+                0.0007835730523839679,
+                0.015752107630808143
+              ],
+              "survives": true,
+              "p_value": 0.01191
+            },
+            "cluster": {
+              "ci": [
+                0.00014626144929819063,
+                0.02057012599020147
+              ],
+              "survives": true,
+              "p_value": 0.03235
+            }
+          }
+        }
+      },
+      {
+        "seed": 20260909,
+        "pair_1_2": {
+          "posA": 1,
+          "posB": 2,
+          "modelA": "STRIDE w/ Synapse",
+          "modelB": "EXAONE-Forecast-Agent",
+          "MASE_Rank": {
+            "point_gap": 4.247422680412372,
+            "iid": {
+              "ci": [
+                -0.020618556701030855,
+                8.49484536082474
+              ],
+              "survives": false,
+              "p_value": 0.05104
+            },
+            "cluster": {
+              "ci": [
+                -1.4250000000000007,
+                10.372727272727273
+              ],
+              "survives": false,
+              "p_value": 0.1433
+            }
+          },
+          "gmean": {
+            "point_gap": -0.015464719441530606,
+            "iid": {
+              "ci": [
+                -0.041701599460175265,
+                0.009533327994895147
+              ],
+              "survives": false,
+              "p_value": 0.23401
+            },
+            "cluster": {
+              "ci": [
+                -0.06996022201498608,
+                0.030671407104347237
+              ],
+              "survives": false,
+              "p_value": 0.62482
+            }
+          }
+        },
+        "pair_9_10": {
+          "posA": 9,
+          "posB": 10,
+          "modelA": "RegLab-AH-1",
+          "modelB": "RacineCast-1-NC",
+          "MASE_Rank": {
+            "point_gap": 1.3298969072164972,
+            "iid": {
+              "ci": [
+                -0.051546391752577136,
+                2.711340206185568
+              ],
+              "survives": false,
+              "p_value": 0.06064
+            },
+            "cluster": {
+              "ci": [
+                0.13043478260869534,
+                2.410256410256409
+              ],
+              "survives": true,
+              "p_value": 0.0322
+            }
+          },
+          "gmean": {
+            "point_gap": 0.0073057969042957804,
+            "iid": {
+              "ci": [
+                0.0007764938069128036,
+                0.015794491533834942
+              ],
+              "survives": true,
+              "p_value": 0.01239
+            },
+            "cluster": {
+              "ci": [
+                0.0001437719042517438,
+                0.0204999909739908
+              ],
+              "survives": true,
+              "p_value": 0.03207
+            }
+          }
+        }
+      }
+    ],
+    "all_seeds_pair_1_2_iid_lower_bounds": [
+      -0.010309278350515427,
+      0.0,
+      -0.020618556701030855
+    ],
+    "all_seeds_pair_9_10_cluster_lower_bounds": [
+      0.1264367816091969,
+      0.13888888888888573,
+      0.13043478260869534
+    ],
+    "pair_1_2_iid_survives_all_seeds": false,
+    "pair_9_10_cluster_survives_all_seeds": true
+  },
+  "claim3_holm_correction": {
+    "a_mase_rank_top10_pairs": {
+      "n_pairs": 45,
+      "raw_significant_count": 12,
+      "holm_significant_count": 2,
+      "per_pair_p_both": {
+        "1-2": 0.14442,
+        "1-3": 0.06712,
+        "1-4": 0.01478,
+        "1-5": 0.00246,
+        "1-6": 0.00794,
+        "1-7": 0.0026,
+        "1-8": 0.00662,
+        "1-9": 0.0018,
+        "1-10": 0.00022,
+        "2-3": 0.92936,
+        "2-4": 0.49502,
+        "2-5": 0.30638,
+        "2-6": 0.37974,
+        "2-7": 0.28804,
+        "2-8": 0.27042,
+        "2-9": 0.09852,
+        "2-10": 0.03604,
+        "3-4": 0.10652,
+        "3-5": 0.23846,
+        "3-6": 0.12846,
+        "3-7": 0.1261,
+        "3-8": 0.1133,
+        "3-9": 0.0058,
+        "3-10": 8e-05,
+        "4-5": 0.70662,
+        "4-6": 0.58574,
+        "4-7": 0.60276,
+        "4-8": 0.2952,
+        "4-9": 0.1271,
+        "4-10": 0.01268,
+        "5-6": 0.98538,
+        "5-7": 0.97022,
+        "5-8": 0.55964,
+        "5-9": 0.43102,
+        "5-10": 0.10766,
+        "6-7": 0.99202,
+        "6-8": 0.55298,
+        "6-9": 0.27764,
+        "6-10": 0.08532,
+        "7-8": 0.57838,
+        "7-9": 0.19384,
+        "7-10": 0.01462,
+        "8-9": 0.8564,
+        "8-10": 0.51654,
+        "9-10": 0.06082
+      },
+      "raw_reject": {
+        "1-2": false,
+        "1-3": false,
+        "1-4": true,
+        "1-5": true,
+        "1-6": true,
+        "1-7": true,
+        "1-8": true,
+        "1-9": true,
+        "1-10": true,
+        "2-3": false,
+        "2-4": false,
+        "2-5": false,
+        "2-6": false,
+        "2-7": false,
+        "2-8": false,
+        "2-9": false,
+        "2-10": true,
+        "3-4": false,
+        "3-5": false,
+        "3-6": false,
+        "3-7": false,
+        "3-8": false,
+        "3-9": true,
+        "3-10": true,
+        "4-5": false,
+        "4-6": false,
+        "4-7": false,
+        "4-8": false,
+        "4-9": false,
+        "4-10": true,
+        "5-6": false,
+        "5-7": false,
+        "5-8": false,
+        "5-9": false,
+        "5-10": false,
+        "6-7": false,
+        "6-8": false,
+        "6-9": false,
+        "6-10": false,
+        "7-8": false,
+        "7-9": false,
+        "7-10": true,
+        "8-9": false,
+        "8-10": false,
+        "9-10": false
+      },
+      "holm_reject": {
+        "1-2": false,
+        "1-3": false,
+        "1-4": false,
+        "1-5": false,
+        "1-6": false,
+        "1-7": false,
+        "1-8": false,
+        "1-9": false,
+        "1-10": true,
+        "2-3": false,
+        "2-4": false,
+        "2-5": false,
+        "2-6": false,
+        "2-7": false,
+        "2-8": false,
+        "2-9": false,
+        "2-10": false,
+        "3-4": false,
+        "3-5": false,
+        "3-6": false,
+        "3-7": false,
+        "3-8": false,
+        "3-9": false,
+        "3-10": true,
+        "4-5": false,
+        "4-6": false,
+        "4-7": false,
+        "4-8": false,
+        "4-9": false,
+        "4-10": false,
+        "5-6": false,
+        "5-7": false,
+        "5-8": false,
+        "5-9": false,
+        "5-10": false,
+        "6-7": false,
+        "6-8": false,
+        "6-9": false,
+        "6-10": false,
+        "7-8": false,
+        "7-9": false,
+        "7-10": false,
+        "8-9": false,
+        "8-10": false,
+        "9-10": false
+      }
+    },
+    "b_gmean_top10_pairs": {
+      "n_pairs": 45,
+      "raw_significant_count": 23,
+      "holm_significant_count": 11,
+      "per_pair_p_both": {
+        "1-2": 0.6261,
+        "1-3": 0.00274,
+        "1-4": 0.00022,
+        "1-5": 0.00124,
+        "1-6": 0.00138,
+        "1-7": 0.00012,
+        "1-8": 0.00012,
+        "1-9": 2e-05,
+        "1-10": 2e-05,
+        "2-3": 0.10404,
+        "2-4": 0.062,
+        "2-5": 0.03968,
+        "2-6": 0.06286,
+        "2-7": 0.04004,
+        "2-8": 0.13254,
+        "2-9": 0.02236,
+        "2-10": 0.01664,
+        "3-4": 0.0871,
+        "3-5": 0.16784,
+        "3-6": 0.18486,
+        "3-7": 0.07872,
+        "3-8": 0.96338,
+        "3-9": 0.00046,
+        "3-10": 0.0,
+        "4-5": 0.45572,
+        "4-6": 0.85822,
+        "4-7": 0.35274,
+        "4-8": 0.51486,
+        "4-9": 0.0129,
+        "4-10": 0.00458,
+        "5-6": 0.44,
+        "5-7": 0.5143,
+        "5-8": 0.1145,
+        "5-9": 0.9529,
+        "5-10": 0.11874,
+        "6-7": 0.29128,
+        "6-8": 0.49136,
+        "6-9": 0.00222,
+        "6-10": 0.00136,
+        "7-8": 0.16274,
+        "7-9": 0.00788,
+        "7-10": 0.00026,
+        "8-9": 0.0409,
+        "8-10": 0.01904,
+        "9-10": 0.03136
+      },
+      "raw_reject": {
+        "1-2": false,
+        "1-3": true,
+        "1-4": true,
+        "1-5": true,
+        "1-6": true,
+        "1-7": true,
+        "1-8": true,
+        "1-9": true,
+        "1-10": true,
+        "2-3": false,
+        "2-4": false,
+        "2-5": true,
+        "2-6": false,
+        "2-7": true,
+        "2-8": false,
+        "2-9": true,
+        "2-10": true,
+        "3-4": false,
+        "3-5": false,
+        "3-6": false,
+        "3-7": false,
+        "3-8": false,
+        "3-9": true,
+        "3-10": true,
+        "4-5": false,
+        "4-6": false,
+        "4-7": false,
+        "4-8": false,
+        "4-9": true,
+        "4-10": true,
+        "5-6": false,
+        "5-7": false,
+        "5-8": false,
+        "5-9": false,
+        "5-10": false,
+        "6-7": false,
+        "6-8": false,
+        "6-9": true,
+        "6-10": true,
+        "7-8": false,
+        "7-9": true,
+        "7-10": true,
+        "8-9": true,
+        "8-10": true,
+        "9-10": true
+      },
+      "holm_reject": {
+        "1-2": false,
+        "1-3": false,
+        "1-4": true,
+        "1-5": true,
+        "1-6": true,
+        "1-7": true,
+        "1-8": true,
+        "1-9": true,
+        "1-10": true,
+        "2-3": false,
+        "2-4": false,
+        "2-5": false,
+        "2-6": false,
+        "2-7": false,
+        "2-8": false,
+        "2-9": false,
+        "2-10": false,
+        "3-4": false,
+        "3-5": false,
+        "3-6": false,
+        "3-7": false,
+        "3-8": false,
+        "3-9": true,
+        "3-10": true,
+        "4-5": false,
+        "4-6": false,
+        "4-7": false,
+        "4-8": false,
+        "4-9": false,
+        "4-10": false,
+        "5-6": false,
+        "5-7": false,
+        "5-8": false,
+        "5-9": false,
+        "5-10": false,
+        "6-7": false,
+        "6-8": false,
+        "6-9": false,
+        "6-10": true,
+        "7-8": false,
+        "7-9": false,
+        "7-10": true,
+        "8-9": false,
+        "8-10": false,
+        "9-10": false
+      }
+    },
+    "c_result2_movements": {
+      "n_movements": 8,
+      "raw_significant_count": 5,
+      "holm_significant_count": 4,
+      "movements": [
+        {
+          "model": "chronos_bolt_base",
+          "aggregation": "mean_insertion_rank",
+          "point_delta": 6.666666666666671,
+          "ci_2.5_97.5": [
+            -4.916666666666671,
+            19.083333333333343
+          ],
+          "excludes_zero": false,
+          "p_value": 0.2822
+        },
+        {
+          "model": "chronos_bolt_base",
+          "aggregation": "gmean_scaled_mase",
+          "point_delta": -0.018889178659245,
+          "ci_2.5_97.5": [
+            -0.17272521755681325,
+            0.06464854893008098
+          ],
+          "excludes_zero": false,
+          "p_value": 0.78008
+        },
+        {
+          "model": "moirai2_small",
+          "aggregation": "mean_insertion_rank",
+          "point_delta": 4.083333333333336,
+          "ci_2.5_97.5": [
+            -6.833333333333329,
+            14.166666666666671
+          ],
+          "excludes_zero": false,
+          "p_value": 0.44954
+        },
+        {
+          "model": "moirai2_small",
+          "aggregation": "gmean_scaled_mase",
+          "point_delta": 0.049418271878512,
+          "ci_2.5_97.5": [
+            0.006749334547629382,
+            0.10489259567095044
+          ],
+          "excludes_zero": true,
+          "p_value": 0.01744
+        },
+        {
+          "model": "timesfm25",
+          "aggregation": "mean_insertion_rank",
+          "point_delta": 26.58333333333333,
+          "ci_2.5_97.5": [
+            8.333333333333329,
+            44.24999999999999
+          ],
+          "excludes_zero": true,
+          "p_value": 0.00414
+        },
+        {
+          "model": "timesfm25",
+          "aggregation": "gmean_scaled_mase",
+          "point_delta": 0.16290901572560113,
+          "ci_2.5_97.5": [
+            0.03947003110369507,
+            0.3404878453198844
+          ],
+          "excludes_zero": true,
+          "p_value": 0.0015
+        },
+        {
+          "model": "toto",
+          "aggregation": "mean_insertion_rank",
+          "point_delta": 16.583333333333343,
+          "ci_2.5_97.5": [
+            6.5,
+            27.75
+          ],
+          "excludes_zero": true,
+          "p_value": 0.00016
+        },
+        {
+          "model": "toto",
+          "aggregation": "gmean_scaled_mase",
+          "point_delta": 0.16752043682075923,
+          "ci_2.5_97.5": [
+            0.06303831152268158,
+            0.31485499581071597
+          ],
+          "excludes_zero": true,
+          "p_value": 0.0
+        }
+      ],
+      "raw_reject": {
+        "chronos_bolt_base/mean_insertion_rank": false,
+        "chronos_bolt_base/gmean_scaled_mase": false,
+        "moirai2_small/mean_insertion_rank": false,
+        "moirai2_small/gmean_scaled_mase": true,
+        "timesfm25/mean_insertion_rank": true,
+        "timesfm25/gmean_scaled_mase": true,
+        "toto/mean_insertion_rank": true,
+        "toto/gmean_scaled_mase": true
+      },
+      "holm_reject": {
+        "chronos_bolt_base/mean_insertion_rank": false,
+        "chronos_bolt_base/gmean_scaled_mase": false,
+        "moirai2_small/mean_insertion_rank": false,
+        "moirai2_small/gmean_scaled_mase": false,
+        "timesfm25/mean_insertion_rank": true,
+        "timesfm25/gmean_scaled_mase": true,
+        "toto/mean_insertion_rank": true,
+        "toto/gmean_scaled_mase": true
+      },
+      "moirai_gmean_p_value": 0.01744,
+      "moirai_gmean_holm_significant": false,
+      "result2_grid_json_md5": "a3662fe4acfccf6f828723b65dab52f1",
+      "result2_bands_json_md5": "8472fd71b201c2bf36abacf919776f88"
+    }
+  },
+  "claim4_leave_one_out_moirai_gmean": {
+    "primary_full12_ci": {
+      "point_delta": 0.049418271878512,
+      "ci_2.5_97.5": [
+        0.0059896737906618425,
+        0.10701415659555336
+      ],
+      "excludes_zero": true
+    },
+    "primary_full12_ci_source": "result2_grid.json deltas_vs_bands[moirai2_small].gmean_scaled_mase.paired_ci (B=4000, seed 20260914, same as paper Table 2)",
+    "leave_one_out": [
+      {
+        "dropped_config": "bizitobs_service/10S/short",
+        "point_delta": 0.03589289265942652,
+        "ci_2.5_97.5": [
+          -0.002379271606501532,
+          0.08807232138381871
+        ],
+        "excludes_zero": false,
+        "p_value": 0.075
+      },
+      {
+        "dropped_config": "m4_daily/D/short",
+        "point_delta": 0.053828358343448346,
+        "ci_2.5_97.5": [
+          0.008519718871774606,
+          0.1143246869966491
+        ],
+        "excludes_zero": true,
+        "p_value": 0.0155
+      },
+      {
+        "dropped_config": "m_dense/H/short",
+        "point_delta": 0.05367872338186708,
+        "ci_2.5_97.5": [
+          0.005855011489099948,
+          0.11151839367609584
+        ],
+        "excludes_zero": true,
+        "p_value": 0.0195
+      },
+      {
+        "dropped_config": "solar/10T/short",
+        "point_delta": 0.0498099963470765,
+        "ci_2.5_97.5": [
+          0.0015784788948747241,
+          0.11375549861186518
+        ],
+        "excludes_zero": true,
+        "p_value": 0.039
+      },
+      {
+        "dropped_config": "us_births/W/short",
+        "point_delta": 0.05779462351729858,
+        "ci_2.5_97.5": [
+          0.011464811901079841,
+          0.11783357199840983
+        ],
+        "excludes_zero": true,
+        "p_value": 0.0125
+      },
+      {
+        "dropped_config": "bizitobs_application/10S/medium",
+        "point_delta": 0.053368718208197996,
+        "ci_2.5_97.5": [
+          0.007593637563661382,
+          0.1109213099183145
+        ],
+        "excludes_zero": true,
+        "p_value": 0.0155
+      },
+      {
+        "dropped_config": "ett1/H/medium",
+        "point_delta": 0.05606419489009773,
+        "ci_2.5_97.5": [
+          0.010943423809151809,
+          0.11621449270103412
+        ],
+        "excludes_zero": true,
+        "p_value": 0.005
+      },
+      {
+        "dropped_config": "jena_weather/10T/medium",
+        "point_delta": 0.04625035176143466,
+        "ci_2.5_97.5": [
+          0.0018618350371093495,
+          0.10565383454765342
+        ],
+        "excludes_zero": true,
+        "p_value": 0.043
+      },
+      {
+        "dropped_config": "bizitobs_l2c/H/long",
+        "point_delta": 0.059506781760979455,
+        "ci_2.5_97.5": [
+          0.013201883515811197,
+          0.11875612001369651
+        ],
+        "excludes_zero": true,
+        "p_value": 0.0065
+      },
+      {
+        "dropped_config": "electricity/H/long",
+        "point_delta": 0.052096002347040704,
+        "ci_2.5_97.5": [
+          0.006746684230812483,
+          0.11458035261908306
+        ],
+        "excludes_zero": true,
+        "p_value": 0.018
+      },
+      {
+        "dropped_config": "ett2/15T/long",
+        "point_delta": 0.037741111272754035,
+        "ci_2.5_97.5": [
+          -0.0020731714604045326,
+          0.09121984654803117
+        ],
+        "excludes_zero": false,
+        "p_value": 0.0705
+      },
+      {
+        "dropped_config": "loop_seattle/5T/long",
+        "point_delta": 0.03810855692284709,
+        "ci_2.5_97.5": [
+          -0.002009213617531813,
+          0.0934847665714501
+        ],
+        "excludes_zero": false,
+        "p_value": 0.0635
+      }
+    ],
+    "n_drops_crossing_zero": 3,
+    "highlighted_drops": {
+      "bizitobs_service/10S/short": {
+        "dropped_config": "bizitobs_service/10S/short",
+        "point_delta": 0.03589289265942652,
+        "ci_2.5_97.5": [
+          -0.002379271606501532,
+          0.08807232138381871
+        ],
+        "excludes_zero": false,
+        "p_value": 0.075
+      },
+      "ett2/15T/long": {
+        "dropped_config": "ett2/15T/long",
+        "point_delta": 0.037741111272754035,
+        "ci_2.5_97.5": [
+          -0.0020731714604045326,
+          0.09121984654803117
+        ],
+        "excludes_zero": false,
+        "p_value": 0.0705
+      },
+      "loop_seattle/5T/long": {
+        "dropped_config": "loop_seattle/5T/long",
+        "point_delta": 0.03810855692284709,
+        "ci_2.5_97.5": [
+          -0.002009213617531813,
+          0.0934847665714501
+        ],
+        "excludes_zero": false,
+        "p_value": 0.0635
+      }
+    },
+    "highlighted_all_cross_zero": true
+  },
+  "claim5_leakage_pushdown_relevance": {
+    "top12_raw_mase_rank": [
+      {
+        "model": "STRIDE w/ Synapse",
+        "MASE_Rank": 14.618556701030927,
+        "testdata_leakage": "No"
+      },
+      {
+        "model": "EXAONE-Forecast-Agent",
+        "MASE_Rank": 18.8659793814433,
+        "testdata_leakage": "No"
+      },
+      {
+        "model": "LS-MoE",
+        "MASE_Rank": 19.309278350515463,
+        "testdata_leakage": "No"
+      },
+      {
+        "model": "LS-Agent",
+        "MASE_Rank": 21.24742268041237,
+        "testdata_leakage": "No"
+      },
+      {
+        "model": "Falcon-Agent",
+        "MASE_Rank": 22.15463917525773,
+        "testdata_leakage": "No"
+      },
+      {
+        "model": "CastStar",
+        "MASE_Rank": 22.22680412371134,
+        "testdata_leakage": "No"
+      },
+      {
+        "model": "limix_moe",
+        "MASE_Rank": 22.237113402061855,
+        "testdata_leakage": "No"
+      },
+      {
+        "model": "TIMEHEDGE",
+        "MASE_Rank": 23.65979381443299,
+        "testdata_leakage": "No"
+      },
+      {
+        "model": "RegLab-AH-1",
+        "MASE_Rank": 24.309278350515463,
+        "testdata_leakage": "No"
+      },
+      {
+        "model": "RacineCast-1-NC",
+        "MASE_Rank": 25.63917525773196,
+        "testdata_leakage": "No"
+      },
+      {
+        "model": "RacineCast-1",
+        "MASE_Rank": 25.75257731958763,
+        "testdata_leakage": "No"
+      },
+      {
+        "model": "FastCastrage",
+        "MASE_Rank": 27.2680412371134,
+        "testdata_leakage": "No"
+      }
+    ],
+    "all_unflagged": true
+  },
+  "claim6_gmean_first_place_gap": {
+    "pair": {
+      "posA": 1,
+      "posB": 2,
+      "modelA": "STRIDE w/ Synapse",
+      "modelB": "EXAONE-Forecast-Agent",
+      "MASE_Rank": {
+        "point_gap": 4.247422680412372,
+        "iid": {
+          "ci": [
+            -0.020618556701030855,
+            8.484536082474227
+          ],
+          "survives": false,
+          "p_value": 0.05152
+        },
+        "cluster": {
+          "ci": [
+            -1.4242424242424239,
+            10.355555555555554
+          ],
+          "survives": false,
+          "p_value": 0.14442
+        }
+      },
+      "gmean": {
+        "point_gap": -0.015464719441530606,
+        "iid": {
+          "ci": [
+            -0.04164509930897409,
+            0.009535808106711507
+          ],
+          "survives": false,
+          "p_value": 0.23324
+        },
+        "cluster": {
+          "ci": [
+            -0.07024699892146669,
+            0.030684770703729103
+          ],
+          "survives": false,
+          "p_value": 0.6261
+        }
+      }
+    },
+    "iid_includes_zero": true,
+    "cluster_includes_zero": true
+  },
+  "claim7_toto_like_for_like": {
+    "a_like_for_like": {
+      "per_config": [
+        {
+          "config": "bizitobs_service/10S/short",
+          "board_mase": 0.7885676144,
+          "our_default_mase": 0.7864663283829156,
+          "board_insertion_rank_like_for_like": 60,
+          "our_insertion_rank_like_for_like": 60
+        },
+        {
+          "config": "m4_daily/D/short",
+          "board_mase": 3.312199429,
+          "our_default_mase": 3.2956289871924773,
+          "board_insertion_rank_like_for_like": 72,
+          "our_insertion_rank_like_for_like": 65
+        },
+        {
+          "config": "m_dense/H/short",
+          "board_mase": 0.8785644308,
+          "our_default_mase": 0.8807447463653135,
+          "board_insertion_rank_like_for_like": 100,
+          "our_insertion_rank_like_for_like": 100
+        },
+        {
+          "config": "solar/10T/short",
+          "board_mase": 1.032864175,
+          "our_default_mase": 1.0330326884685221,
+          "board_insertion_rank_like_for_like": 80,
+          "our_insertion_rank_like_for_like": 80
+        },
+        {
+          "config": "us_births/W/short",
+          "board_mase": 1.234635428,
+          "our_default_mase": 1.2369276899967474,
+          "board_insertion_rank_like_for_like": 90,
+          "our_insertion_rank_like_for_like": 91
+        },
+        {
+          "config": "bizitobs_application/10S/medium",
+          "board_mase": 2.303904467,
+          "our_default_mase": 2.6893958957114097,
+          "board_insertion_rank_like_for_like": 46,
+          "our_insertion_rank_like_for_like": 87
+        },
+        {
+          "config": "ett1/H/medium",
+          "board_mase": 1.271840857,
+          "our_default_mase": 1.2605839636601093,
+          "board_insertion_rank_like_for_like": 60,
+          "our_insertion_rank_like_for_like": 47
+        },
+        {
+          "config": "jena_weather/10T/medium",
+          "board_mase": 0.5977261209,
+          "our_default_mase": 0.6313798423908791,
+          "board_insertion_rank_like_for_like": 47,
+          "our_insertion_rank_like_for_like": 83
+        },
+        {
+          "config": "bizitobs_l2c/H/long",
+          "board_mase": 0.7971592662,
+          "our_default_mase": 0.9303132963216109,
+          "board_insertion_rank_like_for_like": 102,
+          "our_insertion_rank_like_for_like": 109
+        },
+        {
+          "config": "electricity/H/long",
+          "board_mase": 1.235409238,
+          "our_default_mase": 1.255054554160155,
+          "board_insertion_rank_like_for_like": 81,
+          "our_insertion_rank_like_for_like": 88
+        },
+        {
+          "config": "ett2/15T/long",
+          "board_mase": 0.8713644491,
+          "our_default_mase": 0.896422948545275,
+          "board_insertion_rank_like_for_like": 33,
+          "our_insertion_rank_like_for_like": 62
+        },
+        {
+          "config": "loop_seattle/5T/long",
+          "board_mase": 0.8478243958,
+          "our_default_mase": 1.089857393599375,
+          "board_insertion_rank_like_for_like": 58,
+          "our_insertion_rank_like_for_like": 104
+        }
+      ],
+      "board_avg_like_for_like_insertion_rank": 69.08333333333333,
+      "our_avg_like_for_like_insertion_rank": 81.33333333333333,
+      "gap_like_for_like": 12.25,
+      "original_mismatched_gap": 13.0,
+      "critic_claimed_gap": 12.0
+    },
+    "b_multivariate_check": {
+      "over_5pct_reproduction_error_configs": [
+        "bizitobs_application/10S/medium",
+        "bizitobs_l2c/H/long",
+        "jena_weather/10T/medium",
+        "loop_seattle/5T/long"
+      ],
+      "critic_claimed_over5pct_configs": [
+        "bizitobs_application/10S/medium",
+        "bizitobs_l2c/H/long",
+        "jena_weather/10T/medium",
+        "loop_seattle/5T/long"
+      ],
+      "over5pct_matches_critic_list": true,
+      "num_variates_by_config": {
+        "bizitobs_service/10S/short": 2,
+        "m4_daily/D/short": 1,
+        "m_dense/H/short": 1,
+        "solar/10T/short": 1,
+        "us_births/W/short": 1,
+        "bizitobs_application/10S/medium": 2,
+        "ett1/H/medium": 7,
+        "jena_weather/10T/medium": 21,
+        "bizitobs_l2c/H/long": 7,
+        "electricity/H/long": 1,
+        "ett2/15T/long": 7,
+        "loop_seattle/5T/long": 1
+      },
+      "multivariate_configs_gt1": [
+        "bizitobs_application/10S/medium",
+        "bizitobs_l2c/H/long",
+        "bizitobs_service/10S/short",
+        "ett1/H/medium",
+        "ett2/15T/long",
+        "jena_weather/10T/medium"
+      ],
+      "over5pct_set_equals_multivariate_set": false
+    },
+    "c_board_baseline_movement": {
+      "board_published_avg_insertion_rank_12cfg": 69.08333333333333,
+      "at_512_avg_insertion_rank": 98.66666666666667,
+      "movement_vs_board_baseline": 29.583333333333343,
+      "paper_movement_vs_our_default": 82.08333333333333,
+      "paper_reported_delta": 16.583333333333343,
+      "critic_claimed_movement": 28.58
+    }
+  },
+  "claim8_falcon_x_rank_method": {
+    "falcon_x_swing_method_first": {
+      "model": "Falcon-X",
+      "rank_MASE_Rank": 54,
+      "rank_gmean": 33,
+      "abs_diff": 21
+    },
+    "falcon_x_swing_method_average": {
+      "model": "Falcon-X",
+      "rank_MASE_Rank_avg": 54,
+      "rank_gmean": 33,
+      "abs_diff": 21
+    },
+    "twenty_one_becomes_twenty": false,
+    "top3_swings_method_average": [
+      {
+        "model": "TurkForecast-FM-Chronos2-LoRA-v1",
+        "rank_MASE_Rank_avg": 43,
+        "rank_gmean": 7,
+        "abs_diff": 36
+      },
+      {
+        "model": "Falcon-X",
+        "rank_MASE_Rank_avg": 54,
+        "rank_gmean": 33,
+        "abs_diff": 21
+      },
+      {
+        "model": "ForecastMate",
+        "rank_MASE_Rank_avg": 24,
+        "rank_gmean": 9,
+        "abs_diff": 15
+      }
+    ],
+    "n_configs_with_at_least_one_mase_tie": 96,
+    "n_configs_total": 97
+  },
+  "warnings_mase_pipeline": [],
+  "warnings_crps_pipeline": []
+}

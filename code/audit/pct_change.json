@@ -1,0 +1,30 @@
+{
+ "timesfm25": {
+  "pct_change": 22.2,
+  "ci95": [
+   5.2,
+   45.6
+  ]
+ },
+ "toto": {
+  "pct_change": 20.6,
+  "ci95": [
+   8.1,
+   36.8
+  ]
+ },
+ "moirai2_small": {
+  "pct_change": 6.8,
+  "ci95": [
+   1.0,
+   14.0
+  ]
+ },
+ "chronos_bolt_base": {
+  "pct_change": -2.0,
+  "ci95": [
+   -13.2,
+   8.9
+  ]
+ }
+}
