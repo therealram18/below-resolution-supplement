@@ -1,0 +1,2 @@
+[FAILED] loop_seattle/5T/long: FileNotFoundError: Directory <WORKDIR>/harness/data/loop_seattle/5T not found
+[failed] loop_seattle/5T/long -> results/moirai2_small/ctx_default/all_results.csv

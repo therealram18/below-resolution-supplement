@@ -1,0 +1,2 @@
+[FAILED] bizitobs_application/10S/medium: FileNotFoundError: Directory <WORKDIR>/harness/data/bizitobs_application/10S not found
+[failed] bizitobs_application/10S/medium -> results/chronos_bolt_base/ctx_512/all_results.csv

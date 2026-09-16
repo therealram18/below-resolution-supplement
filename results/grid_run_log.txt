@@ -1,0 +1,162 @@
+1 us_births/W short
+2 bizitobs_l2c/H long
+3 bizitobs_application/10S medium
+4 ett1/H medium
+5 jena_weather/10T medium
+6 ett2/15T long
+7 bizitobs_service/10S short
+8 m_dense/H short
+9 solar/10T short
+10 m4_daily/D short
+11 electricity/H long
+12 loop_seattle/5T long
+PROGRESS cfg01 us_births/W/short chronos_bolt_base ctx=default rc=0 wall=7s 13:50:51
+PROGRESS cfg01 us_births/W/short chronos_bolt_base ctx=512 rc=0 wall=8s 13:50:59
+PROGRESS cfg01 us_births/W/short moirai2_small ctx=default rc=0 wall=5s 13:51:04
+PROGRESS cfg01 us_births/W/short moirai2_small ctx=512 rc=0 wall=5s 13:51:09
+PROGRESS cfg01 us_births/W/short timesfm25 ctx=default rc=0 wall=6s 13:51:15
+PROGRESS cfg01 us_births/W/short timesfm25 ctx=512 rc=0 wall=6s 13:51:21
+PROGRESS cfg01 us_births/W/short toto ctx=default rc=0 wall=7s 13:51:28
+PROGRESS cfg01 us_births/W/short toto ctx=512 rc=0 wall=7s 13:51:35
+RECT_COMPLETE through cfg01 (us_births/W/short)
+PROGRESS cfg02 bizitobs_l2c/H/long chronos_bolt_base ctx=default rc=0 wall=9s 13:51:44
+PROGRESS cfg02 bizitobs_l2c/H/long chronos_bolt_base ctx=512 rc=0 wall=8s 13:51:52
+PROGRESS cfg02 bizitobs_l2c/H/long moirai2_small ctx=default rc=0 wall=5s 13:51:57
+PROGRESS cfg02 bizitobs_l2c/H/long moirai2_small ctx=512 rc=0 wall=5s 13:52:02
+PROGRESS cfg02 bizitobs_l2c/H/long timesfm25 ctx=default rc=0 wall=6s 13:52:08
+PROGRESS cfg02 bizitobs_l2c/H/long timesfm25 ctx=512 rc=0 wall=6s 13:52:14
+PROGRESS cfg02 bizitobs_l2c/H/long toto ctx=default rc=0 wall=7s 13:52:21
+PROGRESS cfg02 bizitobs_l2c/H/long toto ctx=512 rc=0 wall=8s 13:52:29
+RECT_COMPLETE through cfg02 (bizitobs_l2c/H/long)
+PROGRESS cfg03 bizitobs_application/10S/medium chronos_bolt_base ctx=default rc=1 wall=1s 13:52:30
+GRIDFAIL cfg03 bizitobs_application/10S/medium chronos_bolt_base default
+PROGRESS cfg03 bizitobs_application/10S/medium chronos_bolt_base ctx=512 rc=1 wall=0s 13:52:30
+GRIDFAIL cfg03 bizitobs_application/10S/medium chronos_bolt_base 512
+PROGRESS cfg03 bizitobs_application/10S/medium moirai2_small ctx=default rc=1 wall=1s 13:52:31
+GRIDFAIL cfg03 bizitobs_application/10S/medium moirai2_small default
+PROGRESS cfg03 bizitobs_application/10S/medium moirai2_small ctx=512 rc=1 wall=1s 13:52:32
+GRIDFAIL cfg03 bizitobs_application/10S/medium moirai2_small 512
+PROGRESS cfg03 bizitobs_application/10S/medium timesfm25 ctx=default rc=1 wall=1s 13:52:33
+GRIDFAIL cfg03 bizitobs_application/10S/medium timesfm25 default
+PROGRESS cfg03 bizitobs_application/10S/medium timesfm25 ctx=512 rc=1 wall=1s 13:52:34
+GRIDFAIL cfg03 bizitobs_application/10S/medium timesfm25 512
+PROGRESS cfg03 bizitobs_application/10S/medium toto ctx=default rc=1 wall=0s 13:52:34
+GRIDFAIL cfg03 bizitobs_application/10S/medium toto default
+PROGRESS cfg03 bizitobs_application/10S/medium toto ctx=512 rc=1 wall=1s 13:52:35
+GRIDFAIL cfg03 bizitobs_application/10S/medium toto 512
+RECT_COMPLETE through cfg03 (bizitobs_application/10S/medium)
+PROGRESS cfg04 ett1/H/medium chronos_bolt_base ctx=default rc=0 wall=9s 13:52:44
+PROGRESS cfg04 ett1/H/medium chronos_bolt_base ctx=512 rc=0 wall=8s 13:52:52
+PROGRESS cfg04 ett1/H/medium moirai2_small ctx=default rc=0 wall=6s 13:52:58
+PROGRESS cfg04 ett1/H/medium moirai2_small ctx=512 rc=0 wall=6s 13:53:04
+PROGRESS cfg04 ett1/H/medium timesfm25 ctx=default rc=0 wall=8s 13:53:12
+PROGRESS cfg04 ett1/H/medium timesfm25 ctx=512 rc=0 wall=6s 13:53:18
+PROGRESS cfg04 ett1/H/medium toto ctx=default rc=0 wall=7s 13:53:25
+PROGRESS cfg04 ett1/H/medium toto ctx=512 rc=0 wall=8s 13:53:33
+RECT_COMPLETE through cfg04 (ett1/H/medium)
+PROGRESS cfg05 jena_weather/10T/medium chronos_bolt_base ctx=default rc=0 wall=19s 13:53:52
+PROGRESS cfg05 jena_weather/10T/medium chronos_bolt_base ctx=512 rc=0 wall=13s 13:54:05
+PROGRESS cfg05 jena_weather/10T/medium moirai2_small ctx=default rc=0 wall=12s 13:54:17
+PROGRESS cfg05 jena_weather/10T/medium moirai2_small ctx=512 rc=0 wall=7s 13:54:24
+PROGRESS cfg05 jena_weather/10T/medium timesfm25 ctx=default rc=0 wall=13s 13:54:37
+PROGRESS cfg05 jena_weather/10T/medium timesfm25 ctx=512 rc=0 wall=8s 13:54:45
+PROGRESS cfg05 jena_weather/10T/medium toto ctx=default rc=0 wall=9s 13:54:54
+PROGRESS cfg05 jena_weather/10T/medium toto ctx=512 rc=0 wall=8s 13:55:02
+RECT_COMPLETE through cfg05 (jena_weather/10T/medium)
+PROGRESS cfg06 ett2/15T/long chronos_bolt_base ctx=default rc=0 wall=13s 13:55:15
+PROGRESS cfg06 ett2/15T/long chronos_bolt_base ctx=512 rc=0 wall=10s 13:55:25
+PROGRESS cfg06 ett2/15T/long moirai2_small ctx=default rc=0 wall=9s 13:55:34
+PROGRESS cfg06 ett2/15T/long moirai2_small ctx=512 rc=0 wall=6s 13:55:40
+PROGRESS cfg06 ett2/15T/long timesfm25 ctx=default rc=0 wall=9s 13:55:49
+PROGRESS cfg06 ett2/15T/long timesfm25 ctx=512 rc=0 wall=6s 13:55:55
+PROGRESS cfg06 ett2/15T/long toto ctx=default rc=0 wall=8s 13:56:03
+PROGRESS cfg06 ett2/15T/long toto ctx=512 rc=0 wall=7s 13:56:10
+RECT_COMPLETE through cfg06 (ett2/15T/long)
+PROGRESS cfg07 bizitobs_service/10S/short chronos_bolt_base ctx=default rc=1 wall=1s 13:56:11
+GRIDFAIL cfg07 bizitobs_service/10S/short chronos_bolt_base default
+PROGRESS cfg07 bizitobs_service/10S/short chronos_bolt_base ctx=512 rc=1 wall=1s 13:56:12
+GRIDFAIL cfg07 bizitobs_service/10S/short chronos_bolt_base 512
+PROGRESS cfg07 bizitobs_service/10S/short moirai2_small ctx=default rc=1 wall=1s 13:56:13
+GRIDFAIL cfg07 bizitobs_service/10S/short moirai2_small default
+PROGRESS cfg07 bizitobs_service/10S/short moirai2_small ctx=512 rc=1 wall=1s 13:56:14
+GRIDFAIL cfg07 bizitobs_service/10S/short moirai2_small 512
+PROGRESS cfg07 bizitobs_service/10S/short timesfm25 ctx=default rc=1 wall=0s 13:56:14
+GRIDFAIL cfg07 bizitobs_service/10S/short timesfm25 default
+PROGRESS cfg07 bizitobs_service/10S/short timesfm25 ctx=512 rc=1 wall=1s 13:56:15
+GRIDFAIL cfg07 bizitobs_service/10S/short timesfm25 512
+PROGRESS cfg07 bizitobs_service/10S/short toto ctx=default rc=1 wall=1s 13:56:16
+GRIDFAIL cfg07 bizitobs_service/10S/short toto default
+PROGRESS cfg07 bizitobs_service/10S/short toto ctx=512 rc=1 wall=0s 13:56:16
+GRIDFAIL cfg07 bizitobs_service/10S/short toto 512
+RECT_COMPLETE through cfg07 (bizitobs_service/10S/short)
+PROGRESS cfg08 m_dense/H/short chronos_bolt_base ctx=default rc=1 wall=1s 13:56:17
+GRIDFAIL cfg08 m_dense/H/short chronos_bolt_base default
+PROGRESS cfg08 m_dense/H/short chronos_bolt_base ctx=512 rc=1 wall=1s 13:56:18
+GRIDFAIL cfg08 m_dense/H/short chronos_bolt_base 512
+PROGRESS cfg08 m_dense/H/short moirai2_small ctx=default rc=1 wall=1s 13:56:19
+GRIDFAIL cfg08 m_dense/H/short moirai2_small default
+PROGRESS cfg08 m_dense/H/short moirai2_small ctx=512 rc=1 wall=1s 13:56:20
+GRIDFAIL cfg08 m_dense/H/short moirai2_small 512
+PROGRESS cfg08 m_dense/H/short timesfm25 ctx=default rc=1 wall=0s 13:56:20
+GRIDFAIL cfg08 m_dense/H/short timesfm25 default
+PROGRESS cfg08 m_dense/H/short timesfm25 ctx=512 rc=1 wall=1s 13:56:21
+GRIDFAIL cfg08 m_dense/H/short timesfm25 512
+PROGRESS cfg08 m_dense/H/short toto ctx=default rc=1 wall=1s 13:56:22
+GRIDFAIL cfg08 m_dense/H/short toto default
+PROGRESS cfg08 m_dense/H/short toto ctx=512 rc=1 wall=1s 13:56:23
+GRIDFAIL cfg08 m_dense/H/short toto 512
+RECT_COMPLETE through cfg08 (m_dense/H/short)
+PROGRESS cfg09 solar/10T/short chronos_bolt_base ctx=default rc=0 wall=31s 13:56:54
+PROGRESS cfg09 solar/10T/short chronos_bolt_base ctx=512 rc=0 wall=29s 13:57:23
+PROGRESS cfg09 solar/10T/short moirai2_small ctx=default rc=0 wall=27s 13:57:50
+PROGRESS cfg09 solar/10T/short moirai2_small ctx=512 rc=0 wall=27s 13:58:17
+PROGRESS cfg09 solar/10T/short timesfm25 ctx=default rc=0 wall=84s 13:59:41
+PROGRESS cfg09 solar/10T/short timesfm25 ctx=512 rc=0 wall=35s 14:00:16
+PROGRESS cfg09 solar/10T/short toto ctx=default rc=0 wall=33s 14:00:49
+PROGRESS cfg09 solar/10T/short toto ctx=512 rc=0 wall=32s 14:01:21
+RECT_COMPLETE through cfg09 (solar/10T/short)
+PROGRESS cfg10 m4_daily/D/short chronos_bolt_base ctx=default rc=1 wall=1s 14:01:22
+GRIDFAIL cfg10 m4_daily/D/short chronos_bolt_base default
+PROGRESS cfg10 m4_daily/D/short chronos_bolt_base ctx=512 rc=1 wall=0s 14:01:22
+GRIDFAIL cfg10 m4_daily/D/short chronos_bolt_base 512
+PROGRESS cfg10 m4_daily/D/short moirai2_small ctx=default rc=1 wall=1s 14:01:23
+GRIDFAIL cfg10 m4_daily/D/short moirai2_small default
+PROGRESS cfg10 m4_daily/D/short moirai2_small ctx=512 rc=1 wall=1s 14:01:24
+GRIDFAIL cfg10 m4_daily/D/short moirai2_small 512
+PROGRESS cfg10 m4_daily/D/short timesfm25 ctx=default rc=1 wall=1s 14:01:25
+GRIDFAIL cfg10 m4_daily/D/short timesfm25 default
+PROGRESS cfg10 m4_daily/D/short timesfm25 ctx=512 rc=1 wall=0s 14:01:25
+GRIDFAIL cfg10 m4_daily/D/short timesfm25 512
+PROGRESS cfg10 m4_daily/D/short toto ctx=default rc=1 wall=1s 14:01:26
+GRIDFAIL cfg10 m4_daily/D/short toto default
+PROGRESS cfg10 m4_daily/D/short toto ctx=512 rc=1 wall=1s 14:01:27
+GRIDFAIL cfg10 m4_daily/D/short toto 512
+RECT_COMPLETE through cfg10 (m4_daily/D/short)
+PROGRESS cfg11 electricity/H/long chronos_bolt_base ctx=default rc=1 wall=14s 14:01:41
+GRIDFAIL cfg11 electricity/H/long chronos_bolt_base default
+PROGRESS cfg11 electricity/H/long chronos_bolt_base ctx=512 rc=0 wall=71s 14:02:52
+PROGRESS cfg11 electricity/H/long moirai2_small ctx=default rc=0 wall=77s 14:04:09
+PROGRESS cfg11 electricity/H/long moirai2_small ctx=512 rc=0 wall=27s 14:04:36
+PROGRESS cfg11 electricity/H/long timesfm25 ctx=default rc=0 wall=54s 14:05:30
+PROGRESS cfg11 electricity/H/long timesfm25 ctx=512 rc=0 wall=22s 14:05:52
+PROGRESS cfg11 electricity/H/long toto ctx=default rc=0 wall=40s 14:06:32
+PROGRESS cfg11 electricity/H/long toto ctx=512 rc=0 wall=35s 14:07:07
+RECT_COMPLETE through cfg11 (electricity/H/long)
+PROGRESS cfg12 loop_seattle/5T/long chronos_bolt_base ctx=default rc=1 wall=1s 14:07:08
+GRIDFAIL cfg12 loop_seattle/5T/long chronos_bolt_base default
+PROGRESS cfg12 loop_seattle/5T/long chronos_bolt_base ctx=512 rc=1 wall=1s 14:07:09
+GRIDFAIL cfg12 loop_seattle/5T/long chronos_bolt_base 512
+PROGRESS cfg12 loop_seattle/5T/long moirai2_small ctx=default rc=1 wall=1s 14:07:10
+GRIDFAIL cfg12 loop_seattle/5T/long moirai2_small default
+PROGRESS cfg12 loop_seattle/5T/long moirai2_small ctx=512 rc=1 wall=1s 14:07:11
+GRIDFAIL cfg12 loop_seattle/5T/long moirai2_small 512
+PROGRESS cfg12 loop_seattle/5T/long timesfm25 ctx=default rc=1 wall=0s 14:07:11
+GRIDFAIL cfg12 loop_seattle/5T/long timesfm25 default
+PROGRESS cfg12 loop_seattle/5T/long timesfm25 ctx=512 rc=1 wall=1s 14:07:12
+GRIDFAIL cfg12 loop_seattle/5T/long timesfm25 512
+PROGRESS cfg12 loop_seattle/5T/long toto ctx=default rc=1 wall=1s 14:07:13
+GRIDFAIL cfg12 loop_seattle/5T/long toto default
+PROGRESS cfg12 loop_seattle/5T/long toto ctx=512 rc=1 wall=1s 14:07:14
+GRIDFAIL cfg12 loop_seattle/5T/long toto 512
+RECT_COMPLETE through cfg12 (loop_seattle/5T/long)
+GRID_ALL_DONE

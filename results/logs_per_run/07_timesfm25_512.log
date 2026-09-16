@@ -1,0 +1,2 @@
+[FAILED] bizitobs_service/10S/short: FileNotFoundError: Directory <WORKDIR>/harness/data/bizitobs_service/10S not found
+[failed] bizitobs_service/10S/short -> results/timesfm25/ctx_512/all_results.csv

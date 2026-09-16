@@ -1,0 +1,67 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+0it [00:00, ?it/s]The mean prediction is not stored in the forecast data; the median is being returned instead. This behaviour may change in the future.
+The mean prediction is not stored in the forecast data; the median is being returned instead. This behaviour may change in the future.
+The mean prediction is not stored in the forecast data; the median is being returned instead. This behaviour may change in the future.
+The mean prediction is not stored in the forecast data; the median is being returned instead. This behaviour may change in the future.
+The mean prediction is not stored in the forecast data; the median is being returned instead. This behaviour may change in the future.
+The mean prediction is not stored in the forecast data; the median is being returned instead. This behaviour may change in the future.
+The mean prediction is not stored in the forecast data; the median is being returned instead. This behaviour may change in the future.
+The mean prediction is not stored in the forecast data; the median is being returned instead. This behaviour may change in the future.
+The mean prediction is not stored in the forecast data; the median is being returned instead. This behaviour may change in the future.
+The mean prediction is not stored in the forecast data; the median is being returned instead. This behaviour may change in the future.
+The mean prediction is not stored in the forecast data; the median is being returned instead. This behaviour may change in the future.
+The mean prediction is not stored in the forecast data; the median is being returned instead. This behaviour may change in the future.
+The mean prediction is not stored in the forecast data; the median is being returned instead. This behaviour may change in the future.
+The mean prediction is not stored in the forecast data; the median is being returned instead. This behaviour may change in the future.
+The mean prediction is not stored in the forecast data; the median is being returned instead. This behaviour may change in the future.
+The mean prediction is not stored in the forecast data; the median is being returned instead. This behaviour may change in the future.
+The mean prediction is not stored in the forecast data; the median is being returned instead. This behaviour may change in the future.
+The mean prediction is not stored in the forecast data; the median is being returned instead. This behaviour may change in the future.
+The mean prediction is not stored in the forecast data; the median is being returned instead. This behaviour may change in the future.
+The mean prediction is not stored in the forecast data; the median is being returned instead. This behaviour may change in the future.
+The mean prediction is not stored in the forecast data; the median is being returned instead. This behaviour may change in the future.
+The mean prediction is not stored in the forecast data; the median is being returned instead. This behaviour may change in the future.
+The mean prediction is not stored in the forecast data; the median is being returned instead. This behaviour may change in the future.
+The mean prediction is not stored in the forecast data; the median is being returned instead. This behaviour may change in the future.
+The mean prediction is not stored in the forecast data; the median is being returned instead. This behaviour may change in the future.
+The mean prediction is not stored in the forecast data; the median is being returned instead. This behaviour may change in the future.
+The mean prediction is not stored in the forecast data; the median is being returned instead. This behaviour may change in the future.
+The mean prediction is not stored in the forecast data; the median is being returned instead. This behaviour may change in the future.
+The mean prediction is not stored in the forecast data; the median is being returned instead. This behaviour may change in the future.
+The mean prediction is not stored in the forecast data; the median is being returned instead. This behaviour may change in the future.
+The mean prediction is not stored in the forecast data; the median is being returned instead. This behaviour may change in the future.
+The mean prediction is not stored in the forecast data; the median is being returned instead. This behaviour may change in the future.
+The mean prediction is not stored in the forecast data; the median is being returned instead. This behaviour may change in the future.
+The mean prediction is not stored in the forecast data; the median is being returned instead. This behaviour may change in the future.
+The mean prediction is not stored in the forecast data; the median is being returned instead. This behaviour may change in the future.
+The mean prediction is not stored in the forecast data; the median is being returned instead. This behaviour may change in the future.
+The mean prediction is not stored in the forecast data; the median is being returned instead. This behaviour may change in the future.
+The mean prediction is not stored in the forecast data; the median is being returned instead. This behaviour may change in the future.
+The mean prediction is not stored in the forecast data; the median is being returned instead. This behaviour may change in the future.
+The mean prediction is not stored in the forecast data; the median is being returned instead. This behaviour may change in the future.
+The mean prediction is not stored in the forecast data; the median is being returned instead. This behaviour may change in the future.
+The mean prediction is not stored in the forecast data; the median is being returned instead. This behaviour may change in the future.
+14it [00:00, 46.39it/s]14it [00:00, 46.37it/s]
+<WORKDIR>/harness/run_grid.py:486: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  res["MSE[mean]"][0],
+<WORKDIR>/harness/run_grid.py:487: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  res["MSE[0.5]"][0],
+<WORKDIR>/harness/run_grid.py:488: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  res["MAE[0.5]"][0],
+<WORKDIR>/harness/run_grid.py:489: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  res["MASE[0.5]"][0],
+<WORKDIR>/harness/run_grid.py:490: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  res["MAPE[0.5]"][0],
+<WORKDIR>/harness/run_grid.py:491: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  res["sMAPE[0.5]"][0],
+<WORKDIR>/harness/run_grid.py:492: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  res["MSIS"][0],
+<WORKDIR>/harness/run_grid.py:493: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  res["RMSE[mean]"][0],
+<WORKDIR>/harness/run_grid.py:494: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  res["NRMSE[mean]"][0],
+<WORKDIR>/harness/run_grid.py:495: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  res["ND[0.5]"][0],
+<WORKDIR>/harness/run_grid.py:496: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  res["mean_weighted_sum_quantile_loss"][0],
+[ok] us_births/W/short -> results/moirai2_small/ctx_512/all_results.csv
