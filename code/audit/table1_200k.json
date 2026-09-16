@@ -1,0 +1,384 @@
+{
+  "meta": {
+    "snapshot_commit": "b61c48aa3197a1a111e405c0e6f600128a1efee3",
+    "snapshot_root": "<WORKDIR>/snapshot_2026-09-07",
+    "seed": 20260907
+  },
+  "computation1_table1_at_200k": {
+    "seed": 20260907,
+    "B_rank_gmean": 200000,
+    "B_win_rate": 200000,
+    "top10_mase_rank_order": [
+      "STRIDE w/ Synapse",
+      "EXAONE-Forecast-Agent",
+      "LS-MoE",
+      "LS-Agent",
+      "Falcon-Agent",
+      "CastStar",
+      "limix_moe",
+      "TIMEHEDGE",
+      "RegLab-AH-1",
+      "RacineCast-1-NC"
+    ],
+    "table1_rows": [
+      {
+        "pair": "1-2",
+        "modelA": "STRIDE w/ Synapse",
+        "modelB": "EXAONE-Forecast-Agent",
+        "delta_mase_rank": 4.247422680412372,
+        "independent_ci": [
+          -0.010309278350515427,
+          8.50515463917526
+        ],
+        "independent_survives": false,
+        "clustered_ci": [
+          -1.4186046511627914,
+          10.402597402597403
+        ],
+        "clustered_survives": false,
+        "delta_gmean": -0.015464719441530606,
+        "win_rate": 0.6185567010309279,
+        "win_rate_ci": [
+          0.5257731958762887,
+          0.711340206185567
+        ]
+      },
+      {
+        "pair": "2-3",
+        "modelA": "EXAONE-Forecast-Agent",
+        "modelB": "LS-MoE",
+        "delta_mase_rank": 0.4432989690721634,
+        "independent_ci": [
+          -4.546391752577321,
+          5.402061855670103
+        ],
+        "independent_survives": false,
+        "clustered_ci": [
+          -6.200000000000001,
+          6.632352941176469
+        ],
+        "clustered_survives": false,
+        "delta_gmean": 0.04014784870249022,
+        "win_rate": 0.5051546391752577,
+        "win_rate_ci": [
+          0.4020618556701031,
+          0.6082474226804123
+        ]
+      },
+      {
+        "pair": "3-4",
+        "modelA": "LS-MoE",
+        "modelB": "LS-Agent",
+        "delta_mase_rank": 1.9381443298969074,
+        "independent_ci": [
+          -0.3814432989690708,
+          4.402061855670102
+        ],
+        "independent_survives": false,
+        "clustered_ci": [
+          -0.0897435897435912,
+          3.8192771084337345
+        ],
+        "clustered_survives": false,
+        "delta_gmean": 0.004768478493827,
+        "win_rate": 0.6288659793814433,
+        "win_rate_ci": [
+          0.5360824742268041,
+          0.7216494845360825
+        ]
+      },
+      {
+        "pair": "4-5",
+        "modelA": "LS-Agent",
+        "modelB": "Falcon-Agent",
+        "delta_mase_rank": 0.9072164948453612,
+        "independent_ci": [
+          -3.7216494845360835,
+          5.567010309278352
+        ],
+        "independent_survives": false,
+        "clustered_ci": [
+          -3.75,
+          4.896103896103899
+        ],
+        "clustered_survives": false,
+        "delta_gmean": 0.010988673328697018,
+        "win_rate": 0.5051546391752577,
+        "win_rate_ci": [
+          0.4020618556701031,
+          0.6082474226804123
+        ]
+      },
+      {
+        "pair": "5-6",
+        "modelA": "Falcon-Agent",
+        "modelB": "CastStar",
+        "delta_mase_rank": 0.07216494845360799,
+        "independent_ci": [
+          -4.938144329896907,
+          5.164948453608247
+        ],
+        "independent_survives": false,
+        "clustered_ci": [
+          -4.217391304347828,
+          4.487804878048781
+        ],
+        "clustered_survives": false,
+        "delta_gmean": -0.010555296105646206,
+        "win_rate": 0.5154639175257731,
+        "win_rate_ci": [
+          0.41237113402061853,
+          0.6185567010309279
+        ]
+      },
+      {
+        "pair": "6-7",
+        "modelA": "CastStar",
+        "modelB": "limix_moe",
+        "delta_mase_rank": 0.010309278350515427,
+        "independent_ci": [
+          -3.2989690721649474,
+          3.237113402061855
+        ],
+        "independent_survives": false,
+        "clustered_ci": [
+          -2.4907407407407405,
+          3.0131578947368425
+        ],
+        "clustered_survives": false,
+        "delta_gmean": 0.004169345387188161,
+        "win_rate": 0.5257731958762887,
+        "win_rate_ci": [
+          0.422680412371134,
+          0.6288659793814433
+        ]
+      },
+      {
+        "pair": "7-8",
+        "modelA": "limix_moe",
+        "modelB": "TIMEHEDGE",
+        "delta_mase_rank": 1.422680412371136,
+        "independent_ci": [
+          -2.7525773195876297,
+          5.587628865979383
+        ],
+        "independent_survives": false,
+        "clustered_ci": [
+          -3.795454545454543,
+          6.172727272727272
+        ],
+        "clustered_survives": false,
+        "delta_gmean": -0.009720410538577307,
+        "win_rate": 0.4948453608247423,
+        "win_rate_ci": [
+          0.3917525773195876,
+          0.5979381443298969
+        ]
+      },
+      {
+        "pair": "8-9",
+        "modelA": "TIMEHEDGE",
+        "modelB": "RegLab-AH-1",
+        "delta_mase_rank": 0.6494845360824719,
+        "independent_ci": [
+          -3.8762886597938113,
+          5.319587628865978
+        ],
+        "independent_survives": false,
+        "clustered_ci": [
+          -5.457831325301203,
+          7.481927710843376
+        ],
+        "clustered_survives": false,
+        "delta_gmean": 0.014913305397964205,
+        "win_rate": 0.5051546391752577,
+        "win_rate_ci": [
+          0.4020618556701031,
+          0.6082474226804123
+        ]
+      },
+      {
+        "pair": "9-10",
+        "modelA": "RegLab-AH-1",
+        "modelB": "RacineCast-1-NC",
+        "delta_mase_rank": 1.3298969072164972,
+        "independent_ci": [
+          -0.051546391752577136,
+          2.7010309278350526
+        ],
+        "independent_survives": false,
+        "clustered_ci": [
+          0.1264367816091969,
+          2.4141414141414153
+        ],
+        "clustered_survives": true,
+        "delta_gmean": 0.0073057969042957804,
+        "win_rate": 0.5773195876288659,
+        "win_rate_ci": [
+          0.4742268041237113,
+          0.6701030927835051
+        ]
+      }
+    ],
+    "headline_counts": {
+      "mase_rank_both_schemes_adjacent_of_9": 0,
+      "mase_rank_both_schemes_all_of_45": 12,
+      "gmean_both_schemes_adjacent_of_9": 2,
+      "gmean_both_schemes_all_of_45": 23,
+      "expected": {
+        "mase_adjacent": 0,
+        "mase_all45": 12,
+        "gmean_adjacent": 2,
+        "gmean_all45": 23
+      },
+      "unchanged_at_200k": true
+    },
+    "endpoint_sanity_checks": {
+      "pair_1_2_independent_ours": [
+        -0.01,
+        8.51
+      ],
+      "pair_1_2_independent_critic_ref": [
+        0.0,
+        8.49
+      ],
+      "pair_9_10_independent_ours": [
+        -0.05,
+        2.7
+      ],
+      "pair_9_10_independent_critic_ref": [
+        -0.05,
+        2.71
+      ],
+      "pair_9_10_clustered_ours": [
+        0.13,
+        2.41
+      ],
+      "pair_9_10_clustered_critic_ref": [
+        0.13,
+        2.41
+      ],
+      "note": "Sanity-check only, not asserted exact: the critic's run used its own seed, and MASE_Rank moves in steps of 1/97 =~ 0.0103, so a near-zero bound can land a step either side between runs (paper text: the pair-1-2 independent lower bound 'sits at zero' and the pair-9-10 clustered lower bound 'holds near 0.13 across three seeds')."
+    },
+    "latex_table1_body": "1-2  & 4.25 & [$-$0.01, 8.51] & [$-$1.42, 10.40] & $-$0.0155 & 0.62 [0.53, 0.71] \\\\\n2-3  & 0.44 & [$-$4.55, 5.40] & [$-$6.20, \\phantom{1}6.63] & \\phantom{$-$}0.0401 & 0.51 [0.40, 0.61] \\\\\n3-4  & 1.94 & [$-$0.38, 4.40] & [$-$0.09, \\phantom{1}3.82] & \\phantom{$-$}0.0048 & 0.63 [0.54, 0.72] \\\\\n4-5  & 0.91 & [$-$3.72, 5.57] & [$-$3.75, \\phantom{1}4.90] & \\phantom{$-$}0.0110 & 0.51 [0.40, 0.61] \\\\\n5-6  & 0.07 & [$-$4.94, 5.16] & [$-$4.22, \\phantom{1}4.49] & $-$0.0106 & 0.52 [0.41, 0.62] \\\\\n6-7  & 0.01 & [$-$3.30, 3.24] & [$-$2.49, \\phantom{1}3.01] & \\phantom{$-$}0.0042 & 0.53 [0.42, 0.63] \\\\\n7-8  & 1.42 & [$-$2.75, 5.59] & [$-$3.80, \\phantom{1}6.17] & $-$0.0097 & 0.49 [0.39, 0.60] \\\\\n8-9  & 0.65 & [$-$3.88, 5.32] & [$-$5.46, \\phantom{1}7.48] & \\phantom{$-$}0.0149 & 0.51 [0.40, 0.61] \\\\\n9-10 & 1.33 & [$-$0.05, 2.70] & [\\phantom{$-$}0.13, \\phantom{1}2.41] & \\phantom{$-$}0.0073 & 0.58 [0.47, 0.67] \\\\"
+  },
+  "computation2_crps_holm_at_100k": {
+    "seed": 20260907,
+    "B_holm": 100000,
+    "holm_alpha": 0.05,
+    "top10_crps_rank_order": [
+      "STRIDE w/ Synapse",
+      "EXAONE-Forecast-Agent",
+      "LS-MoE",
+      "CastStar",
+      "LS-Agent",
+      "TIMEHEDGE",
+      "Falcon-Agent",
+      "RegLab-AH-1",
+      "limix_moe",
+      "RacineCast-1-NC"
+    ],
+    "raw_significant_count_of_45": 16,
+    "raw_both_schemes_survive_all45": 16,
+    "raw_both_schemes_matches_critic_checks_json": true,
+    "holm_survivor_count_of_45": 0,
+    "critic_external_claim_holm_survivors": 0,
+    "matches_critic_external_claim": true,
+    "per_pair_p_both": {
+      "1-2": 0.111,
+      "1-3": 0.04178,
+      "1-4": 0.03214,
+      "1-5": 0.00484,
+      "1-6": 0.02398,
+      "1-7": 0.008,
+      "1-8": 0.00418,
+      "1-9": 0.00258,
+      "1-10": 0.00246,
+      "2-3": 0.85128,
+      "2-4": 0.75194,
+      "2-5": 0.40584,
+      "2-6": 0.4468,
+      "2-7": 0.28144,
+      "2-8": 0.08356,
+      "2-9": 0.12718,
+      "2-10": 0.04136,
+      "3-4": 0.7673,
+      "3-5": 0.02918,
+      "3-6": 0.27476,
+      "3-7": 0.16736,
+      "3-8": 0.0106,
+      "3-9": 0.0272,
+      "3-10": 0.00126,
+      "4-5": 0.4361,
+      "4-6": 0.44884,
+      "4-7": 0.45452,
+      "4-8": 0.04648,
+      "4-9": 0.1189,
+      "4-10": 0.0209,
+      "5-6": 0.85402,
+      "5-7": 0.75178,
+      "5-8": 0.1572,
+      "5-9": 0.25536,
+      "5-10": 0.04962,
+      "6-7": 0.89974,
+      "6-8": 0.44554,
+      "6-9": 0.37904,
+      "6-10": 0.24882,
+      "7-8": 0.49472,
+      "7-9": 0.49356,
+      "7-10": 0.22048,
+      "8-9": 0.99502,
+      "8-10": 0.21254,
+      "9-10": 0.64104
+    },
+    "holm_reject": {
+      "1-2": false,
+      "1-3": false,
+      "1-4": false,
+      "1-5": false,
+      "1-6": false,
+      "1-7": false,
+      "1-8": false,
+      "1-9": false,
+      "1-10": false,
+      "2-3": false,
+      "2-4": false,
+      "2-5": false,
+      "2-6": false,
+      "2-7": false,
+      "2-8": false,
+      "2-9": false,
+      "2-10": false,
+      "3-4": false,
+      "3-5": false,
+      "3-6": false,
+      "3-7": false,
+      "3-8": false,
+      "3-9": false,
+      "3-10": false,
+      "4-5": false,
+      "4-6": false,
+      "4-7": false,
+      "4-8": false,
+      "4-9": false,
+      "4-10": false,
+      "5-6": false,
+      "5-7": false,
+      "5-8": false,
+      "5-9": false,
+      "5-10": false,
+      "6-7": false,
+      "6-8": false,
+      "6-9": false,
+      "6-10": false,
+      "7-8": false,
+      "7-9": false,
+      "7-10": false,
+      "8-9": false,
+      "8-10": false,
+      "9-10": false
+    }
+  },
+  "warnings_mase_pipeline": [],
+  "warnings_crps_pipeline": []
+}

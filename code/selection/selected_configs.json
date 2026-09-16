@@ -1,0 +1,146 @@
+{
+  "seed": 20260912,
+  "rule_version": 2,
+  "eligibility_filter": {
+    "min_median_length": 1024,
+    "eligible_of_97": 70,
+    "ineligible_of_97": 27
+  },
+  "selected": [
+    {
+      "config": "bizitobs_service/10S/short",
+      "base_dataset": "bizitobs_service",
+      "frequency": "10S",
+      "term": "short",
+      "domain": "Web/CloudOps",
+      "median_length": 8835.0
+    },
+    {
+      "config": "m4_daily/D/short",
+      "base_dataset": "m4_daily",
+      "frequency": "D",
+      "term": "short",
+      "domain": "Econ/Fin",
+      "median_length": 2954.0
+    },
+    {
+      "config": "m_dense/H/short",
+      "base_dataset": "m_dense",
+      "frequency": "H",
+      "term": "short",
+      "domain": "Transport",
+      "median_length": 17520.0
+    },
+    {
+      "config": "solar/10T/short",
+      "base_dataset": "solar",
+      "frequency": "10T",
+      "term": "short",
+      "domain": "Energy",
+      "median_length": 52560.0
+    },
+    {
+      "config": "us_births/W/short",
+      "base_dataset": "us_births",
+      "frequency": "W",
+      "term": "short",
+      "domain": "Healthcare",
+      "median_length": 1043.0
+    },
+    {
+      "config": "bizitobs_application/10S/medium",
+      "base_dataset": "bizitobs_application",
+      "frequency": "10S",
+      "term": "medium",
+      "domain": "Web/CloudOps",
+      "median_length": 8834.0
+    },
+    {
+      "config": "ett1/H/medium",
+      "base_dataset": "ett1",
+      "frequency": "H",
+      "term": "medium",
+      "domain": "Energy",
+      "median_length": 17420.0
+    },
+    {
+      "config": "jena_weather/10T/medium",
+      "base_dataset": "jena_weather",
+      "frequency": "10T",
+      "term": "medium",
+      "domain": "Nature",
+      "median_length": 52704.0
+    },
+    {
+      "config": "bizitobs_l2c/H/long",
+      "base_dataset": "bizitobs_l2c",
+      "frequency": "H",
+      "term": "long",
+      "domain": "Web/CloudOps",
+      "median_length": 2664.0
+    },
+    {
+      "config": "electricity/H/long",
+      "base_dataset": "electricity",
+      "frequency": "H",
+      "term": "long",
+      "domain": "Energy",
+      "median_length": 35064.0
+    },
+    {
+      "config": "ett2/15T/long",
+      "base_dataset": "ett2",
+      "frequency": "15T",
+      "term": "long",
+      "domain": "Energy",
+      "median_length": 69680.0
+    },
+    {
+      "config": "loop_seattle/5T/long",
+      "base_dataset": "loop_seattle",
+      "frequency": "5T",
+      "term": "long",
+      "domain": "Transport",
+      "median_length": 105120.0
+    }
+  ],
+  "term_allocation": {
+    "counts_of_97": {
+      "short": 55,
+      "medium": 21,
+      "long": 21
+    },
+    "eligible_counts": {
+      "short": 28,
+      "medium": 21,
+      "long": 21
+    },
+    "quota": {
+      "short": 4.8,
+      "medium": 3.6,
+      "long": 3.6
+    },
+    "remainder": {
+      "short": 0.7999999999999998,
+      "medium": 0.6000000000000001,
+      "long": 0.6000000000000001
+    },
+    "slots": {
+      "short": 5,
+      "medium": 3,
+      "long": 4
+    }
+  },
+  "domain_composition": {
+    "Web/CloudOps": 3,
+    "Econ/Fin": 1,
+    "Transport": 2,
+    "Energy": 4,
+    "Healthcare": 1,
+    "Nature": 1
+  },
+  "domains_with_zero_eligible_configs": [],
+  "universe_size": 97,
+  "input_csv_md5": "f2a6debaecc39fce06ecec7b22828e7d",
+  "config_median_lengths_json_md5": "3ce1effd0f86b27ef5144a6ed3573909"
+}
