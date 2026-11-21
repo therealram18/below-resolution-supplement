@@ -1,0 +1,2 @@
+dataset,model,eval_metrics/MSE[mean],eval_metrics/MSE[0.5],eval_metrics/MAE[0.5],eval_metrics/MASE[0.5],eval_metrics/MAPE[0.5],eval_metrics/sMAPE[0.5],eval_metrics/MSIS,eval_metrics/RMSE[mean],eval_metrics/NRMSE[mean],eval_metrics/ND[0.5],eval_metrics/mean_weighted_sum_quantile_loss,domain,num_variates
+bizitobs_l2c/5T/medium,chronos_bolt_base,197.2921768707483,197.2921768707483,8.990658216411564,0.8906960683860647,0.6454952854295497,0.947499468537415,21.653921121151665,14.046073361290276,0.739030015257979,0.47304083553807946,0.42863847097023894,Web/CloudOps,7

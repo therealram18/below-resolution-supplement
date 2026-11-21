@@ -1,0 +1,2 @@
+dataset,model,eval_metrics/MSE[mean],eval_metrics/MSE[0.5],eval_metrics/MAE[0.5],eval_metrics/MASE[0.5],eval_metrics/MAPE[0.5],eval_metrics/sMAPE[0.5],eval_metrics/MSIS,eval_metrics/RMSE[mean],eval_metrics/NRMSE[mean],eval_metrics/ND[0.5],eval_metrics/mean_weighted_sum_quantile_loss,domain,num_variates
+bitbrains_rnd/5T/short,chronos_bolt_base,1906348.4095145434,1906348.4095145434,140.12252459889615,1.7556273203257373,1.5174524371417173,0.6831417806186677,56.5297649387357,1380.705765003733,5.649449416642759,0.5733409209395198,0.47979340013719873,Web/CloudOps,2

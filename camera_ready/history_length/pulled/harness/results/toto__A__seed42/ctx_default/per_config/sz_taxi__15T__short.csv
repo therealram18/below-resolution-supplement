@@ -1,0 +1,2 @@
+dataset,model,eval_metrics/MSE[mean],eval_metrics/MSE[0.5],eval_metrics/MAE[0.5],eval_metrics/MASE[0.5],eval_metrics/MAPE[0.5],eval_metrics/sMAPE[0.5],eval_metrics/MSIS,eval_metrics/RMSE[mean],eval_metrics/NRMSE[mean],eval_metrics/ND[0.5],eval_metrics/mean_weighted_sum_quantile_loss,domain,num_variates
+sz_taxi/15T/short,toto__A__seed42,35.74939367273352,17.176429161658653,2.7586736993475274,0.5500096092271815,927661231794.8434,0.3943066090454549,3.8721174942406913,5.979079667702507,0.5590695437694057,0.2579478000324946,0.20259153839662725,Transport,1

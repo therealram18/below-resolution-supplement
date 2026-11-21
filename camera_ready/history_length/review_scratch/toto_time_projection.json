@@ -1,0 +1,641 @@
+{
+ "assumptions": {
+  "width": 768,
+  "depth": 12,
+  "gpu_mb": 81000
+ },
+ "rows": [
+  {
+   "config": "bitbrains_fast_storage/5T/short",
+   "batch_doc": 1,
+   "batches_doc": 22500,
+   "minutes_doc": 83.4,
+   "batch_512": 11,
+   "batches_512": 2046,
+   "minutes_512": 10.4
+  },
+  {
+   "config": "bitbrains_rnd/5T/short",
+   "batch_doc": 1,
+   "batches_doc": 9000,
+   "minutes_doc": 33.4,
+   "batch_512": 11,
+   "batches_512": 819,
+   "minutes_512": 4.2
+  },
+  {
+   "config": "electricity/15T/long",
+   "batch_doc": 2,
+   "batches_doc": 3700,
+   "minutes_doc": 25.5,
+   "batch_512": 16,
+   "batches_512": 463,
+   "minutes_512": 13.5
+  },
+  {
+   "config": "electricity/15T/medium",
+   "batch_doc": 2,
+   "batches_doc": 3700,
+   "minutes_doc": 21.2,
+   "batch_512": 16,
+   "batches_512": 463,
+   "minutes_512": 9.2
+  },
+  {
+   "config": "loop_seattle/5T/medium",
+   "batch_doc": 2,
+   "batches_doc": 3230,
+   "minutes_doc": 18.5,
+   "batch_512": 16,
+   "batches_512": 404,
+   "minutes_512": 8.0
+  },
+  {
+   "config": "bitbrains_fast_storage/5T/long",
+   "batch_doc": 1,
+   "batches_doc": 2500,
+   "minutes_doc": 17.2,
+   "batch_512": 11,
+   "batches_512": 228,
+   "minutes_512": 9.1
+  },
+  {
+   "config": "loop_seattle/5T/long",
+   "batch_doc": 2,
+   "batches_doc": 2423,
+   "minutes_doc": 16.7,
+   "batch_512": 16,
+   "batches_512": 303,
+   "minutes_512": 8.8
+  },
+  {
+   "config": "bitbrains_fast_storage/5T/medium",
+   "batch_doc": 1,
+   "batches_doc": 2500,
+   "minutes_doc": 14.3,
+   "batch_512": 11,
+   "batches_512": 228,
+   "minutes_512": 6.2
+  },
+  {
+   "config": "electricity/15T/short",
+   "batch_doc": 2,
+   "batches_doc": 3700,
+   "minutes_doc": 13.7,
+   "batch_512": 16,
+   "batches_512": 463,
+   "minutes_512": 1.7
+  },
+  {
+   "config": "electricity/H/short",
+   "batch_doc": 2,
+   "batches_doc": 3700,
+   "minutes_doc": 13.7,
+   "batch_512": 16,
+   "batches_512": 463,
+   "minutes_512": 1.7
+  },
+  {
+   "config": "loop_seattle/5T/short",
+   "batch_doc": 2,
+   "batches_doc": 3230,
+   "minutes_doc": 12.0,
+   "batch_512": 16,
+   "batches_512": 404,
+   "minutes_512": 1.5
+  },
+  {
+   "config": "loop_seattle/H/short",
+   "batch_doc": 2,
+   "batches_doc": 3069,
+   "minutes_doc": 11.4,
+   "batch_512": 16,
+   "batches_512": 384,
+   "minutes_512": 1.4
+  },
+  {
+   "config": "kdd_cup_2018/H/short",
+   "batch_doc": 2,
+   "batches_doc": 2700,
+   "minutes_doc": 10.0,
+   "batch_512": 16,
+   "batches_512": 338,
+   "minutes_512": 1.3
+  },
+  {
+   "config": "electricity/H/medium",
+   "batch_doc": 2,
+   "batches_doc": 1480,
+   "minutes_doc": 8.5,
+   "batch_512": 16,
+   "batches_512": 185,
+   "minutes_512": 3.7
+  },
+  {
+   "config": "bitbrains_rnd/5T/long",
+   "batch_doc": 1,
+   "batches_doc": 1000,
+   "minutes_doc": 6.9,
+   "batch_512": 11,
+   "batches_512": 91,
+   "minutes_512": 3.6
+  },
+  {
+   "config": "electricity/H/long",
+   "batch_doc": 2,
+   "batches_doc": 925,
+   "minutes_doc": 6.4,
+   "batch_512": 16,
+   "batches_512": 116,
+   "minutes_512": 3.4
+  },
+  {
+   "config": "bitbrains_rnd/5T/medium",
+   "batch_doc": 1,
+   "batches_doc": 1000,
+   "minutes_doc": 5.7,
+   "batch_512": 11,
+   "batches_512": 91,
+   "minutes_512": 2.5
+  },
+  {
+   "config": "solar/10T/short",
+   "batch_doc": 2,
+   "batches_doc": 1370,
+   "minutes_doc": 5.1,
+   "batch_512": 16,
+   "batches_512": 172,
+   "minutes_512": 0.6
+  },
+  {
+   "config": "solar/H/short",
+   "batch_doc": 2,
+   "batches_doc": 1302,
+   "minutes_doc": 4.8,
+   "batch_512": 16,
+   "batches_512": 163,
+   "minutes_512": 0.6
+  },
+  {
+   "config": "solar/10T/medium",
+   "batch_doc": 2,
+   "batches_doc": 754,
+   "minutes_doc": 4.3,
+   "batch_512": 16,
+   "batches_512": 95,
+   "minutes_512": 1.9
+  },
+  {
+   "config": "solar/10T/long",
+   "batch_doc": 2,
+   "batches_doc": 548,
+   "minutes_doc": 3.8,
+   "batch_512": 16,
+   "batches_512": 69,
+   "minutes_512": 2.0
+  },
+  {
+   "config": "loop_seattle/H/long",
+   "batch_doc": 2,
+   "batches_doc": 323,
+   "minutes_doc": 2.2,
+   "batch_512": 16,
+   "batches_512": 41,
+   "minutes_512": 1.2
+  },
+  {
+   "config": "kdd_cup_2018/H/long",
+   "batch_doc": 2,
+   "batches_doc": 270,
+   "minutes_doc": 1.9,
+   "batch_512": 16,
+   "batches_512": 34,
+   "minutes_512": 1.0
+  },
+  {
+   "config": "loop_seattle/H/medium",
+   "batch_doc": 2,
+   "batches_doc": 323,
+   "minutes_doc": 1.8,
+   "batch_512": 16,
+   "batches_512": 41,
+   "minutes_512": 0.8
+  },
+  {
+   "config": "kdd_cup_2018/H/medium",
+   "batch_doc": 2,
+   "batches_doc": 270,
+   "minutes_doc": 1.5,
+   "batch_512": 16,
+   "batches_512": 34,
+   "minutes_512": 0.7
+  },
+  {
+   "config": "sz_taxi/15T/short",
+   "batch_doc": 4,
+   "batches_doc": 273,
+   "minutes_doc": 1.3,
+   "batch_512": 16,
+   "batches_512": 69,
+   "minutes_512": 0.3
+  },
+  {
+   "config": "bizitobs_service/10S/short",
+   "batch_doc": 1,
+   "batches_doc": 315,
+   "minutes_doc": 1.2,
+   "batch_512": 11,
+   "batches_512": 29,
+   "minutes_512": 0.1
+  },
+  {
+   "config": "electricity/D/short",
+   "batch_doc": 8,
+   "batches_doc": 232,
+   "minutes_doc": 1.1,
+   "batch_512": 16,
+   "batches_512": 116,
+   "minutes_512": 0.4
+  },
+  {
+   "config": "m_dense/H/short",
+   "batch_doc": 2,
+   "batches_doc": 300,
+   "minutes_doc": 1.1,
+   "batch_512": 16,
+   "batches_512": 38,
+   "minutes_512": 0.1
+  },
+  {
+   "config": "solar/H/long",
+   "batch_doc": 2,
+   "batches_doc": 137,
+   "minutes_doc": 0.9,
+   "batch_512": 16,
+   "batches_512": 18,
+   "minutes_512": 0.5
+  },
+  {
+   "config": "jena_weather/10T/short",
+   "batch_doc": 1,
+   "batches_doc": 20,
+   "minutes_doc": 0.8,
+   "batch_512": 1,
+   "batches_512": 20,
+   "minutes_512": 0.1
+  },
+  {
+   "config": "solar/H/medium",
+   "batch_doc": 2,
+   "batches_doc": 137,
+   "minutes_doc": 0.8,
+   "batch_512": 16,
+   "batches_512": 18,
+   "minutes_512": 0.4
+  },
+  {
+   "config": "jena_weather/10T/medium",
+   "batch_doc": 1,
+   "batches_doc": 11,
+   "minutes_doc": 0.7,
+   "batch_512": 1,
+   "batches_512": 11,
+   "minutes_512": 0.3
+  },
+  {
+   "config": "jena_weather/H/short",
+   "batch_doc": 1,
+   "batches_doc": 19,
+   "minutes_doc": 0.7,
+   "batch_512": 1,
+   "batches_512": 19,
+   "minutes_512": 0.1
+  },
+  {
+   "config": "hierarchical_sales/D/short",
+   "batch_doc": 7,
+   "batches_doc": 118,
+   "minutes_doc": 0.6,
+   "batch_512": 16,
+   "batches_512": 52,
+   "minutes_512": 0.2
+  },
+  {
+   "config": "jena_weather/10T/long",
+   "batch_doc": 1,
+   "batches_doc": 8,
+   "minutes_doc": 0.6,
+   "batch_512": 1,
+   "batches_512": 8,
+   "minutes_512": 0.3
+  },
+  {
+   "config": "sz_taxi/15T/long",
+   "batch_doc": 7,
+   "batches_doc": 23,
+   "minutes_doc": 0.4,
+   "batch_512": 16,
+   "batches_512": 10,
+   "minutes_512": 0.3
+  },
+  {
+   "config": "bizitobs_l2c/5T/short",
+   "batch_doc": 1,
+   "batches_doc": 20,
+   "minutes_doc": 0.3,
+   "batch_512": 3,
+   "batches_512": 7,
+   "minutes_512": 0.0
+  },
+  {
+   "config": "bizitobs_service/10S/medium",
+   "batch_doc": 1,
+   "batches_doc": 42,
+   "minutes_doc": 0.3,
+   "batch_512": 11,
+   "batches_512": 4,
+   "minutes_512": 0.1
+  },
+  {
+   "config": "ett1/15T/medium",
+   "batch_doc": 1,
+   "batches_doc": 15,
+   "minutes_doc": 0.3,
+   "batch_512": 3,
+   "batches_512": 5,
+   "minutes_512": 0.1
+  },
+  {
+   "config": "ett1/15T/short",
+   "batch_doc": 1,
+   "batches_doc": 20,
+   "minutes_doc": 0.3,
+   "batch_512": 3,
+   "batches_512": 7,
+   "minutes_512": 0.0
+  },
+  {
+   "config": "ett1/H/short",
+   "batch_doc": 1,
+   "batches_doc": 20,
+   "minutes_doc": 0.3,
+   "batch_512": 3,
+   "batches_512": 7,
+   "minutes_512": 0.0
+  },
+  {
+   "config": "ett2/15T/medium",
+   "batch_doc": 1,
+   "batches_doc": 15,
+   "minutes_doc": 0.3,
+   "batch_512": 3,
+   "batches_512": 5,
+   "minutes_512": 0.1
+  },
+  {
+   "config": "ett2/15T/short",
+   "batch_doc": 1,
+   "batches_doc": 20,
+   "minutes_doc": 0.3,
+   "batch_512": 3,
+   "batches_512": 7,
+   "minutes_512": 0.0
+  },
+  {
+   "config": "ett2/H/short",
+   "batch_doc": 1,
+   "batches_doc": 20,
+   "minutes_doc": 0.3,
+   "batch_512": 3,
+   "batches_512": 7,
+   "minutes_512": 0.0
+  },
+  {
+   "config": "m_dense/H/long",
+   "batch_doc": 2,
+   "batches_doc": 45,
+   "minutes_doc": 0.3,
+   "batch_512": 16,
+   "batches_512": 6,
+   "minutes_512": 0.2
+  },
+  {
+   "config": "m_dense/H/medium",
+   "batch_doc": 2,
+   "batches_doc": 60,
+   "minutes_doc": 0.3,
+   "batch_512": 16,
+   "batches_512": 8,
+   "minutes_512": 0.2
+  },
+  {
+   "config": "sz_taxi/15T/medium",
+   "batch_doc": 5,
+   "batches_doc": 32,
+   "minutes_doc": 0.3,
+   "batch_512": 16,
+   "batches_512": 10,
+   "minutes_512": 0.2
+  },
+  {
+   "config": "bizitobs_service/10S/long",
+   "batch_doc": 1,
+   "batches_doc": 21,
+   "minutes_doc": 0.2,
+   "batch_512": 11,
+   "batches_512": 2,
+   "minutes_512": 0.1
+  },
+  {
+   "config": "ett1/15T/long",
+   "batch_doc": 1,
+   "batches_doc": 10,
+   "minutes_doc": 0.2,
+   "batch_512": 3,
+   "batches_512": 4,
+   "minutes_512": 0.2
+  },
+  {
+   "config": "ett2/15T/long",
+   "batch_doc": 1,
+   "batches_doc": 10,
+   "minutes_doc": 0.2,
+   "batch_512": 3,
+   "batches_512": 4,
+   "minutes_512": 0.2
+  },
+  {
+   "config": "m4_daily/D/short",
+   "batch_doc": 16,
+   "batches_doc": 265,
+   "minutes_doc": 0.2,
+   "batch_512": 16,
+   "batches_512": 265,
+   "minutes_512": 0.2
+  },
+  {
+   "config": "bizitobs_application/10S/short",
+   "batch_doc": 1,
+   "batches_doc": 15,
+   "minutes_doc": 0.1,
+   "batch_512": 11,
+   "batches_512": 2,
+   "minutes_512": 0.0
+  },
+  {
+   "config": "bizitobs_l2c/5T/long",
+   "batch_doc": 1,
+   "batches_doc": 5,
+   "minutes_doc": 0.1,
+   "batch_512": 3,
+   "batches_512": 2,
+   "minutes_512": 0.1
+  },
+  {
+   "config": "bizitobs_l2c/5T/medium",
+   "batch_doc": 1,
+   "batches_doc": 7,
+   "minutes_doc": 0.1,
+   "batch_512": 3,
+   "batches_512": 3,
+   "minutes_512": 0.1
+  },
+  {
+   "config": "ett1/H/long",
+   "batch_doc": 1,
+   "batches_doc": 3,
+   "minutes_doc": 0.1,
+   "batch_512": 3,
+   "batches_512": 1,
+   "minutes_512": 0.0
+  },
+  {
+   "config": "ett1/H/medium",
+   "batch_doc": 1,
+   "batches_doc": 4,
+   "minutes_doc": 0.1,
+   "batch_512": 3,
+   "batches_512": 2,
+   "minutes_512": 0.1
+  },
+  {
+   "config": "ett2/H/long",
+   "batch_doc": 1,
+   "batches_doc": 3,
+   "minutes_doc": 0.1,
+   "batch_512": 3,
+   "batches_512": 1,
+   "minutes_512": 0.0
+  },
+  {
+   "config": "ett2/H/medium",
+   "batch_doc": 1,
+   "batches_doc": 4,
+   "minutes_doc": 0.1,
+   "batch_512": 3,
+   "batches_512": 2,
+   "minutes_512": 0.1
+  },
+  {
+   "config": "jena_weather/H/long",
+   "batch_doc": 1,
+   "batches_doc": 2,
+   "minutes_doc": 0.1,
+   "batch_512": 1,
+   "batches_512": 2,
+   "minutes_512": 0.1
+  },
+  {
+   "config": "jena_weather/H/medium",
+   "batch_doc": 1,
+   "batches_doc": 2,
+   "minutes_doc": 0.1,
+   "batch_512": 1,
+   "batches_512": 2,
+   "minutes_512": 0.1
+  },
+  {
+   "config": "bizitobs_application/10S/long",
+   "batch_doc": 1,
+   "batches_doc": 1,
+   "minutes_doc": 0.0,
+   "batch_512": 11,
+   "batches_512": 1,
+   "minutes_512": 0.0
+  },
+  {
+   "config": "bizitobs_application/10S/medium",
+   "batch_doc": 1,
+   "batches_doc": 2,
+   "minutes_doc": 0.0,
+   "batch_512": 11,
+   "batches_512": 1,
+   "minutes_512": 0.0
+  },
+  {
+   "config": "bizitobs_l2c/H/long",
+   "batch_doc": 1,
+   "batches_doc": 1,
+   "minutes_doc": 0.0,
+   "batch_512": 3,
+   "batches_512": 1,
+   "minutes_512": 0.0
+  },
+  {
+   "config": "bizitobs_l2c/H/medium",
+   "batch_doc": 1,
+   "batches_doc": 1,
+   "minutes_doc": 0.0,
+   "batch_512": 3,
+   "batches_512": 1,
+   "minutes_512": 0.0
+  },
+  {
+   "config": "bizitobs_l2c/H/short",
+   "batch_doc": 1,
+   "batches_doc": 6,
+   "minutes_doc": 0.0,
+   "batch_512": 3,
+   "batches_512": 2,
+   "minutes_512": 0.0
+  },
+  {
+   "config": "saugeen/D/short",
+   "batch_doc": 2,
+   "batches_doc": 10,
+   "minutes_doc": 0.0,
+   "batch_512": 16,
+   "batches_512": 2,
+   "minutes_512": 0.0
+  },
+  {
+   "config": "saugeen/W/short",
+   "batch_doc": 3,
+   "batches_doc": 7,
+   "minutes_doc": 0.0,
+   "batch_512": 16,
+   "batches_512": 2,
+   "minutes_512": 0.0
+  },
+  {
+   "config": "us_births/D/short",
+   "batch_doc": 2,
+   "batches_doc": 10,
+   "minutes_doc": 0.0,
+   "batch_512": 16,
+   "batches_512": 2,
+   "minutes_512": 0.0
+  },
+  {
+   "config": "us_births/W/short",
+   "batch_doc": 12,
+   "batches_doc": 2,
+   "minutes_doc": 0.0,
+   "batch_512": 16,
+   "batches_512": 1,
+   "minutes_512": 0.0
+  }
+ ],
+ "total_hours_doc": 5.985000000000004,
+ "total_hours_512": 1.7383333333333326
+}

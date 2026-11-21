@@ -1,0 +1,793 @@
+{
+ "drop_tasks_kept": [
+  "ETTh",
+  "ETTm",
+  "dominick",
+  "ercot",
+  "exchange_rate"
+ ],
+ "orig_wr": {
+  "transitions": 11,
+  "with_reversal": 3,
+  "pairs": 8,
+  "events": [
+   {
+    "from_date": "2025-04-08",
+    "to_date": "2025-05-15",
+    "pairs": [
+     [
+      "timesfm-2.0",
+      "moirai_large"
+     ],
+     [
+      "auto_ets",
+      "chronos_base"
+     ]
+    ],
+    "entries_added_or_changed": [
+     "ibm-granite/granite-timeseries-ttm-r2"
+    ]
+   },
+   {
+    "from_date": "2025-05-15",
+    "to_date": "2025-05-28",
+    "pairs": [
+     [
+      "chronos_bolt_base",
+      "moirai_large"
+     ],
+     [
+      "chronos_bolt_base",
+      "timesfm-2.0"
+     ],
+     [
+      "moirai_large",
+      "timesfm-2.0"
+     ],
+     [
+      "chronos_large",
+      "auto_theta"
+     ],
+     [
+      "chronos_base",
+      "auto_ets"
+     ]
+    ],
+    "entries_added_or_changed": [
+     "tirex"
+    ]
+   },
+   {
+    "from_date": "2025-05-28",
+    "to_date": "2025-09-10",
+    "pairs": [
+     [
+      "auto_theta",
+      "auto_ets"
+     ]
+    ],
+    "entries_added_or_changed": [
+     "timecopilot"
+    ]
+   }
+  ],
+  "skipped": [
+   {
+    "from_date": "2024-12-09",
+    "to_date": "2024-12-10",
+    "reason": "fewer than 10 displayed entries at 2024-12-09"
+   },
+   {
+    "from_date": "2025-01-03",
+    "to_date": "2025-03-05",
+    "reason": "task set changed (28 -> 27 tasks, 1 differ)"
+   }
+  ],
+  "flagged_cells_by_state": [
+   0,
+   0,
+   88,
+   88,
+   79,
+   73,
+   73,
+   74,
+   74,
+   74,
+   74,
+   74,
+   74,
+   74
+  ],
+  "n_entries_by_state": [
+   1,
+   17,
+   17,
+   17,
+   17,
+   17,
+   17,
+   18,
+   18,
+   19,
+   19,
+   20,
+   21,
+   21
+  ],
+  "dates": [
+   "2024-12-09",
+   "2024-12-10",
+   "2024-12-12",
+   "2024-12-14",
+   "2024-12-14",
+   "2024-12-14",
+   "2025-01-03",
+   "2025-03-05",
+   "2025-04-08",
+   "2025-05-15",
+   "2025-05-15",
+   "2025-05-28",
+   "2025-09-10",
+   "2025-09-16"
+  ]
+ },
+ "orig_rank": {
+  "transitions": 11,
+  "with_reversal": 3,
+  "pairs": 8,
+  "events": [
+   {
+    "from_date": "2025-04-08",
+    "to_date": "2025-05-15",
+    "pairs": [
+     [
+      "timesfm-2.0",
+      "moirai_large"
+     ],
+     [
+      "auto_ets",
+      "chronos_base"
+     ]
+    ],
+    "entries_added_or_changed": [
+     "ibm-granite/granite-timeseries-ttm-r2"
+    ]
+   },
+   {
+    "from_date": "2025-05-15",
+    "to_date": "2025-05-28",
+    "pairs": [
+     [
+      "chronos_bolt_base",
+      "moirai_large"
+     ],
+     [
+      "chronos_bolt_base",
+      "timesfm-2.0"
+     ],
+     [
+      "moirai_large",
+      "timesfm-2.0"
+     ],
+     [
+      "chronos_large",
+      "auto_theta"
+     ],
+     [
+      "chronos_base",
+      "auto_ets"
+     ]
+    ],
+    "entries_added_or_changed": [
+     "tirex"
+    ]
+   },
+   {
+    "from_date": "2025-05-28",
+    "to_date": "2025-09-10",
+    "pairs": [
+     [
+      "auto_theta",
+      "auto_ets"
+     ]
+    ],
+    "entries_added_or_changed": [
+     "timecopilot"
+    ]
+   }
+  ],
+  "skipped": [
+   {
+    "from_date": "2024-12-09",
+    "to_date": "2024-12-10",
+    "reason": "fewer than 10 displayed entries at 2024-12-09"
+   },
+   {
+    "from_date": "2025-01-03",
+    "to_date": "2025-03-05",
+    "reason": "task set changed (28 -> 27 tasks, 1 differ)"
+   }
+  ],
+  "flagged_cells_by_state": [
+   0,
+   0,
+   88,
+   88,
+   79,
+   73,
+   73,
+   74,
+   74,
+   74,
+   74,
+   74,
+   74,
+   74
+  ],
+  "n_entries_by_state": [
+   1,
+   17,
+   17,
+   17,
+   17,
+   17,
+   17,
+   18,
+   18,
+   19,
+   19,
+   20,
+   21,
+   21
+  ],
+  "dates": [
+   "2024-12-09",
+   "2024-12-10",
+   "2024-12-12",
+   "2024-12-14",
+   "2024-12-14",
+   "2024-12-14",
+   "2025-01-03",
+   "2025-03-05",
+   "2025-04-08",
+   "2025-05-15",
+   "2025-05-15",
+   "2025-05-28",
+   "2025-09-10",
+   "2025-09-16"
+  ]
+ },
+ "orig_gm": {
+  "transitions": 11,
+  "with_reversal": 0,
+  "pairs": 0,
+  "events": [],
+  "skipped": [
+   {
+    "from_date": "2024-12-09",
+    "to_date": "2024-12-10",
+    "reason": "fewer than 10 displayed entries at 2024-12-09"
+   },
+   {
+    "from_date": "2025-01-03",
+    "to_date": "2025-03-05",
+    "reason": "task set changed (28 -> 27 tasks, 1 differ)"
+   }
+  ],
+  "flagged_cells_by_state": [
+   0,
+   0,
+   88,
+   88,
+   79,
+   73,
+   73,
+   74,
+   74,
+   74,
+   74,
+   74,
+   74,
+   74
+  ],
+  "n_entries_by_state": [
+   1,
+   17,
+   17,
+   17,
+   17,
+   17,
+   17,
+   18,
+   18,
+   19,
+   19,
+   20,
+   21,
+   21
+  ],
+  "dates": [
+   "2024-12-09",
+   "2024-12-10",
+   "2024-12-12",
+   "2024-12-14",
+   "2024-12-14",
+   "2024-12-14",
+   "2025-01-03",
+   "2025-03-05",
+   "2025-04-08",
+   "2025-05-15",
+   "2025-05-15",
+   "2025-05-28",
+   "2025-09-10",
+   "2025-09-16"
+  ]
+ },
+ "lib_wr": {
+  "transitions": 11,
+  "with_reversal": 2,
+  "pairs": 4,
+  "events": [
+   {
+    "from_date": "2025-05-15",
+    "to_date": "2025-05-28",
+    "pairs": [
+     [
+      "chronos_large",
+      "auto_ets"
+     ],
+     [
+      "auto_arima",
+      "auto_theta"
+     ]
+    ],
+    "entries_added_or_changed": [
+     "tirex"
+    ]
+   },
+   {
+    "from_date": "2025-05-28",
+    "to_date": "2025-09-10",
+    "pairs": [
+     [
+      "moirai_large",
+      "timesfm-2.0"
+     ],
+     [
+      "chronos_large",
+      "auto_arima"
+     ]
+    ],
+    "entries_added_or_changed": [
+     "timecopilot"
+    ]
+   }
+  ],
+  "skipped": [
+   {
+    "from_date": "2024-12-09",
+    "to_date": "2024-12-10",
+    "reason": "fewer than 10 displayed entries at 2024-12-09"
+   },
+   {
+    "from_date": "2025-01-03",
+    "to_date": "2025-03-05",
+    "reason": "task set changed (28 -> 27 tasks, 1 differ)"
+   }
+  ],
+  "flagged_cells_by_state": [
+   0,
+   0,
+   88,
+   88,
+   79,
+   73,
+   73,
+   74,
+   74,
+   74,
+   74,
+   74,
+   74,
+   74
+  ],
+  "n_entries_by_state": [
+   1,
+   17,
+   17,
+   17,
+   17,
+   17,
+   17,
+   18,
+   18,
+   19,
+   19,
+   20,
+   21,
+   21
+  ],
+  "dates": [
+   "2024-12-09",
+   "2024-12-10",
+   "2024-12-12",
+   "2024-12-14",
+   "2024-12-14",
+   "2024-12-14",
+   "2025-01-03",
+   "2025-03-05",
+   "2025-04-08",
+   "2025-05-15",
+   "2025-05-15",
+   "2025-05-28",
+   "2025-09-10",
+   "2025-09-16"
+  ]
+ },
+ "lib_rank": {
+  "transitions": 11,
+  "with_reversal": 2,
+  "pairs": 4,
+  "events": [
+   {
+    "from_date": "2025-05-15",
+    "to_date": "2025-05-28",
+    "pairs": [
+     [
+      "chronos_large",
+      "auto_ets"
+     ],
+     [
+      "auto_arima",
+      "auto_theta"
+     ]
+    ],
+    "entries_added_or_changed": [
+     "tirex"
+    ]
+   },
+   {
+    "from_date": "2025-05-28",
+    "to_date": "2025-09-10",
+    "pairs": [
+     [
+      "moirai_large",
+      "timesfm-2.0"
+     ],
+     [
+      "chronos_large",
+      "auto_arima"
+     ]
+    ],
+    "entries_added_or_changed": [
+     "timecopilot"
+    ]
+   }
+  ],
+  "skipped": [
+   {
+    "from_date": "2024-12-09",
+    "to_date": "2024-12-10",
+    "reason": "fewer than 10 displayed entries at 2024-12-09"
+   },
+   {
+    "from_date": "2025-01-03",
+    "to_date": "2025-03-05",
+    "reason": "task set changed (28 -> 27 tasks, 1 differ)"
+   }
+  ],
+  "flagged_cells_by_state": [
+   0,
+   0,
+   88,
+   88,
+   79,
+   73,
+   73,
+   74,
+   74,
+   74,
+   74,
+   74,
+   74,
+   74
+  ],
+  "n_entries_by_state": [
+   1,
+   17,
+   17,
+   17,
+   17,
+   17,
+   17,
+   18,
+   18,
+   19,
+   19,
+   20,
+   21,
+   21
+  ],
+  "dates": [
+   "2024-12-09",
+   "2024-12-10",
+   "2024-12-12",
+   "2024-12-14",
+   "2024-12-14",
+   "2024-12-14",
+   "2025-01-03",
+   "2025-03-05",
+   "2025-04-08",
+   "2025-05-15",
+   "2025-05-15",
+   "2025-05-28",
+   "2025-09-10",
+   "2025-09-16"
+  ]
+ },
+ "lib_gm": {
+  "transitions": 11,
+  "with_reversal": 0,
+  "pairs": 0,
+  "events": [],
+  "skipped": [
+   {
+    "from_date": "2024-12-09",
+    "to_date": "2024-12-10",
+    "reason": "fewer than 10 displayed entries at 2024-12-09"
+   },
+   {
+    "from_date": "2025-01-03",
+    "to_date": "2025-03-05",
+    "reason": "task set changed (28 -> 27 tasks, 1 differ)"
+   }
+  ],
+  "flagged_cells_by_state": [
+   0,
+   0,
+   88,
+   88,
+   79,
+   73,
+   73,
+   74,
+   74,
+   74,
+   74,
+   74,
+   74,
+   74
+  ],
+  "n_entries_by_state": [
+   1,
+   17,
+   17,
+   17,
+   17,
+   17,
+   17,
+   18,
+   18,
+   19,
+   19,
+   20,
+   21,
+   21
+  ],
+  "dates": [
+   "2024-12-09",
+   "2024-12-10",
+   "2024-12-12",
+   "2024-12-14",
+   "2024-12-14",
+   "2024-12-14",
+   "2025-01-03",
+   "2025-03-05",
+   "2025-04-08",
+   "2025-05-15",
+   "2025-05-15",
+   "2025-05-28",
+   "2025-09-10",
+   "2025-09-16"
+  ]
+ },
+ "drop_wr": {
+  "transitions": 12,
+  "with_reversal": 1,
+  "pairs": 1,
+  "events": [
+   {
+    "from_date": "2025-05-15",
+    "to_date": "2025-05-28",
+    "pairs": [
+     [
+      "chronos_bolt_tiny",
+      "chronos_bolt_small"
+     ]
+    ],
+    "entries_added_or_changed": [
+     "tirex"
+    ]
+   }
+  ],
+  "skipped": [
+   {
+    "from_date": "2024-12-09",
+    "to_date": "2024-12-10",
+    "reason": "fewer than 10 displayed entries at 2024-12-09"
+   }
+  ],
+  "flagged_cells_by_state": [
+   0,
+   0,
+   15,
+   15,
+   6,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "n_entries_by_state": [
+   1,
+   17,
+   17,
+   17,
+   17,
+   17,
+   17,
+   18,
+   18,
+   19,
+   19,
+   20,
+   21,
+   21
+  ],
+  "dates": [
+   "2024-12-09",
+   "2024-12-10",
+   "2024-12-12",
+   "2024-12-14",
+   "2024-12-14",
+   "2024-12-14",
+   "2025-01-03",
+   "2025-03-05",
+   "2025-04-08",
+   "2025-05-15",
+   "2025-05-15",
+   "2025-05-28",
+   "2025-09-10",
+   "2025-09-16"
+  ]
+ },
+ "drop_rank": {
+  "transitions": 12,
+  "with_reversal": 0,
+  "pairs": 0,
+  "events": [],
+  "skipped": [
+   {
+    "from_date": "2024-12-09",
+    "to_date": "2024-12-10",
+    "reason": "fewer than 10 displayed entries at 2024-12-09"
+   }
+  ],
+  "flagged_cells_by_state": [
+   0,
+   0,
+   15,
+   15,
+   6,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "n_entries_by_state": [
+   1,
+   17,
+   17,
+   17,
+   17,
+   17,
+   17,
+   18,
+   18,
+   19,
+   19,
+   20,
+   21,
+   21
+  ],
+  "dates": [
+   "2024-12-09",
+   "2024-12-10",
+   "2024-12-12",
+   "2024-12-14",
+   "2024-12-14",
+   "2024-12-14",
+   "2025-01-03",
+   "2025-03-05",
+   "2025-04-08",
+   "2025-05-15",
+   "2025-05-15",
+   "2025-05-28",
+   "2025-09-10",
+   "2025-09-16"
+  ]
+ },
+ "drop_gm": {
+  "transitions": 12,
+  "with_reversal": 0,
+  "pairs": 0,
+  "events": [],
+  "skipped": [
+   {
+    "from_date": "2024-12-09",
+    "to_date": "2024-12-10",
+    "reason": "fewer than 10 displayed entries at 2024-12-09"
+   }
+  ],
+  "flagged_cells_by_state": [
+   0,
+   0,
+   15,
+   15,
+   6,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "n_entries_by_state": [
+   1,
+   17,
+   17,
+   17,
+   17,
+   17,
+   17,
+   18,
+   18,
+   19,
+   19,
+   20,
+   21,
+   21
+  ],
+  "dates": [
+   "2024-12-09",
+   "2024-12-10",
+   "2024-12-12",
+   "2024-12-14",
+   "2024-12-14",
+   "2024-12-14",
+   "2025-01-03",
+   "2025-03-05",
+   "2025-04-08",
+   "2025-05-15",
+   "2025-05-15",
+   "2025-05-28",
+   "2025-09-10",
+   "2025-09-16"
+  ]
+ },
+ "runtime_s": 14.9
+}

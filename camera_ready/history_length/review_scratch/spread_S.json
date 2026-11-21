@@ -1,0 +1,94 @@
+{
+ "70": {
+  "S_pct": 11.76,
+  "ln1pS": 0.11120179556682076,
+  "best": "EXAONE-Forecast-Agent",
+  "worst": "RacineCast-1-NC"
+ },
+ "58": {
+  "S_pct": 12.71,
+  "ln1pS": 0.11964387695576711,
+  "best": "EXAONE-Forecast-Agent",
+  "worst": "RacineCast-1-NC"
+ },
+ "12": {
+  "S_pct": 9.34,
+  "ln1pS": 0.08926187558410811,
+  "best": "STRIDE w/ Synapse",
+  "worst": "TIMEHEDGE"
+ },
+ "loo_70": [
+  [
+   "bitbrains_fast_storage",
+   12.27
+  ],
+  [
+   "bitbrains_rnd",
+   12.31
+  ],
+  [
+   "bizitobs_application",
+   12.98
+  ],
+  [
+   "bizitobs_l2c",
+   12.84
+  ],
+  [
+   "bizitobs_service",
+   12.59
+  ],
+  [
+   "electricity",
+   12.97
+  ],
+  [
+   "ett1",
+   8.51
+  ],
+  [
+   "ett2",
+   8.93
+  ],
+  [
+   "hierarchical_sales",
+   11.94
+  ],
+  [
+   "jena_weather",
+   13.22
+  ],
+  [
+   "kdd_cup_2018",
+   10.95
+  ],
+  [
+   "loop_seattle",
+   12.9
+  ],
+  [
+   "m4_daily",
+   11.92
+  ],
+  [
+   "m_dense",
+   11.72
+  ],
+  [
+   "saugeen",
+   12.11
+  ],
+  [
+   "solar",
+   9.14
+  ],
+  [
+   "sz_taxi",
+   12.31
+  ],
+  [
+   "us_births",
+   12.11
+  ]
+ ]
+}

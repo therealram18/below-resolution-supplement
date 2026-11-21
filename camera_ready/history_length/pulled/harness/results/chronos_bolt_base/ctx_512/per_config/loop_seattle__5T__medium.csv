@@ -1,0 +1,2 @@
+dataset,model,eval_metrics/MSE[mean],eval_metrics/MSE[0.5],eval_metrics/MAE[0.5],eval_metrics/MASE[0.5],eval_metrics/MAPE[0.5],eval_metrics/sMAPE[0.5],eval_metrics/MSIS,eval_metrics/RMSE[mean],eval_metrics/NRMSE[mean],eval_metrics/ND[0.5],eval_metrics/mean_weighted_sum_quantile_loss,domain,num_variates
+loop_seattle/5T/medium,chronos_bolt_base,153.22313715412153,153.22313715412153,7.626184800091912,1.1837413932278744,0.2544257053182344,0.1666983149541298,17.410924144538416,12.37833337546382,0.22023598638175199,0.1356854982680439,0.1146093555669309,Transport,1

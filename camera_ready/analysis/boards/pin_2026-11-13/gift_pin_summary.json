@@ -1,0 +1,642 @@
+{
+ "summary": {
+  "entries": 170,
+  "units": 97,
+  "sources": 28,
+  "top10": [
+   "Taichu-TimeSeries-Agent-v2",
+   "STRIDE w/ Synapse",
+   "RegLab-AH-2",
+   "HCR",
+   "TSRouter",
+   "EXAONE-Forecast-Agent",
+   "limix_moe",
+   "OpenTSLM-TeeMoE",
+   "TW3Cast",
+   "PDM-Nano"
+  ],
+  "res_paper": 15.3194,
+  "res_corrected": 17.2828,
+  "median_gap": 0.4845,
+  "counts": {
+   "paper": {
+    "adjacent": 0,
+    "all": 9,
+    "adjacent_holm": 0,
+    "all_holm": 1
+   },
+   "P-clu": {
+    "adjacent": 0,
+    "all": 9,
+    "adjacent_holm": 0,
+    "all_holm": 1
+   },
+   "CR2-icc": {
+    "adjacent": 0,
+    "all": 8,
+    "adjacent_holm": 0,
+    "all_holm": 0
+   },
+   "CR2-indep": {
+    "adjacent": 0,
+    "all": 8,
+    "adjacent_holm": 0,
+    "all_holm": 0
+   },
+   "CR1": {
+    "adjacent": 0,
+    "all": 9,
+    "adjacent_holm": 0,
+    "all_holm": 1
+   },
+   "wild": {
+    "adjacent": 0,
+    "all": 8,
+    "adjacent_holm": 0,
+    "all_holm": 0
+   },
+   "means-t": {
+    "adjacent": 0,
+    "all": 6,
+    "adjacent_holm": 0,
+    "all_holm": 1
+   }
+  },
+  "tier": {
+   "paper": 2,
+   "CR2-icc": 3,
+   "wild": 3
+  },
+  "tier_members": {
+   "paper": {
+    "size": 2,
+    "members": [
+     "Taichu-TimeSeries-Agent-v2",
+     "STRIDE w/ Synapse"
+    ]
+   },
+   "CR2-icc": {
+    "size": 3,
+    "members": [
+     "Taichu-TimeSeries-Agent-v2",
+     "STRIDE w/ Synapse",
+     "EXAONE-Forecast-Agent"
+    ]
+   },
+   "wild": {
+    "size": 3,
+    "members": [
+     "Taichu-TimeSeries-Agent-v2",
+     "STRIDE w/ Synapse",
+     "EXAONE-Forecast-Agent"
+    ]
+   }
+  }
+ },
+ "removal": {
+  "changed": 67,
+  "of": 160
+ },
+ "near_copy": {
+  "changed": 53,
+  "of": 170,
+  "entries": [
+   "CastStar",
+   "ChakraTS",
+   "ChakraTS-Lab",
+   "Crossformer",
+   "EFG-base",
+   "EXAONE-Forecast",
+   "EXAONE-Forecast-Agent",
+   "Falcon-X",
+   "FastCastrage",
+   "ForecastMate",
+   "Granite-FlowState-r1.1",
+   "Granite-PatchTST-FM-r2",
+   "HART-36M",
+   "HCR",
+   "IK-QuadTSFM",
+   "LS-Agent",
+   "LS-MoE",
+   "Lingjiang",
+   "Lingjiang2.0",
+   "MoiraiAgent",
+   "Morpheus-2.0",
+   "PDM-Femto",
+   "PDM-Nano",
+   "PDM-Pico",
+   "PERSONA-AI-T4",
+   "Prism",
+   "RacineCast-1",
+   "RacineCast-1-NC",
+   "RegLab-AH-1",
+   "RegLab-AH-2",
+   "Reverso",
+   "STRIDE (+Chronos-2)",
+   "STRIDE (+Timer-S1)",
+   "STRIDE w/ Synapse",
+   "Simons-178M",
+   "Simons-25M",
+   "Simons-297M",
+   "Simons-60M",
+   "TIMEHEDGE",
+   "TSRouter",
+   "TW3Cast",
+   "Tabby",
+   "TiRex-2-Pretrained",
+   "TiRex-2-Zeroshot",
+   "TimeH2O-v1",
+   "TimesFM-2.5",
+   "TimesFM-3",
+   "Timestral-28M",
+   "TinyCast",
+   "VISIT-2.0",
+   "limix_moe",
+   "t0-gamma",
+   "tafsut"
+  ]
+ },
+ "n_leak_flagged_displayed": 18,
+ "top10_scores": [
+  [
+   "Taichu-TimeSeries-Agent-v2",
+   17.9278,
+   false
+  ],
+  [
+   "STRIDE w/ Synapse",
+   24.0722,
+   false
+  ],
+  [
+   "RegLab-AH-2",
+   28.2887,
+   false
+  ],
+  [
+   "HCR",
+   28.567,
+   false
+  ],
+  [
+   "TSRouter",
+   29.6392,
+   false
+  ],
+  [
+   "EXAONE-Forecast-Agent",
+   31.0825,
+   false
+  ],
+  [
+   "limix_moe",
+   31.3402,
+   false
+  ],
+  [
+   "OpenTSLM-TeeMoE",
+   31.8247,
+   false
+  ],
+  [
+   "TW3Cast",
+   32.1856,
+   false
+  ],
+  [
+   "PDM-Nano",
+   32.1959,
+   false
+  ],
+  [
+   "Timestral-209M",
+   32.5155,
+   false
+  ],
+  [
+   "LS-MoE",
+   32.7423,
+   false
+  ]
+ ],
+ "special": {
+  "Timestral-209M": {
+   "target": "Timestral-209M",
+   "exact_name": "Timestral-209M",
+   "place": 11,
+   "of": 170,
+   "above": {
+    "theta": 0.31958762886597936,
+    "iid": {
+     "ci": [
+      -6.247680412371134,
+      6.701030927835052
+     ],
+     "se": 3.2919637951042,
+     "p": 0.9329
+    },
+    "cluster": {
+     "ci": [
+      -9.0,
+      9.302526062550104
+     ],
+     "se": 4.675464670910921,
+     "p": 0.9283
+    },
+    "p_paper": 0.9329,
+    "sep_paper": false,
+    "cr2_icc": {
+     "se": 4.789818605725295,
+     "df": 12.834509456164655,
+     "p": 0.9478309715173601,
+     "ci95": [
+      -10.041765903483915,
+      10.680941161215875
+     ]
+    },
+    "cr2_indep": {
+     "se": 4.789818605725295,
+     "df": 17.07061153044901,
+     "p": 0.9475780306250985,
+     "ci95": [
+      -9.782862951398872,
+      10.422038209130832
+     ]
+    },
+    "cr1": {
+     "se": 4.73691509763809,
+     "df": 27.0,
+     "p": 0.946706708920715,
+     "ci95": [
+      -9.399759322444034,
+      10.038934580175994
+     ]
+    },
+    "wild_p": 0.94615,
+    "means_t_p": 0.3797696540981049,
+    "icc_hat": 0.22565138772056365,
+    "side": "above",
+    "a": "PDM-Nano",
+    "b": "Timestral-209M",
+    "rank_a": 10,
+    "rank_b": 11
+   },
+   "below": {
+    "theta": 0.2268041237113402,
+    "iid": {
+     "ci": [
+      -6.793814432989691,
+      7.360824742268041
+     ],
+     "se": 3.593408405870022,
+     "p": 0.9417
+    },
+    "cluster": {
+     "ci": [
+      -10.728646723646724,
+      10.117025432180851
+     ],
+     "se": 5.311437308617052,
+     "p": 0.9939
+    },
+    "p_paper": 0.9939,
+    "sep_paper": false,
+    "cr2_icc": {
+     "se": 5.441819796660527,
+     "df": 12.475948474033297,
+     "p": 0.9674150035628278,
+     "ci95": [
+      -11.57992938717091,
+      12.03353763459359
+     ]
+    },
+    "cr2_indep": {
+     "se": 5.441819796660527,
+     "df": 17.07061153044901,
+     "p": 0.9672390013405288,
+     "ci95": [
+      -11.250815403833426,
+      11.704423651256105
+     ]
+    },
+    "cr1": {
+     "se": 5.358302549811338,
+     "df": 27.0,
+     "p": 0.9665490094295595,
+     "ci95": [
+      -10.767524564525676,
+      11.221132811948355
+     ]
+    },
+    "wild_p": 0.96589,
+    "means_t_p": 0.07539538397282751,
+    "icc_hat": 0.27233181670667306,
+    "side": "below",
+    "a": "Timestral-209M",
+    "b": "LS-MoE",
+    "rank_a": 11,
+    "rank_b": 12
+   }
+  },
+  "TimesFM-3": {
+   "target": "TimesFM-3",
+   "exact_name": "TimesFM-3",
+   "place": 28,
+   "of": 170,
+   "above": {
+    "theta": 0.020618556701030927,
+    "iid": {
+     "ci": [
+      -7.092783505154639,
+      7.164948453608248
+     ],
+     "se": 3.66003576407916,
+     "p": 0.9861
+    },
+    "cluster": {
+     "ci": [
+      -10.179513888888888,
+      11.470676977687619
+     ],
+     "se": 5.512924274767454,
+     "p": 0.9648
+    },
+    "p_paper": 0.9861,
+    "sep_paper": false,
+    "cr2_icc": {
+     "se": 5.6898991239981545,
+     "df": 12.849283649683002,
+     "p": 0.9971643578686147,
+     "ci95": [
+      -12.286333900343976,
+      12.327571013746038
+     ]
+    },
+    "cr2_indep": {
+     "se": 5.6898991239981545,
+     "df": 17.07061153044901,
+     "p": 0.9971507135859822,
+     "ci95": [
+      -11.980237725867829,
+      12.02147483926989
+     ]
+    },
+    "cr1": {
+     "se": 5.599314341133631,
+     "df": 27.0,
+     "p": 0.9970890005152652,
+     "ci95": [
+      -11.468225479802644,
+      11.509462593204706
+     ]
+    },
+    "wild_p": 0.99701,
+    "means_t_p": 0.5957646197194625,
+    "icc_hat": 0.22393532297876306,
+    "side": "above",
+    "a": "FastCastrage",
+    "b": "TimesFM-3",
+    "rank_a": 27,
+    "rank_b": 28
+   },
+   "below": {
+    "theta": 0.25773195876288657,
+    "iid": {
+     "ci": [
+      -5.43298969072165,
+      5.65979381443299
+     ],
+     "se": 2.8302825725939966,
+     "p": 0.922
+    },
+    "cluster": {
+     "ci": [
+      -10.05357894736842,
+      8.609298850574703
+     ],
+     "se": 4.857816193339789,
+     "p": 0.8881
+    },
+    "p_paper": 0.922,
+    "sep_paper": false,
+    "cr2_icc": {
+     "se": 5.045222831781557,
+     "df": 11.982368489425319,
+     "p": 0.9601000181198331,
+     "ci95": [
+      -10.736658512396119,
+      11.25212242992189
+     ]
+    },
+    "cr2_indep": {
+     "se": 5.045222831781557,
+     "df": 17.07061153044901,
+     "p": 0.9598513051640931,
+     "ci95": [
+      -10.383404693797072,
+      10.898868611322843
+     ]
+    },
+    "cr1": {
+     "se": 4.949871467406594,
+     "df": 27.0,
+     "p": 0.9588575049521397,
+     "ci95": [
+      -9.898565370717002,
+      10.414029288242777
+     ]
+    },
+    "wild_p": 0.97387,
+    "means_t_p": 0.9650878313420311,
+    "icc_hat": 0.3578214581865505,
+    "side": "below",
+    "a": "TimesFM-3",
+    "b": "ChakraTS-Lab",
+    "rank_a": 28,
+    "rank_b": 29
+   }
+  }
+ },
+ "displayed_order_first30": [
+  [
+   1,
+   "Taichu-TimeSeries-Agent-v2",
+   17.928,
+   false
+  ],
+  [
+   2,
+   "STRIDE w/ Synapse",
+   24.072,
+   false
+  ],
+  [
+   3,
+   "RegLab-AH-2",
+   28.289,
+   false
+  ],
+  [
+   4,
+   "HCR",
+   28.567,
+   false
+  ],
+  [
+   5,
+   "TSRouter",
+   29.639,
+   false
+  ],
+  [
+   6,
+   "EXAONE-Forecast-Agent",
+   31.082,
+   false
+  ],
+  [
+   7,
+   "limix_moe",
+   31.34,
+   false
+  ],
+  [
+   8,
+   "OpenTSLM-TeeMoE",
+   31.825,
+   false
+  ],
+  [
+   9,
+   "TW3Cast",
+   32.186,
+   false
+  ],
+  [
+   10,
+   "PDM-Nano",
+   32.196,
+   false
+  ],
+  [
+   11,
+   "Timestral-209M",
+   32.515,
+   false
+  ],
+  [
+   12,
+   "LS-MoE",
+   32.742,
+   false
+  ],
+  [
+   13,
+   "PERSONA-AI-T4",
+   33.443,
+   false
+  ],
+  [
+   14,
+   "TimeH2O-v1",
+   33.459,
+   false
+  ],
+  [
+   15,
+   "IK-QuadTSFM",
+   35.144,
+   false
+  ],
+  [
+   16,
+   "Falcon-Agent",
+   35.268,
+   false
+  ],
+  [
+   17,
+   "Timestral-123M",
+   35.732,
+   false
+  ],
+  [
+   18,
+   "LS-Agent",
+   35.814,
+   false
+  ],
+  [
+   19,
+   "CastStar",
+   36.804,
+   false
+  ],
+  [
+   20,
+   "TIMEHEDGE",
+   38.742,
+   false
+  ],
+  [
+   21,
+   "PDM-Pico",
+   39.33,
+   false
+  ],
+  [
+   22,
+   "RegLab-AH-1",
+   40.711,
+   false
+  ],
+  [
+   23,
+   "Prism",
+   41.526,
+   false
+  ],
+  [
+   24,
+   "RacineCast-1-NC",
+   42.216,
+   false
+  ],
+  [
+   25,
+   "RacineCast-1",
+   42.526,
+   false
+  ],
+  [
+   26,
+   "Simons-297M",
+   43.433,
+   false
+  ],
+  [
+   27,
+   "FastCastrage",
+   44.598,
+   false
+  ],
+  [
+   28,
+   "TimesFM-3",
+   44.619,
+   false
+  ],
+  [
+   29,
+   "ChakraTS-Lab",
+   44.876,
+   false
+  ],
+  [
+   30,
+   "Cobra-Agent",
+   47.0,
+   false
+  ]
+ ]
+}

@@ -1,0 +1,2 @@
+dataset,model,eval_metrics/MSE[mean],eval_metrics/MSE[0.5],eval_metrics/MAE[0.5],eval_metrics/MASE[0.5],eval_metrics/MAPE[0.5],eval_metrics/sMAPE[0.5],eval_metrics/MSIS,eval_metrics/RMSE[mean],eval_metrics/NRMSE[mean],eval_metrics/ND[0.5],eval_metrics/mean_weighted_sum_quantile_loss,domain,num_variates
+sz_taxi/15T/medium,moirai2_small,17.26103265224359,17.26103265224359,2.82768304286859,0.5519926555291839,10671183053108.076,0.41678427671774837,6.010799122124805,4.154639894412462,0.3866585893614538,0.2631631054203533,0.21361444544466032,Transport,1
