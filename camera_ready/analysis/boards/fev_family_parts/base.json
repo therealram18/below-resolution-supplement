@@ -1,0 +1,1401 @@
+{
+ "fev_commit": "9cf943c388e5cfaf352175ea3c69e408b197d997",
+ "hidden_models": [
+  "PDM-Femto",
+  "PDM-Pico",
+  "Simons-178M",
+  "Simons-25M",
+  "Simons-60M",
+  "Timestral-123M",
+  "Timestral-28M",
+  "Timestral-5M",
+  "Toto-2.0-1B",
+  "Toto-2.0-313m",
+  "Toto-2.0-4m",
+  "timeh2o-v1-tiny"
+ ],
+ "repro_A": {
+  "board": "A",
+  "entries_shown": 40,
+  "order_equal": true,
+  "top10_equal": true,
+  "max_abs_diff_win_rate": 2.220446049250313e-16,
+  "max_abs_diff_skill": 1.1102230246251565e-16,
+  "ties_in_win_rate": 1,
+  "skill_order_equal": true,
+  "top10_board": [
+   "TimeRSI-1.5",
+   "ci-proto",
+   "timeh2o-v1",
+   "Timestral-209M",
+   "PDM-Nano",
+   "TimeRSI",
+   "t0-gamma",
+   "Simons-297M",
+   "timesfm-3",
+   "ChakraTS"
+  ],
+  "top10_own": [
+   "TimeRSI-1.5",
+   "ci-proto",
+   "timeh2o-v1",
+   "Timestral-209M",
+   "PDM-Nano",
+   "TimeRSI",
+   "t0-gamma",
+   "Simons-297M",
+   "timesfm-3",
+   "ChakraTS"
+  ],
+  "n_cells_missing_imputed": 15,
+  "n_cells_leakage_replaced": 56,
+  "incomplete_models": {
+   "AutoARIMA": 4,
+   "AutoETS": 3,
+   "DeepAR": 3,
+   "Stat. Ensemble": 4,
+   "TabPFN-TS": 1
+  },
+  "n_families": 39
+ },
+ "repro_B": {
+  "board": "B",
+  "entries_shown": 40,
+  "order_equal": true,
+  "top10_equal": true,
+  "max_abs_diff_win_rate": 2.220446049250313e-16,
+  "max_abs_diff_skill": 0.0,
+  "ties_in_win_rate": 0,
+  "skill_order_equal": true,
+  "top10_board": [
+   "TimeRSI-1.5",
+   "ci-proto",
+   "TimeRSI",
+   "Timestral-209M",
+   "timeh2o-v1",
+   "PDM-Nano",
+   "t0-gamma",
+   "Simons-297M",
+   "timesfm-3",
+   "ChakraTS"
+  ],
+  "top10_own": [
+   "TimeRSI-1.5",
+   "ci-proto",
+   "TimeRSI",
+   "Timestral-209M",
+   "timeh2o-v1",
+   "PDM-Nano",
+   "t0-gamma",
+   "Simons-297M",
+   "timesfm-3",
+   "ChakraTS"
+  ],
+  "n_cells_missing_imputed": 2,
+  "n_cells_leakage_replaced": 9,
+  "incomplete_models": {
+   "AutoARIMA": 1,
+   "Stat. Ensemble": 1
+  },
+  "n_families": 15
+ },
+ "live_app_default_pool_sensitivity": {
+  "entries": 45,
+  "top10": [
+   "timeh2o-v1",
+   "ci-proto",
+   "Timestral-209M",
+   "Timestral-123M",
+   "t0-gamma",
+   "Simons-297M",
+   "Simons-178M",
+   "Timestral-28M",
+   "timesfm-3",
+   "Simons-60M"
+  ],
+  "same_top10_as_repo_script": false,
+  "note": "space app (fev_pages/fev_bench.py) selects models by type, default pretrained+task-specific+statistical, and does not read the hidden flag"
+ },
+ "live_table": {
+  "checked": "2026-11-11",
+  "result": "not available: HF space autogluon/fev-bench has no tables/ directory in its git tree (tables/ is gitignored and generated at Docker build time by save_tables.py); leaderboard is drawn by a streamlit app, no CSV served",
+  "space_sha": "2ec342772ef2cd3193ee2eced54ec642388158f6",
+  "space_last_modified": "2026-11-09T09:44:12Z"
+ },
+ "sources": {
+  "A_families": [
+   "ETT",
+   "LOOP_SEATTLE",
+   "M_DENSE",
+   "SZ_TAXI",
+   "australian",
+   "bizitobs_l2c",
+   "boomlet",
+   "ecdc",
+   "entsoe",
+   "epf",
+   "ercot",
+   "favorita_stores",
+   "favorita_transactions",
+   "fred_md",
+   "fred_qd",
+   "gvar",
+   "hermes",
+   "hierarchical_sales",
+   "hospital",
+   "hospital_admissions",
+   "jena_weather",
+   "kdd_cup_2022",
+   "m5",
+   "proenfo",
+   "redset",
+   "restaurant",
+   "rohlik_orders",
+   "rohlik_sales",
+   "rossmann",
+   "solar",
+   "solar_with_weather",
+   "uci_air_quality",
+   "uk_covid_nation",
+   "uk_covid_utla",
+   "us_consumption",
+   "walmart",
+   "world",
+   "world_co2",
+   "world_life"
+  ],
+  "B_families": [
+   "ETT",
+   "M_DENSE",
+   "bizitobs_l2c",
+   "boomlet",
+   "epf",
+   "hospital_admissions",
+   "jena_weather",
+   "proenfo",
+   "rohlik_orders",
+   "rossmann",
+   "solar_with_weather",
+   "uci_air_quality",
+   "uk_covid_nation",
+   "us_consumption",
+   "world_co2"
+  ],
+  "C_map": {
+   "monash_traffic": "monash_traffic",
+   "monash_australian_electricity": "monash_australian_electricity",
+   "ercot": "ercot",
+   "ETTm": "ETT",
+   "ETTh": "ETT",
+   "exchange_rate": "exchange_rate",
+   "nn5": "nn5",
+   "monash_nn5_weekly": "monash_nn5_weekly",
+   "monash_weather": "monash_weather",
+   "monash_covid_deaths": "monash_covid_deaths",
+   "monash_fred_md": "monash_fred_md",
+   "m4_quarterly": "m4",
+   "m4_yearly": "m4",
+   "dominick": "dominick",
+   "m5": "m5",
+   "monash_tourism_monthly": "tourism",
+   "monash_tourism_quarterly": "tourism",
+   "monash_tourism_yearly": "tourism",
+   "monash_car_parts": "monash_car_parts",
+   "monash_hospital": "monash_hospital",
+   "monash_cif_2016": "monash_cif_2016",
+   "monash_m1_yearly": "m1",
+   "monash_m1_quarterly": "m1",
+   "monash_m1_monthly": "m1",
+   "monash_m3_monthly": "m3",
+   "monash_m3_yearly": "m3",
+   "monash_m3_quarterly": "m3"
+  }
+ },
+ "pool_tests": {
+  "A_win_rate": {
+   "top": [
+    "TimeRSI-1.5",
+    "ci-proto",
+    "timeh2o-v1",
+    "Timestral-209M",
+    "PDM-Nano",
+    "TimeRSI",
+    "t0-gamma",
+    "Simons-297M",
+    "timesfm-3",
+    "ChakraTS"
+   ],
+   "removal": {
+    "changed": 2,
+    "of": 30,
+    "entries": [
+     "TabPFN-TS",
+     "t0-beta"
+    ],
+    "includes_baseline_or_leakage_model": [
+     "Seasonal Naive",
+     "Chronos-Bolt"
+    ]
+   },
+   "near_copy": {
+    "changed": 8,
+    "of": 40,
+    "entries": [
+     "ChakraTS",
+     "PDM-Nano",
+     "Simons-297M",
+     "TS-ICL",
+     "TimeRSI",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-22m",
+     "timeh2o-v1"
+    ]
+   }
+  },
+  "A_skill_score": {
+   "top": [
+    "TimeRSI-1.5",
+    "ci-proto",
+    "TimeRSI",
+    "timeh2o-v1",
+    "Timestral-209M",
+    "PDM-Nano",
+    "t0-gamma",
+    "timesfm-3",
+    "Simons-297M",
+    "ChakraTS"
+   ],
+   "removal": {
+    "changed": 0,
+    "of": 30,
+    "entries": [],
+    "includes_baseline_or_leakage_model": [
+     "Seasonal Naive",
+     "Chronos-Bolt"
+    ]
+   },
+   "near_copy": {
+    "changed": 0,
+    "of": 40,
+    "entries": []
+   }
+  },
+  "B_win_rate": {
+   "top": [
+    "TimeRSI-1.5",
+    "ci-proto",
+    "TimeRSI",
+    "Timestral-209M",
+    "timeh2o-v1",
+    "PDM-Nano",
+    "t0-gamma",
+    "Simons-297M",
+    "timesfm-3",
+    "ChakraTS"
+   ],
+   "removal": {
+    "changed": 2,
+    "of": 30,
+    "entries": [
+     "TiRex-2",
+     "TimesFM-2.5"
+    ],
+    "includes_baseline_or_leakage_model": [
+     "Seasonal Naive",
+     "Chronos-Bolt"
+    ]
+   },
+   "near_copy": {
+    "changed": 11,
+    "of": 40,
+    "entries": [
+     "ChakraTS",
+     "Chronos-2",
+     "Lingjiang2.0",
+     "PDM-Nano",
+     "PatchTST",
+     "Simons-297M",
+     "TimeRSI",
+     "Timestral-209M",
+     "Toto-2.0-2.5B",
+     "ci-proto",
+     "timesfm-3"
+    ]
+   }
+  },
+  "B_skill_score": {
+   "top": [
+    "TimeRSI-1.5",
+    "TimeRSI",
+    "ci-proto",
+    "timeh2o-v1",
+    "Timestral-209M",
+    "PDM-Nano",
+    "timesfm-3",
+    "t0-gamma",
+    "Simons-297M",
+    "ChakraTS"
+   ],
+   "removal": {
+    "changed": 0,
+    "of": 30,
+    "entries": [],
+    "includes_baseline_or_leakage_model": [
+     "Seasonal Naive",
+     "Chronos-Bolt"
+    ]
+   },
+   "near_copy": {
+    "changed": 0,
+    "of": 40,
+    "entries": []
+   }
+  },
+  "C_win_rate": {
+   "top": [
+    "tirex",
+    "timecopilot",
+    "timesfm-2.0",
+    "moirai_large",
+    "chronos_bolt_base",
+    "moirai_base",
+    "auto_ets",
+    "auto_theta",
+    "chronos_large",
+    "chronos_base"
+   ],
+   "removal": {
+    "changed": 4,
+    "of": 11,
+    "entries": [
+     "auto_arima",
+     "chronos_small",
+     "chronos_tiny",
+     "ttm-r2"
+    ]
+   },
+   "near_copy": {
+    "changed": 13,
+    "of": 21,
+    "entries": [
+     "auto_ets",
+     "auto_theta",
+     "chronos_base",
+     "chronos_bolt_base",
+     "chronos_bolt_mini",
+     "chronos_bolt_small",
+     "chronos_bolt_tiny",
+     "chronos_large",
+     "chronos_mini",
+     "moirai_base",
+     "moirai_large",
+     "moirai_small",
+     "timecopilot"
+    ]
+   }
+  },
+  "C_mean_rank_MASE": {
+   "top": [
+    "tirex",
+    "timecopilot",
+    "timesfm-2.0",
+    "moirai_large",
+    "chronos_bolt_base",
+    "moirai_base",
+    "auto_ets",
+    "auto_theta",
+    "chronos_large",
+    "chronos_base"
+   ],
+   "removal": {
+    "changed": 3,
+    "of": 11,
+    "entries": [
+     "auto_arima",
+     "chronos_tiny",
+     "ttm-r2"
+    ]
+   },
+   "near_copy": {
+    "changed": 13,
+    "of": 21,
+    "entries": [
+     "auto_ets",
+     "auto_theta",
+     "chronos_base",
+     "chronos_bolt_base",
+     "chronos_bolt_mini",
+     "chronos_bolt_small",
+     "chronos_bolt_tiny",
+     "chronos_large",
+     "chronos_mini",
+     "moirai_base",
+     "moirai_large",
+     "moirai_small",
+     "timecopilot"
+    ]
+   }
+  },
+  "C_gmean_rel_MASE": {
+   "top": [
+    "timecopilot",
+    "tirex",
+    "timesfm-2.0",
+    "moirai_large",
+    "chronos_bolt_base",
+    "chronos_base",
+    "moirai_base",
+    "chronos_bolt_small",
+    "chronos_large",
+    "chronos_bolt_mini"
+   ],
+   "removal": {
+    "changed": 0,
+    "of": 11,
+    "entries": []
+   },
+   "near_copy": {
+    "changed": 0,
+    "of": 21,
+    "entries": []
+   }
+  },
+  "C_gmean_rel_WQL": {
+   "top": [
+    "timecopilot",
+    "tirex",
+    "chronos_bolt_base",
+    "moirai_large",
+    "chronos_bolt_small",
+    "moirai_base",
+    "chronos_base",
+    "chronos_bolt_mini",
+    "chronos_small",
+    "chronos_large"
+   ],
+   "removal": {
+    "changed": 0,
+    "of": 11,
+    "entries": []
+   },
+   "near_copy": {
+    "changed": 0,
+    "of": 21,
+    "entries": []
+   }
+  }
+ },
+ "C_data": {
+  "entries": 21,
+  "tasks": 27,
+  "leakage_flagged_cells": 74,
+  "leakage_by_model": {
+   "moirai_base": 22,
+   "moirai_large": 22,
+   "moirai_small": 22,
+   "timesfm": 4,
+   "timesfm-2.0": 4
+  },
+  "note": "no leakage replacement applied for C (fev library default leakage_imputation_model=None); flagged cells kept as published"
+ },
+ "C_orders": {
+  "win_rate": [
+   "tirex",
+   "timecopilot",
+   "timesfm-2.0",
+   "moirai_large",
+   "chronos_bolt_base",
+   "moirai_base",
+   "auto_ets",
+   "auto_theta",
+   "chronos_large",
+   "chronos_base",
+   "auto_arima",
+   "chronos_bolt_small",
+   "chronos_bolt_mini",
+   "chronos_small",
+   "timesfm",
+   "chronos_bolt_tiny",
+   "chronos_mini",
+   "moirai_small",
+   "chronos_tiny",
+   "seasonal_naive",
+   "ttm-r2"
+  ],
+  "mean_rank_MASE": [
+   "tirex",
+   "timecopilot",
+   "timesfm-2.0",
+   "moirai_large",
+   "chronos_bolt_base",
+   "moirai_base",
+   "auto_ets",
+   "auto_theta",
+   "chronos_large",
+   "chronos_base",
+   "auto_arima",
+   "chronos_bolt_small",
+   "chronos_bolt_mini",
+   "chronos_small",
+   "timesfm",
+   "chronos_bolt_tiny",
+   "chronos_mini",
+   "moirai_small",
+   "chronos_tiny",
+   "seasonal_naive",
+   "ttm-r2"
+  ],
+  "gmean_rel_MASE": [
+   "timecopilot",
+   "tirex",
+   "timesfm-2.0",
+   "moirai_large",
+   "chronos_bolt_base",
+   "chronos_base",
+   "moirai_base",
+   "chronos_bolt_small",
+   "chronos_large",
+   "chronos_bolt_mini",
+   "chronos_small",
+   "chronos_mini",
+   "chronos_bolt_tiny",
+   "auto_theta",
+   "auto_arima",
+   "chronos_tiny",
+   "timesfm",
+   "moirai_small",
+   "auto_ets",
+   "seasonal_naive",
+   "ttm-r2"
+  ],
+  "gmean_rel_WQL": [
+   "timecopilot",
+   "tirex",
+   "chronos_bolt_base",
+   "moirai_large",
+   "chronos_bolt_small",
+   "moirai_base",
+   "chronos_base",
+   "chronos_bolt_mini",
+   "chronos_small",
+   "chronos_large",
+   "chronos_mini",
+   "chronos_bolt_tiny",
+   "timesfm-2.0",
+   "chronos_tiny",
+   "moirai_small",
+   "timesfm",
+   "auto_arima",
+   "auto_theta",
+   "auto_ets",
+   "seasonal_naive",
+   "ttm-r2"
+  ]
+ },
+ "repro_C": {
+  "entries_shown": 21,
+  "order_equal": true,
+  "max_abs_diff_win_rate": 2.220446049250313e-16,
+  "top10_board": [
+   "tirex",
+   "timecopilot",
+   "timesfm-2.0",
+   "moirai_large",
+   "chronos_bolt_base",
+   "moirai_base",
+   "auto_ets",
+   "auto_theta",
+   "chronos_large",
+   "chronos_base"
+  ],
+  "top10_own": [
+   "tirex",
+   "timecopilot",
+   "timesfm-2.0",
+   "moirai_large",
+   "chronos_bolt_base",
+   "moirai_base",
+   "auto_ets",
+   "auto_theta",
+   "chronos_large",
+   "chronos_base"
+  ],
+  "published_table": "none: the repository holds no displayed table for Chronos Benchmark II",
+  "skill_order_equal": true
+ },
+ "history": {
+  "A_commits": 32,
+  "C_commits": 14,
+  "A_diag": [
+   {
+    "commit": "073f164",
+    "date": "2025-10-01",
+    "files": 1,
+    "models": 14,
+    "hidden": 0,
+    "tasks": 100,
+    "models_yaml": false
+   },
+   {
+    "commit": "020f839",
+    "date": "2025-10-15",
+    "files": 14,
+    "models": 14,
+    "hidden": 0,
+    "tasks": 100,
+    "models_yaml": false
+   },
+   {
+    "commit": "12d1eac",
+    "date": "2025-10-20",
+    "files": 14,
+    "models": 14,
+    "hidden": 0,
+    "tasks": 100,
+    "models_yaml": false
+   },
+   {
+    "commit": "d8aec58",
+    "date": "2025-10-20",
+    "files": 15,
+    "models": 15,
+    "hidden": 0,
+    "tasks": 100,
+    "models_yaml": false
+   },
+   {
+    "commit": "7ccab7c",
+    "date": "2026-01-05",
+    "files": 15,
+    "models": 15,
+    "hidden": 0,
+    "tasks": 100,
+    "models_yaml": false
+   },
+   {
+    "commit": "fde040f",
+    "date": "2026-01-07",
+    "files": 15,
+    "models": 15,
+    "hidden": 0,
+    "tasks": 100,
+    "models_yaml": false
+   },
+   {
+    "commit": "73a34df",
+    "date": "2026-01-28",
+    "files": 15,
+    "models": 15,
+    "hidden": 0,
+    "tasks": 100,
+    "models_yaml": false
+   },
+   {
+    "commit": "efea287",
+    "date": "2026-02-19",
+    "files": 17,
+    "models": 17,
+    "hidden": 0,
+    "tasks": 100,
+    "models_yaml": false
+   },
+   {
+    "commit": "c95aa9d",
+    "date": "2026-05-19",
+    "files": 21,
+    "models": 21,
+    "hidden": 0,
+    "tasks": 100,
+    "models_yaml": false
+   },
+   {
+    "commit": "1970c03",
+    "date": "2026-06-25",
+    "files": 21,
+    "models": 21,
+    "hidden": 0,
+    "tasks": 100,
+    "models_yaml": false
+   },
+   {
+    "commit": "1552ee5",
+    "date": "2026-06-27",
+    "files": 22,
+    "models": 22,
+    "hidden": 0,
+    "tasks": 100,
+    "models_yaml": false
+   },
+   {
+    "commit": "357bc23",
+    "date": "2026-06-28",
+    "files": 23,
+    "models": 27,
+    "hidden": 0,
+    "tasks": 100,
+    "models_yaml": false
+   },
+   {
+    "commit": "f18e320",
+    "date": "2026-06-29",
+    "files": 23,
+    "models": 27,
+    "hidden": 0,
+    "tasks": 100,
+    "models_yaml": false
+   },
+   {
+    "commit": "9653574",
+    "date": "2026-07-04",
+    "files": 24,
+    "models": 28,
+    "hidden": 0,
+    "tasks": 100,
+    "models_yaml": false
+   },
+   {
+    "commit": "135db17",
+    "date": "2026-07-21",
+    "files": 25,
+    "models": 29,
+    "hidden": 0,
+    "tasks": 100,
+    "models_yaml": false
+   },
+   {
+    "commit": "6796a0c",
+    "date": "2026-08-03",
+    "files": 26,
+    "models": 30,
+    "hidden": 0,
+    "tasks": 100,
+    "models_yaml": false
+   },
+   {
+    "commit": "bcd429d",
+    "date": "2026-08-28",
+    "files": 27,
+    "models": 31,
+    "hidden": 0,
+    "tasks": 100,
+    "models_yaml": false
+   },
+   {
+    "commit": "81cf125",
+    "date": "2026-09-18",
+    "files": 28,
+    "models": 32,
+    "hidden": 0,
+    "tasks": 100,
+    "models_yaml": false
+   },
+   {
+    "commit": "0d00f9f",
+    "date": "2026-10-01",
+    "files": 29,
+    "models": 33,
+    "hidden": 0,
+    "tasks": 100,
+    "models_yaml": false
+   },
+   {
+    "commit": "510551b",
+    "date": "2026-10-02",
+    "files": 33,
+    "models": 33,
+    "hidden": 3,
+    "tasks": 100,
+    "models_yaml": true
+   },
+   {
+    "commit": "ceb85e5",
+    "date": "2026-10-06",
+    "files": 34,
+    "models": 34,
+    "hidden": 3,
+    "tasks": 100,
+    "models_yaml": true
+   },
+   {
+    "commit": "edcc51a",
+    "date": "2026-10-06",
+    "files": 34,
+    "models": 34,
+    "hidden": 3,
+    "tasks": 100,
+    "models_yaml": true
+   },
+   {
+    "commit": "08156b9",
+    "date": "2026-10-13",
+    "files": 35,
+    "models": 35,
+    "hidden": 3,
+    "tasks": 100,
+    "models_yaml": true
+   },
+   {
+    "commit": "83d347d",
+    "date": "2026-10-14",
+    "files": 36,
+    "models": 36,
+    "hidden": 3,
+    "tasks": 100,
+    "models_yaml": true
+   },
+   {
+    "commit": "4ae368c",
+    "date": "2026-10-15",
+    "files": 37,
+    "models": 37,
+    "hidden": 3,
+    "tasks": 100,
+    "models_yaml": true
+   },
+   {
+    "commit": "f9e2c7d",
+    "date": "2026-10-16",
+    "files": 41,
+    "models": 41,
+    "hidden": 6,
+    "tasks": 100,
+    "models_yaml": true
+   },
+   {
+    "commit": "e750af6",
+    "date": "2026-10-23",
+    "files": 42,
+    "models": 42,
+    "hidden": 7,
+    "tasks": 100,
+    "models_yaml": true
+   },
+   {
+    "commit": "ceb25ae",
+    "date": "2026-10-23",
+    "files": 43,
+    "models": 43,
+    "hidden": 7,
+    "tasks": 100,
+    "models_yaml": true
+   },
+   {
+    "commit": "193e4fc",
+    "date": "2026-10-28",
+    "files": 44,
+    "models": 44,
+    "hidden": 7,
+    "tasks": 100,
+    "models_yaml": true
+   },
+   {
+    "commit": "13b1913",
+    "date": "2026-11-02",
+    "files": 47,
+    "models": 47,
+    "hidden": 9,
+    "tasks": 100,
+    "models_yaml": true
+   },
+   {
+    "commit": "0de0962",
+    "date": "2026-11-11",
+    "files": 51,
+    "models": 51,
+    "hidden": 12,
+    "tasks": 100,
+    "models_yaml": true
+   },
+   {
+    "commit": "9cf943c",
+    "date": "2026-11-11",
+    "files": 52,
+    "models": 52,
+    "hidden": 12,
+    "tasks": 100,
+    "models_yaml": true
+   }
+  ],
+  "C_diag": [
+   {
+    "commit": "de6c634",
+    "date": "2024-12-09",
+    "files": 1,
+    "entries": 1,
+    "dropped_incomplete": [],
+    "tasks": 28
+   },
+   {
+    "commit": "5e2c55d",
+    "date": "2024-12-10",
+    "files": 17,
+    "entries": 17,
+    "dropped_incomplete": [],
+    "tasks": 28
+   },
+   {
+    "commit": "e876cf3",
+    "date": "2024-12-12",
+    "files": 17,
+    "entries": 17,
+    "dropped_incomplete": [],
+    "tasks": 28
+   },
+   {
+    "commit": "239d66e",
+    "date": "2024-12-14",
+    "files": 17,
+    "entries": 17,
+    "dropped_incomplete": [],
+    "tasks": 28
+   },
+   {
+    "commit": "eec5612",
+    "date": "2024-12-14",
+    "files": 17,
+    "entries": 17,
+    "dropped_incomplete": [],
+    "tasks": 28
+   },
+   {
+    "commit": "a82b1fb",
+    "date": "2024-12-14",
+    "files": 17,
+    "entries": 17,
+    "dropped_incomplete": [],
+    "tasks": 28
+   },
+   {
+    "commit": "124cec8",
+    "date": "2025-01-03",
+    "files": 17,
+    "entries": 17,
+    "dropped_incomplete": [],
+    "tasks": 28
+   },
+   {
+    "commit": "e6f78cc",
+    "date": "2025-03-05",
+    "files": 18,
+    "entries": 18,
+    "dropped_incomplete": [],
+    "tasks": 27
+   },
+   {
+    "commit": "ae3fcdc",
+    "date": "2025-04-08",
+    "files": 18,
+    "entries": 18,
+    "dropped_incomplete": [],
+    "tasks": 27
+   },
+   {
+    "commit": "43580a7",
+    "date": "2025-05-15",
+    "files": 19,
+    "entries": 19,
+    "dropped_incomplete": [],
+    "tasks": 27
+   },
+   {
+    "commit": "87a2430",
+    "date": "2025-05-15",
+    "files": 19,
+    "entries": 19,
+    "dropped_incomplete": [],
+    "tasks": 27
+   },
+   {
+    "commit": "d389a2a",
+    "date": "2025-05-28",
+    "files": 20,
+    "entries": 20,
+    "dropped_incomplete": [],
+    "tasks": 27
+   },
+   {
+    "commit": "8dee806",
+    "date": "2025-09-10",
+    "files": 21,
+    "entries": 21,
+    "dropped_incomplete": [],
+    "tasks": 27
+   },
+   {
+    "commit": "d0130ba",
+    "date": "2025-09-16",
+    "files": 21,
+    "entries": 21,
+    "dropped_incomplete": [],
+    "tasks": 27
+   }
+  ],
+  "A_win_rate": {
+   "transitions": 30,
+   "transitions_with_reversal": 2,
+   "reversed_pairs": 2,
+   "events": [
+    {
+     "from_date": "2026-10-13",
+     "to_date": "2026-10-14",
+     "pairs": [
+      [
+       "ChakraTS",
+       "timesfm-3"
+      ]
+     ],
+     "entries_added_or_changed": [
+      "timeh2o-v1-tiny"
+     ]
+    },
+    {
+     "from_date": "2026-10-14",
+     "to_date": "2026-10-15",
+     "pairs": [
+      [
+       "TiRex-2",
+       "Toto-2.0-2.5B"
+      ]
+     ],
+     "entries_added_or_changed": [
+      "TimeRSI"
+     ]
+    }
+   ],
+   "transition_accounting": {
+    "total_pairs": 31,
+    "examined": 30,
+    "skipped": [
+     {
+      "from_date": "2025-10-01",
+      "to_date": "2025-10-15",
+      "reason": "task set changed (100 -> 100 tasks, 60 differ)"
+     }
+    ]
+   }
+  },
+  "A_skill_score": {
+   "transitions": 30,
+   "transitions_with_reversal": 0,
+   "reversed_pairs": 0,
+   "events": [],
+   "transition_accounting": {
+    "total_pairs": 31,
+    "examined": 30,
+    "skipped": [
+     {
+      "from_date": "2025-10-01",
+      "to_date": "2025-10-15",
+      "reason": "task set changed (100 -> 100 tasks, 60 differ)"
+     }
+    ]
+   }
+  },
+  "C_win_rate": {
+   "transitions": 11,
+   "transitions_with_reversal": 3,
+   "reversed_pairs": 8,
+   "events": [
+    {
+     "from_date": "2025-04-08",
+     "to_date": "2025-05-15",
+     "pairs": [
+      [
+       "timesfm-2.0",
+       "moirai_large"
+      ],
+      [
+       "auto_ets",
+       "chronos_base"
+      ]
+     ],
+     "entries_added_or_changed": [
+      "ibm-granite/granite-timeseries-ttm-r2"
+     ]
+    },
+    {
+     "from_date": "2025-05-15",
+     "to_date": "2025-05-28",
+     "pairs": [
+      [
+       "chronos_bolt_base",
+       "moirai_large"
+      ],
+      [
+       "chronos_bolt_base",
+       "timesfm-2.0"
+      ],
+      [
+       "moirai_large",
+       "timesfm-2.0"
+      ],
+      [
+       "chronos_large",
+       "auto_theta"
+      ],
+      [
+       "chronos_base",
+       "auto_ets"
+      ]
+     ],
+     "entries_added_or_changed": [
+      "tirex"
+     ]
+    },
+    {
+     "from_date": "2025-05-28",
+     "to_date": "2025-09-10",
+     "pairs": [
+      [
+       "auto_theta",
+       "auto_ets"
+      ]
+     ],
+     "entries_added_or_changed": [
+      "timecopilot"
+     ]
+    }
+   ],
+   "transition_accounting": {
+    "total_pairs": 13,
+    "examined": 11,
+    "skipped": [
+     {
+      "from_date": "2024-12-09",
+      "to_date": "2024-12-10",
+      "reason": "fewer than 10 displayed entries at 2024-12-09"
+     },
+     {
+      "from_date": "2025-01-03",
+      "to_date": "2025-03-05",
+      "reason": "task set changed (28 -> 27 tasks, 1 differ)"
+     }
+    ]
+   }
+  },
+  "C_mean_rank_MASE": {
+   "transitions": 11,
+   "transitions_with_reversal": 3,
+   "reversed_pairs": 8,
+   "events": [
+    {
+     "from_date": "2025-04-08",
+     "to_date": "2025-05-15",
+     "pairs": [
+      [
+       "timesfm-2.0",
+       "moirai_large"
+      ],
+      [
+       "auto_ets",
+       "chronos_base"
+      ]
+     ],
+     "entries_added_or_changed": [
+      "ibm-granite/granite-timeseries-ttm-r2"
+     ]
+    },
+    {
+     "from_date": "2025-05-15",
+     "to_date": "2025-05-28",
+     "pairs": [
+      [
+       "chronos_bolt_base",
+       "moirai_large"
+      ],
+      [
+       "chronos_bolt_base",
+       "timesfm-2.0"
+      ],
+      [
+       "moirai_large",
+       "timesfm-2.0"
+      ],
+      [
+       "chronos_large",
+       "auto_theta"
+      ],
+      [
+       "chronos_base",
+       "auto_ets"
+      ]
+     ],
+     "entries_added_or_changed": [
+      "tirex"
+     ]
+    },
+    {
+     "from_date": "2025-05-28",
+     "to_date": "2025-09-10",
+     "pairs": [
+      [
+       "auto_theta",
+       "auto_ets"
+      ]
+     ],
+     "entries_added_or_changed": [
+      "timecopilot"
+     ]
+    }
+   ],
+   "transition_accounting": {
+    "total_pairs": 13,
+    "examined": 11,
+    "skipped": [
+     {
+      "from_date": "2024-12-09",
+      "to_date": "2024-12-10",
+      "reason": "fewer than 10 displayed entries at 2024-12-09"
+     },
+     {
+      "from_date": "2025-01-03",
+      "to_date": "2025-03-05",
+      "reason": "task set changed (28 -> 27 tasks, 1 differ)"
+     }
+    ]
+   }
+  },
+  "C_gmean_rel_MASE": {
+   "transitions": 11,
+   "transitions_with_reversal": 0,
+   "reversed_pairs": 0,
+   "events": [],
+   "transition_accounting": {
+    "total_pairs": 13,
+    "examined": 11,
+    "skipped": [
+     {
+      "from_date": "2024-12-09",
+      "to_date": "2024-12-10",
+      "reason": "fewer than 10 displayed entries at 2024-12-09"
+     },
+     {
+      "from_date": "2025-01-03",
+      "to_date": "2025-03-05",
+      "reason": "task set changed (28 -> 27 tasks, 1 differ)"
+     }
+    ]
+   }
+  },
+  "A_final_state_top10_equals_board": true
+ },
+ "overlap": {
+  "gift_datasets": [
+   "bitbrains_fast_storage",
+   "bitbrains_rnd",
+   "bizitobs_application",
+   "bizitobs_l2c",
+   "bizitobs_service",
+   "car_parts",
+   "covid_deaths",
+   "electricity",
+   "ett1",
+   "ett2",
+   "hierarchical_sales",
+   "hospital",
+   "jena_weather",
+   "kdd_cup_2018",
+   "loop_seattle",
+   "m4_daily",
+   "m4_hourly",
+   "m4_monthly",
+   "m4_quarterly",
+   "m4_weekly",
+   "m4_yearly",
+   "m_dense",
+   "restaurant",
+   "saugeen",
+   "solar",
+   "sz_taxi",
+   "temperature_rain",
+   "us_births"
+  ],
+  "A_certain": {
+   "ETT": "ett1/ett2 (ETTh/ETTm)",
+   "LOOP_SEATTLE": "loop_seattle",
+   "M_DENSE": "m_dense",
+   "SZ_TAXI": "sz_taxi",
+   "bizitobs_l2c": "bizitobs_l2c",
+   "hierarchical_sales": "hierarchical_sales",
+   "hospital": "hospital",
+   "jena_weather": "jena_weather",
+   "restaurant": "restaurant"
+  },
+  "A_uncertain": {
+   "hospital_admissions": "similar word, a different dataset from GIFT hospital",
+   "kdd_cup_2022": "GIFT has kdd_cup_2018 (different competition year)",
+   "solar": "GIFT solar (same name; fev solar_1D may be a different solar collection)",
+   "solar_with_weather": "solar with weather covariates; same plants as GIFT solar is unconfirmed",
+   "uk_covid_nation": "GIFT has covid_deaths (different covid source)"
+  },
+  "A_tasks_certain": [
+   "restaurant",
+   "hierarchical_sales_1D",
+   "hierarchical_sales_1W",
+   "LOOP_SEATTLE_5T",
+   "LOOP_SEATTLE_1D",
+   "LOOP_SEATTLE_1H",
+   "M_DENSE_1D",
+   "M_DENSE_1H",
+   "SZ_TAXI_15T",
+   "SZ_TAXI_1H",
+   "ETT_1W",
+   "ETT_1D",
+   "ETT_1H",
+   "ETT_15T",
+   "hospital",
+   "jena_weather_10T",
+   "jena_weather_1D",
+   "jena_weather_1H",
+   "bizitobs_l2c_1H",
+   "bizitobs_l2c_5T"
+  ],
+  "A_tasks_uncertain": [
+   "solar_with_weather_15T",
+   "solar_with_weather_1H",
+   "solar_1D",
+   "solar_1W",
+   "kdd_cup_2022_10T",
+   "kdd_cup_2022_30T",
+   "kdd_cup_2022_1D",
+   "hospital_admissions_1D",
+   "hospital_admissions_1W",
+   "uk_covid_nation_1D/new",
+   "uk_covid_nation_1D/cumulative",
+   "uk_covid_nation_1W/new",
+   "uk_covid_nation_1W/cumulative"
+  ],
+  "B_certain_families": [
+   "ETT",
+   "M_DENSE",
+   "bizitobs_l2c",
+   "jena_weather"
+  ],
+  "B_uncertain_families": [
+   "hospital_admissions",
+   "solar_with_weather",
+   "uk_covid_nation"
+  ],
+  "C_certain": {
+   "m4": "GIFT m4_daily/hourly/monthly/quarterly/weekly/yearly",
+   "ETT": "GIFT ett1/ett2",
+   "monash_covid_deaths": "GIFT covid_deaths",
+   "monash_car_parts": "GIFT car_parts",
+   "monash_hospital": "GIFT hospital"
+  },
+  "C_uncertain": {
+   "monash_weather": "GIFT has jena_weather and temperature_rain; Monash weather is probably a different dataset",
+   "monash_traffic": "GIFT has loop_seattle (road traffic); probably different data"
+  },
+  "C_tasks_certain": [
+   "ETTh",
+   "ETTm",
+   "m4_quarterly",
+   "m4_yearly",
+   "monash_car_parts",
+   "monash_covid_deaths",
+   "monash_hospital"
+  ]
+ },
+ "base_runtime_s": 19.9
+}

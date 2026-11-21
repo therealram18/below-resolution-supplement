@@ -1,0 +1,2 @@
+dataset,model,eval_metrics/MSE[mean],eval_metrics/MSE[0.5],eval_metrics/MAE[0.5],eval_metrics/MASE[0.5],eval_metrics/MAPE[0.5],eval_metrics/sMAPE[0.5],eval_metrics/MSIS,eval_metrics/RMSE[mean],eval_metrics/NRMSE[mean],eval_metrics/ND[0.5],eval_metrics/mean_weighted_sum_quantile_loss,domain,num_variates
+kdd_cup_2018/H/long,toto__A__seed42,22621781478.01918,4318.463037772219,24.897740796427254,1.0491758310490935,0.8424767975914911,0.6410581196382067,11.45046776118572,150405.39045532636,3529.118156574243,0.5842015956765133,0.4667345650502058,Nature,1

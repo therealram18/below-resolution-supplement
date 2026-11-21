@@ -1,0 +1,27 @@
+{
+ "pair": 2,
+ "n_control": 200,
+ "deltas": {
+  "paper_resolution": 0.2674924225509634,
+  "corrected_resolution": 0.42049360845364053,
+  "zero": 0.0
+ },
+ "detection": {
+  "paper": [
+   1.0,
+   1.0,
+   0.07
+  ],
+  "CR2-icc": [
+   0.915,
+   0.985,
+   0.05
+  ],
+  "wild": [
+   1.0,
+   1.0,
+   0.08
+  ]
+ },
+ "seconds": 44.70846962928772
+}

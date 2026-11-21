@@ -1,0 +1,702 @@
+{
+ "bitbrains_fast_storage/5T/long": {
+  "min_series_length": 8640,
+  "prediction_length": 720,
+  "series": 1250,
+  "storage_name": "bitbrains_fast_storage/5T",
+  "toto_A_samples_ram_gb": 3.6864,
+  "toto_maximal_context": 6480,
+  "variates": 2,
+  "windows": 2
+ },
+ "bitbrains_fast_storage/5T/medium": {
+  "min_series_length": 8640,
+  "prediction_length": 480,
+  "series": 1250,
+  "storage_name": "bitbrains_fast_storage/5T",
+  "toto_A_samples_ram_gb": 2.4576,
+  "toto_maximal_context": 7200,
+  "variates": 2,
+  "windows": 2
+ },
+ "bitbrains_fast_storage/5T/short": {
+  "min_series_length": 8640,
+  "prediction_length": 48,
+  "series": 1250,
+  "storage_name": "bitbrains_fast_storage/5T",
+  "toto_A_samples_ram_gb": 2.21184,
+  "toto_maximal_context": 7728,
+  "variates": 2,
+  "windows": 18
+ },
+ "bitbrains_rnd/5T/long": {
+  "min_series_length": 8640,
+  "prediction_length": 720,
+  "series": 500,
+  "storage_name": "bitbrains_rnd/5T",
+  "toto_A_samples_ram_gb": 1.47456,
+  "toto_maximal_context": 6480,
+  "variates": 2,
+  "windows": 2
+ },
+ "bitbrains_rnd/5T/medium": {
+  "min_series_length": 8640,
+  "prediction_length": 480,
+  "series": 500,
+  "storage_name": "bitbrains_rnd/5T",
+  "toto_A_samples_ram_gb": 0.98304,
+  "toto_maximal_context": 7200,
+  "variates": 2,
+  "windows": 2
+ },
+ "bitbrains_rnd/5T/short": {
+  "min_series_length": 8640,
+  "prediction_length": 48,
+  "series": 500,
+  "storage_name": "bitbrains_rnd/5T",
+  "toto_A_samples_ram_gb": 0.884736,
+  "toto_maximal_context": 7728,
+  "variates": 2,
+  "windows": 18
+ },
+ "bizitobs_application/10S/long": {
+  "min_series_length": 8834,
+  "prediction_length": 900,
+  "series": 1,
+  "storage_name": "bizitobs_application",
+  "toto_A_samples_ram_gb": 0.0018432,
+  "toto_maximal_context": 7034,
+  "variates": 2,
+  "windows": 1
+ },
+ "bizitobs_application/10S/medium": {
+  "min_series_length": 8834,
+  "prediction_length": 600,
+  "series": 1,
+  "storage_name": "bizitobs_application",
+  "toto_A_samples_ram_gb": 0.0024576,
+  "toto_maximal_context": 7034,
+  "variates": 2,
+  "windows": 2
+ },
+ "bizitobs_application/10S/short": {
+  "min_series_length": 8834,
+  "prediction_length": 60,
+  "series": 1,
+  "storage_name": "bizitobs_application",
+  "toto_A_samples_ram_gb": 0.0018432,
+  "toto_maximal_context": 7874,
+  "variates": 2,
+  "windows": 15
+ },
+ "bizitobs_l2c/5T/long": {
+  "min_series_length": 31968,
+  "prediction_length": 720,
+  "series": 1,
+  "storage_name": "bizitobs_l2c/5T",
+  "toto_A_samples_ram_gb": 0.0258048,
+  "toto_maximal_context": 27648,
+  "variates": 7,
+  "windows": 5
+ },
+ "bizitobs_l2c/5T/medium": {
+  "min_series_length": 31968,
+  "prediction_length": 480,
+  "series": 1,
+  "storage_name": "bizitobs_l2c/5T",
+  "toto_A_samples_ram_gb": 0.02408448,
+  "toto_maximal_context": 28128,
+  "variates": 7,
+  "windows": 7
+ },
+ "bizitobs_l2c/5T/short": {
+  "min_series_length": 31968,
+  "prediction_length": 48,
+  "series": 1,
+  "storage_name": "bizitobs_l2c/5T",
+  "toto_A_samples_ram_gb": 0.00688128,
+  "toto_maximal_context": 30960,
+  "variates": 7,
+  "windows": 20
+ },
+ "bizitobs_l2c/H/long": {
+  "min_series_length": 2664,
+  "prediction_length": 720,
+  "series": 1,
+  "storage_name": "bizitobs_l2c/H",
+  "toto_A_samples_ram_gb": 0.00516096,
+  "toto_maximal_context": 1224,
+  "variates": 7,
+  "windows": 1
+ },
+ "bizitobs_l2c/H/medium": {
+  "min_series_length": 2664,
+  "prediction_length": 480,
+  "series": 1,
+  "storage_name": "bizitobs_l2c/H",
+  "toto_A_samples_ram_gb": 0.00344064,
+  "toto_maximal_context": 1704,
+  "variates": 7,
+  "windows": 1
+ },
+ "bizitobs_l2c/H/short": {
+  "min_series_length": 2664,
+  "prediction_length": 48,
+  "series": 1,
+  "storage_name": "bizitobs_l2c/H",
+  "toto_A_samples_ram_gb": 0.002064384,
+  "toto_maximal_context": 2328,
+  "variates": 7,
+  "windows": 6
+ },
+ "bizitobs_service/10S/long": {
+  "min_series_length": 8835,
+  "prediction_length": 900,
+  "series": 21,
+  "storage_name": "bizitobs_service",
+  "toto_A_samples_ram_gb": 0.0387072,
+  "toto_maximal_context": 7035,
+  "variates": 2,
+  "windows": 1
+ },
+ "bizitobs_service/10S/medium": {
+  "min_series_length": 8835,
+  "prediction_length": 600,
+  "series": 21,
+  "storage_name": "bizitobs_service",
+  "toto_A_samples_ram_gb": 0.0516096,
+  "toto_maximal_context": 7035,
+  "variates": 2,
+  "windows": 2
+ },
+ "bizitobs_service/10S/short": {
+  "min_series_length": 8835,
+  "prediction_length": 60,
+  "series": 21,
+  "storage_name": "bizitobs_service",
+  "toto_A_samples_ram_gb": 0.0387072,
+  "toto_maximal_context": 7875,
+  "variates": 2,
+  "windows": 15
+ },
+ "electricity/15T/long": {
+  "min_series_length": 140256,
+  "prediction_length": 720,
+  "series": 370,
+  "storage_name": "electricity/15T",
+  "toto_A_samples_ram_gb": 5.455872,
+  "toto_maximal_context": 125136,
+  "variates": 1,
+  "windows": 20
+ },
+ "electricity/15T/medium": {
+  "min_series_length": 140256,
+  "prediction_length": 480,
+  "series": 370,
+  "storage_name": "electricity/15T",
+  "toto_A_samples_ram_gb": 3.637248,
+  "toto_maximal_context": 130176,
+  "variates": 1,
+  "windows": 20
+ },
+ "electricity/15T/short": {
+  "min_series_length": 140256,
+  "prediction_length": 48,
+  "series": 370,
+  "storage_name": "electricity/15T",
+  "toto_A_samples_ram_gb": 0.3637248,
+  "toto_maximal_context": 139248,
+  "variates": 1,
+  "windows": 20
+ },
+ "electricity/D/short": {
+  "min_series_length": 1461,
+  "prediction_length": 30,
+  "series": 370,
+  "storage_name": "electricity/D",
+  "toto_A_samples_ram_gb": 0.056832,
+  "toto_maximal_context": 1281,
+  "variates": 1,
+  "windows": 5
+ },
+ "electricity/H/long": {
+  "min_series_length": 35064,
+  "prediction_length": 720,
+  "series": 370,
+  "storage_name": "electricity/H",
+  "toto_A_samples_ram_gb": 1.363968,
+  "toto_maximal_context": 30744,
+  "variates": 1,
+  "windows": 5
+ },
+ "electricity/H/medium": {
+  "min_series_length": 35064,
+  "prediction_length": 480,
+  "series": 370,
+  "storage_name": "electricity/H",
+  "toto_A_samples_ram_gb": 1.4548992,
+  "toto_maximal_context": 30744,
+  "variates": 1,
+  "windows": 8
+ },
+ "electricity/H/short": {
+  "min_series_length": 35064,
+  "prediction_length": 48,
+  "series": 370,
+  "storage_name": "electricity/H",
+  "toto_A_samples_ram_gb": 0.3637248,
+  "toto_maximal_context": 34056,
+  "variates": 1,
+  "windows": 20
+ },
+ "ett1/15T/long": {
+  "min_series_length": 69680,
+  "prediction_length": 720,
+  "series": 1,
+  "storage_name": "ett1/15T",
+  "toto_A_samples_ram_gb": 0.0516096,
+  "toto_maximal_context": 61760,
+  "variates": 7,
+  "windows": 10
+ },
+ "ett1/15T/medium": {
+  "min_series_length": 69680,
+  "prediction_length": 480,
+  "series": 1,
+  "storage_name": "ett1/15T",
+  "toto_A_samples_ram_gb": 0.0516096,
+  "toto_maximal_context": 62000,
+  "variates": 7,
+  "windows": 15
+ },
+ "ett1/15T/short": {
+  "min_series_length": 69680,
+  "prediction_length": 48,
+  "series": 1,
+  "storage_name": "ett1/15T",
+  "toto_A_samples_ram_gb": 0.00688128,
+  "toto_maximal_context": 68672,
+  "variates": 7,
+  "windows": 20
+ },
+ "ett1/H/long": {
+  "min_series_length": 17420,
+  "prediction_length": 720,
+  "series": 1,
+  "storage_name": "ett1/H",
+  "toto_A_samples_ram_gb": 0.01548288,
+  "toto_maximal_context": 14540,
+  "variates": 7,
+  "windows": 3
+ },
+ "ett1/H/medium": {
+  "min_series_length": 17420,
+  "prediction_length": 480,
+  "series": 1,
+  "storage_name": "ett1/H",
+  "toto_A_samples_ram_gb": 0.01376256,
+  "toto_maximal_context": 15020,
+  "variates": 7,
+  "windows": 4
+ },
+ "ett1/H/short": {
+  "min_series_length": 17420,
+  "prediction_length": 48,
+  "series": 1,
+  "storage_name": "ett1/H",
+  "toto_A_samples_ram_gb": 0.00688128,
+  "toto_maximal_context": 16412,
+  "variates": 7,
+  "windows": 20
+ },
+ "ett2/15T/long": {
+  "min_series_length": 69680,
+  "prediction_length": 720,
+  "series": 1,
+  "storage_name": "ett2/15T",
+  "toto_A_samples_ram_gb": 0.0516096,
+  "toto_maximal_context": 61760,
+  "variates": 7,
+  "windows": 10
+ },
+ "ett2/15T/medium": {
+  "min_series_length": 69680,
+  "prediction_length": 480,
+  "series": 1,
+  "storage_name": "ett2/15T",
+  "toto_A_samples_ram_gb": 0.0516096,
+  "toto_maximal_context": 62000,
+  "variates": 7,
+  "windows": 15
+ },
+ "ett2/15T/short": {
+  "min_series_length": 69680,
+  "prediction_length": 48,
+  "series": 1,
+  "storage_name": "ett2/15T",
+  "toto_A_samples_ram_gb": 0.00688128,
+  "toto_maximal_context": 68672,
+  "variates": 7,
+  "windows": 20
+ },
+ "ett2/H/long": {
+  "min_series_length": 17420,
+  "prediction_length": 720,
+  "series": 1,
+  "storage_name": "ett2/H",
+  "toto_A_samples_ram_gb": 0.01548288,
+  "toto_maximal_context": 14540,
+  "variates": 7,
+  "windows": 3
+ },
+ "ett2/H/medium": {
+  "min_series_length": 17420,
+  "prediction_length": 480,
+  "series": 1,
+  "storage_name": "ett2/H",
+  "toto_A_samples_ram_gb": 0.01376256,
+  "toto_maximal_context": 15020,
+  "variates": 7,
+  "windows": 4
+ },
+ "ett2/H/short": {
+  "min_series_length": 17420,
+  "prediction_length": 48,
+  "series": 1,
+  "storage_name": "ett2/H",
+  "toto_A_samples_ram_gb": 0.00688128,
+  "toto_maximal_context": 16412,
+  "variates": 7,
+  "windows": 20
+ },
+ "hierarchical_sales/D/short": {
+  "min_series_length": 1825,
+  "prediction_length": 30,
+  "series": 118,
+  "storage_name": "hierarchical_sales/D",
+  "toto_A_samples_ram_gb": 0.02537472,
+  "toto_maximal_context": 1585,
+  "variates": 1,
+  "windows": 7
+ },
+ "jena_weather/10T/long": {
+  "min_series_length": 52704,
+  "prediction_length": 720,
+  "series": 1,
+  "storage_name": "jena_weather/10T",
+  "toto_A_samples_ram_gb": 0.12386304,
+  "toto_maximal_context": 46224,
+  "variates": 21,
+  "windows": 8
+ },
+ "jena_weather/10T/medium": {
+  "min_series_length": 52704,
+  "prediction_length": 480,
+  "series": 1,
+  "storage_name": "jena_weather/10T",
+  "toto_A_samples_ram_gb": 0.11354112,
+  "toto_maximal_context": 46944,
+  "variates": 21,
+  "windows": 11
+ },
+ "jena_weather/10T/short": {
+  "min_series_length": 52704,
+  "prediction_length": 48,
+  "series": 1,
+  "storage_name": "jena_weather/10T",
+  "toto_A_samples_ram_gb": 0.02064384,
+  "toto_maximal_context": 51696,
+  "variates": 21,
+  "windows": 20
+ },
+ "jena_weather/H/long": {
+  "min_series_length": 8784,
+  "prediction_length": 720,
+  "series": 1,
+  "storage_name": "jena_weather/H",
+  "toto_A_samples_ram_gb": 0.03096576,
+  "toto_maximal_context": 6624,
+  "variates": 21,
+  "windows": 2
+ },
+ "jena_weather/H/medium": {
+  "min_series_length": 8784,
+  "prediction_length": 480,
+  "series": 1,
+  "storage_name": "jena_weather/H",
+  "toto_A_samples_ram_gb": 0.02064384,
+  "toto_maximal_context": 7344,
+  "variates": 21,
+  "windows": 2
+ },
+ "jena_weather/H/short": {
+  "min_series_length": 8784,
+  "prediction_length": 48,
+  "series": 1,
+  "storage_name": "jena_weather/H",
+  "toto_A_samples_ram_gb": 0.019611648,
+  "toto_maximal_context": 7824,
+  "variates": 21,
+  "windows": 19
+ },
+ "kdd_cup_2018/H/long": {
+  "min_series_length": 9504,
+  "prediction_length": 720,
+  "series": 270,
+  "storage_name": "kdd_cup_2018_with_missing/H",
+  "toto_A_samples_ram_gb": 0.3981312,
+  "toto_maximal_context": 7344,
+  "variates": 1,
+  "windows": 2
+ },
+ "kdd_cup_2018/H/medium": {
+  "min_series_length": 9504,
+  "prediction_length": 480,
+  "series": 270,
+  "storage_name": "kdd_cup_2018_with_missing/H",
+  "toto_A_samples_ram_gb": 0.2654208,
+  "toto_maximal_context": 8064,
+  "variates": 1,
+  "windows": 2
+ },
+ "kdd_cup_2018/H/short": {
+  "min_series_length": 9504,
+  "prediction_length": 48,
+  "series": 270,
+  "storage_name": "kdd_cup_2018_with_missing/H",
+  "toto_A_samples_ram_gb": 0.2654208,
+  "toto_maximal_context": 8496,
+  "variates": 1,
+  "windows": 20
+ },
+ "loop_seattle/5T/long": {
+  "min_series_length": 105120,
+  "prediction_length": 720,
+  "series": 323,
+  "storage_name": "LOOP_SEATTLE/5T",
+  "toto_A_samples_ram_gb": 3.5721216,
+  "toto_maximal_context": 93600,
+  "variates": 1,
+  "windows": 15
+ },
+ "loop_seattle/5T/medium": {
+  "min_series_length": 105120,
+  "prediction_length": 480,
+  "series": 323,
+  "storage_name": "LOOP_SEATTLE/5T",
+  "toto_A_samples_ram_gb": 3.1752192,
+  "toto_maximal_context": 95040,
+  "variates": 1,
+  "windows": 20
+ },
+ "loop_seattle/5T/short": {
+  "min_series_length": 105120,
+  "prediction_length": 48,
+  "series": 323,
+  "storage_name": "LOOP_SEATTLE/5T",
+  "toto_A_samples_ram_gb": 0.31752192,
+  "toto_maximal_context": 104112,
+  "variates": 1,
+  "windows": 20
+ },
+ "loop_seattle/H/long": {
+  "min_series_length": 8760,
+  "prediction_length": 720,
+  "series": 323,
+  "storage_name": "LOOP_SEATTLE/H",
+  "toto_A_samples_ram_gb": 0.47628288,
+  "toto_maximal_context": 6600,
+  "variates": 1,
+  "windows": 2
+ },
+ "loop_seattle/H/medium": {
+  "min_series_length": 8760,
+  "prediction_length": 480,
+  "series": 323,
+  "storage_name": "LOOP_SEATTLE/H",
+  "toto_A_samples_ram_gb": 0.31752192,
+  "toto_maximal_context": 7320,
+  "variates": 1,
+  "windows": 2
+ },
+ "loop_seattle/H/short": {
+  "min_series_length": 8760,
+  "prediction_length": 48,
+  "series": 323,
+  "storage_name": "LOOP_SEATTLE/H",
+  "toto_A_samples_ram_gb": 0.301645824,
+  "toto_maximal_context": 7800,
+  "variates": 1,
+  "windows": 19
+ },
+ "m4_daily/D/short": {
+  "min_series_length": 107,
+  "prediction_length": 14,
+  "series": 4227,
+  "storage_name": "m4_daily",
+  "toto_A_samples_ram_gb": 0.060598272,
+  "toto_maximal_context": 79,
+  "variates": 1,
+  "windows": 1
+ },
+ "m_dense/H/long": {
+  "min_series_length": 17520,
+  "prediction_length": 720,
+  "series": 30,
+  "storage_name": "M_DENSE/H",
+  "toto_A_samples_ram_gb": 0.0663552,
+  "toto_maximal_context": 14640,
+  "variates": 1,
+  "windows": 3
+ },
+ "m_dense/H/medium": {
+  "min_series_length": 17520,
+  "prediction_length": 480,
+  "series": 30,
+  "storage_name": "M_DENSE/H",
+  "toto_A_samples_ram_gb": 0.0589824,
+  "toto_maximal_context": 15120,
+  "variates": 1,
+  "windows": 4
+ },
+ "m_dense/H/short": {
+  "min_series_length": 17520,
+  "prediction_length": 48,
+  "series": 30,
+  "storage_name": "M_DENSE/H",
+  "toto_A_samples_ram_gb": 0.0294912,
+  "toto_maximal_context": 16512,
+  "variates": 1,
+  "windows": 20
+ },
+ "saugeen/D/short": {
+  "min_series_length": 23741,
+  "prediction_length": 30,
+  "series": 1,
+  "storage_name": "saugeenday/D",
+  "toto_A_samples_ram_gb": 0.0006144,
+  "toto_maximal_context": 23111,
+  "variates": 1,
+  "windows": 20
+ },
+ "saugeen/W/short": {
+  "min_series_length": 3391,
+  "prediction_length": 8,
+  "series": 1,
+  "storage_name": "saugeenday/W",
+  "toto_A_samples_ram_gb": 0.00016384,
+  "toto_maximal_context": 3223,
+  "variates": 1,
+  "windows": 20
+ },
+ "solar/10T/long": {
+  "min_series_length": 52560,
+  "prediction_length": 720,
+  "series": 137,
+  "storage_name": "solar/10T",
+  "toto_A_samples_ram_gb": 0.80805888,
+  "toto_maximal_context": 46080,
+  "variates": 1,
+  "windows": 8
+ },
+ "solar/10T/medium": {
+  "min_series_length": 52560,
+  "prediction_length": 480,
+  "series": 137,
+  "storage_name": "solar/10T",
+  "toto_A_samples_ram_gb": 0.74072064,
+  "toto_maximal_context": 46800,
+  "variates": 1,
+  "windows": 11
+ },
+ "solar/10T/short": {
+  "min_series_length": 52560,
+  "prediction_length": 48,
+  "series": 137,
+  "storage_name": "solar/10T",
+  "toto_A_samples_ram_gb": 0.13467648,
+  "toto_maximal_context": 51552,
+  "variates": 1,
+  "windows": 20
+ },
+ "solar/H/long": {
+  "min_series_length": 8760,
+  "prediction_length": 720,
+  "series": 137,
+  "storage_name": "solar/H",
+  "toto_A_samples_ram_gb": 0.20201472,
+  "toto_maximal_context": 6600,
+  "variates": 1,
+  "windows": 2
+ },
+ "solar/H/medium": {
+  "min_series_length": 8760,
+  "prediction_length": 480,
+  "series": 137,
+  "storage_name": "solar/H",
+  "toto_A_samples_ram_gb": 0.13467648,
+  "toto_maximal_context": 7320,
+  "variates": 1,
+  "windows": 2
+ },
+ "solar/H/short": {
+  "min_series_length": 8760,
+  "prediction_length": 48,
+  "series": 137,
+  "storage_name": "solar/H",
+  "toto_A_samples_ram_gb": 0.127942656,
+  "toto_maximal_context": 7800,
+  "variates": 1,
+  "windows": 19
+ },
+ "sz_taxi/15T/long": {
+  "min_series_length": 2976,
+  "prediction_length": 720,
+  "series": 156,
+  "storage_name": "SZ_TAXI/15T",
+  "toto_A_samples_ram_gb": 0.11501568,
+  "toto_maximal_context": 1536,
+  "variates": 1,
+  "windows": 1
+ },
+ "sz_taxi/15T/medium": {
+  "min_series_length": 2976,
+  "prediction_length": 480,
+  "series": 156,
+  "storage_name": "SZ_TAXI/15T",
+  "toto_A_samples_ram_gb": 0.07667712,
+  "toto_maximal_context": 2016,
+  "variates": 1,
+  "windows": 1
+ },
+ "sz_taxi/15T/short": {
+  "min_series_length": 2976,
+  "prediction_length": 48,
+  "series": 156,
+  "storage_name": "SZ_TAXI/15T",
+  "toto_A_samples_ram_gb": 0.053673984,
+  "toto_maximal_context": 2592,
+  "variates": 1,
+  "windows": 7
+ },
+ "us_births/D/short": {
+  "min_series_length": 7305,
+  "prediction_length": 30,
+  "series": 1,
+  "storage_name": "us_births/D",
+  "toto_A_samples_ram_gb": 0.0006144,
+  "toto_maximal_context": 6675,
+  "variates": 1,
+  "windows": 20
+ },
+ "us_births/W/short": {
+  "min_series_length": 1043,
+  "prediction_length": 8,
+  "series": 1,
+  "storage_name": "us_births/W",
+  "toto_A_samples_ram_gb": 0.000114688,
+  "toto_maximal_context": 923,
+  "variates": 1,
+  "windows": 14
+ }
+}

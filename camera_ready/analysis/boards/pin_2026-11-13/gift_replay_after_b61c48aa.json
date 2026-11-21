@@ -1,0 +1,863 @@
+{
+ "updates": [
+  {
+   "commit": "a5019972",
+   "date": "2026-09-15",
+   "subject": "Update PatchFM model results",
+   "new": [],
+   "results_changed": [
+    "PatchFM"
+   ],
+   "config_changed": [],
+   "removed": [],
+   "n_entries_after": 129
+  },
+  {
+   "commit": "feff990c",
+   "date": "2026-09-18",
+   "subject": "Add DLinear-t model results",
+   "new": [
+    "DLinear-t"
+   ],
+   "results_changed": [],
+   "config_changed": [],
+   "removed": [],
+   "n_entries_after": 130
+  },
+  {
+   "commit": "81100d6f",
+   "date": "2026-09-18",
+   "subject": "Add t0-beta results",
+   "new": [
+    "t0-beta"
+   ],
+   "results_changed": [],
+   "config_changed": [],
+   "removed": [],
+   "n_entries_after": 131
+  },
+  {
+   "commit": "72f2872f",
+   "date": "2026-09-23",
+   "subject": "Add TW3Cast model results",
+   "new": [
+    "TW3Cast"
+   ],
+   "results_changed": [],
+   "config_changed": [],
+   "removed": [],
+   "n_entries_after": 132
+  },
+  {
+   "commit": "df6139a4",
+   "date": "2026-09-28",
+   "subject": "Correct iTransformer label in config.json",
+   "new": [],
+   "results_changed": [],
+   "config_changed": [],
+   "removed": [
+    "i_transformer"
+   ],
+   "n_entries_after": 133
+  },
+  {
+   "commit": "4b376a0a",
+   "date": "2026-09-28",
+   "subject": "Correct Zeus label in all_results.csv",
+   "new": [],
+   "results_changed": [
+    "Zeus"
+   ],
+   "config_changed": [],
+   "removed": [
+    "GestaltCog/Zeus-100M"
+   ],
+   "n_entries_after": 133
+  },
+  {
+   "commit": "5c42c06f",
+   "date": "2026-09-28",
+   "subject": "chore(results): sync validated GIFT-Eval submissions",
+   "new": [],
+   "results_changed": [
+    "Chronos-2",
+    "Credence",
+    "DeOSAlphaTimeGPTPredictor-2025",
+    "FlowState-9.1M",
+    "FlowState-r1.1",
+    "Granite-FlowState-r1.1",
+    "Granite-PatchTST-FM-r1",
+    "Lingjiang",
+    "LongSeer-v1.0",
+    "Migas-1.0",
+    "STRIDE (+Chronos-2)",
+    "STRIDE (+Timer-S1)",
+    "Samay",
+    "TSOrchestra",
+    "TTM-R2-Finetuned",
+    "TTM-R3-FT",
+    "TTM-R3-PT",
+    "Taichu-TimeSeries-Agent",
+    "TimeCopilot",
+    "TimeRouter",
+    "Toto_Open_Base_1.0",
+    "YingLong_50m",
+    "YingLong_6m",
+    "ZooCast-Top1"
+   ],
+   "config_changed": [
+    "Chronos-2",
+    "LongSeer-v1.0",
+    "MoiraiAgent",
+    "TSOrchestra",
+    "Timer-S1"
+   ],
+   "removed": [],
+   "n_entries_after": 133
+  },
+  {
+   "commit": "24d51bdf",
+   "date": "2026-09-28",
+   "subject": "Add Fracast-0 model results",
+   "new": [
+    "Fracast-0"
+   ],
+   "results_changed": [],
+   "config_changed": [],
+   "removed": [],
+   "n_entries_after": 134
+  },
+  {
+   "commit": "ea51428a",
+   "date": "2026-09-28",
+   "subject": "Add Lingjuang2.0 model results",
+   "new": [
+    "Lingjiang2.0"
+   ],
+   "results_changed": [],
+   "config_changed": [],
+   "removed": [],
+   "n_entries_after": 135
+  },
+  {
+   "commit": "af740858",
+   "date": "2026-10-02",
+   "subject": "Add QiYao-M model results",
+   "new": [
+    "QiYao-M"
+   ],
+   "results_changed": [],
+   "config_changed": [],
+   "removed": [],
+   "n_entries_after": 136
+  },
+  {
+   "commit": "e6d1b749",
+   "date": "2026-10-02",
+   "subject": "Add IK-QuanTSFM model results",
+   "new": [
+    "IK-QuadTSFM"
+   ],
+   "results_changed": [],
+   "config_changed": [],
+   "removed": [],
+   "n_entries_after": 137
+  },
+  {
+   "commit": "0d2d7c69",
+   "date": "2026-10-02",
+   "subject": "update limix_moe model results",
+   "new": [],
+   "results_changed": [
+    "limix_moe"
+   ],
+   "config_changed": [],
+   "removed": [],
+   "n_entries_after": 137
+  },
+  {
+   "commit": "526f02ed",
+   "date": "2026-10-02",
+   "subject": "Update Prism model results",
+   "new": [],
+   "results_changed": [
+    "Prism"
+   ],
+   "config_changed": [
+    "Prism"
+   ],
+   "removed": [],
+   "n_entries_after": 137
+  },
+  {
+   "commit": "7b2c9d33",
+   "date": "2026-10-02",
+   "subject": "Add OpenTSLM-TeeMoE model results",
+   "new": [
+    "OpenTSLM-TeeMoE"
+   ],
+   "results_changed": [],
+   "config_changed": [],
+   "removed": [],
+   "n_entries_after": 138
+  },
+  {
+   "commit": "1a45f7ad",
+   "date": "2026-10-02",
+   "subject": "change model label",
+   "new": [],
+   "results_changed": [],
+   "config_changed": [
+    "IK-QuadTSFM"
+   ],
+   "removed": [],
+   "n_entries_after": 138
+  },
+  {
+   "commit": "db72a2a6",
+   "date": "2026-10-02",
+   "subject": "Add Tabby and Tabby-Pretrain model results",
+   "new": [
+    "Tabby",
+    "Tabby-Pretrain"
+   ],
+   "results_changed": [],
+   "config_changed": [],
+   "removed": [],
+   "n_entries_after": 140
+  },
+  {
+   "commit": "410e5381",
+   "date": "2026-10-09",
+   "subject": "Add ChakraTS-Lab model results",
+   "new": [
+    "ChakraTS-Lab"
+   ],
+   "results_changed": [],
+   "config_changed": [],
+   "removed": [],
+   "n_entries_after": 141
+  },
+  {
+   "commit": "d18795d0",
+   "date": "2026-10-09",
+   "subject": "Add Yug model results",
+   "new": [
+    "Yug"
+   ],
+   "results_changed": [],
+   "config_changed": [],
+   "removed": [],
+   "n_entries_after": 142
+  },
+  {
+   "commit": "9d731e06",
+   "date": "2026-10-09",
+   "subject": "Add ChakraTS model results",
+   "new": [
+    "ChakraTS"
+   ],
+   "results_changed": [],
+   "config_changed": [],
+   "removed": [],
+   "n_entries_after": 143
+  },
+  {
+   "commit": "1ae02719",
+   "date": "2026-10-16",
+   "subject": "Add Morpheus-2.0 model results",
+   "new": [
+    "Morpheus-2.0"
+   ],
+   "results_changed": [],
+   "config_changed": [],
+   "removed": [],
+   "n_entries_after": 144
+  },
+  {
+   "commit": "c938e96d",
+   "date": "2026-10-16",
+   "subject": "Add PERSONA-AI-T4 model results",
+   "new": [
+    "PERSONA-AI-T4"
+   ],
+   "results_changed": [],
+   "config_changed": [],
+   "removed": [],
+   "n_entries_after": 145
+  },
+  {
+   "commit": "6e4a07b4",
+   "date": "2026-10-16",
+   "subject": "Add t0-gamma model results",
+   "new": [
+    "t0-gamma"
+   ],
+   "results_changed": [],
+   "config_changed": [],
+   "removed": [],
+   "n_entries_after": 146
+  },
+  {
+   "commit": "ef9929b8",
+   "date": "2026-10-16",
+   "subject": "Add TimeSSM-25.M model results",
+   "new": [
+    "TimeSSM-2.5M"
+   ],
+   "results_changed": [],
+   "config_changed": [],
+   "removed": [],
+   "n_entries_after": 147
+  },
+  {
+   "commit": "e545fa28",
+   "date": "2026-10-16",
+   "subject": "Add Timestral model family results",
+   "new": [
+    "Timestral-123M",
+    "Timestral-209M",
+    "Timestral-28M",
+    "Timestral-5M"
+   ],
+   "results_changed": [],
+   "config_changed": [],
+   "removed": [],
+   "n_entries_after": 151
+  },
+  {
+   "commit": "23078cb5",
+   "date": "2026-10-17",
+   "subject": "Add Granite-timeseries-ensemble-r1(iqr/probabilistic) model results",
+   "new": [
+    "Granite-timeseries-ensemble-r1-iqr",
+    "Granite-timeseries-ensemble-r1-probabilistic"
+   ],
+   "results_changed": [],
+   "config_changed": [],
+   "removed": [],
+   "n_entries_after": 153
+  },
+  {
+   "commit": "2d94cc83",
+   "date": "2026-10-23",
+   "subject": "Add Mobius-0 model results",
+   "new": [
+    "Mobius-0"
+   ],
+   "results_changed": [],
+   "config_changed": [],
+   "removed": [],
+   "n_entries_after": 154
+  },
+  {
+   "commit": "488e29b1",
+   "date": "2026-10-23",
+   "subject": "Add PCFM model results",
+   "new": [
+    "PCFM"
+   ],
+   "results_changed": [],
+   "config_changed": [],
+   "removed": [],
+   "n_entries_after": 155
+  },
+  {
+   "commit": "2f67ed16",
+   "date": "2026-10-23",
+   "subject": "Add Reglab-AH-2 model results",
+   "new": [
+    "RegLab-AH-2"
+   ],
+   "results_changed": [],
+   "config_changed": [],
+   "removed": [],
+   "n_entries_after": 156
+  },
+  {
+   "commit": "35b8db11",
+   "date": "2026-10-23",
+   "subject": "Add TimeH2O-v1 and TimeH2O-v1-tiny model results",
+   "new": [
+    "TimeH2O-v1",
+    "TimeH2O-v1-tiny"
+   ],
+   "results_changed": [],
+   "config_changed": [],
+   "removed": [],
+   "n_entries_after": 158
+  },
+  {
+   "commit": "6326c60f",
+   "date": "2026-10-29",
+   "subject": "Update Tabby model config",
+   "new": [],
+   "results_changed": [],
+   "config_changed": [
+    "Tabby",
+    "Tabby-Pretrain"
+   ],
+   "removed": [],
+   "n_entries_after": 158
+  },
+  {
+   "commit": "58e77d5c",
+   "date": "2026-10-29",
+   "subject": "Add HART-36M model results",
+   "new": [
+    "HART-36M"
+   ],
+   "results_changed": [],
+   "config_changed": [],
+   "removed": [],
+   "n_entries_after": 159
+  },
+  {
+   "commit": "e826356c",
+   "date": "2026-10-30",
+   "subject": "Add iAmTime model results",
+   "new": [
+    "iAmTime"
+   ],
+   "results_changed": [],
+   "config_changed": [],
+   "removed": [],
+   "n_entries_after": 160
+  },
+  {
+   "commit": "a8484273",
+   "date": "2026-10-30",
+   "subject": "add PDM-Femto model results",
+   "new": [
+    "PDM-Femto",
+    "PDM-Nano",
+    "PDM-Pico"
+   ],
+   "results_changed": [],
+   "config_changed": [],
+   "removed": [],
+   "n_entries_after": 163
+  },
+  {
+   "commit": "0a1f2eca",
+   "date": "2026-11-06",
+   "subject": "Add TSRouter model results",
+   "new": [
+    "TSRouter"
+   ],
+   "results_changed": [],
+   "config_changed": [],
+   "removed": [],
+   "n_entries_after": 164
+  },
+  {
+   "commit": "bad8e48d",
+   "date": "2026-11-06",
+   "subject": "Add Taichu-TimeSeries-Agent-v2 model results",
+   "new": [
+    "Taichu-TimeSeries-Agent-v2"
+   ],
+   "results_changed": [],
+   "config_changed": [],
+   "removed": [],
+   "n_entries_after": 165
+  },
+  {
+   "commit": "6730b98e",
+   "date": "2026-11-06",
+   "subject": "Add tabSutra_39M_v1.0 model results",
+   "new": [
+    "tabSutra_39M_v1.0"
+   ],
+   "results_changed": [],
+   "config_changed": [],
+   "removed": [],
+   "n_entries_after": 166
+  },
+  {
+   "commit": "5c98b98d",
+   "date": "2026-11-06",
+   "subject": "Update HistRoute-CV model results (new name: HCR)",
+   "new": [
+    "HCR"
+   ],
+   "results_changed": [],
+   "config_changed": [],
+   "removed": [
+    "HistRoute-CV"
+   ],
+   "n_entries_after": 166
+  },
+  {
+   "commit": "42beef3e",
+   "date": "2026-11-13",
+   "subject": "Add Simons model family results",
+   "new": [
+    "Simons-178M",
+    "Simons-25M",
+    "Simons-297M",
+    "Simons-60M"
+   ],
+   "results_changed": [],
+   "config_changed": [],
+   "removed": [],
+   "n_entries_after": 170
+  }
+ ],
+ "avg_vernier_board": {
+  "transitions": 38,
+  "transitions_with_reversal": 8,
+  "reversed_pairs": 8,
+  "events": [
+   {
+    "from_date": "2026-10-16",
+    "to_date": "2026-10-16",
+    "pairs": [
+     [
+      "limix_moe",
+      "EXAONE-Forecast-Agent"
+     ]
+    ],
+    "entries_added": [
+     "Timestral-123M",
+     "Timestral-209M",
+     "Timestral-28M",
+     "Timestral-5M"
+    ]
+   },
+   {
+    "from_date": "2026-10-16",
+    "to_date": "2026-10-17",
+    "pairs": [
+     [
+      "EXAONE-Forecast-Agent",
+      "limix_moe"
+     ]
+    ],
+    "entries_added": [
+     "Granite-timeseries-ensemble-r1-iqr",
+     "Granite-timeseries-ensemble-r1-probabilistic"
+    ]
+   },
+   {
+    "from_date": "2026-10-23",
+    "to_date": "2026-10-23",
+    "pairs": [
+     [
+      "PERSONA-AI-T4",
+      "Timestral-209M"
+     ]
+    ],
+    "entries_added": [
+     "PCFM"
+    ]
+   },
+   {
+    "from_date": "2026-10-23",
+    "to_date": "2026-10-23",
+    "pairs": [
+     [
+      "limix_moe",
+      "EXAONE-Forecast-Agent"
+     ]
+    ],
+    "entries_added": [
+     "RegLab-AH-2"
+    ]
+   },
+   {
+    "from_date": "2026-10-23",
+    "to_date": "2026-10-23",
+    "pairs": [
+     [
+      "EXAONE-Forecast-Agent",
+      "limix_moe"
+     ]
+    ],
+    "entries_added": [
+     "TimeH2O-v1",
+     "TimeH2O-v1-tiny"
+    ]
+   },
+   {
+    "from_date": "2026-10-29",
+    "to_date": "2026-10-29",
+    "pairs": [
+     [
+      "limix_moe",
+      "EXAONE-Forecast-Agent"
+     ]
+    ],
+    "entries_added": [
+     "HART-36M"
+    ]
+   },
+   {
+    "from_date": "2026-10-29",
+    "to_date": "2026-10-30",
+    "pairs": [
+     [
+      "EXAONE-Forecast-Agent",
+      "limix_moe"
+     ]
+    ],
+    "entries_added": [
+     "iAmTime"
+    ]
+   },
+   {
+    "from_date": "2026-10-30",
+    "to_date": "2026-10-30",
+    "pairs": [
+     [
+      "limix_moe",
+      "EXAONE-Forecast-Agent"
+     ]
+    ],
+    "entries_added": [
+     "PDM-Femto",
+     "PDM-Nano",
+     "PDM-Pico"
+    ]
+   }
+  ]
+ },
+ "avg_poolcheck_code": {
+  "transitions": 38,
+  "transitions_with_reversal": 8,
+  "reversed_pairs": 8,
+  "events": [
+   {
+    "from_date": "2026-10-16",
+    "to_date": "2026-10-16",
+    "pairs": [
+     [
+      "limix_moe",
+      "EXAONE-Forecast-Agent"
+     ]
+    ],
+    "entries_added": [
+     "Timestral-123M",
+     "Timestral-209M",
+     "Timestral-28M",
+     "Timestral-5M"
+    ]
+   },
+   {
+    "from_date": "2026-10-16",
+    "to_date": "2026-10-17",
+    "pairs": [
+     [
+      "EXAONE-Forecast-Agent",
+      "limix_moe"
+     ]
+    ],
+    "entries_added": [
+     "Granite-timeseries-ensemble-r1-iqr",
+     "Granite-timeseries-ensemble-r1-probabilistic"
+    ]
+   },
+   {
+    "from_date": "2026-10-23",
+    "to_date": "2026-10-23",
+    "pairs": [
+     [
+      "PERSONA-AI-T4",
+      "Timestral-209M"
+     ]
+    ],
+    "entries_added": [
+     "PCFM"
+    ]
+   },
+   {
+    "from_date": "2026-10-23",
+    "to_date": "2026-10-23",
+    "pairs": [
+     [
+      "limix_moe",
+      "EXAONE-Forecast-Agent"
+     ]
+    ],
+    "entries_added": [
+     "RegLab-AH-2"
+    ]
+   },
+   {
+    "from_date": "2026-10-23",
+    "to_date": "2026-10-23",
+    "pairs": [
+     [
+      "EXAONE-Forecast-Agent",
+      "limix_moe"
+     ]
+    ],
+    "entries_added": [
+     "TimeH2O-v1",
+     "TimeH2O-v1-tiny"
+    ]
+   },
+   {
+    "from_date": "2026-10-29",
+    "to_date": "2026-10-29",
+    "pairs": [
+     [
+      "limix_moe",
+      "EXAONE-Forecast-Agent"
+     ]
+    ],
+    "entries_added": [
+     "HART-36M"
+    ]
+   },
+   {
+    "from_date": "2026-10-29",
+    "to_date": "2026-10-30",
+    "pairs": [
+     [
+      "EXAONE-Forecast-Agent",
+      "limix_moe"
+     ]
+    ],
+    "entries_added": [
+     "iAmTime"
+    ]
+   },
+   {
+    "from_date": "2026-10-30",
+    "to_date": "2026-10-30",
+    "pairs": [
+     [
+      "limix_moe",
+      "EXAONE-Forecast-Agent"
+     ]
+    ],
+    "entries_added": [
+     "PDM-Femto",
+     "PDM-Nano",
+     "PDM-Pico"
+    ]
+   }
+  ],
+  "exact_tie_comparisons": 0
+ },
+ "exact_tiebreak_poolcheck_code": {
+  "transitions": 38,
+  "transitions_with_reversal": 8,
+  "reversed_pairs": 8,
+  "events": [
+   {
+    "from_date": "2026-10-16",
+    "to_date": "2026-10-16",
+    "pairs": [
+     [
+      "limix_moe",
+      "EXAONE-Forecast-Agent"
+     ]
+    ],
+    "entries_added": [
+     "Timestral-123M",
+     "Timestral-209M",
+     "Timestral-28M",
+     "Timestral-5M"
+    ]
+   },
+   {
+    "from_date": "2026-10-16",
+    "to_date": "2026-10-17",
+    "pairs": [
+     [
+      "EXAONE-Forecast-Agent",
+      "limix_moe"
+     ]
+    ],
+    "entries_added": [
+     "Granite-timeseries-ensemble-r1-iqr",
+     "Granite-timeseries-ensemble-r1-probabilistic"
+    ]
+   },
+   {
+    "from_date": "2026-10-23",
+    "to_date": "2026-10-23",
+    "pairs": [
+     [
+      "PERSONA-AI-T4",
+      "Timestral-209M"
+     ]
+    ],
+    "entries_added": [
+     "PCFM"
+    ]
+   },
+   {
+    "from_date": "2026-10-23",
+    "to_date": "2026-10-23",
+    "pairs": [
+     [
+      "limix_moe",
+      "EXAONE-Forecast-Agent"
+     ]
+    ],
+    "entries_added": [
+     "RegLab-AH-2"
+    ]
+   },
+   {
+    "from_date": "2026-10-23",
+    "to_date": "2026-10-23",
+    "pairs": [
+     [
+      "EXAONE-Forecast-Agent",
+      "limix_moe"
+     ]
+    ],
+    "entries_added": [
+     "TimeH2O-v1",
+     "TimeH2O-v1-tiny"
+    ]
+   },
+   {
+    "from_date": "2026-10-29",
+    "to_date": "2026-10-29",
+    "pairs": [
+     [
+      "limix_moe",
+      "EXAONE-Forecast-Agent"
+     ]
+    ],
+    "entries_added": [
+     "HART-36M"
+    ]
+   },
+   {
+    "from_date": "2026-10-29",
+    "to_date": "2026-10-30",
+    "pairs": [
+     [
+      "EXAONE-Forecast-Agent",
+      "limix_moe"
+     ]
+    ],
+    "entries_added": [
+     "iAmTime"
+    ]
+   },
+   {
+    "from_date": "2026-10-30",
+    "to_date": "2026-10-30",
+    "pairs": [
+     [
+      "limix_moe",
+      "EXAONE-Forecast-Agent"
+     ]
+    ],
+    "entries_added": [
+     "PDM-Femto",
+     "PDM-Nano",
+     "PDM-Pico"
+    ]
+   }
+  ],
+  "exact_tie_comparisons": 0
+ }
+}

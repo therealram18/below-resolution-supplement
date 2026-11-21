@@ -1,0 +1,240 @@
+% References for the FMTS 2026 submission.
+%
+% Confidence notes, so nothing here is trusted further than it was checked:
+%  - arXiv identifiers are taken from the frozen design document, which recorded
+%    them after reading the papers. They are treated as correct.
+%  - Titles and author lists below were fetched from each arXiv abstract page
+%    (arxiv.org/abs/<ID>) and checked on 2026-09-12. Where the actual paper an ID
+%    resolves to did not clearly match what the citation context expected, it was
+%    left marked TITLE-UNVERIFIED with a note explaining the mismatch, instead of
+%    being silently filled in -- see `harnessvar` below.
+
+% ---------------------------------------------------------------------------
+% The benchmark under audit
+% ---------------------------------------------------------------------------
+@article{gifteval,
+  title   = {{GIFT-Eval}: A Benchmark For General Time Series Forecasting Model Evaluation},
+  author  = {Aksu, Taha and Woo, Gerald and Liu, Juncheng and Liu, Xu and Liu, Chenghao and
+             Savarese, Silvio and Xiong, Caiming and Sahoo, Doyen},
+  journal = {arXiv preprint arXiv:2410.10393},
+  year    = {2024},
+  note    = {arXiv:2410.10393}
+}
+
+% ---------------------------------------------------------------------------
+% Closest work: a new benchmark that reports uncertainty from the start
+% ---------------------------------------------------------------------------
+@article{fevbench,
+  title   = {fev-bench: A Realistic Benchmark for Time Series Forecasting},
+  author  = {Shchur, Oleksandr and Ansari, Abdul Fatir and Turkmen, Caner and Stella, Lorenzo and
+             Erickson, Nick and Guerron, Pablo and Bohlke-Schneider, Michael and Wang, Yuyang},
+  journal = {arXiv preprint arXiv:2509.26468},
+  year    = {2025},
+  note    = {arXiv:2509.26468}
+}
+
+% ---------------------------------------------------------------------------
+% Rank intervals on other leaderboards
+% ---------------------------------------------------------------------------
+@article{rankint1,
+  title   = {Rank Intervals for Leaderboards: A Hierarchical Framework for Model Evaluation},
+  author  = {Neuhof, Bitya and Benjamini, Yuval},
+  journal = {arXiv preprint arXiv:2606.08679},
+  year    = {2026},
+  note    = {arXiv:2606.08679}
+}
+
+@article{rankint2,
+  title   = {Quantifying Ranking Uncertainty in {LLM} Benchmarks},
+  author  = {Neuhof, Bitya and Benjamini, Yuval},
+  journal = {arXiv preprint arXiv:2607.16259},
+  year    = {2026},
+  note    = {arXiv:2607.16259}
+}
+
+@article{pairedmde,
+  title   = {Pre-Registering the Detectable Effect: A Paired-MDE Budget for 4-bit
+             Quantization Benchmarks, with a Pilot Audit},
+  author  = {Zhuang, Zexin and Li, Yanhang and Fan, Zhichao},
+  journal = {arXiv preprint arXiv:2605.28873},
+  year    = {2026},
+  note    = {arXiv:2605.28873}
+}
+
+% ---------------------------------------------------------------------------
+% Ranking instability from causes outside the harness, and harness variance
+% ---------------------------------------------------------------------------
+@article{livehousets,
+  title   = {{LiveHouse-TS}: An Open-world Living Benchmark for Time Series Foundation Models},
+  author  = {Wen, Haomin and Zhou, Ziyu and Liu, Qingxiang and Zhong, Siru and Liang, Yuxuan},
+  journal = {arXiv preprint arXiv:2608.17299},
+  year    = {2026},
+  note    = {arXiv:2608.17299}
+}
+
+% harnessvar: this LLM-agent paper is the INTENDED citation, not a mismatch: it
+% measures how much of a benchmark score comes from the execution harness around
+% an agent, and we cite it because all 10 of the displayed top-10 GIFT-Eval
+% entries are agentic pipelines (frozen design doc positioning table, s4.2).
+@article{harnessvar,
+  title   = {Stop Comparing {LLM} Agents Without Disclosing the Harness},
+  author  = {Zhang, Yunbei and Wang, Janet and Ge, Yingqiang and Xu, Weijie and Hamm, Jihun and Reddy, Chandan K.},
+  journal = {arXiv preprint arXiv:2605.23950},
+  year    = {2026},
+  note    = {arXiv:2605.23950}
+}
+
+% ---------------------------------------------------------------------------
+% Forecasting foundation model benchmarks and audits
+% ---------------------------------------------------------------------------
+@article{tsfmbench,
+  title   = {{TSFM-Bench}: A Comprehensive and Unified Benchmark of Foundation Models
+             for Time Series Forecasting},
+  author  = {Li, Zhe and Qiu, Xiangfei and Chen, Peng and Wang, Yihang and Cheng, Hanyin and
+             Shu, Yang and Hu, Jilin and Guo, Chenjuan and Zhou, Aoying and
+             Jensen, Christian S. and Yang, Bin},
+  journal = {arXiv preprint arXiv:2410.11802},
+  year    = {2024},
+  note    = {arXiv:2410.11802}
+}
+
+@article{tsfmaudit,
+  title   = {{TSFMAudit}: Data Contamination Auditing in Forecasting Time Series
+             Foundation Models},
+  author  = {Li, Hongkai and Xie, Shifeng and Shen, Lefei and Li, Zhuo and Chen, Mouxiang and
+             Zhang, Xiaobin and Fu, Han and Sun, Jianling and Ren, Xiaoxue and Liu, Chenghao},
+  journal = {arXiv preprint arXiv:2605.26161},
+  year    = {2026},
+  note    = {arXiv:2605.26161}
+}
+
+% ---------------------------------------------------------------------------
+% Motivation: leaderboard position used as a claim, and a call for this measurement
+% ---------------------------------------------------------------------------
+@article{timerouter,
+  title   = {{TimeRouter}: Efficient and Adaptive Routing of Time-Series Foundation Models},
+  author  = {Ning, Kanghui and Jiang, Yushan and Rasul, Kashif and Schneider, Anderson and
+             Nevmyvaka, Yuriy and Song, Dongjin},
+  journal = {arXiv preprint arXiv:2606.11625},
+  year    = {2026},
+  note    = {arXiv:2606.11625}
+}
+
+% positionpaper note (2026-09-12): confirmed as the paper the frozen design
+% document's ID points to, and it is about time series forecasting evaluation.
+% But its actual argument is multi-dimensional evaluation (structural coherence,
+% decision relevance), not specifically statistical/rank uncertainty. The
+% sentence citing it in main.tex must claim only what it supports.
+@article{positionpaper,
+  title   = {Are We Winning the Wrong Game? Revisiting Evaluation Practices for
+             Long-Term Time Series Forecasting},
+  author  = {Phungtua-eng, Thanapol and Yamamoto, Yoshitaka},
+  journal = {arXiv preprint arXiv:2603.08156},
+  year    = {2026},
+  note    = {arXiv:2603.08156}
+}
+
+% ---------------------------------------------------------------------------
+% The four models we run
+% ---------------------------------------------------------------------------
+@article{chronos,
+  author  = {Ansari, Abdul Fatir and Stella, Lorenzo and Turkmen, Caner and Zhang, Xiyuan and
+             Mercado, Pedro and Shen, Huibin and Shchur, Oleksandr and Rangapuram, Syama Sundar and
+             Pineda Arango, Sebastian and Kapoor, Shubham and Zschiegner, Jasper and
+             Maddix, Danielle C. and Wang, Hao and Mahoney, Michael W. and Torkkola, Kari and
+             Gordon Wilson, Andrew and Bohlke-Schneider, Michael and Wang, Yuyang},
+  title   = {Chronos: Learning the Language of Time Series},
+  journal = {arXiv preprint arXiv:2403.07815},
+  year    = {2024},
+  note    = {arXiv:2403.07815; we run the Chronos-Bolt-base checkpoint}
+}
+
+% The moirai-2.0-R-small model card requests citing the Moirai 2.0 paper
+% (arXiv:2511.11698), not the Moirai 1 paper (2402.02592). Verified against
+% huggingface.co/Salesforce/moirai-2.0-R-small on 2026-09-14.
+@article{moirai,
+  author  = {Liu, Chenghao and Aksu, Taha and Liu, Juncheng and Liu, Xu and Yan, Hanshu and
+             Pham, Quang and Savarese, Silvio and Sahoo, Doyen and Xiong, Caiming and Li, Junnan},
+  title   = {{Moirai 2.0}: When Less Is More for Time Series Forecasting},
+  journal = {arXiv preprint arXiv:2511.11698},
+  year    = {2025},
+  note    = {arXiv:2511.11698; we run the Moirai-2.0-R-small checkpoint}
+}
+
+@article{timesfm,
+  author  = {Das, Abhimanyu and Kong, Weihao and Sen, Rajat and Zhou, Yichen},
+  title   = {A Decoder-Only Foundation Model for Time-Series Forecasting},
+  journal = {arXiv preprint arXiv:2310.10688},
+  year    = {2023},
+  note    = {arXiv:2310.10688; we run the TimesFM-2.5-200M checkpoint}
+}
+
+@misc{toto,
+  author = {Cohen, Ben and Khwaja, Emaad and Wang, Kan and Masson, Charles and
+            Ram\'e, Elise and Doubli, Youssef and Abou-Amal, Othmane},
+  title  = {Toto: Time Series Optimized Transformer for Observability},
+  year   = {2024},
+  note   = {arXiv:2407.07874; Datadog's Toto technical report; we run the
+            Toto-Open-Base-1.0 checkpoint}
+}
+
+% BOOM / Datadog observability benchmark: source of the "512 degrades across
+% models" statement cited in Result 2. Verified against the arXiv HTML full
+% text on 2026-09-13; author list from the abs page.
+@article{boom,
+  title   = {This Time is Different: An Observability Perspective on Time Series Foundation Models},
+  author  = {Cohen, Ben and Khwaja, Emaad and Doubli, Youssef and Lemaachi, Salahidine and Lettieri, Chris and Masson, Charles and Miccinilli, Hugo and Ram{\'e}, Elise and Ren, Qiqi and Rostamizadeh, Afshin and Ogier du Terrail, Jean and Toon, Anna-Monica and Wang, Kan and Xie, Stephan and Xu, Zongzhe and Zhukova, Viktoriya and Asker, David and Talwalkar, Ameet and Abou-Amal, Othmane},
+  journal = {arXiv preprint arXiv:2505.14766},
+  year    = {2025},
+  note    = {arXiv:2505.14766}
+}
+
+% Aggregation-rule sensitivity on a tabular benchmark (TabArena); cited as the
+% methodological sibling of our aggregation-disagreement finding. Verified
+% against the abs page on 2026-09-13.
+@article{lostinagg,
+  title   = {Lost in Aggregation: How Benchmarks Overlook Irreplaceable Model Strengths},
+  author  = {Tschalzev, Andrej and L{\"u}dtke, Stefan and Stuckenschmidt, Heiner and Bartelt, Christian},
+  journal = {arXiv preprint arXiv:2608.18919},
+  year    = {2026},
+  note    = {arXiv:2608.18919}
+}
+
+% TS-Arena: live/prospective forecast pre-registration arena with bootstrapped
+% ELO intervals — prior art for intervals on a time-series board (prospective;
+% ours is a retrospective audit of the incumbent). Verified 2026-09-14.
+@article{tsarena,
+  title   = {{TS-Arena}: A Live Forecast Pre-Registration Platform},
+  author  = {Meyer, Marcel and Kaltenpoth, Sascha and Albers, Henrik and Zalipski, Kevin and M{\"u}ller, Oliver},
+  journal = {arXiv preprint arXiv:2512.20761},
+  year    = {2025},
+  note    = {arXiv:2512.20761}
+}
+
+% Pool dependence of mean-rank comparisons (cite only with the pool-dependence
+% paragraph). Verified 2026-09-14.
+@article{benavoli2016,
+  title   = {Should We Really Use Post-Hoc Tests Based on Mean-Ranks?},
+  author  = {Benavoli, Alessio and Corani, Giorgio and Mangili, Francesca},
+  journal = {Journal of Machine Learning Research},
+  volume  = {17},
+  number  = {5},
+  pages   = {1--10},
+  year    = {2016}
+}
+
+@inproceedings{zhanghardt2024,
+  title     = {Inherent Trade-Offs between Diversity and Stability in Multi-Task Benchmarks},
+  author    = {Zhang, Guanhua and Hardt, Moritz},
+  booktitle = {International Conference on Machine Learning},
+  year      = {2024},
+  note      = {arXiv:2405.01719}
+}
+
+@article{arenaperturb,
+  title   = {A Unified Perturbation Framework for Analyzing Leaderboard Stability and Manipulation},
+  author  = {Oyarhoseini, Hosna and Lin, Jimmy and Karimi, Amir-Hossein},
+  journal = {arXiv preprint arXiv:2605.15761},
+  year    = {2026},
+  note    = {arXiv:2605.15761}
+}

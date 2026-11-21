@@ -1,0 +1,8 @@
+# Env: harness/envs/data  (python 3.11)
+# Data download + gift_eval.data.Dataset verification only. No model
+# packages, no torch.
+#
+# Install:
+#   uv venv envs/data --python 3.11
+#   uv pip install --python envs/data/bin/python -e ../gift-eval "huggingface_hub[cli]"
+huggingface_hub

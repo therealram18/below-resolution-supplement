@@ -1,0 +1,2 @@
+dataset,model,eval_metrics/MSE[mean],eval_metrics/MSE[0.5],eval_metrics/MAE[0.5],eval_metrics/MASE[0.5],eval_metrics/MAPE[0.5],eval_metrics/sMAPE[0.5],eval_metrics/MSIS,eval_metrics/RMSE[mean],eval_metrics/NRMSE[mean],eval_metrics/ND[0.5],eval_metrics/mean_weighted_sum_quantile_loss,domain,num_variates
+m_dense/H/short,toto__A__seed43,75994.58666666667,56443.58888888889,101.26434027777778,0.879052920902299,0.3163899282773713,0.22785898844401042,10.541547735185645,275.67115675504874,0.4889719693491778,0.17961771725892908,0.1483498704955157,Transport,1

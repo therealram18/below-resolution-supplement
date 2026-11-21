@@ -1,0 +1,3 @@
+# first round, envs/toto, install step 4: uv pip install 'setuptools<81' --reinstall
+# from grid_results_h100/provenance_h100/setup_logs/setup.log
+setuptools==80.10.2

@@ -1,0 +1,194 @@
+{
+ "top10": [
+  "toto_2.0_2.5b",
+  "toto_2.0_1b",
+  "toto_2.0_313m",
+  "toto_2.0_22m",
+  "toto",
+  "toto_2.0_4m",
+  "chronos_2",
+  "timesfm_2_5_200m",
+  "moirai_1.1_base",
+  "moirai_1.1_large"
+ ],
+ "removal": {
+  "changed": 0,
+  "of": 13,
+  "entries": []
+ },
+ "near_copy": {
+  "changed": 6,
+  "of": 23,
+  "entries": [
+   "toto_2.0_4m",
+   "moirai_1.1_large",
+   "chronos_2",
+   "toto_2.0_313m",
+   "timesfm_2_5_200m",
+   "toto_2.0_1b"
+  ]
+ },
+ "seconds": 7.177248001098633,
+ "git_commits": [
+  {
+   "hash": "b3f3ffb",
+   "date": "2026-05-12",
+   "added": [],
+   "other": [
+    [
+     "M",
+     "toto_2.0_1b"
+    ],
+    [
+     "M",
+     "toto_2.0_2.5b"
+    ],
+    [
+     "M",
+     "toto_2.0_22m"
+    ],
+    [
+     "M",
+     "toto_2.0_313m"
+    ],
+    [
+     "M",
+     "toto_2.0_4m"
+    ]
+   ]
+  },
+  {
+   "hash": "f67fbc3",
+   "date": "2026-05-11",
+   "added": [],
+   "other": [
+    [
+     "M",
+     "toto_2.0_1b"
+    ],
+    [
+     "M",
+     "toto_2.0_2.5b"
+    ],
+    [
+     "M",
+     "toto_2.0_22m"
+    ],
+    [
+     "M",
+     "toto_2.0_313m"
+    ],
+    [
+     "M",
+     "toto_2.0_4m"
+    ]
+   ]
+  },
+  {
+   "hash": "d0c2dc0",
+   "date": "2026-04-23",
+   "added": [
+    [
+     "A",
+     "chronos_2"
+    ],
+    [
+     "A",
+     "moirai_2_small"
+    ],
+    [
+     "A",
+     "timesfm_2_5_200m"
+    ],
+    [
+     "A",
+     "toto_2.0_1b"
+    ],
+    [
+     "A",
+     "toto_2.0_2.5b"
+    ],
+    [
+     "A",
+     "toto_2.0_22m"
+    ],
+    [
+     "A",
+     "toto_2.0_313m"
+    ],
+    [
+     "A",
+     "toto_2.0_4m"
+    ]
+   ],
+   "other": []
+  },
+  {
+   "hash": "fd75d06",
+   "date": "2025-05-28",
+   "added": [
+    [
+     "A",
+     "autoarima"
+    ],
+    [
+     "A",
+     "autoets"
+    ],
+    [
+     "A",
+     "autotheta"
+    ],
+    [
+     "A",
+     "chronos_bolt_base"
+    ],
+    [
+     "A",
+     "chronos_bolt_small"
+    ],
+    [
+     "A",
+     "moirai_1.1_base"
+    ],
+    [
+     "A",
+     "moirai_1.1_large"
+    ],
+    [
+     "A",
+     "moirai_1.1_small"
+    ],
+    [
+     "A",
+     "seasonalnaive"
+    ],
+    [
+     "A",
+     "time_moe_200M"
+    ],
+    [
+     "A",
+     "time_moe_50M"
+    ],
+    [
+     "A",
+     "timer"
+    ],
+    [
+     "A",
+     "timesfm_2_0_500m"
+    ],
+    [
+     "A",
+     "toto"
+    ],
+    [
+     "A",
+     "visionts"
+    ]
+   ],
+   "other": []
+  }
+ ]
+}

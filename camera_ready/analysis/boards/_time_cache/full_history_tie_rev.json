@@ -1,0 +1,7787 @@
+{
+ "n_states": 45,
+ "n_updates": 44,
+ "all_updates": {
+  "mase_gmean": {
+   "updates": 44,
+   "updates_with_swap": 0,
+   "pairs": 0
+  },
+  "crps_gmean": {
+   "updates": 44,
+   "updates_with_swap": 0,
+   "pairs": 0
+  },
+  "mase_rank": {
+   "updates": 44,
+   "updates_with_swap": 12,
+   "pairs": 13
+  },
+  "crps_rank": {
+   "updates": 44,
+   "updates_with_swap": 4,
+   "pairs": 5
+  }
+ },
+ "ordinary_updates": {
+  "mase_gmean": {
+   "updates": 43,
+   "updates_with_swap": 0,
+   "pairs": 0
+  },
+  "crps_gmean": {
+   "updates": 43,
+   "updates_with_swap": 0,
+   "pairs": 0
+  },
+  "mase_rank": {
+   "updates": 43,
+   "updates_with_swap": 12,
+   "pairs": 13
+  },
+  "crps_rank": {
+   "updates": 43,
+   "updates_with_swap": 4,
+   "pairs": 5
+  }
+ },
+ "baseline_refresh_updates": {
+  "mase_gmean": {
+   "updates": 1,
+   "updates_with_swap": 0,
+   "pairs": 0
+  },
+  "crps_gmean": {
+   "updates": 1,
+   "updates_with_swap": 0,
+   "pairs": 0
+  },
+  "mase_rank": {
+   "updates": 1,
+   "updates_with_swap": 0,
+   "pairs": 0
+  },
+  "crps_rank": {
+   "updates": 1,
+   "updates_with_swap": 0,
+   "pairs": 0
+  }
+ },
+ "first_round_window": {
+  "mase_gmean": {
+   "updates": 28,
+   "updates_with_swap": 0,
+   "pairs": 0
+  },
+  "crps_gmean": {
+   "updates": 28,
+   "updates_with_swap": 0,
+   "pairs": 0
+  },
+  "mase_rank": {
+   "updates": 28,
+   "updates_with_swap": 10,
+   "pairs": 11
+  },
+  "crps_rank": {
+   "updates": 28,
+   "updates_with_swap": 3,
+   "pairs": 3
+  }
+ },
+ "checks": [
+  {
+   "commit": "ca2d156c",
+   "pool": 13,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.0004419925788688994,
+    "crps_gmean": 0.00044227089666937225,
+    "mase_rank": 0.0004897959183667311,
+    "crps_rank": 0.0004897959183667311
+   },
+   "tie_units": 0,
+   "board_top10": [
+    "TimesFM-2.5",
+    "ToTo",
+    "TiRex",
+    "moirai2",
+    "chronos2_base",
+    "TimesFM-2.0",
+    "kairos",
+    "sundial_base",
+    "chronos_bolt_base",
+    "TimesFM-1.0"
+   ],
+   "my_top10": [
+    "TimesFM-2.5",
+    "ToTo",
+    "TiRex",
+    "moirai2",
+    "chronos2_base",
+    "TimesFM-2.0",
+    "kairos",
+    "sundial_base",
+    "chronos_bolt_base",
+    "TimesFM-1.0"
+   ]
+  },
+  {
+   "commit": "c01dea39",
+   "pool": 13,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.0004419925788688994,
+    "crps_gmean": 0.00044227089666937225,
+    "mase_rank": 0.0004285714285714448,
+    "crps_rank": 0.00046938775510163566
+   },
+   "tie_units": 0,
+   "board_top10": [
+    "chronos2_base",
+    "TimesFM-2.5",
+    "ToTo",
+    "TiRex",
+    "moirai2",
+    "TimesFM-2.0",
+    "kairos",
+    "sundial_base",
+    "chronos_bolt_base",
+    "TimesFM-1.0"
+   ],
+   "my_top10": [
+    "chronos2_base",
+    "TimesFM-2.5",
+    "ToTo",
+    "TiRex",
+    "moirai2",
+    "TimesFM-2.0",
+    "kairos",
+    "sundial_base",
+    "chronos_bolt_base",
+    "TimesFM-1.0"
+   ]
+  },
+  {
+   "commit": "9d12c44d",
+   "pool": 13,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.00041924631883172303,
+    "crps_gmean": 0.00044227089666937225,
+    "mase_rank": 0.0004489795918369843,
+    "crps_rank": 0.0004897959183667311
+   },
+   "tie_units": 0,
+   "board_top10": [
+    "chronos2_base",
+    "TimesFM-2.5",
+    "ToTo",
+    "TiRex",
+    "moirai2",
+    "TimesFM-2.0",
+    "chronos_bolt_base",
+    "kairos",
+    "sundial_base",
+    "TimesFM-1.0"
+   ],
+   "my_top10": [
+    "chronos2_base",
+    "TimesFM-2.5",
+    "ToTo",
+    "TiRex",
+    "moirai2",
+    "TimesFM-2.0",
+    "chronos_bolt_base",
+    "kairos",
+    "sundial_base",
+    "TimesFM-1.0"
+   ]
+  },
+  {
+   "commit": "0ffbc360",
+   "pool": 13,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.00041924631883172303,
+    "crps_gmean": 0.00044227089666937225,
+    "mase_rank": 0.0004489795918369843,
+    "crps_rank": 0.0004897959183676193
+   },
+   "tie_units": 0,
+   "board_top10": [
+    "chronos2_base",
+    "TimesFM-2.5",
+    "TiRex",
+    "ToTo",
+    "moirai2",
+    "TimesFM-2.0",
+    "chronos_bolt_base",
+    "kairos",
+    "sundial_base",
+    "TimesFM-1.0"
+   ],
+   "my_top10": [
+    "chronos2_base",
+    "TimesFM-2.5",
+    "TiRex",
+    "ToTo",
+    "moirai2",
+    "TimesFM-2.0",
+    "chronos_bolt_base",
+    "kairos",
+    "sundial_base",
+    "TimesFM-1.0"
+   ]
+  },
+  {
+   "commit": "d39d9291",
+   "pool": 13,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.00041924631883172303,
+    "crps_gmean": 0.00044227089666937225,
+    "mase_rank": 0.0004489795918369843,
+    "crps_rank": 0.0004897959183676193
+   },
+   "tie_units": 0,
+   "board_top10": [
+    "Chronos-2",
+    "TimesFM-2.5",
+    "TiRex",
+    "ToTo",
+    "moirai2",
+    "TimesFM-2.0",
+    "chronos_bolt_base",
+    "kairos",
+    "sundial_base",
+    "TimesFM-1.0"
+   ],
+   "my_top10": [
+    "Chronos-2",
+    "TimesFM-2.5",
+    "TiRex",
+    "ToTo",
+    "moirai2",
+    "TimesFM-2.0",
+    "chronos_bolt_base",
+    "kairos",
+    "sundial_base",
+    "TimesFM-1.0"
+   ]
+  },
+  {
+   "commit": "985df4da",
+   "pool": 13,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.00041924631883172303,
+    "crps_gmean": 0.00044227089666937225,
+    "mase_rank": 0.0004489795918369843,
+    "crps_rank": 0.0004897959183676193
+   },
+   "tie_units": 0,
+   "board_top10": [
+    "Chronos-2",
+    "TimesFM-2.5",
+    "TiRex",
+    "Toto",
+    "Moirai2",
+    "TimesFM-2.0",
+    "Chronos-bolt",
+    "Kairos",
+    "sundial_base",
+    "TimesFM-1.0"
+   ],
+   "my_top10": [
+    "Chronos-2",
+    "TimesFM-2.5",
+    "TiRex",
+    "Toto",
+    "Moirai2",
+    "TimesFM-2.0",
+    "Chronos-bolt",
+    "Kairos",
+    "sundial_base",
+    "TimesFM-1.0"
+   ]
+  },
+  {
+   "commit": "cece563b",
+   "pool": 14,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.00041924631883172303,
+    "crps_gmean": 0.0004986036315256515,
+    "mase_rank": 0.0004897959183676193,
+    "crps_rank": 0.0004897959183667311
+   },
+   "tie_units": 0,
+   "board_top10": [
+    "Chronos-2",
+    "TimesFM-2.5",
+    "Timer-S1",
+    "TiRex",
+    "Toto",
+    "Moirai2",
+    "TimesFM-2.0",
+    "Chronos-bolt",
+    "Kairos",
+    "sundial_base"
+   ],
+   "my_top10": [
+    "Chronos-2",
+    "TimesFM-2.5",
+    "Timer-S1",
+    "TiRex",
+    "Toto",
+    "Moirai2",
+    "TimesFM-2.0",
+    "Chronos-bolt",
+    "Kairos",
+    "sundial_base"
+   ]
+  },
+  {
+   "commit": "6eb02691",
+   "pool": 15,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.00041924631883172303,
+    "crps_gmean": 0.0004986036315256515,
+    "mase_rank": 0.00040816326530723757,
+    "crps_rank": 0.0004285714285714448
+   },
+   "tie_units": 0,
+   "board_top10": [
+    "Chronos-2",
+    "TimesFM-2.5",
+    "Timer-S1",
+    "TiRex",
+    "Toto",
+    "Moirai2",
+    "Eidos",
+    "TimesFM-2.0",
+    "Chronos-bolt",
+    "Kairos"
+   ],
+   "my_top10": [
+    "Chronos-2",
+    "TimesFM-2.5",
+    "Timer-S1",
+    "TiRex",
+    "Toto",
+    "Moirai2",
+    "Eidos",
+    "TimesFM-2.0",
+    "Chronos-bolt",
+    "Kairos"
+   ]
+  },
+  {
+   "commit": "5b7dab51",
+   "pool": 16,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.00041924631883172303,
+    "crps_gmean": 0.0004986036315256515,
+    "mase_rank": 0.00046938775510163566,
+    "crps_rank": 0.0004897959183671752
+   },
+   "tie_units": 0,
+   "board_top10": [
+    "PatchTST-FM-TsMix10M",
+    "Chronos-2",
+    "TimesFM-2.5",
+    "Timer-S1",
+    "TiRex",
+    "Toto",
+    "Moirai2",
+    "Eidos",
+    "TimesFM-2.0",
+    "Chronos-bolt"
+   ],
+   "my_top10": [
+    "PatchTST-FM-TsMix10M",
+    "Chronos-2",
+    "TimesFM-2.5",
+    "Timer-S1",
+    "TiRex",
+    "Toto",
+    "Moirai2",
+    "Eidos",
+    "TimesFM-2.0",
+    "Chronos-bolt"
+   ]
+  },
+  {
+   "commit": "d6d1916a",
+   "pool": 17,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.00043606757628111836,
+    "crps_gmean": 0.0004986036315256515,
+    "mase_rank": 0.0004489795918374284,
+    "crps_rank": 0.00046938775510163566
+   },
+   "tie_units": 0,
+   "board_top10": [
+    "PatchTST-FM-TsMix10M",
+    "Chronos-2",
+    "TimesFM-2.5",
+    "PatchTST-FM-R1",
+    "Timer-S1",
+    "TiRex",
+    "Toto",
+    "Moirai2",
+    "Eidos",
+    "TimesFM-2.0"
+   ],
+   "my_top10": [
+    "PatchTST-FM-TsMix10M",
+    "Chronos-2",
+    "TimesFM-2.5",
+    "PatchTST-FM-R1",
+    "Timer-S1",
+    "TiRex",
+    "Toto",
+    "Moirai2",
+    "Eidos",
+    "TimesFM-2.0"
+   ]
+  },
+  {
+   "commit": "25e9cf50",
+   "pool": 17,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.00043606757628111836,
+    "crps_gmean": 0.0004986036315256515,
+    "mase_rank": 0.0004897959183676193,
+    "crps_rank": 0.0004897959183667311
+   },
+   "tie_units": 0,
+   "board_top10": [
+    "PatchTST-FM-TsMix10M",
+    "Chronos-2",
+    "TimesFM-2.5",
+    "PatchTST-FM-R1",
+    "Timer-S1",
+    "TiRex",
+    "Toto",
+    "Eidos",
+    "Moirai2",
+    "TimesFM-2.0"
+   ],
+   "my_top10": [
+    "PatchTST-FM-TsMix10M",
+    "Chronos-2",
+    "TimesFM-2.5",
+    "PatchTST-FM-R1",
+    "Timer-S1",
+    "TiRex",
+    "Toto",
+    "Eidos",
+    "Moirai2",
+    "TimesFM-2.0"
+   ]
+  },
+  {
+   "commit": "0d1f7a63",
+   "pool": 18,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.00043606757628111836,
+    "crps_gmean": 0.0004986036315256515,
+    "mase_rank": 0.0004897959183676193,
+    "crps_rank": 0.00044897959183654024
+   },
+   "tie_units": 0,
+   "board_top10": [
+    "PatchTST-FM-TsMix10M",
+    "Chronos-2",
+    "TimesFM-2.5",
+    "PatchTST-FM-R1",
+    "Timer-S1",
+    "TiRex",
+    "Toto-2.0-4m",
+    "Toto",
+    "Eidos",
+    "Moirai2"
+   ],
+   "my_top10": [
+    "PatchTST-FM-TsMix10M",
+    "Chronos-2",
+    "TimesFM-2.5",
+    "PatchTST-FM-R1",
+    "Timer-S1",
+    "TiRex",
+    "Toto-2.0-4m",
+    "Toto",
+    "Eidos",
+    "Moirai2"
+   ]
+  },
+  {
+   "commit": "f5115615",
+   "pool": 19,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.00043606757628111836,
+    "crps_gmean": 0.0004986036315256515,
+    "mase_rank": 0.00046938775510163566,
+    "crps_rank": 0.0004897959183676193
+   },
+   "tie_units": 0,
+   "board_top10": [
+    "PatchTST-FM-TsMix10M",
+    "Chronos-2",
+    "TimesFM-2.5",
+    "Toto-2.0-22m",
+    "PatchTST-FM-R1",
+    "Timer-S1",
+    "TiRex",
+    "Toto-2.0-4m",
+    "Toto",
+    "Eidos"
+   ],
+   "my_top10": [
+    "PatchTST-FM-TsMix10M",
+    "Chronos-2",
+    "TimesFM-2.5",
+    "Toto-2.0-22m",
+    "PatchTST-FM-R1",
+    "Timer-S1",
+    "TiRex",
+    "Toto-2.0-4m",
+    "Toto",
+    "Eidos"
+   ]
+  },
+  {
+   "commit": "7a1b5500",
+   "pool": 20,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.00043606757628111836,
+    "crps_gmean": 0.0004986036315256515,
+    "mase_rank": 0.0004897959183667311,
+    "crps_rank": 0.0004897959183667311
+   },
+   "tie_units": 0,
+   "board_top10": [
+    "Toto-2.0-313m",
+    "PatchTST-FM-TsMix10M",
+    "Chronos-2",
+    "TimesFM-2.5",
+    "Toto-2.0-22m",
+    "PatchTST-FM-R1",
+    "Timer-S1",
+    "TiRex",
+    "Toto-2.0-4m",
+    "Toto"
+   ],
+   "my_top10": [
+    "Toto-2.0-313m",
+    "PatchTST-FM-TsMix10M",
+    "Chronos-2",
+    "TimesFM-2.5",
+    "Toto-2.0-22m",
+    "PatchTST-FM-R1",
+    "Timer-S1",
+    "TiRex",
+    "Toto-2.0-4m",
+    "Toto"
+   ]
+  },
+  {
+   "commit": "3d7c681e",
+   "pool": 21,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.00043606757628111836,
+    "crps_gmean": 0.0004986036315256515,
+    "mase_rank": 0.0004285714285714448,
+    "crps_rank": 0.0004489795918374284
+   },
+   "tie_units": 0,
+   "board_top10": [
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-TsMix10M",
+    "Chronos-2",
+    "TimesFM-2.5",
+    "Toto-2.0-22m",
+    "PatchTST-FM-R1",
+    "Timer-S1",
+    "TiRex",
+    "Toto-2.0-4m"
+   ],
+   "my_top10": [
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-TsMix10M",
+    "Chronos-2",
+    "TimesFM-2.5",
+    "Toto-2.0-22m",
+    "PatchTST-FM-R1",
+    "Timer-S1",
+    "TiRex",
+    "Toto-2.0-4m"
+   ]
+  },
+  {
+   "commit": "297ae66a",
+   "pool": 22,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.00043606757628111836,
+    "crps_gmean": 0.0004986036315256515,
+    "mase_rank": 0.00046938775510163566,
+    "crps_rank": 0.00046938775510163566
+   },
+   "tie_units": 0,
+   "board_top10": [
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-TsMix10M",
+    "Chronos-2",
+    "TimesFM-2.5",
+    "Toto-2.0-22m",
+    "PatchTST-FM-R1",
+    "Timer-S1",
+    "TiRex"
+   ],
+   "my_top10": [
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-TsMix10M",
+    "Chronos-2",
+    "TimesFM-2.5",
+    "Toto-2.0-22m",
+    "PatchTST-FM-R1",
+    "Timer-S1",
+    "TiRex"
+   ]
+  },
+  {
+   "commit": "c43961bb",
+   "pool": 22,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.0004732876941910824,
+    "crps_gmean": 0.0004870787020705425,
+    "mase_rank": 0.0004897959183676193,
+    "crps_rank": 0.0004897959183676193
+   },
+   "tie_units": 0,
+   "board_top10": [
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-TsMix10M",
+    "Toto-2.0-22m",
+    "PatchTST-FM-R1",
+    "Chronos-2",
+    "Timer-S1",
+    "TimesFM-2.5",
+    "Toto-2.0-4m"
+   ],
+   "my_top10": [
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-TsMix10M",
+    "Toto-2.0-22m",
+    "PatchTST-FM-R1",
+    "Chronos-2",
+    "Timer-S1",
+    "TimesFM-2.5",
+    "Toto-2.0-4m"
+   ]
+  },
+  {
+   "commit": "4d7793e9",
+   "pool": 22,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.0004732876941910824,
+    "crps_gmean": 0.0004896541749257466,
+    "mase_rank": 0.0004897959183676193,
+    "crps_rank": 0.0004897959183667311
+   },
+   "tie_units": 0,
+   "board_top10": [
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-TsMix10M",
+    "PatchTST-FM-R1",
+    "Chronos-2",
+    "Timer-S1",
+    "TimesFM-2.5",
+    "Toto-2.0-22m",
+    "TiRex"
+   ],
+   "my_top10": [
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-TsMix10M",
+    "PatchTST-FM-R1",
+    "Chronos-2",
+    "Timer-S1",
+    "TimesFM-2.5",
+    "Toto-2.0-22m",
+    "TiRex"
+   ]
+  },
+  {
+   "commit": "a2d8c250",
+   "pool": 22,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.0004732876941910824,
+    "crps_gmean": 0.0004896541749257466,
+    "mase_rank": 0.000469387755103412,
+    "crps_rank": 0.00046938775510163566
+   },
+   "tie_units": 0,
+   "board_top10": [
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-TsMix10M",
+    "PatchTST-FM-R1",
+    "Chronos-2",
+    "TimesFM-2.5",
+    "Toto-2.0-22m",
+    "TiRex",
+    "Eidos"
+   ],
+   "my_top10": [
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-TsMix10M",
+    "PatchTST-FM-R1",
+    "Chronos-2",
+    "TimesFM-2.5",
+    "Toto-2.0-22m",
+    "TiRex",
+    "Eidos"
+   ]
+  },
+  {
+   "commit": "d086573e",
+   "pool": 22,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.0004732876941910824,
+    "crps_gmean": 0.0004896541749257466,
+    "mase_rank": 0.0004897959183676193,
+    "crps_rank": 0.00046938775510163566
+   },
+   "tie_units": 0,
+   "board_top10": [
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-TsMix10M",
+    "PatchTST-FM-R1",
+    "Chronos-2",
+    "TimesFM-2.5",
+    "Toto-2.0-22m",
+    "TiRex",
+    "Toto-2.0-4m"
+   ],
+   "my_top10": [
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-TsMix10M",
+    "PatchTST-FM-R1",
+    "Chronos-2",
+    "TimesFM-2.5",
+    "Toto-2.0-22m",
+    "TiRex",
+    "Toto-2.0-4m"
+   ]
+  },
+  {
+   "commit": "3963cf80",
+   "pool": 22,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.0004732876941910824,
+    "crps_gmean": 0.0004896541749257466,
+    "mase_rank": 0.0004897959183676193,
+    "crps_rank": 0.0004489795918374284
+   },
+   "tie_units": 0,
+   "board_top10": [
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-TsMix10M",
+    "Chronos-2",
+    "TimesFM-2.5",
+    "Toto-2.0-22m",
+    "PatchTST-FM-R1",
+    "TiRex",
+    "Toto-2.0-4m"
+   ],
+   "my_top10": [
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-TsMix10M",
+    "Chronos-2",
+    "TimesFM-2.5",
+    "Toto-2.0-22m",
+    "PatchTST-FM-R1",
+    "TiRex",
+    "Toto-2.0-4m"
+   ]
+  },
+  {
+   "commit": "e14243f8",
+   "pool": 23,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.0004732876941910824,
+    "crps_gmean": 0.0004896541749257466,
+    "mase_rank": 0.9797551020408157,
+    "crps_rank": 0.9901428571428568
+   },
+   "tie_units": 193,
+   "board_top10": [
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-TsMix10M",
+    "PatchTST-FM-Extended",
+    "Chronos-2",
+    "TimesFM-2.5",
+    "Toto-2.0-22m",
+    "PatchTST-FM-R1",
+    "TiRex"
+   ],
+   "my_top10": [
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-TsMix10M",
+    "PatchTST-FM-Extended",
+    "Chronos-2",
+    "TimesFM-2.5",
+    "Toto-2.0-22m",
+    "PatchTST-FM-R1",
+    "TiRex"
+   ]
+  },
+  {
+   "commit": "8ec9db10",
+   "pool": 22,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.0004732876941910824,
+    "crps_gmean": 0.0004896541749257466,
+    "mase_rank": 0.0004897959183676193,
+    "crps_rank": 0.00046938775510163566
+   },
+   "tie_units": 0,
+   "board_top10": [
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-Extended",
+    "Chronos-2",
+    "TimesFM-2.5",
+    "Toto-2.0-22m",
+    "PatchTST-FM-R1",
+    "TiRex",
+    "Toto-2.0-4m"
+   ],
+   "my_top10": [
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-Extended",
+    "Chronos-2",
+    "TimesFM-2.5",
+    "Toto-2.0-22m",
+    "PatchTST-FM-R1",
+    "TiRex",
+    "Toto-2.0-4m"
+   ]
+  },
+  {
+   "commit": "2ffa8721",
+   "pool": 23,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.000497624518465356,
+    "crps_gmean": 0.0004896541749257466,
+    "mase_rank": 0.0004897959183676193,
+    "crps_rank": 0.00046938775510163566
+   },
+   "tie_units": 0,
+   "board_top10": [
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-Extended",
+    "Chronos-2",
+    "OmniScient",
+    "TimesFM-2.5",
+    "Toto-2.0-22m",
+    "PatchTST-FM-R1",
+    "TiRex"
+   ],
+   "my_top10": [
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-Extended",
+    "Chronos-2",
+    "OmniScient",
+    "TimesFM-2.5",
+    "Toto-2.0-22m",
+    "PatchTST-FM-R1",
+    "TiRex"
+   ]
+  },
+  {
+   "commit": "42495a47",
+   "pool": 24,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.000497624518465356,
+    "crps_gmean": 0.0004896541749257466,
+    "mase_rank": 0.0004897959183676193,
+    "crps_rank": 0.0004897959183676193
+   },
+   "tie_units": 0,
+   "board_top10": [
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-Extended",
+    "Chronos-2",
+    "OmniScient",
+    "TimesFM-2.5",
+    "Toto-2.0-22m",
+    "PatchTST-FM-R1",
+    "TiRex"
+   ],
+   "my_top10": [
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-Extended",
+    "Chronos-2",
+    "OmniScient",
+    "TimesFM-2.5",
+    "Toto-2.0-22m",
+    "PatchTST-FM-R1",
+    "TiRex"
+   ]
+  },
+  {
+   "commit": "73a177cb",
+   "pool": 25,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.000497624518465356,
+    "crps_gmean": 0.0004896541749257466,
+    "mase_rank": 0.0004897959183676193,
+    "crps_rank": 0.00046938775510163566
+   },
+   "tie_units": 0,
+   "board_top10": [
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-Extended",
+    "Chronos-2",
+    "OmniScient",
+    "TimesFM-2.5",
+    "Toto-2.0-22m",
+    "PatchTST-FM-R1",
+    "TiRex"
+   ],
+   "my_top10": [
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-Extended",
+    "Chronos-2",
+    "OmniScient",
+    "TimesFM-2.5",
+    "Toto-2.0-22m",
+    "PatchTST-FM-R1",
+    "TiRex"
+   ]
+  },
+  {
+   "commit": "e308bbc7",
+   "pool": 26,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.000497624518465356,
+    "crps_gmean": 0.0004896541749257466,
+    "mase_rank": 0.0004897959183667311,
+    "crps_rank": 0.0004897959183676193
+   },
+   "tie_units": 0,
+   "board_top10": [
+    "TimesFM-3",
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-Extended",
+    "Chronos-2",
+    "OmniScient",
+    "TimesFM-2.5",
+    "Toto-2.0-22m",
+    "PatchTST-FM-R1"
+   ],
+   "my_top10": [
+    "TimesFM-3",
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-Extended",
+    "Chronos-2",
+    "OmniScient",
+    "TimesFM-2.5",
+    "Toto-2.0-22m",
+    "PatchTST-FM-R1"
+   ]
+  },
+  {
+   "commit": "bb420f38",
+   "pool": 27,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.000497624518465356,
+    "crps_gmean": 0.0004896541749257466,
+    "mase_rank": 0.00046938775510163566,
+    "crps_rank": 0.0004897959183658429
+   },
+   "tie_units": 0,
+   "board_top10": [
+    "TimesFM-3",
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-Extended",
+    "Chronos-2",
+    "OmniScient",
+    "TimesFM-2.5",
+    "Toto-2.0-22m",
+    "PatchTST-FM-R1"
+   ],
+   "my_top10": [
+    "TimesFM-3",
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-Extended",
+    "Chronos-2",
+    "OmniScient",
+    "TimesFM-2.5",
+    "Toto-2.0-22m",
+    "PatchTST-FM-R1"
+   ]
+  },
+  {
+   "commit": "82e43a1e",
+   "pool": 28,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.000497624518465356,
+    "crps_gmean": 0.0004896541749257466,
+    "mase_rank": 0.0004897959183676193,
+    "crps_rank": 0.0004897959183676193
+   },
+   "tie_units": 0,
+   "board_top10": [
+    "TimesFM-3",
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-Extended",
+    "Chronos-2",
+    "t0_beta",
+    "OmniScient",
+    "TimesFM-2.5",
+    "Toto-2.0-22m"
+   ],
+   "my_top10": [
+    "TimesFM-3",
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-Extended",
+    "Chronos-2",
+    "t0_beta",
+    "OmniScient",
+    "TimesFM-2.5",
+    "Toto-2.0-22m"
+   ]
+  },
+  {
+   "commit": "65119f56",
+   "pool": 29,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.000497624518465356,
+    "crps_gmean": 0.0004896541749257466,
+    "mase_rank": 0.000469387755103412,
+    "crps_rank": 0.0004897959183676193
+   },
+   "tie_units": 0,
+   "board_top10": [
+    "TimesFM-3",
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-Extended",
+    "Chronos-2",
+    "t0_beta",
+    "OmniScient",
+    "TimesFM-2.5",
+    "Toto-2.0-22m"
+   ],
+   "my_top10": [
+    "TimesFM-3",
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-Extended",
+    "Chronos-2",
+    "t0_beta",
+    "OmniScient",
+    "TimesFM-2.5",
+    "Toto-2.0-22m"
+   ]
+  },
+  {
+   "commit": "03ab980c",
+   "pool": 30,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.000497624518465356,
+    "crps_gmean": 0.0004896541749257466,
+    "mase_rank": 0.0004897959183658429,
+    "crps_rank": 0.0004897959183658429
+   },
+   "tie_units": 0,
+   "board_top10": [
+    "QiYao-M",
+    "TimesFM-3",
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-Extended",
+    "Chronos-2",
+    "t0_beta",
+    "OmniScient",
+    "TimesFM-2.5"
+   ],
+   "my_top10": [
+    "QiYao-M",
+    "TimesFM-3",
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-Extended",
+    "Chronos-2",
+    "t0_beta",
+    "OmniScient",
+    "TimesFM-2.5"
+   ]
+  },
+  {
+   "commit": "66eea9da",
+   "pool": 30,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.000497624518465356,
+    "crps_gmean": 0.0004896541749257466,
+    "mase_rank": 0.0004897959183676193,
+    "crps_rank": 0.0004897959183658429
+   },
+   "tie_units": 0,
+   "board_top10": [
+    "QiYao-M",
+    "TimesFM-3",
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-Extended",
+    "Chronos-2",
+    "t0_beta",
+    "Tabby",
+    "OmniScient"
+   ],
+   "my_top10": [
+    "QiYao-M",
+    "TimesFM-3",
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-Extended",
+    "Chronos-2",
+    "t0_beta",
+    "Tabby",
+    "OmniScient"
+   ]
+  },
+  {
+   "commit": "5787f898",
+   "pool": 31,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.000497624518465356,
+    "crps_gmean": 0.0004896541749257466,
+    "mase_rank": 0.0004897959183667311,
+    "crps_rank": 0.0004897959183676193
+   },
+   "tie_units": 0,
+   "board_top10": [
+    "QiYao-M",
+    "TimesFM-3",
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-Extended",
+    "Chronos-2",
+    "t0_beta",
+    "Tabby",
+    "OmniScient"
+   ],
+   "my_top10": [
+    "QiYao-M",
+    "TimesFM-3",
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-Extended",
+    "Chronos-2",
+    "t0_beta",
+    "Tabby",
+    "OmniScient"
+   ]
+  },
+  {
+   "commit": "246dc3f1",
+   "pool": 32,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.000497624518465356,
+    "crps_gmean": 0.0004896541749257466,
+    "mase_rank": 0.0004897959183676193,
+    "crps_rank": 0.000469387755103412
+   },
+   "tie_units": 0,
+   "board_top10": [
+    "QiYao-M",
+    "ChakraTS",
+    "TimesFM-3",
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-Extended",
+    "Chronos-2",
+    "t0_beta",
+    "Tabby"
+   ],
+   "my_top10": [
+    "QiYao-M",
+    "ChakraTS",
+    "TimesFM-3",
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-Extended",
+    "Chronos-2",
+    "t0_beta",
+    "Tabby"
+   ]
+  },
+  {
+   "commit": "4b07d9e5",
+   "pool": 33,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.000497624518465356,
+    "crps_gmean": 0.0004896541749257466,
+    "mase_rank": 0.0004897959183658429,
+    "crps_rank": 0.0004897959183676193
+   },
+   "tie_units": 0,
+   "board_top10": [
+    "TimeRSI",
+    "QiYao-M",
+    "ChakraTS",
+    "TimesFM-3",
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-Extended",
+    "Chronos-2",
+    "t0_beta"
+   ],
+   "my_top10": [
+    "TimeRSI",
+    "QiYao-M",
+    "ChakraTS",
+    "TimesFM-3",
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-Extended",
+    "Chronos-2",
+    "t0_beta"
+   ]
+  },
+  {
+   "commit": "751c9b42",
+   "pool": 34,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.000497624518465356,
+    "crps_gmean": 0.0004896541749257466,
+    "mase_rank": 0.0004897959183667311,
+    "crps_rank": 0.0004489795918374284
+   },
+   "tie_units": 0,
+   "board_top10": [
+    "TimeRSI",
+    "QiYao-M",
+    "ChakraTS",
+    "TimesFM-3",
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-Extended",
+    "Chronos-2",
+    "t0_beta"
+   ],
+   "my_top10": [
+    "TimeRSI",
+    "QiYao-M",
+    "ChakraTS",
+    "TimesFM-3",
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-Extended",
+    "Chronos-2",
+    "t0_beta"
+   ]
+  },
+  {
+   "commit": "1ebbe655",
+   "pool": 35,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.000497624518465356,
+    "crps_gmean": 0.0004896541749257466,
+    "mase_rank": 0.0004897959183667311,
+    "crps_rank": 0.0004897959183676193
+   },
+   "tie_units": 0,
+   "board_top10": [
+    "TimeRSI",
+    "t0_gamma",
+    "QiYao-M",
+    "ChakraTS",
+    "TimesFM-3",
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-Extended",
+    "Chronos-2"
+   ],
+   "my_top10": [
+    "TimeRSI",
+    "t0_gamma",
+    "QiYao-M",
+    "ChakraTS",
+    "TimesFM-3",
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "PatchTST-FM-Extended",
+    "Chronos-2"
+   ]
+  },
+  {
+   "commit": "3d63e2a1",
+   "pool": 36,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.000497624518465356,
+    "crps_gmean": 0.0004896541749257466,
+    "mase_rank": 0.0004897959183676193,
+    "crps_rank": 0.0004897959183658429
+   },
+   "tie_units": 0,
+   "board_top10": [
+    "TimeRSI",
+    "t0_gamma",
+    "QiYao-M",
+    "ChakraTS",
+    "TimesFM-3",
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "Timestral-5M",
+    "PatchTST-FM-Extended"
+   ],
+   "my_top10": [
+    "TimeRSI",
+    "t0_gamma",
+    "QiYao-M",
+    "ChakraTS",
+    "TimesFM-3",
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "Timestral-5M",
+    "PatchTST-FM-Extended"
+   ]
+  },
+  {
+   "commit": "9a5e670d",
+   "pool": 37,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.000497624518465356,
+    "crps_gmean": 0.0004896541749257466,
+    "mase_rank": 0.0004897959183676193,
+    "crps_rank": 0.000469387755103412
+   },
+   "tie_units": 0,
+   "board_top10": [
+    "TimeRSI",
+    "t0_gamma",
+    "Timestral-28M",
+    "QiYao-M",
+    "ChakraTS",
+    "TimesFM-3",
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "Timestral-5M"
+   ],
+   "my_top10": [
+    "TimeRSI",
+    "t0_gamma",
+    "Timestral-28M",
+    "QiYao-M",
+    "ChakraTS",
+    "TimesFM-3",
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B",
+    "Timestral-5M"
+   ]
+  },
+  {
+   "commit": "a3cc65c0",
+   "pool": 38,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.000497624518465356,
+    "crps_gmean": 0.0004896541749257466,
+    "mase_rank": 0.0004897959183658429,
+    "crps_rank": 0.0004489795918374284
+   },
+   "tie_units": 0,
+   "board_top10": [
+    "Timestral-123M",
+    "TimeRSI",
+    "t0_gamma",
+    "Timestral-28M",
+    "QiYao-M",
+    "ChakraTS",
+    "TimesFM-3",
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B"
+   ],
+   "my_top10": [
+    "Timestral-123M",
+    "TimeRSI",
+    "t0_gamma",
+    "Timestral-28M",
+    "QiYao-M",
+    "ChakraTS",
+    "TimesFM-3",
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m",
+    "Toto-2.0-1B"
+   ]
+  },
+  {
+   "commit": "a69910a2",
+   "pool": 39,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.000497624518465356,
+    "crps_gmean": 0.0004896541749257466,
+    "mase_rank": 0.0004897959183658429,
+    "crps_rank": 0.0004897959183676193
+   },
+   "tie_units": 0,
+   "board_top10": [
+    "Timestral-209M",
+    "Timestral-123M",
+    "TimeRSI",
+    "t0_gamma",
+    "Timestral-28M",
+    "QiYao-M",
+    "ChakraTS",
+    "TimesFM-3",
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m"
+   ],
+   "my_top10": [
+    "Timestral-209M",
+    "Timestral-123M",
+    "TimeRSI",
+    "t0_gamma",
+    "Timestral-28M",
+    "QiYao-M",
+    "ChakraTS",
+    "TimesFM-3",
+    "Toto-2.0-2.5B",
+    "Toto-2.0-313m"
+   ]
+  },
+  {
+   "commit": "4c93deaa",
+   "pool": 40,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.000497624518465356,
+    "crps_gmean": 0.0004896541749257466,
+    "mase_rank": 0.0004897959183676193,
+    "crps_rank": 0.0004897959183693956
+   },
+   "tie_units": 0,
+   "board_top10": [
+    "TimeRSI-1.5",
+    "Timestral-209M",
+    "Timestral-123M",
+    "TimeRSI",
+    "t0_gamma",
+    "Timestral-28M",
+    "QiYao-M",
+    "ChakraTS",
+    "TimesFM-3",
+    "Toto-2.0-2.5B"
+   ],
+   "my_top10": [
+    "TimeRSI-1.5",
+    "Timestral-209M",
+    "Timestral-123M",
+    "TimeRSI",
+    "t0_gamma",
+    "Timestral-28M",
+    "QiYao-M",
+    "ChakraTS",
+    "TimesFM-3",
+    "Toto-2.0-2.5B"
+   ]
+  },
+  {
+   "commit": "6d5ab8de",
+   "pool": 41,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.000497624518465356,
+    "crps_gmean": 0.0004896541749257466,
+    "mase_rank": 0.0004897959183658429,
+    "crps_rank": 0.0004897959183693956
+   },
+   "tie_units": 0,
+   "board_top10": [
+    "TimeRSI-1.5",
+    "Timestral-209M",
+    "Timestral-123M",
+    "TimeRSI",
+    "t0_gamma",
+    "Timestral-28M",
+    "QiYao-M",
+    "ChakraTS",
+    "TimesFM-3",
+    "Toto-2.0-2.5B"
+   ],
+   "my_top10": [
+    "TimeRSI-1.5",
+    "Timestral-209M",
+    "Timestral-123M",
+    "TimeRSI",
+    "t0_gamma",
+    "Timestral-28M",
+    "QiYao-M",
+    "ChakraTS",
+    "TimesFM-3",
+    "Toto-2.0-2.5B"
+   ]
+  },
+  {
+   "commit": "9713c37d",
+   "pool": 42,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.000497624518465356,
+    "crps_gmean": 0.0004896541749257466,
+    "mase_rank": 0.000469387755103412,
+    "crps_rank": 0.0004897959183693956
+   },
+   "tie_units": 0,
+   "board_top10": [
+    "TimeRSI-1.5",
+    "Timestral-209M",
+    "Timestral-123M",
+    "TimeRSI",
+    "PDM-Pico",
+    "t0_gamma",
+    "Timestral-28M",
+    "QiYao-M",
+    "ChakraTS",
+    "TimesFM-3"
+   ],
+   "my_top10": [
+    "TimeRSI-1.5",
+    "Timestral-209M",
+    "Timestral-123M",
+    "TimeRSI",
+    "PDM-Pico",
+    "t0_gamma",
+    "Timestral-28M",
+    "QiYao-M",
+    "ChakraTS",
+    "TimesFM-3"
+   ]
+  },
+  {
+   "commit": "3bf103cb",
+   "pool": 43,
+   "order_matches_board": true,
+   "max_abs_diff_vs_board": {
+    "mase_gmean": 0.000497624518465356,
+    "crps_gmean": 0.0004896541749257466,
+    "mase_rank": 0.0004897959183693956,
+    "crps_rank": 0.0004897959183693956
+   },
+   "tie_units": 0,
+   "board_top10": [
+    "TimeRSI-1.5",
+    "PDM-Nano",
+    "Timestral-209M",
+    "Timestral-123M",
+    "TimeRSI",
+    "PDM-Pico",
+    "t0_gamma",
+    "Timestral-28M",
+    "QiYao-M",
+    "ChakraTS"
+   ],
+   "my_top10": [
+    "TimeRSI-1.5",
+    "PDM-Nano",
+    "Timestral-209M",
+    "Timestral-123M",
+    "TimeRSI",
+    "PDM-Pico",
+    "t0_gamma",
+    "Timestral-28M",
+    "QiYao-M",
+    "ChakraTS"
+   ]
+  }
+ ],
+ "transitions": [
+  {
+   "from_commit": "ca2d156c",
+   "to_commit": "c01dea39",
+   "from_date": "2026-02-09",
+   "to_date": "2026-02-22",
+   "subject": "Update chronos2_base results (#2)",
+   "new_entries": [],
+   "removed_entries": [],
+   "renamed": {},
+   "entries_with_changed_files": {
+    "chronos2_base": [
+     "Australia_Solar/H/long",
+     "Australia_Solar/H/medium",
+     "Australia_Solar/H/short",
+     "Auto_Production_SF/M/short",
+     "CPHL/15T/long",
+     "CPHL/15T/medium",
+     "CPHL/15T/short",
+     "CPHL/30T/long",
+     "CPHL/30T/medium",
+     "CPHL/30T/short",
+     "CPHL/H/long",
+     "CPHL/H/medium",
+     "CPHL/H/short",
+     "Coastal_T_S/15T/long",
+     "Coastal_T_S/15T/medium",
+     "Coastal_T_S/15T/short",
+     "Coastal_T_S/20T/long",
+     "Coastal_T_S/20T/medium",
+     "Coastal_T_S/20T/short",
+     "Coastal_T_S/5T/long",
+     "Coastal_T_S/5T/medium",
+     "Coastal_T_S/5T/short",
+     "Coastal_T_S/H/long",
+     "Coastal_T_S/H/medium",
+     "Coastal_T_S/H/short",
+     "Commodity_Import/M/short",
+     "Commodity_Production/M/short",
+     "Crypto/D/short",
+     "ECDC_COVID/D/short",
+     "ECDC_COVID/W/short",
+     "EWELD_Load/15T/long",
+     "EWELD_Load/15T/medium",
+     "EWELD_Load/15T/short",
+     "Finland_Traffic/15T/long",
+     "Finland_Traffic/15T/medium",
+     "Finland_Traffic/15T/short",
+     "Global_Influenza/W/short",
+     "Global_Price/Q/short",
+     "Housing_Inventory/M/short",
+     "JOLTS/M/short",
+     "Job_Claims/W/short",
+     "MetroPT-3/5T/long",
+     "MetroPT-3/5T/medium",
+     "MetroPT-3/5T/short",
+     "NE_China_Wind/H/long",
+     "NE_China_Wind/H/medium",
+     "NE_China_Wind/H/short",
+     "Oil_Price/B/short",
+     "Online_Retail_2_UCI/D/short",
+     "OpenElectricity_NEM/5T/long",
+     "OpenElectricity_NEM/5T/medium",
+     "OpenElectricity_NEM/5T/short",
+     "Port_Activity/D/short",
+     "Port_Activity/W/short",
+     "SG_Carpark/15T/long",
+     "SG_Carpark/15T/medium",
+     "SG_Carpark/15T/short",
+     "SG_PM25/H/long",
+     "SG_PM25/H/medium",
+     "SG_PM25/H/short",
+     "SG_Weather/D/long",
+     "SG_Weather/D/medium",
+     "SG_Weather/D/short",
+     "Smart_Manufacturing/H/long",
+     "Smart_Manufacturing/H/medium",
+     "Smart_Manufacturing/H/short",
+     "Supply_Chain_Customer/D/short",
+     "Supply_Chain_Location/D/short",
+     "US_Labor/M/short",
+     "US_Term_Structure/B/short",
+     "Uncertainty_1M/M/short",
+     "Vehicle_Sales/M/short",
+     "Vehicle_Supply/M/short",
+     "WUI_Global/Q/short",
+     "Water_Quality_Darwin/15T/long",
+     "Water_Quality_Darwin/15T/medium",
+     "Water_Quality_Darwin/15T/short",
+     "azure2019_D/5T/short",
+     "azure2019_I/5T/short",
+     "azure2019_U/5T/short",
+     "current_velocity/10T/long",
+     "current_velocity/10T/medium",
+     "current_velocity/10T/short",
+     "current_velocity/15T/long",
+     "current_velocity/15T/medium",
+     "current_velocity/15T/short",
+     "current_velocity/20T/long",
+     "current_velocity/20T/medium",
+     "current_velocity/20T/short",
+     "current_velocity/5T/long",
+     "current_velocity/5T/medium",
+     "current_velocity/5T/short",
+     "current_velocity/H/long",
+     "current_velocity/H/medium",
+     "current_velocity/H/short",
+     "epf_electricity_price/H/long",
+     "epf_electricity_price/H/medium",
+     "epf_electricity_price/H/short"
+    ]
+   },
+   "baseline_changed": false,
+   "baseline_changed_units": [],
+   "pool_before": 13,
+   "pool_after": 13,
+   "kind": "ordinary",
+   "flips_in_prev_top10_including_touched_entries": {
+    "mase_gmean": [
+     {
+      "a": "TimesFM-2.5",
+      "b": "chronos2_base",
+      "touched": [
+       "chronos2_base"
+      ]
+     },
+     {
+      "a": "ToTo",
+      "b": "chronos2_base",
+      "touched": [
+       "chronos2_base"
+      ]
+     },
+     {
+      "a": "TiRex",
+      "b": "chronos2_base",
+      "touched": [
+       "chronos2_base"
+      ]
+     },
+     {
+      "a": "moirai2",
+      "b": "chronos2_base",
+      "touched": [
+       "chronos2_base"
+      ]
+     }
+    ],
+    "crps_gmean": [],
+    "mase_rank": [
+     {
+      "a": "TimesFM-2.5",
+      "b": "chronos2_base",
+      "touched": [
+       "chronos2_base"
+      ]
+     }
+    ],
+    "crps_rank": []
+   },
+   "mase_gmean": {
+    "untouched_top10_entries": 9,
+    "swapped_pairs": []
+   },
+   "crps_gmean": {
+    "untouched_top10_entries": 9,
+    "swapped_pairs": []
+   },
+   "mase_rank": {
+    "untouched_top10_entries": 9,
+    "swapped_pairs": []
+   },
+   "crps_rank": {
+    "untouched_top10_entries": 9,
+    "swapped_pairs": []
+   }
+  },
+  {
+   "from_commit": "c01dea39",
+   "to_commit": "9d12c44d",
+   "from_date": "2026-02-22",
+   "to_date": "2026-02-22",
+   "subject": "Update chronos_bolt_base results (#3)",
+   "new_entries": [],
+   "removed_entries": [],
+   "renamed": {},
+   "entries_with_changed_files": {
+    "chronos_bolt_base": [
+     "Australia_Solar/H/long",
+     "Australia_Solar/H/medium",
+     "Australia_Solar/H/short",
+     "Auto_Production_SF/M/short",
+     "CPHL/15T/long",
+     "CPHL/15T/medium",
+     "CPHL/15T/short",
+     "CPHL/30T/long",
+     "CPHL/30T/medium",
+     "CPHL/30T/short",
+     "CPHL/H/long",
+     "CPHL/H/medium",
+     "CPHL/H/short",
+     "Coastal_T_S/15T/long",
+     "Coastal_T_S/15T/medium",
+     "Coastal_T_S/15T/short",
+     "Coastal_T_S/20T/long",
+     "Coastal_T_S/20T/medium",
+     "Coastal_T_S/20T/short",
+     "Coastal_T_S/5T/long",
+     "Coastal_T_S/5T/medium",
+     "Coastal_T_S/5T/short",
+     "Coastal_T_S/H/long",
+     "Coastal_T_S/H/medium",
+     "Coastal_T_S/H/short",
+     "Commodity_Import/M/short",
+     "Commodity_Production/M/short",
+     "Crypto/D/short",
+     "ECDC_COVID/D/short",
+     "ECDC_COVID/W/short",
+     "EWELD_Load/15T/long",
+     "EWELD_Load/15T/medium",
+     "EWELD_Load/15T/short",
+     "Finland_Traffic/15T/long",
+     "Finland_Traffic/15T/medium",
+     "Finland_Traffic/15T/short",
+     "Global_Influenza/W/short",
+     "Global_Price/Q/short",
+     "Housing_Inventory/M/short",
+     "JOLTS/M/short",
+     "Job_Claims/W/short",
+     "MetroPT-3/5T/long",
+     "MetroPT-3/5T/medium",
+     "MetroPT-3/5T/short",
+     "NE_China_Wind/H/long",
+     "NE_China_Wind/H/medium",
+     "NE_China_Wind/H/short",
+     "Oil_Price/B/short",
+     "Online_Retail_2_UCI/D/short",
+     "OpenElectricity_NEM/5T/long",
+     "OpenElectricity_NEM/5T/medium",
+     "OpenElectricity_NEM/5T/short",
+     "Port_Activity/D/short",
+     "Port_Activity/W/short",
+     "SG_Carpark/15T/long",
+     "SG_Carpark/15T/medium",
+     "SG_Carpark/15T/short",
+     "SG_PM25/H/long",
+     "SG_PM25/H/medium",
+     "SG_PM25/H/short",
+     "SG_Weather/D/long",
+     "SG_Weather/D/medium",
+     "SG_Weather/D/short",
+     "Smart_Manufacturing/H/long",
+     "Smart_Manufacturing/H/medium",
+     "Smart_Manufacturing/H/short",
+     "Supply_Chain_Customer/D/short",
+     "Supply_Chain_Location/D/short",
+     "US_Labor/M/short",
+     "US_Term_Structure/B/short",
+     "Uncertainty_1M/M/short",
+     "Vehicle_Sales/M/short",
+     "Vehicle_Supply/M/short",
+     "WUI_Global/Q/short",
+     "Water_Quality_Darwin/15T/long",
+     "Water_Quality_Darwin/15T/medium",
+     "Water_Quality_Darwin/15T/short",
+     "azure2019_D/5T/short",
+     "azure2019_I/5T/short",
+     "azure2019_U/5T/short",
+     "current_velocity/10T/long",
+     "current_velocity/10T/medium",
+     "current_velocity/10T/short",
+     "current_velocity/15T/long",
+     "current_velocity/15T/medium",
+     "current_velocity/15T/short",
+     "current_velocity/20T/long",
+     "current_velocity/20T/medium",
+     "current_velocity/20T/short",
+     "current_velocity/5T/long",
+     "current_velocity/5T/medium",
+     "current_velocity/5T/short",
+     "current_velocity/H/long",
+     "current_velocity/H/medium",
+     "current_velocity/H/short",
+     "epf_electricity_price/H/long",
+     "epf_electricity_price/H/medium",
+     "epf_electricity_price/H/short"
+    ]
+   },
+   "baseline_changed": false,
+   "baseline_changed_units": [],
+   "pool_before": 13,
+   "pool_after": 13,
+   "kind": "ordinary",
+   "flips_in_prev_top10_including_touched_entries": {
+    "mase_gmean": [
+     {
+      "a": "kairos",
+      "b": "chronos_bolt_base",
+      "touched": [
+       "chronos_bolt_base"
+      ]
+     },
+     {
+      "a": "sundial_base",
+      "b": "chronos_bolt_base",
+      "touched": [
+       "chronos_bolt_base"
+      ]
+     }
+    ],
+    "crps_gmean": [
+     {
+      "a": "TimesFM-2.0",
+      "b": "chronos_bolt_base",
+      "touched": [
+       "chronos_bolt_base"
+      ]
+     }
+    ],
+    "mase_rank": [
+     {
+      "a": "kairos",
+      "b": "chronos_bolt_base",
+      "touched": [
+       "chronos_bolt_base"
+      ]
+     },
+     {
+      "a": "sundial_base",
+      "b": "chronos_bolt_base",
+      "touched": [
+       "chronos_bolt_base"
+      ]
+     }
+    ],
+    "crps_rank": []
+   },
+   "mase_gmean": {
+    "untouched_top10_entries": 9,
+    "swapped_pairs": []
+   },
+   "crps_gmean": {
+    "untouched_top10_entries": 9,
+    "swapped_pairs": []
+   },
+   "mase_rank": {
+    "untouched_top10_entries": 9,
+    "swapped_pairs": []
+   },
+   "crps_rank": {
+    "untouched_top10_entries": 9,
+    "swapped_pairs": []
+   }
+  },
+  {
+   "from_commit": "9d12c44d",
+   "to_commit": "0ffbc360",
+   "from_date": "2026-02-22",
+   "to_date": "2026-02-22",
+   "subject": "Upload TiRex results (#4)",
+   "new_entries": [],
+   "removed_entries": [],
+   "renamed": {},
+   "entries_with_changed_files": {
+    "TiRex": [
+     "Australia_Solar/H/long",
+     "Australia_Solar/H/medium",
+     "Australia_Solar/H/short",
+     "Auto_Production_SF/M/short",
+     "CPHL/15T/long",
+     "CPHL/15T/medium",
+     "CPHL/15T/short",
+     "CPHL/30T/long",
+     "CPHL/30T/medium",
+     "CPHL/30T/short",
+     "CPHL/H/long",
+     "CPHL/H/medium",
+     "CPHL/H/short",
+     "Coastal_T_S/15T/long",
+     "Coastal_T_S/15T/medium",
+     "Coastal_T_S/15T/short",
+     "Coastal_T_S/20T/long",
+     "Coastal_T_S/20T/medium",
+     "Coastal_T_S/20T/short",
+     "Coastal_T_S/5T/long",
+     "Coastal_T_S/5T/medium",
+     "Coastal_T_S/5T/short",
+     "Coastal_T_S/H/long",
+     "Coastal_T_S/H/medium",
+     "Coastal_T_S/H/short",
+     "Commodity_Import/M/short",
+     "Commodity_Production/M/short",
+     "Crypto/D/short",
+     "ECDC_COVID/D/short",
+     "ECDC_COVID/W/short",
+     "EWELD_Load/15T/long",
+     "EWELD_Load/15T/medium",
+     "EWELD_Load/15T/short",
+     "Finland_Traffic/15T/long",
+     "Finland_Traffic/15T/medium",
+     "Finland_Traffic/15T/short",
+     "Global_Influenza/W/short",
+     "Global_Price/Q/short",
+     "Housing_Inventory/M/short",
+     "JOLTS/M/short",
+     "Job_Claims/W/short",
+     "MetroPT-3/5T/long",
+     "MetroPT-3/5T/medium",
+     "MetroPT-3/5T/short",
+     "NE_China_Wind/H/long",
+     "NE_China_Wind/H/medium",
+     "NE_China_Wind/H/short",
+     "Oil_Price/B/short",
+     "Online_Retail_2_UCI/D/short",
+     "OpenElectricity_NEM/5T/long",
+     "OpenElectricity_NEM/5T/medium",
+     "OpenElectricity_NEM/5T/short",
+     "Port_Activity/D/short",
+     "Port_Activity/W/short",
+     "SG_Carpark/15T/long",
+     "SG_Carpark/15T/medium",
+     "SG_Carpark/15T/short",
+     "SG_PM25/H/long",
+     "SG_PM25/H/medium",
+     "SG_PM25/H/short",
+     "SG_Weather/D/long",
+     "SG_Weather/D/medium",
+     "SG_Weather/D/short",
+     "Smart_Manufacturing/H/long",
+     "Smart_Manufacturing/H/medium",
+     "Smart_Manufacturing/H/short",
+     "Supply_Chain_Customer/D/short",
+     "Supply_Chain_Location/D/short",
+     "US_Labor/M/short",
+     "US_Term_Structure/B/short",
+     "Uncertainty_1M/M/short",
+     "Vehicle_Sales/M/short",
+     "Vehicle_Supply/M/short",
+     "WUI_Global/Q/short",
+     "Water_Quality_Darwin/15T/long",
+     "Water_Quality_Darwin/15T/medium",
+     "Water_Quality_Darwin/15T/short",
+     "azure2019_D/5T/short",
+     "azure2019_I/5T/short",
+     "azure2019_U/5T/short",
+     "current_velocity/10T/long",
+     "current_velocity/10T/medium",
+     "current_velocity/10T/short",
+     "current_velocity/15T/long",
+     "current_velocity/15T/medium",
+     "current_velocity/15T/short",
+     "current_velocity/20T/long",
+     "current_velocity/20T/medium",
+     "current_velocity/20T/short",
+     "current_velocity/5T/long",
+     "current_velocity/5T/medium",
+     "current_velocity/5T/short",
+     "current_velocity/H/long",
+     "current_velocity/H/medium",
+     "current_velocity/H/short",
+     "epf_electricity_price/H/long",
+     "epf_electricity_price/H/medium",
+     "epf_electricity_price/H/short"
+    ]
+   },
+   "baseline_changed": false,
+   "baseline_changed_units": [],
+   "pool_before": 13,
+   "pool_after": 13,
+   "kind": "ordinary",
+   "flips_in_prev_top10_including_touched_entries": {
+    "mase_gmean": [
+     {
+      "a": "ToTo",
+      "b": "TiRex",
+      "touched": [
+       "TiRex"
+      ]
+     }
+    ],
+    "crps_gmean": [
+     {
+      "a": "ToTo",
+      "b": "TiRex",
+      "touched": [
+       "TiRex"
+      ]
+     },
+     {
+      "a": "moirai2",
+      "b": "TiRex",
+      "touched": [
+       "TiRex"
+      ]
+     }
+    ],
+    "mase_rank": [],
+    "crps_rank": []
+   },
+   "mase_gmean": {
+    "untouched_top10_entries": 9,
+    "swapped_pairs": []
+   },
+   "crps_gmean": {
+    "untouched_top10_entries": 9,
+    "swapped_pairs": []
+   },
+   "mase_rank": {
+    "untouched_top10_entries": 9,
+    "swapped_pairs": []
+   },
+   "crps_rank": {
+    "untouched_top10_entries": 9,
+    "swapped_pairs": []
+   }
+  },
+  {
+   "from_commit": "0ffbc360",
+   "to_commit": "d39d9291",
+   "from_date": "2026-02-22",
+   "to_date": "2026-02-27",
+   "subject": "Rename chronos2_base to Chronos-2 (#7)",
+   "new_entries": [],
+   "removed_entries": [],
+   "renamed": {
+    "chronos2_base": "Chronos-2"
+   },
+   "entries_with_changed_files": {},
+   "baseline_changed": false,
+   "baseline_changed_units": [],
+   "pool_before": 13,
+   "pool_after": 13,
+   "kind": "ordinary",
+   "flips_in_prev_top10_including_touched_entries": {
+    "mase_gmean": [],
+    "crps_gmean": [],
+    "mase_rank": [],
+    "crps_rank": []
+   },
+   "mase_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "mase_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   }
+  },
+  {
+   "from_commit": "d39d9291",
+   "to_commit": "985df4da",
+   "from_date": "2026-02-27",
+   "to_date": "2026-02-27",
+   "subject": "Rename multiple model folders (#9)",
+   "new_entries": [
+    "Kairos"
+   ],
+   "removed_entries": [
+    "kairos"
+   ],
+   "renamed": {
+    "ToTo": "Toto",
+    "chronos_bolt_base": "Chronos-bolt",
+    "moirai2": "Moirai2",
+    "moirai_base": "Moirai_base"
+   },
+   "entries_with_changed_files": {},
+   "baseline_changed": false,
+   "baseline_changed_units": [],
+   "pool_before": 13,
+   "pool_after": 13,
+   "kind": "ordinary",
+   "flips_in_prev_top10_including_touched_entries": {
+    "mase_gmean": [],
+    "crps_gmean": [],
+    "mase_rank": [],
+    "crps_rank": []
+   },
+   "mase_gmean": {
+    "untouched_top10_entries": 9,
+    "swapped_pairs": []
+   },
+   "crps_gmean": {
+    "untouched_top10_entries": 9,
+    "swapped_pairs": []
+   },
+   "mase_rank": {
+    "untouched_top10_entries": 9,
+    "swapped_pairs": []
+   },
+   "crps_rank": {
+    "untouched_top10_entries": 9,
+    "swapped_pairs": []
+   }
+  },
+  {
+   "from_commit": "985df4da",
+   "to_commit": "cece563b",
+   "from_date": "2026-02-27",
+   "to_date": "2026-03-09",
+   "subject": "Submit evaluation results for Timer-S1 (#10)",
+   "new_entries": [
+    "Timer-S1"
+   ],
+   "removed_entries": [],
+   "renamed": {},
+   "entries_with_changed_files": {},
+   "baseline_changed": false,
+   "baseline_changed_units": [],
+   "pool_before": 13,
+   "pool_after": 14,
+   "kind": "ordinary",
+   "flips_in_prev_top10_including_touched_entries": {
+    "mase_gmean": [],
+    "crps_gmean": [],
+    "mase_rank": [],
+    "crps_rank": []
+   },
+   "mase_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "mase_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   }
+  },
+  {
+   "from_commit": "cece563b",
+   "to_commit": "6eb02691",
+   "from_date": "2026-03-09",
+   "to_date": "2026-03-13",
+   "subject": "Submit evaluation results for Eidos (#12)",
+   "new_entries": [
+    "Eidos"
+   ],
+   "removed_entries": [],
+   "renamed": {},
+   "entries_with_changed_files": {},
+   "baseline_changed": false,
+   "baseline_changed_units": [],
+   "pool_before": 14,
+   "pool_after": 15,
+   "kind": "ordinary",
+   "flips_in_prev_top10_including_touched_entries": {
+    "mase_gmean": [],
+    "crps_gmean": [],
+    "mase_rank": [],
+    "crps_rank": []
+   },
+   "mase_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "mase_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   }
+  },
+  {
+   "from_commit": "6eb02691",
+   "to_commit": "5b7dab51",
+   "from_date": "2026-03-13",
+   "to_date": "2026-04-03",
+   "subject": "Submit evaluation results for PatchTST-FM-TsMix10M (#15)",
+   "new_entries": [
+    "PatchTST-FM-TsMix10M"
+   ],
+   "removed_entries": [],
+   "renamed": {},
+   "entries_with_changed_files": {},
+   "baseline_changed": false,
+   "baseline_changed_units": [],
+   "pool_before": 15,
+   "pool_after": 16,
+   "kind": "ordinary",
+   "flips_in_prev_top10_including_touched_entries": {
+    "mase_gmean": [],
+    "crps_gmean": [],
+    "mase_rank": [
+     {
+      "a": "Toto",
+      "b": "Eidos",
+      "touched": []
+     }
+    ],
+    "crps_rank": []
+   },
+   "mase_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "mase_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": [
+     {
+      "a": "Toto",
+      "b": "Eidos",
+      "place_before": [
+       5,
+       6
+      ],
+      "place_after": [
+       7,
+       6
+      ]
+     }
+    ]
+   },
+   "crps_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   }
+  },
+  {
+   "from_commit": "5b7dab51",
+   "to_commit": "d6d1916a",
+   "from_date": "2026-04-03",
+   "to_date": "2026-04-03",
+   "subject": "Submit evaluation results for PatchTST-FM-R1 (#14)",
+   "new_entries": [
+    "PatchTST-FM-R1"
+   ],
+   "removed_entries": [],
+   "renamed": {},
+   "entries_with_changed_files": {},
+   "baseline_changed": false,
+   "baseline_changed_units": [],
+   "pool_before": 16,
+   "pool_after": 17,
+   "kind": "ordinary",
+   "flips_in_prev_top10_including_touched_entries": {
+    "mase_gmean": [],
+    "crps_gmean": [],
+    "mase_rank": [
+     {
+      "a": "Chronos-2",
+      "b": "PatchTST-FM-TsMix10M",
+      "touched": []
+     }
+    ],
+    "crps_rank": []
+   },
+   "mase_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "mase_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": [
+     {
+      "a": "Chronos-2",
+      "b": "PatchTST-FM-TsMix10M",
+      "place_before": [
+       1,
+       2
+      ],
+      "place_after": [
+       2,
+       1
+      ]
+     }
+    ]
+   },
+   "crps_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   }
+  },
+  {
+   "from_commit": "d6d1916a",
+   "to_commit": "25e9cf50",
+   "from_date": "2026-04-03",
+   "to_date": "2026-04-03",
+   "subject": "Submit evaluation results for Eidos (#13)",
+   "new_entries": [],
+   "removed_entries": [],
+   "renamed": {},
+   "entries_with_changed_files": {
+    "Eidos": [
+     "Australia_Solar/H/long",
+     "Australia_Solar/H/medium",
+     "Australia_Solar/H/short",
+     "Auto_Production_SF/M/short",
+     "CPHL/15T/long",
+     "CPHL/15T/medium",
+     "CPHL/15T/short",
+     "CPHL/30T/long",
+     "CPHL/30T/medium",
+     "CPHL/30T/short",
+     "CPHL/H/long",
+     "CPHL/H/medium",
+     "CPHL/H/short",
+     "Coastal_T_S/15T/long",
+     "Coastal_T_S/15T/medium",
+     "Coastal_T_S/15T/short",
+     "Coastal_T_S/20T/long",
+     "Coastal_T_S/20T/medium",
+     "Coastal_T_S/20T/short",
+     "Coastal_T_S/5T/long",
+     "Coastal_T_S/5T/medium",
+     "Coastal_T_S/5T/short",
+     "Coastal_T_S/H/long",
+     "Coastal_T_S/H/medium",
+     "Coastal_T_S/H/short",
+     "Commodity_Import/M/short",
+     "Commodity_Production/M/short",
+     "Crypto/D/short",
+     "ECDC_COVID/D/short",
+     "ECDC_COVID/W/short",
+     "EWELD_Load/15T/long",
+     "EWELD_Load/15T/medium",
+     "EWELD_Load/15T/short",
+     "Finland_Traffic/15T/long",
+     "Finland_Traffic/15T/medium",
+     "Finland_Traffic/15T/short",
+     "Global_Influenza/W/short",
+     "Global_Price/Q/short",
+     "Housing_Inventory/M/short",
+     "JOLTS/M/short",
+     "Job_Claims/W/short",
+     "MetroPT-3/5T/long",
+     "MetroPT-3/5T/medium",
+     "MetroPT-3/5T/short",
+     "NE_China_Wind/H/long",
+     "NE_China_Wind/H/medium",
+     "NE_China_Wind/H/short",
+     "Oil_Price/B/short",
+     "Online_Retail_2_UCI/D/short",
+     "OpenElectricity_NEM/5T/long",
+     "OpenElectricity_NEM/5T/medium",
+     "OpenElectricity_NEM/5T/short",
+     "Port_Activity/D/short",
+     "Port_Activity/W/short",
+     "SG_Carpark/15T/long",
+     "SG_Carpark/15T/medium",
+     "SG_Carpark/15T/short",
+     "SG_PM25/H/long",
+     "SG_PM25/H/medium",
+     "SG_PM25/H/short",
+     "SG_Weather/D/long",
+     "SG_Weather/D/medium",
+     "SG_Weather/D/short",
+     "Smart_Manufacturing/H/long",
+     "Smart_Manufacturing/H/medium",
+     "Smart_Manufacturing/H/short",
+     "Supply_Chain_Customer/D/short",
+     "Supply_Chain_Location/D/short",
+     "US_Labor/M/short",
+     "US_Term_Structure/B/short",
+     "Uncertainty_1M/M/short",
+     "Vehicle_Sales/M/short",
+     "Vehicle_Supply/M/short",
+     "WUI_Global/Q/short",
+     "Water_Quality_Darwin/15T/long",
+     "Water_Quality_Darwin/15T/medium",
+     "Water_Quality_Darwin/15T/short",
+     "azure2019_D/5T/short",
+     "azure2019_I/5T/short",
+     "azure2019_U/5T/short",
+     "current_velocity/10T/long",
+     "current_velocity/10T/medium",
+     "current_velocity/10T/short",
+     "current_velocity/15T/long",
+     "current_velocity/15T/medium",
+     "current_velocity/15T/short",
+     "current_velocity/20T/long",
+     "current_velocity/20T/medium",
+     "current_velocity/20T/short",
+     "current_velocity/5T/long",
+     "current_velocity/5T/medium",
+     "current_velocity/5T/short",
+     "current_velocity/H/long",
+     "current_velocity/H/medium",
+     "current_velocity/H/short",
+     "epf_electricity_price/H/long",
+     "epf_electricity_price/H/medium",
+     "epf_electricity_price/H/short"
+    ]
+   },
+   "baseline_changed": false,
+   "baseline_changed_units": [],
+   "pool_before": 17,
+   "pool_after": 17,
+   "kind": "ordinary",
+   "flips_in_prev_top10_including_touched_entries": {
+    "mase_gmean": [
+     {
+      "a": "Moirai2",
+      "b": "Eidos",
+      "touched": [
+       "Eidos"
+      ]
+     }
+    ],
+    "crps_gmean": [
+     {
+      "a": "Moirai2",
+      "b": "Eidos",
+      "touched": [
+       "Eidos"
+      ]
+     }
+    ],
+    "mase_rank": [],
+    "crps_rank": [
+     {
+      "a": "Toto",
+      "b": "Eidos",
+      "touched": [
+       "Eidos"
+      ]
+     },
+     {
+      "a": "Moirai2",
+      "b": "Eidos",
+      "touched": [
+       "Eidos"
+      ]
+     }
+    ]
+   },
+   "mase_gmean": {
+    "untouched_top10_entries": 9,
+    "swapped_pairs": []
+   },
+   "crps_gmean": {
+    "untouched_top10_entries": 9,
+    "swapped_pairs": []
+   },
+   "mase_rank": {
+    "untouched_top10_entries": 9,
+    "swapped_pairs": []
+   },
+   "crps_rank": {
+    "untouched_top10_entries": 9,
+    "swapped_pairs": []
+   }
+  },
+  {
+   "from_commit": "25e9cf50",
+   "to_commit": "0d1f7a63",
+   "from_date": "2026-04-03",
+   "to_date": "2026-05-15",
+   "subject": "Submit evaluation results for Toto-2.0-4m (#25)",
+   "new_entries": [
+    "Toto-2.0-4m"
+   ],
+   "removed_entries": [],
+   "renamed": {},
+   "entries_with_changed_files": {},
+   "baseline_changed": false,
+   "baseline_changed_units": [],
+   "pool_before": 17,
+   "pool_after": 18,
+   "kind": "ordinary",
+   "flips_in_prev_top10_including_touched_entries": {
+    "mase_gmean": [],
+    "crps_gmean": [],
+    "mase_rank": [],
+    "crps_rank": []
+   },
+   "mase_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "mase_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   }
+  },
+  {
+   "from_commit": "0d1f7a63",
+   "to_commit": "f5115615",
+   "from_date": "2026-05-15",
+   "to_date": "2026-05-15",
+   "subject": "Submit evaluation results for Toto-2.0-22m (#24)",
+   "new_entries": [
+    "Toto-2.0-22m"
+   ],
+   "removed_entries": [],
+   "renamed": {},
+   "entries_with_changed_files": {},
+   "baseline_changed": false,
+   "baseline_changed_units": [],
+   "pool_before": 18,
+   "pool_after": 19,
+   "kind": "ordinary",
+   "flips_in_prev_top10_including_touched_entries": {
+    "mase_gmean": [],
+    "crps_gmean": [],
+    "mase_rank": [],
+    "crps_rank": []
+   },
+   "mase_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "mase_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   }
+  },
+  {
+   "from_commit": "f5115615",
+   "to_commit": "7a1b5500",
+   "from_date": "2026-05-15",
+   "to_date": "2026-05-15",
+   "subject": "Submit evaluation results for Toto-2.0-313m (#23)",
+   "new_entries": [
+    "Toto-2.0-313m"
+   ],
+   "removed_entries": [],
+   "renamed": {},
+   "entries_with_changed_files": {},
+   "baseline_changed": false,
+   "baseline_changed_units": [],
+   "pool_before": 19,
+   "pool_after": 20,
+   "kind": "ordinary",
+   "flips_in_prev_top10_including_touched_entries": {
+    "mase_gmean": [],
+    "crps_gmean": [],
+    "mase_rank": [],
+    "crps_rank": []
+   },
+   "mase_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "mase_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   }
+  },
+  {
+   "from_commit": "7a1b5500",
+   "to_commit": "3d7c681e",
+   "from_date": "2026-05-15",
+   "to_date": "2026-05-15",
+   "subject": "Submit evaluation results for Toto-2.0-1B (#22)",
+   "new_entries": [
+    "Toto-2.0-1B"
+   ],
+   "removed_entries": [],
+   "renamed": {},
+   "entries_with_changed_files": {},
+   "baseline_changed": false,
+   "baseline_changed_units": [],
+   "pool_before": 20,
+   "pool_after": 21,
+   "kind": "ordinary",
+   "flips_in_prev_top10_including_touched_entries": {
+    "mase_gmean": [],
+    "crps_gmean": [],
+    "mase_rank": [],
+    "crps_rank": [
+     {
+      "a": "Toto-2.0-22m",
+      "b": "PatchTST-FM-R1",
+      "touched": []
+     },
+     {
+      "a": "Toto-2.0-4m",
+      "b": "Eidos",
+      "touched": []
+     }
+    ]
+   },
+   "mase_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "mase_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": [
+     {
+      "a": "Toto-2.0-22m",
+      "b": "PatchTST-FM-R1",
+      "place_before": [
+       4,
+       5
+      ],
+      "place_after": [
+       6,
+       5
+      ]
+     },
+     {
+      "a": "Toto-2.0-4m",
+      "b": "Eidos",
+      "place_before": [
+       9,
+       10
+      ],
+      "place_after": [
+       11,
+       10
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "from_commit": "3d7c681e",
+   "to_commit": "297ae66a",
+   "from_date": "2026-05-15",
+   "to_date": "2026-05-15",
+   "subject": "Submit evaluation results for Toto-2.0-2.5B (#21)",
+   "new_entries": [
+    "Toto-2.0-2.5B"
+   ],
+   "removed_entries": [],
+   "renamed": {},
+   "entries_with_changed_files": {},
+   "baseline_changed": false,
+   "baseline_changed_units": [],
+   "pool_before": 21,
+   "pool_after": 22,
+   "kind": "ordinary",
+   "flips_in_prev_top10_including_touched_entries": {
+    "mase_gmean": [],
+    "crps_gmean": [],
+    "mase_rank": [],
+    "crps_rank": []
+   },
+   "mase_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "mase_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   }
+  },
+  {
+   "from_commit": "297ae66a",
+   "to_commit": "c43961bb",
+   "from_date": "2026-05-15",
+   "to_date": "2026-06-02",
+   "subject": "Update Crypto/D and Global_Influenza/W results (#34)",
+   "new_entries": [],
+   "removed_entries": [],
+   "renamed": {},
+   "entries_with_changed_files": {
+    "Chronos-2": [
+     "Crypto/D/short",
+     "Global_Influenza/W/short"
+    ],
+    "Chronos-bolt": [
+     "Crypto/D/short",
+     "Global_Influenza/W/short"
+    ],
+    "Kairos": [
+     "Crypto/D/short",
+     "Global_Influenza/W/short"
+    ],
+    "Moirai2": [
+     "Crypto/D/short",
+     "Global_Influenza/W/short"
+    ],
+    "Moirai_base": [
+     "Crypto/D/short",
+     "Global_Influenza/W/short"
+    ],
+    "TiRex": [
+     "Crypto/D/short",
+     "Global_Influenza/W/short"
+    ],
+    "TimesFM-1.0": [
+     "Crypto/D/short",
+     "Global_Influenza/W/short"
+    ],
+    "TimesFM-2.0": [
+     "Crypto/D/short",
+     "Global_Influenza/W/short"
+    ],
+    "TimesFM-2.5": [
+     "Crypto/D/short",
+     "Global_Influenza/W/short"
+    ],
+    "Toto": [
+     "Crypto/D/short",
+     "Global_Influenza/W/short"
+    ],
+    "seasonal_naive": [
+     "Crypto/D/short",
+     "Global_Influenza/W/short"
+    ],
+    "sundial_base": [
+     "Crypto/D/short",
+     "Global_Influenza/W/short"
+    ],
+    "visiontspp_base": [
+     "Crypto/D/short",
+     "Global_Influenza/W/short"
+    ]
+   },
+   "baseline_changed": true,
+   "baseline_changed_units": [
+    "Crypto/D/short",
+    "Global_Influenza/W/short"
+   ],
+   "pool_before": 22,
+   "pool_after": 22,
+   "kind": "refresh_of_baseline",
+   "flips_in_prev_top10_including_touched_entries": {
+    "mase_gmean": [
+     {
+      "a": "Chronos-2",
+      "b": "Toto-2.0-22m",
+      "touched": [
+       "Chronos-2"
+      ]
+     },
+     {
+      "a": "Chronos-2",
+      "b": "PatchTST-FM-R1",
+      "touched": [
+       "Chronos-2"
+      ]
+     },
+     {
+      "a": "TimesFM-2.5",
+      "b": "Toto-2.0-22m",
+      "touched": [
+       "TimesFM-2.5"
+      ]
+     },
+     {
+      "a": "TimesFM-2.5",
+      "b": "PatchTST-FM-R1",
+      "touched": [
+       "TimesFM-2.5"
+      ]
+     },
+     {
+      "a": "TimesFM-2.5",
+      "b": "Timer-S1",
+      "touched": [
+       "TimesFM-2.5"
+      ]
+     }
+    ],
+    "crps_gmean": [],
+    "mase_rank": [
+     {
+      "a": "TimesFM-2.5",
+      "b": "PatchTST-FM-R1",
+      "touched": [
+       "TimesFM-2.5"
+      ]
+     }
+    ],
+    "crps_rank": []
+   },
+   "mase_gmean": {
+    "untouched_top10_entries": 7,
+    "swapped_pairs": []
+   },
+   "crps_gmean": {
+    "untouched_top10_entries": 7,
+    "swapped_pairs": []
+   },
+   "mase_rank": {
+    "untouched_top10_entries": 7,
+    "swapped_pairs": []
+   },
+   "crps_rank": {
+    "untouched_top10_entries": 7,
+    "swapped_pairs": []
+   }
+  },
+  {
+   "from_commit": "c43961bb",
+   "to_commit": "4d7793e9",
+   "from_date": "2026-06-02",
+   "to_date": "2026-06-02",
+   "subject": "Correct Toto 2.0 results for TIME Crypto and Global Influenza refresh (#33)",
+   "new_entries": [],
+   "removed_entries": [],
+   "renamed": {},
+   "entries_with_changed_files": {
+    "Toto-2.0-1B": [
+     "Crypto/D/short",
+     "Global_Influenza/W/short"
+    ],
+    "Toto-2.0-2.5B": [
+     "Crypto/D/short",
+     "Global_Influenza/W/short"
+    ],
+    "Toto-2.0-22m": [
+     "Crypto/D/short",
+     "Global_Influenza/W/short"
+    ],
+    "Toto-2.0-313m": [
+     "Crypto/D/short",
+     "Global_Influenza/W/short"
+    ],
+    "Toto-2.0-4m": [
+     "Crypto/D/short",
+     "Global_Influenza/W/short"
+    ]
+   },
+   "baseline_changed": false,
+   "baseline_changed_units": [],
+   "pool_before": 22,
+   "pool_after": 22,
+   "kind": "ordinary",
+   "flips_in_prev_top10_including_touched_entries": {
+    "mase_gmean": [
+     {
+      "a": "Toto-2.0-22m",
+      "b": "PatchTST-FM-R1",
+      "touched": [
+       "Toto-2.0-22m"
+      ]
+     },
+     {
+      "a": "Toto-2.0-22m",
+      "b": "Chronos-2",
+      "touched": [
+       "Toto-2.0-22m"
+      ]
+     },
+     {
+      "a": "Toto-2.0-22m",
+      "b": "Timer-S1",
+      "touched": [
+       "Toto-2.0-22m"
+      ]
+     },
+     {
+      "a": "Toto-2.0-22m",
+      "b": "TimesFM-2.5",
+      "touched": [
+       "Toto-2.0-22m"
+      ]
+     }
+    ],
+    "crps_gmean": [],
+    "mase_rank": [
+     {
+      "a": "Toto-2.0-22m",
+      "b": "Timer-S1",
+      "touched": [
+       "Toto-2.0-22m"
+      ]
+     }
+    ],
+    "crps_rank": []
+   },
+   "mase_gmean": {
+    "untouched_top10_entries": 5,
+    "swapped_pairs": []
+   },
+   "crps_gmean": {
+    "untouched_top10_entries": 6,
+    "swapped_pairs": []
+   },
+   "mase_rank": {
+    "untouched_top10_entries": 6,
+    "swapped_pairs": []
+   },
+   "crps_rank": {
+    "untouched_top10_entries": 6,
+    "swapped_pairs": []
+   }
+  },
+  {
+   "from_commit": "4d7793e9",
+   "to_commit": "a2d8c250",
+   "from_date": "2026-06-02",
+   "to_date": "2026-06-02",
+   "subject": "Update evaluation results for Timer-S1 (#31)",
+   "new_entries": [],
+   "removed_entries": [],
+   "renamed": {},
+   "entries_with_changed_files": {
+    "Timer-S1": [
+     "Australia_Solar/H/long",
+     "Australia_Solar/H/medium",
+     "Australia_Solar/H/short",
+     "Auto_Production_SF/M/short",
+     "CPHL/15T/long",
+     "CPHL/15T/medium",
+     "CPHL/15T/short",
+     "CPHL/30T/long",
+     "CPHL/30T/medium",
+     "CPHL/30T/short",
+     "CPHL/H/long",
+     "CPHL/H/medium",
+     "CPHL/H/short",
+     "Coastal_T_S/15T/long",
+     "Coastal_T_S/15T/medium",
+     "Coastal_T_S/15T/short",
+     "Coastal_T_S/20T/long",
+     "Coastal_T_S/20T/medium",
+     "Coastal_T_S/20T/short",
+     "Coastal_T_S/5T/long",
+     "Coastal_T_S/5T/medium",
+     "Coastal_T_S/5T/short",
+     "Coastal_T_S/H/long",
+     "Coastal_T_S/H/medium",
+     "Coastal_T_S/H/short",
+     "Commodity_Import/M/short",
+     "Commodity_Production/M/short",
+     "Crypto/D/short",
+     "ECDC_COVID/D/short",
+     "ECDC_COVID/W/short",
+     "EWELD_Load/15T/long",
+     "EWELD_Load/15T/medium",
+     "EWELD_Load/15T/short",
+     "Finland_Traffic/15T/long",
+     "Finland_Traffic/15T/medium",
+     "Finland_Traffic/15T/short",
+     "Global_Influenza/W/short",
+     "Global_Price/Q/short",
+     "Housing_Inventory/M/short",
+     "JOLTS/M/short",
+     "Job_Claims/W/short",
+     "MetroPT-3/5T/long",
+     "MetroPT-3/5T/medium",
+     "MetroPT-3/5T/short",
+     "NE_China_Wind/H/long",
+     "NE_China_Wind/H/medium",
+     "NE_China_Wind/H/short",
+     "Oil_Price/B/short",
+     "Online_Retail_2_UCI/D/short",
+     "OpenElectricity_NEM/5T/long",
+     "OpenElectricity_NEM/5T/medium",
+     "OpenElectricity_NEM/5T/short",
+     "Port_Activity/D/short",
+     "Port_Activity/W/short",
+     "SG_Carpark/15T/long",
+     "SG_Carpark/15T/medium",
+     "SG_Carpark/15T/short",
+     "SG_PM25/H/long",
+     "SG_PM25/H/medium",
+     "SG_PM25/H/short",
+     "SG_Weather/D/long",
+     "SG_Weather/D/medium",
+     "SG_Weather/D/short",
+     "Smart_Manufacturing/H/long",
+     "Smart_Manufacturing/H/medium",
+     "Smart_Manufacturing/H/short",
+     "Supply_Chain_Customer/D/short",
+     "Supply_Chain_Location/D/short",
+     "US_Labor/M/short",
+     "US_Term_Structure/B/short",
+     "Uncertainty_1M/M/short",
+     "Vehicle_Sales/M/short",
+     "Vehicle_Supply/M/short",
+     "WUI_Global/Q/short",
+     "Water_Quality_Darwin/15T/long",
+     "Water_Quality_Darwin/15T/medium",
+     "Water_Quality_Darwin/15T/short",
+     "azure2019_D/5T/short",
+     "azure2019_I/5T/short",
+     "azure2019_U/5T/short",
+     "current_velocity/10T/long",
+     "current_velocity/10T/medium",
+     "current_velocity/10T/short",
+     "current_velocity/15T/long",
+     "current_velocity/15T/medium",
+     "current_velocity/15T/short",
+     "current_velocity/20T/long",
+     "current_velocity/20T/medium",
+     "current_velocity/20T/short",
+     "current_velocity/5T/long",
+     "current_velocity/5T/medium",
+     "current_velocity/5T/short",
+     "current_velocity/H/long",
+     "current_velocity/H/medium",
+     "current_velocity/H/short",
+     "epf_electricity_price/H/long",
+     "epf_electricity_price/H/medium",
+     "epf_electricity_price/H/short"
+    ]
+   },
+   "baseline_changed": false,
+   "baseline_changed_units": [],
+   "pool_before": 22,
+   "pool_after": 22,
+   "kind": "ordinary",
+   "flips_in_prev_top10_including_touched_entries": {
+    "mase_gmean": [
+     {
+      "a": "Timer-S1",
+      "b": "TimesFM-2.5",
+      "touched": [
+       "Timer-S1"
+      ]
+     },
+     {
+      "a": "Timer-S1",
+      "b": "Toto-2.0-22m",
+      "touched": [
+       "Timer-S1"
+      ]
+     },
+     {
+      "a": "Timer-S1",
+      "b": "TiRex",
+      "touched": [
+       "Timer-S1"
+      ]
+     }
+    ],
+    "crps_gmean": [],
+    "mase_rank": [
+     {
+      "a": "Timer-S1",
+      "b": "Toto-2.0-22m",
+      "touched": [
+       "Timer-S1"
+      ]
+     },
+     {
+      "a": "Timer-S1",
+      "b": "TiRex",
+      "touched": [
+       "Timer-S1"
+      ]
+     }
+    ],
+    "crps_rank": []
+   },
+   "mase_gmean": {
+    "untouched_top10_entries": 9,
+    "swapped_pairs": []
+   },
+   "crps_gmean": {
+    "untouched_top10_entries": 9,
+    "swapped_pairs": []
+   },
+   "mase_rank": {
+    "untouched_top10_entries": 9,
+    "swapped_pairs": []
+   },
+   "crps_rank": {
+    "untouched_top10_entries": 9,
+    "swapped_pairs": []
+   }
+  },
+  {
+   "from_commit": "a2d8c250",
+   "to_commit": "d086573e",
+   "from_date": "2026-06-02",
+   "to_date": "2026-06-02",
+   "subject": "Submit evaluation results for Eidos (#29)",
+   "new_entries": [],
+   "removed_entries": [],
+   "renamed": {},
+   "entries_with_changed_files": {
+    "Eidos": [
+     "Crypto/D/short",
+     "Global_Influenza/W/short"
+    ]
+   },
+   "baseline_changed": false,
+   "baseline_changed_units": [],
+   "pool_before": 22,
+   "pool_after": 22,
+   "kind": "ordinary",
+   "flips_in_prev_top10_including_touched_entries": {
+    "mase_gmean": [],
+    "crps_gmean": [],
+    "mase_rank": [],
+    "crps_rank": []
+   },
+   "mase_gmean": {
+    "untouched_top10_entries": 9,
+    "swapped_pairs": []
+   },
+   "crps_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "mase_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   }
+  },
+  {
+   "from_commit": "d086573e",
+   "to_commit": "3963cf80",
+   "from_date": "2026-06-02",
+   "to_date": "2026-06-02",
+   "subject": "Submit evaluation results for PatchTST-FM-R1 (#27)",
+   "new_entries": [],
+   "removed_entries": [],
+   "renamed": {},
+   "entries_with_changed_files": {
+    "PatchTST-FM-R1": [
+     "Australia_Solar/H/long",
+     "Australia_Solar/H/medium",
+     "Coastal_T_S/15T/long",
+     "Coastal_T_S/15T/medium",
+     "Coastal_T_S/15T/short",
+     "Coastal_T_S/20T/medium",
+     "Coastal_T_S/20T/short",
+     "Coastal_T_S/5T/long",
+     "Coastal_T_S/5T/medium",
+     "Commodity_Import/M/short",
+     "Crypto/D/short",
+     "ECDC_COVID/D/short",
+     "EWELD_Load/15T/medium",
+     "Global_Influenza/W/short",
+     "MetroPT-3/5T/medium",
+     "NE_China_Wind/H/medium",
+     "Oil_Price/B/short",
+     "OpenElectricity_NEM/5T/long",
+     "OpenElectricity_NEM/5T/medium",
+     "Port_Activity/D/short",
+     "SG_PM25/H/long",
+     "Smart_Manufacturing/H/long",
+     "Smart_Manufacturing/H/short",
+     "US_Labor/M/short",
+     "WUI_Global/Q/short",
+     "Water_Quality_Darwin/15T/short",
+     "azure2019_D/5T/short",
+     "azure2019_I/5T/short",
+     "current_velocity/10T/long",
+     "current_velocity/10T/medium",
+     "current_velocity/20T/long",
+     "current_velocity/H/short",
+     "epf_electricity_price/H/long",
+     "epf_electricity_price/H/medium",
+     "epf_electricity_price/H/short"
+    ]
+   },
+   "baseline_changed": false,
+   "baseline_changed_units": [],
+   "pool_before": 22,
+   "pool_after": 22,
+   "kind": "ordinary",
+   "flips_in_prev_top10_including_touched_entries": {
+    "mase_gmean": [
+     {
+      "a": "PatchTST-FM-R1",
+      "b": "Chronos-2",
+      "touched": [
+       "PatchTST-FM-R1"
+      ]
+     },
+     {
+      "a": "PatchTST-FM-R1",
+      "b": "TimesFM-2.5",
+      "touched": [
+       "PatchTST-FM-R1"
+      ]
+     },
+     {
+      "a": "PatchTST-FM-R1",
+      "b": "Toto-2.0-22m",
+      "touched": [
+       "PatchTST-FM-R1"
+      ]
+     }
+    ],
+    "crps_gmean": [],
+    "mase_rank": [
+     {
+      "a": "PatchTST-FM-R1",
+      "b": "TimesFM-2.5",
+      "touched": [
+       "PatchTST-FM-R1"
+      ]
+     }
+    ],
+    "crps_rank": []
+   },
+   "mase_gmean": {
+    "untouched_top10_entries": 9,
+    "swapped_pairs": []
+   },
+   "crps_gmean": {
+    "untouched_top10_entries": 9,
+    "swapped_pairs": []
+   },
+   "mase_rank": {
+    "untouched_top10_entries": 9,
+    "swapped_pairs": []
+   },
+   "crps_rank": {
+    "untouched_top10_entries": 9,
+    "swapped_pairs": []
+   }
+  },
+  {
+   "from_commit": "3963cf80",
+   "to_commit": "e14243f8",
+   "from_date": "2026-06-02",
+   "to_date": "2026-06-02",
+   "subject": "Submit evaluation results for PatchTST-FM-Extended (#26)",
+   "new_entries": [
+    "PatchTST-FM-Extended"
+   ],
+   "removed_entries": [],
+   "renamed": {},
+   "entries_with_changed_files": {},
+   "baseline_changed": false,
+   "baseline_changed_units": [],
+   "pool_before": 22,
+   "pool_after": 23,
+   "kind": "ordinary",
+   "flips_in_prev_top10_including_touched_entries": {
+    "mase_gmean": [],
+    "crps_gmean": [],
+    "mase_rank": [],
+    "crps_rank": []
+   },
+   "mase_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "mase_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   }
+  },
+  {
+   "from_commit": "e14243f8",
+   "to_commit": "8ec9db10",
+   "from_date": "2026-06-02",
+   "to_date": "2026-06-02",
+   "subject": "Rename to PatchTST-FM-Extended (#35)",
+   "new_entries": [],
+   "removed_entries": [
+    "PatchTST-FM-TsMix10M"
+   ],
+   "renamed": {},
+   "entries_with_changed_files": {},
+   "baseline_changed": false,
+   "baseline_changed_units": [],
+   "pool_before": 23,
+   "pool_after": 22,
+   "kind": "ordinary",
+   "flips_in_prev_top10_including_touched_entries": {
+    "mase_gmean": [],
+    "crps_gmean": [],
+    "mase_rank": [
+     {
+      "a": "Chronos-2",
+      "b": "PatchTST-FM-Extended",
+      "touched": []
+     }
+    ],
+    "crps_rank": []
+   },
+   "mase_gmean": {
+    "untouched_top10_entries": 9,
+    "swapped_pairs": []
+   },
+   "crps_gmean": {
+    "untouched_top10_entries": 9,
+    "swapped_pairs": []
+   },
+   "mase_rank": {
+    "untouched_top10_entries": 9,
+    "swapped_pairs": [
+     {
+      "a": "Chronos-2",
+      "b": "PatchTST-FM-Extended",
+      "place_before": [
+       5,
+       6
+      ],
+      "place_after": [
+       5,
+       4
+      ]
+     }
+    ]
+   },
+   "crps_rank": {
+    "untouched_top10_entries": 9,
+    "swapped_pairs": []
+   }
+  },
+  {
+   "from_commit": "8ec9db10",
+   "to_commit": "2ffa8721",
+   "from_date": "2026-06-02",
+   "to_date": "2026-07-11",
+   "subject": "Add OmniScient results (fine-tuned Chronos-2 derivative, 360 Labs) (#36)",
+   "new_entries": [
+    "OmniScient"
+   ],
+   "removed_entries": [],
+   "renamed": {},
+   "entries_with_changed_files": {},
+   "baseline_changed": false,
+   "baseline_changed_units": [],
+   "pool_before": 22,
+   "pool_after": 23,
+   "kind": "ordinary",
+   "flips_in_prev_top10_including_touched_entries": {
+    "mase_gmean": [],
+    "crps_gmean": [],
+    "mase_rank": [
+     {
+      "a": "TimesFM-2.5",
+      "b": "PatchTST-FM-R1",
+      "touched": []
+     }
+    ],
+    "crps_rank": [
+     {
+      "a": "TiRex",
+      "b": "Timer-S1",
+      "touched": []
+     }
+    ]
+   },
+   "mase_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "mase_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": [
+     {
+      "a": "TimesFM-2.5",
+      "b": "PatchTST-FM-R1",
+      "place_before": [
+       6,
+       7
+      ],
+      "place_after": [
+       7,
+       6
+      ]
+     }
+    ]
+   },
+   "crps_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": [
+     {
+      "a": "TiRex",
+      "b": "Timer-S1",
+      "place_before": [
+       9,
+       10
+      ],
+      "place_after": [
+       11,
+       10
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "from_commit": "2ffa8721",
+   "to_commit": "42495a47",
+   "from_date": "2026-07-11",
+   "to_date": "2026-07-14",
+   "subject": "whenxuan: update the benchmark results for litespecformer (#37)",
+   "new_entries": [
+    "litespecformer"
+   ],
+   "removed_entries": [],
+   "renamed": {},
+   "entries_with_changed_files": {},
+   "baseline_changed": false,
+   "baseline_changed_units": [],
+   "pool_before": 23,
+   "pool_after": 24,
+   "kind": "ordinary",
+   "flips_in_prev_top10_including_touched_entries": {
+    "mase_gmean": [],
+    "crps_gmean": [],
+    "mase_rank": [
+     {
+      "a": "PatchTST-FM-R1",
+      "b": "TimesFM-2.5",
+      "touched": []
+     }
+    ],
+    "crps_rank": []
+   },
+   "mase_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "mase_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": [
+     {
+      "a": "PatchTST-FM-R1",
+      "b": "TimesFM-2.5",
+      "place_before": [
+       6,
+       7
+      ],
+      "place_after": [
+       7,
+       6
+      ]
+     }
+    ]
+   },
+   "crps_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   }
+  },
+  {
+   "from_commit": "42495a47",
+   "to_commit": "73a177cb",
+   "from_date": "2026-07-14",
+   "to_date": "2026-08-05",
+   "subject": "Submit evaluation results for TS-ICL (#38)",
+   "new_entries": [
+    "TS-ICL"
+   ],
+   "removed_entries": [],
+   "renamed": {},
+   "entries_with_changed_files": {},
+   "baseline_changed": false,
+   "baseline_changed_units": [],
+   "pool_before": 24,
+   "pool_after": 25,
+   "kind": "ordinary",
+   "flips_in_prev_top10_including_touched_entries": {
+    "mase_gmean": [],
+    "crps_gmean": [],
+    "mase_rank": [
+     {
+      "a": "TimesFM-2.5",
+      "b": "PatchTST-FM-R1",
+      "touched": []
+     }
+    ],
+    "crps_rank": []
+   },
+   "mase_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "mase_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": [
+     {
+      "a": "TimesFM-2.5",
+      "b": "PatchTST-FM-R1",
+      "place_before": [
+       6,
+       7
+      ],
+      "place_after": [
+       7,
+       6
+      ]
+     }
+    ]
+   },
+   "crps_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   }
+  },
+  {
+   "from_commit": "73a177cb",
+   "to_commit": "e308bbc7",
+   "from_date": "2026-08-05",
+   "to_date": "2026-08-28",
+   "subject": "Submit evaluation results for TimesFM-3 (#39)",
+   "new_entries": [
+    "TimesFM-3"
+   ],
+   "removed_entries": [],
+   "renamed": {},
+   "entries_with_changed_files": {},
+   "baseline_changed": false,
+   "baseline_changed_units": [],
+   "pool_before": 25,
+   "pool_after": 26,
+   "kind": "ordinary",
+   "flips_in_prev_top10_including_touched_entries": {
+    "mase_gmean": [],
+    "crps_gmean": [],
+    "mase_rank": [],
+    "crps_rank": []
+   },
+   "mase_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "mase_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   }
+  },
+  {
+   "from_commit": "e308bbc7",
+   "to_commit": "bb420f38",
+   "from_date": "2026-08-28",
+   "to_date": "2026-09-16",
+   "subject": "Submit evaluation results for Tabby (#40)",
+   "new_entries": [
+    "Tabby"
+   ],
+   "removed_entries": [],
+   "renamed": {},
+   "entries_with_changed_files": {},
+   "baseline_changed": false,
+   "baseline_changed_units": [],
+   "pool_before": 26,
+   "pool_after": 27,
+   "kind": "ordinary",
+   "flips_in_prev_top10_including_touched_entries": {
+    "mase_gmean": [],
+    "crps_gmean": [],
+    "mase_rank": [
+     {
+      "a": "PatchTST-FM-Extended",
+      "b": "Chronos-2",
+      "touched": []
+     }
+    ],
+    "crps_rank": []
+   },
+   "mase_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "mase_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": [
+     {
+      "a": "PatchTST-FM-Extended",
+      "b": "Chronos-2",
+      "place_before": [
+       5,
+       6
+      ],
+      "place_after": [
+       6,
+       5
+      ]
+     }
+    ]
+   },
+   "crps_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   }
+  },
+  {
+   "from_commit": "bb420f38",
+   "to_commit": "82e43a1e",
+   "from_date": "2026-09-16",
+   "to_date": "2026-09-23",
+   "subject": "Submit evaluation results for t0_beta (#41)",
+   "new_entries": [
+    "t0_beta"
+   ],
+   "removed_entries": [],
+   "renamed": {},
+   "entries_with_changed_files": {},
+   "baseline_changed": false,
+   "baseline_changed_units": [],
+   "pool_before": 27,
+   "pool_after": 28,
+   "kind": "ordinary",
+   "flips_in_prev_top10_including_touched_entries": {
+    "mase_gmean": [],
+    "crps_gmean": [],
+    "mase_rank": [
+     {
+      "a": "Chronos-2",
+      "b": "PatchTST-FM-Extended",
+      "touched": []
+     }
+    ],
+    "crps_rank": []
+   },
+   "mase_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "mase_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": [
+     {
+      "a": "Chronos-2",
+      "b": "PatchTST-FM-Extended",
+      "place_before": [
+       5,
+       6
+      ],
+      "place_after": [
+       6,
+       5
+      ]
+     }
+    ]
+   },
+   "crps_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   }
+  },
+  {
+   "from_commit": "82e43a1e",
+   "to_commit": "65119f56",
+   "from_date": "2026-09-23",
+   "to_date": "2026-09-26",
+   "subject": "Submit evaluation results for Fracast-0 (#42)",
+   "new_entries": [
+    "Fracast-0"
+   ],
+   "removed_entries": [],
+   "renamed": {},
+   "entries_with_changed_files": {},
+   "baseline_changed": false,
+   "baseline_changed_units": [],
+   "pool_before": 28,
+   "pool_after": 29,
+   "kind": "ordinary",
+   "flips_in_prev_top10_including_touched_entries": {
+    "mase_gmean": [],
+    "crps_gmean": [],
+    "mase_rank": [],
+    "crps_rank": []
+   },
+   "mase_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "mase_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   }
+  },
+  {
+   "from_commit": "65119f56",
+   "to_commit": "03ab980c",
+   "from_date": "2026-09-26",
+   "to_date": "2026-09-28",
+   "subject": "Submit evaluation results for QiYao-M (#43)",
+   "new_entries": [
+    "QiYao-M"
+   ],
+   "removed_entries": [],
+   "renamed": {},
+   "entries_with_changed_files": {},
+   "baseline_changed": false,
+   "baseline_changed_units": [],
+   "pool_before": 29,
+   "pool_after": 30,
+   "kind": "ordinary",
+   "flips_in_prev_top10_including_touched_entries": {
+    "mase_gmean": [],
+    "crps_gmean": [],
+    "mase_rank": [
+     {
+      "a": "PatchTST-FM-Extended",
+      "b": "Chronos-2",
+      "touched": []
+     }
+    ],
+    "crps_rank": []
+   },
+   "mase_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "mase_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": [
+     {
+      "a": "PatchTST-FM-Extended",
+      "b": "Chronos-2",
+      "place_before": [
+       5,
+       6
+      ],
+      "place_after": [
+       7,
+       6
+      ]
+     }
+    ]
+   },
+   "crps_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   }
+  },
+  {
+   "from_commit": "03ab980c",
+   "to_commit": "66eea9da",
+   "from_date": "2026-09-28",
+   "to_date": "2026-09-30",
+   "subject": "Refresh Tabby TIME results: seed 42, max(H, 128) (#44)",
+   "new_entries": [],
+   "removed_entries": [],
+   "renamed": {},
+   "entries_with_changed_files": {
+    "Tabby": [
+     "Australia_Solar/H/long",
+     "Australia_Solar/H/medium",
+     "Australia_Solar/H/short",
+     "Auto_Production_SF/M/short",
+     "CPHL/15T/long",
+     "CPHL/15T/medium",
+     "CPHL/15T/short",
+     "CPHL/30T/long",
+     "CPHL/30T/medium",
+     "CPHL/30T/short",
+     "CPHL/H/long",
+     "CPHL/H/medium",
+     "CPHL/H/short",
+     "Coastal_T_S/15T/long",
+     "Coastal_T_S/15T/medium",
+     "Coastal_T_S/15T/short",
+     "Coastal_T_S/20T/long",
+     "Coastal_T_S/20T/medium",
+     "Coastal_T_S/20T/short",
+     "Coastal_T_S/5T/long",
+     "Coastal_T_S/5T/medium",
+     "Coastal_T_S/5T/short",
+     "Coastal_T_S/H/long",
+     "Coastal_T_S/H/medium",
+     "Coastal_T_S/H/short",
+     "Commodity_Import/M/short",
+     "Commodity_Production/M/short",
+     "Crypto/D/short",
+     "ECDC_COVID/D/short",
+     "ECDC_COVID/W/short",
+     "EWELD_Load/15T/long",
+     "EWELD_Load/15T/medium",
+     "EWELD_Load/15T/short",
+     "Finland_Traffic/15T/long",
+     "Finland_Traffic/15T/medium",
+     "Finland_Traffic/15T/short",
+     "Global_Influenza/W/short",
+     "Global_Price/Q/short",
+     "Housing_Inventory/M/short",
+     "JOLTS/M/short",
+     "Job_Claims/W/short",
+     "MetroPT-3/5T/long",
+     "MetroPT-3/5T/medium",
+     "MetroPT-3/5T/short",
+     "NE_China_Wind/H/long",
+     "NE_China_Wind/H/medium",
+     "NE_China_Wind/H/short",
+     "Oil_Price/B/short",
+     "Online_Retail_2_UCI/D/short",
+     "OpenElectricity_NEM/5T/long",
+     "OpenElectricity_NEM/5T/medium",
+     "OpenElectricity_NEM/5T/short",
+     "Port_Activity/D/short",
+     "Port_Activity/W/short",
+     "SG_Carpark/15T/long",
+     "SG_Carpark/15T/medium",
+     "SG_Carpark/15T/short",
+     "SG_PM25/H/long",
+     "SG_PM25/H/medium",
+     "SG_PM25/H/short",
+     "SG_Weather/D/long",
+     "SG_Weather/D/medium",
+     "SG_Weather/D/short",
+     "Smart_Manufacturing/H/long",
+     "Smart_Manufacturing/H/medium",
+     "Smart_Manufacturing/H/short",
+     "Supply_Chain_Customer/D/short",
+     "Supply_Chain_Location/D/short",
+     "US_Labor/M/short",
+     "US_Term_Structure/B/short",
+     "Uncertainty_1M/M/short",
+     "Vehicle_Sales/M/short",
+     "Vehicle_Supply/M/short",
+     "WUI_Global/Q/short",
+     "Water_Quality_Darwin/15T/long",
+     "Water_Quality_Darwin/15T/medium",
+     "Water_Quality_Darwin/15T/short",
+     "azure2019_D/5T/short",
+     "azure2019_I/5T/short",
+     "azure2019_U/5T/short",
+     "current_velocity/10T/long",
+     "current_velocity/10T/medium",
+     "current_velocity/10T/short",
+     "current_velocity/15T/long",
+     "current_velocity/15T/medium",
+     "current_velocity/15T/short",
+     "current_velocity/20T/long",
+     "current_velocity/20T/medium",
+     "current_velocity/20T/short",
+     "current_velocity/5T/long",
+     "current_velocity/5T/medium",
+     "current_velocity/5T/short",
+     "current_velocity/H/long",
+     "current_velocity/H/medium",
+     "current_velocity/H/short",
+     "epf_electricity_price/H/long",
+     "epf_electricity_price/H/medium",
+     "epf_electricity_price/H/short"
+    ]
+   },
+   "baseline_changed": false,
+   "baseline_changed_units": [],
+   "pool_before": 30,
+   "pool_after": 30,
+   "kind": "ordinary",
+   "flips_in_prev_top10_including_touched_entries": {
+    "mase_gmean": [],
+    "crps_gmean": [],
+    "mase_rank": [
+     {
+      "a": "Chronos-2",
+      "b": "PatchTST-FM-Extended",
+      "touched": []
+     }
+    ],
+    "crps_rank": [
+     {
+      "a": "Chronos-2",
+      "b": "Tabby",
+      "touched": [
+       "Tabby"
+      ]
+     },
+     {
+      "a": "t0_beta",
+      "b": "Tabby",
+      "touched": [
+       "Tabby"
+      ]
+     }
+    ]
+   },
+   "mase_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "mase_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": [
+     {
+      "a": "Chronos-2",
+      "b": "PatchTST-FM-Extended",
+      "place_before": [
+       6,
+       7
+      ],
+      "place_after": [
+       7,
+       6
+      ]
+     }
+    ]
+   },
+   "crps_rank": {
+    "untouched_top10_entries": 9,
+    "swapped_pairs": []
+   }
+  },
+  {
+   "from_commit": "66eea9da",
+   "to_commit": "5787f898",
+   "from_date": "2026-09-30",
+   "to_date": "2026-09-30",
+   "subject": "Refresh Tabby-Pretrain TIME results: max(H, 128) (#45)",
+   "new_entries": [
+    "Tabby-Pretrain"
+   ],
+   "removed_entries": [],
+   "renamed": {},
+   "entries_with_changed_files": {},
+   "baseline_changed": false,
+   "baseline_changed_units": [],
+   "pool_before": 30,
+   "pool_after": 31,
+   "kind": "ordinary",
+   "flips_in_prev_top10_including_touched_entries": {
+    "mase_gmean": [],
+    "crps_gmean": [],
+    "mase_rank": [],
+    "crps_rank": [
+     {
+      "a": "Toto-2.0-1B",
+      "b": "Tabby",
+      "touched": []
+     }
+    ]
+   },
+   "mase_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "mase_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": [
+     {
+      "a": "Toto-2.0-1B",
+      "b": "Tabby",
+      "place_before": [
+       5,
+       6
+      ],
+      "place_after": [
+       6,
+       5
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "from_commit": "5787f898",
+   "to_commit": "246dc3f1",
+   "from_date": "2026-09-30",
+   "to_date": "2026-10-05",
+   "subject": "Submit evaluation results for ChakraTS (#46)",
+   "new_entries": [
+    "ChakraTS"
+   ],
+   "removed_entries": [],
+   "renamed": {},
+   "entries_with_changed_files": {},
+   "baseline_changed": false,
+   "baseline_changed_units": [],
+   "pool_before": 31,
+   "pool_after": 32,
+   "kind": "ordinary",
+   "flips_in_prev_top10_including_touched_entries": {
+    "mase_gmean": [],
+    "crps_gmean": [],
+    "mase_rank": [],
+    "crps_rank": [
+     {
+      "a": "Tabby",
+      "b": "Toto-2.0-1B",
+      "touched": []
+     }
+    ]
+   },
+   "mase_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "mase_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": [
+     {
+      "a": "Tabby",
+      "b": "Toto-2.0-1B",
+      "place_before": [
+       5,
+       6
+      ],
+      "place_after": [
+       7,
+       6
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "from_commit": "246dc3f1",
+   "to_commit": "4b07d9e5",
+   "from_date": "2026-10-05",
+   "to_date": "2026-10-09",
+   "subject": "Submit evaluation results for TimeRSI (#48)",
+   "new_entries": [
+    "TimeRSI"
+   ],
+   "removed_entries": [],
+   "renamed": {},
+   "entries_with_changed_files": {},
+   "baseline_changed": false,
+   "baseline_changed_units": [],
+   "pool_before": 32,
+   "pool_after": 33,
+   "kind": "ordinary",
+   "flips_in_prev_top10_including_touched_entries": {
+    "mase_gmean": [],
+    "crps_gmean": [],
+    "mase_rank": [
+     {
+      "a": "ChakraTS",
+      "b": "TimesFM-3",
+      "touched": []
+     },
+     {
+      "a": "PatchTST-FM-Extended",
+      "b": "Chronos-2",
+      "touched": []
+     }
+    ],
+    "crps_rank": []
+   },
+   "mase_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "mase_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": [
+     {
+      "a": "ChakraTS",
+      "b": "TimesFM-3",
+      "place_before": [
+       2,
+       3
+      ],
+      "place_after": [
+       4,
+       3
+      ]
+     },
+     {
+      "a": "PatchTST-FM-Extended",
+      "b": "Chronos-2",
+      "place_before": [
+       7,
+       8
+      ],
+      "place_after": [
+       9,
+       8
+      ]
+     }
+    ]
+   },
+   "crps_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   }
+  },
+  {
+   "from_commit": "4b07d9e5",
+   "to_commit": "751c9b42",
+   "from_date": "2026-10-09",
+   "to_date": "2026-10-13",
+   "subject": "Add Hart-36M evaluation results (#49)",
+   "new_entries": [
+    "Hart-36M"
+   ],
+   "removed_entries": [],
+   "renamed": {},
+   "entries_with_changed_files": {},
+   "baseline_changed": false,
+   "baseline_changed_units": [],
+   "pool_before": 33,
+   "pool_after": 34,
+   "kind": "ordinary",
+   "flips_in_prev_top10_including_touched_entries": {
+    "mase_gmean": [],
+    "crps_gmean": [],
+    "mase_rank": [],
+    "crps_rank": []
+   },
+   "mase_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "mase_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   }
+  },
+  {
+   "from_commit": "751c9b42",
+   "to_commit": "1ebbe655",
+   "from_date": "2026-10-13",
+   "to_date": "2026-10-14",
+   "subject": "Submit evaluation results for t0_gamma (#50)",
+   "new_entries": [
+    "t0_gamma"
+   ],
+   "removed_entries": [],
+   "renamed": {},
+   "entries_with_changed_files": {},
+   "baseline_changed": false,
+   "baseline_changed_units": [],
+   "pool_before": 34,
+   "pool_after": 35,
+   "kind": "ordinary",
+   "flips_in_prev_top10_including_touched_entries": {
+    "mase_gmean": [],
+    "crps_gmean": [],
+    "mase_rank": [],
+    "crps_rank": []
+   },
+   "mase_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "mase_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   }
+  },
+  {
+   "from_commit": "1ebbe655",
+   "to_commit": "3d63e2a1",
+   "from_date": "2026-10-14",
+   "to_date": "2026-10-16",
+   "subject": "Submit evaluation results for Timestral-5M (#51)",
+   "new_entries": [
+    "Timestral-5M"
+   ],
+   "removed_entries": [],
+   "renamed": {},
+   "entries_with_changed_files": {},
+   "baseline_changed": false,
+   "baseline_changed_units": [],
+   "pool_before": 35,
+   "pool_after": 36,
+   "kind": "ordinary",
+   "flips_in_prev_top10_including_touched_entries": {
+    "mase_gmean": [],
+    "crps_gmean": [],
+    "mase_rank": [],
+    "crps_rank": []
+   },
+   "mase_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "mase_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   }
+  },
+  {
+   "from_commit": "3d63e2a1",
+   "to_commit": "9a5e670d",
+   "from_date": "2026-10-16",
+   "to_date": "2026-10-16",
+   "subject": "Submit evaluation results for Timestral-28M (#52)",
+   "new_entries": [
+    "Timestral-28M"
+   ],
+   "removed_entries": [],
+   "renamed": {},
+   "entries_with_changed_files": {},
+   "baseline_changed": false,
+   "baseline_changed_units": [],
+   "pool_before": 36,
+   "pool_after": 37,
+   "kind": "ordinary",
+   "flips_in_prev_top10_including_touched_entries": {
+    "mase_gmean": [],
+    "crps_gmean": [],
+    "mase_rank": [
+     {
+      "a": "Timestral-5M",
+      "b": "Toto-2.0-1B",
+      "touched": []
+     }
+    ],
+    "crps_rank": []
+   },
+   "mase_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "mase_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": [
+     {
+      "a": "Timestral-5M",
+      "b": "Toto-2.0-1B",
+      "place_before": [
+       8,
+       9
+      ],
+      "place_after": [
+       10,
+       9
+      ]
+     }
+    ]
+   },
+   "crps_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   }
+  },
+  {
+   "from_commit": "9a5e670d",
+   "to_commit": "a3cc65c0",
+   "from_date": "2026-10-16",
+   "to_date": "2026-10-16",
+   "subject": "Submit evaluation results for Timestral-123M (#53)",
+   "new_entries": [
+    "Timestral-123M"
+   ],
+   "removed_entries": [],
+   "renamed": {},
+   "entries_with_changed_files": {},
+   "baseline_changed": false,
+   "baseline_changed_units": [],
+   "pool_before": 37,
+   "pool_after": 38,
+   "kind": "ordinary",
+   "flips_in_prev_top10_including_touched_entries": {
+    "mase_gmean": [],
+    "crps_gmean": [],
+    "mase_rank": [],
+    "crps_rank": []
+   },
+   "mase_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "mase_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   }
+  },
+  {
+   "from_commit": "a3cc65c0",
+   "to_commit": "a69910a2",
+   "from_date": "2026-10-16",
+   "to_date": "2026-10-16",
+   "subject": "Submit evaluation results for Timestral-209M (#54)",
+   "new_entries": [
+    "Timestral-209M"
+   ],
+   "removed_entries": [],
+   "renamed": {},
+   "entries_with_changed_files": {},
+   "baseline_changed": false,
+   "baseline_changed_units": [],
+   "pool_before": 38,
+   "pool_after": 39,
+   "kind": "ordinary",
+   "flips_in_prev_top10_including_touched_entries": {
+    "mase_gmean": [],
+    "crps_gmean": [],
+    "mase_rank": [],
+    "crps_rank": []
+   },
+   "mase_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "mase_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   }
+  },
+  {
+   "from_commit": "a69910a2",
+   "to_commit": "4c93deaa",
+   "from_date": "2026-10-16",
+   "to_date": "2026-10-19",
+   "subject": "Submit evaluation results for TimeRSI-1.5 (#55)",
+   "new_entries": [
+    "TimeRSI-1.5"
+   ],
+   "removed_entries": [],
+   "renamed": {},
+   "entries_with_changed_files": {},
+   "baseline_changed": false,
+   "baseline_changed_units": [],
+   "pool_before": 39,
+   "pool_after": 40,
+   "kind": "ordinary",
+   "flips_in_prev_top10_including_touched_entries": {
+    "mase_gmean": [],
+    "crps_gmean": [],
+    "mase_rank": [],
+    "crps_rank": []
+   },
+   "mase_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "mase_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   }
+  },
+  {
+   "from_commit": "4c93deaa",
+   "to_commit": "6d5ab8de",
+   "from_date": "2026-10-19",
+   "to_date": "2026-10-31",
+   "subject": "Add Flashmind PDM-Femto results (#56)",
+   "new_entries": [
+    "PDM-Femto"
+   ],
+   "removed_entries": [],
+   "renamed": {},
+   "entries_with_changed_files": {},
+   "baseline_changed": false,
+   "baseline_changed_units": [],
+   "pool_before": 40,
+   "pool_after": 41,
+   "kind": "ordinary",
+   "flips_in_prev_top10_including_touched_entries": {
+    "mase_gmean": [],
+    "crps_gmean": [],
+    "mase_rank": [],
+    "crps_rank": []
+   },
+   "mase_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "mase_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   }
+  },
+  {
+   "from_commit": "6d5ab8de",
+   "to_commit": "9713c37d",
+   "from_date": "2026-10-31",
+   "to_date": "2026-10-31",
+   "subject": "Add Flashmind PDM-Pico results (#57)",
+   "new_entries": [
+    "PDM-Pico"
+   ],
+   "removed_entries": [],
+   "renamed": {},
+   "entries_with_changed_files": {},
+   "baseline_changed": false,
+   "baseline_changed_units": [],
+   "pool_before": 41,
+   "pool_after": 42,
+   "kind": "ordinary",
+   "flips_in_prev_top10_including_touched_entries": {
+    "mase_gmean": [],
+    "crps_gmean": [],
+    "mase_rank": [],
+    "crps_rank": []
+   },
+   "mase_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "mase_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   }
+  },
+  {
+   "from_commit": "9713c37d",
+   "to_commit": "3bf103cb",
+   "from_date": "2026-10-31",
+   "to_date": "2026-10-31",
+   "subject": "Add Flashmind PDM-Nano results (#58)",
+   "new_entries": [
+    "PDM-Nano"
+   ],
+   "removed_entries": [],
+   "renamed": {},
+   "entries_with_changed_files": {},
+   "baseline_changed": false,
+   "baseline_changed_units": [],
+   "pool_before": 42,
+   "pool_after": 43,
+   "kind": "ordinary",
+   "flips_in_prev_top10_including_touched_entries": {
+    "mase_gmean": [],
+    "crps_gmean": [],
+    "mase_rank": [],
+    "crps_rank": []
+   },
+   "mase_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_gmean": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "mase_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   },
+   "crps_rank": {
+    "untouched_top10_entries": 10,
+    "swapped_pairs": []
+   }
+  }
+ ],
+ "events": {
+  "mase_gmean": [],
+  "crps_gmean": [],
+  "mase_rank": [
+   {
+    "from_commit": "6eb02691",
+    "to_commit": "5b7dab51",
+    "from_date": "2026-03-13",
+    "to_date": "2026-04-03",
+    "kind": "ordinary",
+    "new_entries": [
+     "PatchTST-FM-TsMix10M"
+    ],
+    "subject": "Submit evaluation results for PatchTST-FM-TsMix10M (#15)",
+    "pairs": [
+     {
+      "a": "Toto",
+      "b": "Eidos",
+      "place_before": [
+       5,
+       6
+      ],
+      "place_after": [
+       7,
+       6
+      ]
+     }
+    ],
+    "entries_with_changed_files": []
+   },
+   {
+    "from_commit": "5b7dab51",
+    "to_commit": "d6d1916a",
+    "from_date": "2026-04-03",
+    "to_date": "2026-04-03",
+    "kind": "ordinary",
+    "new_entries": [
+     "PatchTST-FM-R1"
+    ],
+    "subject": "Submit evaluation results for PatchTST-FM-R1 (#14)",
+    "pairs": [
+     {
+      "a": "Chronos-2",
+      "b": "PatchTST-FM-TsMix10M",
+      "place_before": [
+       1,
+       2
+      ],
+      "place_after": [
+       2,
+       1
+      ]
+     }
+    ],
+    "entries_with_changed_files": []
+   },
+   {
+    "from_commit": "e14243f8",
+    "to_commit": "8ec9db10",
+    "from_date": "2026-06-02",
+    "to_date": "2026-06-02",
+    "kind": "ordinary",
+    "new_entries": [],
+    "subject": "Rename to PatchTST-FM-Extended (#35)",
+    "pairs": [
+     {
+      "a": "Chronos-2",
+      "b": "PatchTST-FM-Extended",
+      "place_before": [
+       5,
+       6
+      ],
+      "place_after": [
+       5,
+       4
+      ]
+     }
+    ],
+    "entries_with_changed_files": []
+   },
+   {
+    "from_commit": "8ec9db10",
+    "to_commit": "2ffa8721",
+    "from_date": "2026-06-02",
+    "to_date": "2026-07-11",
+    "kind": "ordinary",
+    "new_entries": [
+     "OmniScient"
+    ],
+    "subject": "Add OmniScient results (fine-tuned Chronos-2 derivative, 360 Labs) (#36)",
+    "pairs": [
+     {
+      "a": "TimesFM-2.5",
+      "b": "PatchTST-FM-R1",
+      "place_before": [
+       6,
+       7
+      ],
+      "place_after": [
+       7,
+       6
+      ]
+     }
+    ],
+    "entries_with_changed_files": []
+   },
+   {
+    "from_commit": "2ffa8721",
+    "to_commit": "42495a47",
+    "from_date": "2026-07-11",
+    "to_date": "2026-07-14",
+    "kind": "ordinary",
+    "new_entries": [
+     "litespecformer"
+    ],
+    "subject": "whenxuan: update the benchmark results for litespecformer (#37)",
+    "pairs": [
+     {
+      "a": "PatchTST-FM-R1",
+      "b": "TimesFM-2.5",
+      "place_before": [
+       6,
+       7
+      ],
+      "place_after": [
+       7,
+       6
+      ]
+     }
+    ],
+    "entries_with_changed_files": []
+   },
+   {
+    "from_commit": "42495a47",
+    "to_commit": "73a177cb",
+    "from_date": "2026-07-14",
+    "to_date": "2026-08-05",
+    "kind": "ordinary",
+    "new_entries": [
+     "TS-ICL"
+    ],
+    "subject": "Submit evaluation results for TS-ICL (#38)",
+    "pairs": [
+     {
+      "a": "TimesFM-2.5",
+      "b": "PatchTST-FM-R1",
+      "place_before": [
+       6,
+       7
+      ],
+      "place_after": [
+       7,
+       6
+      ]
+     }
+    ],
+    "entries_with_changed_files": []
+   },
+   {
+    "from_commit": "e308bbc7",
+    "to_commit": "bb420f38",
+    "from_date": "2026-08-28",
+    "to_date": "2026-09-16",
+    "kind": "ordinary",
+    "new_entries": [
+     "Tabby"
+    ],
+    "subject": "Submit evaluation results for Tabby (#40)",
+    "pairs": [
+     {
+      "a": "PatchTST-FM-Extended",
+      "b": "Chronos-2",
+      "place_before": [
+       5,
+       6
+      ],
+      "place_after": [
+       6,
+       5
+      ]
+     }
+    ],
+    "entries_with_changed_files": []
+   },
+   {
+    "from_commit": "bb420f38",
+    "to_commit": "82e43a1e",
+    "from_date": "2026-09-16",
+    "to_date": "2026-09-23",
+    "kind": "ordinary",
+    "new_entries": [
+     "t0_beta"
+    ],
+    "subject": "Submit evaluation results for t0_beta (#41)",
+    "pairs": [
+     {
+      "a": "Chronos-2",
+      "b": "PatchTST-FM-Extended",
+      "place_before": [
+       5,
+       6
+      ],
+      "place_after": [
+       6,
+       5
+      ]
+     }
+    ],
+    "entries_with_changed_files": []
+   },
+   {
+    "from_commit": "65119f56",
+    "to_commit": "03ab980c",
+    "from_date": "2026-09-26",
+    "to_date": "2026-09-28",
+    "kind": "ordinary",
+    "new_entries": [
+     "QiYao-M"
+    ],
+    "subject": "Submit evaluation results for QiYao-M (#43)",
+    "pairs": [
+     {
+      "a": "PatchTST-FM-Extended",
+      "b": "Chronos-2",
+      "place_before": [
+       5,
+       6
+      ],
+      "place_after": [
+       7,
+       6
+      ]
+     }
+    ],
+    "entries_with_changed_files": []
+   },
+   {
+    "from_commit": "03ab980c",
+    "to_commit": "66eea9da",
+    "from_date": "2026-09-28",
+    "to_date": "2026-09-30",
+    "kind": "ordinary",
+    "new_entries": [],
+    "subject": "Refresh Tabby TIME results: seed 42, max(H, 128) (#44)",
+    "pairs": [
+     {
+      "a": "Chronos-2",
+      "b": "PatchTST-FM-Extended",
+      "place_before": [
+       6,
+       7
+      ],
+      "place_after": [
+       7,
+       6
+      ]
+     }
+    ],
+    "entries_with_changed_files": [
+     "Tabby"
+    ]
+   },
+   {
+    "from_commit": "246dc3f1",
+    "to_commit": "4b07d9e5",
+    "from_date": "2026-10-05",
+    "to_date": "2026-10-09",
+    "kind": "ordinary",
+    "new_entries": [
+     "TimeRSI"
+    ],
+    "subject": "Submit evaluation results for TimeRSI (#48)",
+    "pairs": [
+     {
+      "a": "ChakraTS",
+      "b": "TimesFM-3",
+      "place_before": [
+       2,
+       3
+      ],
+      "place_after": [
+       4,
+       3
+      ]
+     },
+     {
+      "a": "PatchTST-FM-Extended",
+      "b": "Chronos-2",
+      "place_before": [
+       7,
+       8
+      ],
+      "place_after": [
+       9,
+       8
+      ]
+     }
+    ],
+    "entries_with_changed_files": []
+   },
+   {
+    "from_commit": "3d63e2a1",
+    "to_commit": "9a5e670d",
+    "from_date": "2026-10-16",
+    "to_date": "2026-10-16",
+    "kind": "ordinary",
+    "new_entries": [
+     "Timestral-28M"
+    ],
+    "subject": "Submit evaluation results for Timestral-28M (#52)",
+    "pairs": [
+     {
+      "a": "Timestral-5M",
+      "b": "Toto-2.0-1B",
+      "place_before": [
+       8,
+       9
+      ],
+      "place_after": [
+       10,
+       9
+      ]
+     }
+    ],
+    "entries_with_changed_files": []
+   }
+  ],
+  "crps_rank": [
+   {
+    "from_commit": "7a1b5500",
+    "to_commit": "3d7c681e",
+    "from_date": "2026-05-15",
+    "to_date": "2026-05-15",
+    "kind": "ordinary",
+    "new_entries": [
+     "Toto-2.0-1B"
+    ],
+    "subject": "Submit evaluation results for Toto-2.0-1B (#22)",
+    "pairs": [
+     {
+      "a": "Toto-2.0-22m",
+      "b": "PatchTST-FM-R1",
+      "place_before": [
+       4,
+       5
+      ],
+      "place_after": [
+       6,
+       5
+      ]
+     },
+     {
+      "a": "Toto-2.0-4m",
+      "b": "Eidos",
+      "place_before": [
+       9,
+       10
+      ],
+      "place_after": [
+       11,
+       10
+      ]
+     }
+    ],
+    "entries_with_changed_files": []
+   },
+   {
+    "from_commit": "8ec9db10",
+    "to_commit": "2ffa8721",
+    "from_date": "2026-06-02",
+    "to_date": "2026-07-11",
+    "kind": "ordinary",
+    "new_entries": [
+     "OmniScient"
+    ],
+    "subject": "Add OmniScient results (fine-tuned Chronos-2 derivative, 360 Labs) (#36)",
+    "pairs": [
+     {
+      "a": "TiRex",
+      "b": "Timer-S1",
+      "place_before": [
+       9,
+       10
+      ],
+      "place_after": [
+       11,
+       10
+      ]
+     }
+    ],
+    "entries_with_changed_files": []
+   },
+   {
+    "from_commit": "66eea9da",
+    "to_commit": "5787f898",
+    "from_date": "2026-09-30",
+    "to_date": "2026-09-30",
+    "kind": "ordinary",
+    "new_entries": [
+     "Tabby-Pretrain"
+    ],
+    "subject": "Refresh Tabby-Pretrain TIME results: max(H, 128) (#45)",
+    "pairs": [
+     {
+      "a": "Toto-2.0-1B",
+      "b": "Tabby",
+      "place_before": [
+       5,
+       6
+      ],
+      "place_after": [
+       6,
+       5
+      ]
+     }
+    ],
+    "entries_with_changed_files": []
+   },
+   {
+    "from_commit": "5787f898",
+    "to_commit": "246dc3f1",
+    "from_date": "2026-09-30",
+    "to_date": "2026-10-05",
+    "kind": "ordinary",
+    "new_entries": [
+     "ChakraTS"
+    ],
+    "subject": "Submit evaluation results for ChakraTS (#46)",
+    "pairs": [
+     {
+      "a": "Tabby",
+      "b": "Toto-2.0-1B",
+      "place_before": [
+       5,
+       6
+      ],
+      "place_after": [
+       7,
+       6
+      ]
+     }
+    ],
+    "entries_with_changed_files": []
+   }
+  ]
+ },
+ "states": [
+  {
+   "commit": "ca2d156c",
+   "date": "2026-02-09",
+   "subject": "Initial upload of results",
+   "pool": 13,
+   "top10": {
+    "mase_gmean": [
+     "TimesFM-2.5",
+     "ToTo",
+     "TiRex",
+     "moirai2",
+     "chronos2_base",
+     "TimesFM-2.0",
+     "kairos",
+     "sundial_base",
+     "chronos_bolt_base",
+     "TimesFM-1.0"
+    ],
+    "crps_gmean": [
+     "chronos2_base",
+     "TimesFM-2.5",
+     "ToTo",
+     "moirai2",
+     "TiRex",
+     "TimesFM-2.0",
+     "chronos_bolt_base",
+     "kairos",
+     "sundial_base",
+     "moirai_base"
+    ],
+    "mase_rank": [
+     "TimesFM-2.5",
+     "chronos2_base",
+     "TiRex",
+     "ToTo",
+     "moirai2",
+     "TimesFM-2.0",
+     "kairos",
+     "sundial_base",
+     "chronos_bolt_base",
+     "visiontspp_base"
+    ],
+    "crps_rank": [
+     "chronos2_base",
+     "TimesFM-2.5",
+     "TiRex",
+     "ToTo",
+     "moirai2",
+     "TimesFM-2.0",
+     "chronos_bolt_base",
+     "visiontspp_base",
+     "kairos",
+     "moirai_base"
+    ]
+   }
+  },
+  {
+   "commit": "c01dea39",
+   "date": "2026-02-22",
+   "subject": "Update chronos2_base results (#2)",
+   "pool": 13,
+   "top10": {
+    "mase_gmean": [
+     "chronos2_base",
+     "TimesFM-2.5",
+     "ToTo",
+     "TiRex",
+     "moirai2",
+     "TimesFM-2.0",
+     "kairos",
+     "sundial_base",
+     "chronos_bolt_base",
+     "TimesFM-1.0"
+    ],
+    "crps_gmean": [
+     "chronos2_base",
+     "TimesFM-2.5",
+     "ToTo",
+     "moirai2",
+     "TiRex",
+     "TimesFM-2.0",
+     "chronos_bolt_base",
+     "kairos",
+     "sundial_base",
+     "moirai_base"
+    ],
+    "mase_rank": [
+     "chronos2_base",
+     "TimesFM-2.5",
+     "TiRex",
+     "ToTo",
+     "moirai2",
+     "TimesFM-2.0",
+     "kairos",
+     "sundial_base",
+     "chronos_bolt_base",
+     "visiontspp_base"
+    ],
+    "crps_rank": [
+     "chronos2_base",
+     "TimesFM-2.5",
+     "TiRex",
+     "ToTo",
+     "moirai2",
+     "TimesFM-2.0",
+     "chronos_bolt_base",
+     "visiontspp_base",
+     "kairos",
+     "moirai_base"
+    ]
+   }
+  },
+  {
+   "commit": "9d12c44d",
+   "date": "2026-02-22",
+   "subject": "Update chronos_bolt_base results (#3)",
+   "pool": 13,
+   "top10": {
+    "mase_gmean": [
+     "chronos2_base",
+     "TimesFM-2.5",
+     "ToTo",
+     "TiRex",
+     "moirai2",
+     "TimesFM-2.0",
+     "chronos_bolt_base",
+     "kairos",
+     "sundial_base",
+     "TimesFM-1.0"
+    ],
+    "crps_gmean": [
+     "chronos2_base",
+     "TimesFM-2.5",
+     "ToTo",
+     "moirai2",
+     "TiRex",
+     "chronos_bolt_base",
+     "TimesFM-2.0",
+     "kairos",
+     "sundial_base",
+     "moirai_base"
+    ],
+    "mase_rank": [
+     "chronos2_base",
+     "TimesFM-2.5",
+     "TiRex",
+     "ToTo",
+     "moirai2",
+     "TimesFM-2.0",
+     "chronos_bolt_base",
+     "kairos",
+     "sundial_base",
+     "visiontspp_base"
+    ],
+    "crps_rank": [
+     "chronos2_base",
+     "TimesFM-2.5",
+     "TiRex",
+     "ToTo",
+     "moirai2",
+     "TimesFM-2.0",
+     "chronos_bolt_base",
+     "visiontspp_base",
+     "kairos",
+     "moirai_base"
+    ]
+   }
+  },
+  {
+   "commit": "0ffbc360",
+   "date": "2026-02-22",
+   "subject": "Upload TiRex results (#4)",
+   "pool": 13,
+   "top10": {
+    "mase_gmean": [
+     "chronos2_base",
+     "TimesFM-2.5",
+     "TiRex",
+     "ToTo",
+     "moirai2",
+     "TimesFM-2.0",
+     "chronos_bolt_base",
+     "kairos",
+     "sundial_base",
+     "TimesFM-1.0"
+    ],
+    "crps_gmean": [
+     "chronos2_base",
+     "TimesFM-2.5",
+     "TiRex",
+     "ToTo",
+     "moirai2",
+     "chronos_bolt_base",
+     "TimesFM-2.0",
+     "kairos",
+     "sundial_base",
+     "moirai_base"
+    ],
+    "mase_rank": [
+     "chronos2_base",
+     "TimesFM-2.5",
+     "TiRex",
+     "ToTo",
+     "moirai2",
+     "TimesFM-2.0",
+     "chronos_bolt_base",
+     "kairos",
+     "sundial_base",
+     "visiontspp_base"
+    ],
+    "crps_rank": [
+     "chronos2_base",
+     "TimesFM-2.5",
+     "TiRex",
+     "ToTo",
+     "moirai2",
+     "TimesFM-2.0",
+     "chronos_bolt_base",
+     "visiontspp_base",
+     "kairos",
+     "moirai_base"
+    ]
+   }
+  },
+  {
+   "commit": "d39d9291",
+   "date": "2026-02-27",
+   "subject": "Rename chronos2_base to Chronos-2 (#7)",
+   "pool": 13,
+   "top10": {
+    "mase_gmean": [
+     "Chronos-2",
+     "TimesFM-2.5",
+     "TiRex",
+     "ToTo",
+     "moirai2",
+     "TimesFM-2.0",
+     "chronos_bolt_base",
+     "kairos",
+     "sundial_base",
+     "TimesFM-1.0"
+    ],
+    "crps_gmean": [
+     "Chronos-2",
+     "TimesFM-2.5",
+     "TiRex",
+     "ToTo",
+     "moirai2",
+     "chronos_bolt_base",
+     "TimesFM-2.0",
+     "kairos",
+     "sundial_base",
+     "moirai_base"
+    ],
+    "mase_rank": [
+     "Chronos-2",
+     "TimesFM-2.5",
+     "TiRex",
+     "ToTo",
+     "moirai2",
+     "TimesFM-2.0",
+     "chronos_bolt_base",
+     "kairos",
+     "sundial_base",
+     "visiontspp_base"
+    ],
+    "crps_rank": [
+     "Chronos-2",
+     "TimesFM-2.5",
+     "TiRex",
+     "ToTo",
+     "moirai2",
+     "TimesFM-2.0",
+     "chronos_bolt_base",
+     "visiontspp_base",
+     "kairos",
+     "moirai_base"
+    ]
+   }
+  },
+  {
+   "commit": "985df4da",
+   "date": "2026-02-27",
+   "subject": "Rename multiple model folders (#9)",
+   "pool": 13,
+   "top10": {
+    "mase_gmean": [
+     "Chronos-2",
+     "TimesFM-2.5",
+     "TiRex",
+     "Toto",
+     "Moirai2",
+     "TimesFM-2.0",
+     "Chronos-bolt",
+     "Kairos",
+     "sundial_base",
+     "TimesFM-1.0"
+    ],
+    "crps_gmean": [
+     "Chronos-2",
+     "TimesFM-2.5",
+     "TiRex",
+     "Toto",
+     "Moirai2",
+     "Chronos-bolt",
+     "TimesFM-2.0",
+     "Kairos",
+     "sundial_base",
+     "Moirai_base"
+    ],
+    "mase_rank": [
+     "Chronos-2",
+     "TimesFM-2.5",
+     "TiRex",
+     "Toto",
+     "Moirai2",
+     "TimesFM-2.0",
+     "Chronos-bolt",
+     "Kairos",
+     "sundial_base",
+     "visiontspp_base"
+    ],
+    "crps_rank": [
+     "Chronos-2",
+     "TimesFM-2.5",
+     "TiRex",
+     "Toto",
+     "Moirai2",
+     "TimesFM-2.0",
+     "Chronos-bolt",
+     "visiontspp_base",
+     "Kairos",
+     "Moirai_base"
+    ]
+   }
+  },
+  {
+   "commit": "cece563b",
+   "date": "2026-03-09",
+   "subject": "Submit evaluation results for Timer-S1 (#10)",
+   "pool": 14,
+   "top10": {
+    "mase_gmean": [
+     "Chronos-2",
+     "TimesFM-2.5",
+     "Timer-S1",
+     "TiRex",
+     "Toto",
+     "Moirai2",
+     "TimesFM-2.0",
+     "Chronos-bolt",
+     "Kairos",
+     "sundial_base"
+    ],
+    "crps_gmean": [
+     "Chronos-2",
+     "TimesFM-2.5",
+     "TiRex",
+     "Timer-S1",
+     "Toto",
+     "Moirai2",
+     "Chronos-bolt",
+     "TimesFM-2.0",
+     "Kairos",
+     "sundial_base"
+    ],
+    "mase_rank": [
+     "Chronos-2",
+     "TimesFM-2.5",
+     "Timer-S1",
+     "TiRex",
+     "Toto",
+     "Moirai2",
+     "TimesFM-2.0",
+     "Chronos-bolt",
+     "Kairos",
+     "sundial_base"
+    ],
+    "crps_rank": [
+     "Chronos-2",
+     "TimesFM-2.5",
+     "Timer-S1",
+     "TiRex",
+     "Toto",
+     "Moirai2",
+     "TimesFM-2.0",
+     "Chronos-bolt",
+     "visiontspp_base",
+     "Kairos"
+    ]
+   }
+  },
+  {
+   "commit": "6eb02691",
+   "date": "2026-03-13",
+   "subject": "Submit evaluation results for Eidos (#12)",
+   "pool": 15,
+   "top10": {
+    "mase_gmean": [
+     "Chronos-2",
+     "TimesFM-2.5",
+     "Timer-S1",
+     "TiRex",
+     "Toto",
+     "Moirai2",
+     "Eidos",
+     "TimesFM-2.0",
+     "Chronos-bolt",
+     "Kairos"
+    ],
+    "crps_gmean": [
+     "Chronos-2",
+     "TimesFM-2.5",
+     "TiRex",
+     "Timer-S1",
+     "Toto",
+     "Moirai2",
+     "Eidos",
+     "Chronos-bolt",
+     "TimesFM-2.0",
+     "Kairos"
+    ],
+    "mase_rank": [
+     "Chronos-2",
+     "TimesFM-2.5",
+     "Timer-S1",
+     "TiRex",
+     "Toto",
+     "Eidos",
+     "Moirai2",
+     "TimesFM-2.0",
+     "Chronos-bolt",
+     "Kairos"
+    ],
+    "crps_rank": [
+     "Chronos-2",
+     "TimesFM-2.5",
+     "Timer-S1",
+     "TiRex",
+     "Toto",
+     "Moirai2",
+     "Eidos",
+     "TimesFM-2.0",
+     "Chronos-bolt",
+     "visiontspp_base"
+    ]
+   }
+  },
+  {
+   "commit": "5b7dab51",
+   "date": "2026-04-03",
+   "subject": "Submit evaluation results for PatchTST-FM-TsMix10M (#15)",
+   "pool": 16,
+   "top10": {
+    "mase_gmean": [
+     "PatchTST-FM-TsMix10M",
+     "Chronos-2",
+     "TimesFM-2.5",
+     "Timer-S1",
+     "TiRex",
+     "Toto",
+     "Moirai2",
+     "Eidos",
+     "TimesFM-2.0",
+     "Chronos-bolt"
+    ],
+    "crps_gmean": [
+     "Chronos-2",
+     "PatchTST-FM-TsMix10M",
+     "TimesFM-2.5",
+     "TiRex",
+     "Timer-S1",
+     "Toto",
+     "Moirai2",
+     "Eidos",
+     "Chronos-bolt",
+     "TimesFM-2.0"
+    ],
+    "mase_rank": [
+     "Chronos-2",
+     "PatchTST-FM-TsMix10M",
+     "TimesFM-2.5",
+     "Timer-S1",
+     "TiRex",
+     "Eidos",
+     "Toto",
+     "Moirai2",
+     "TimesFM-2.0",
+     "Chronos-bolt"
+    ],
+    "crps_rank": [
+     "Chronos-2",
+     "PatchTST-FM-TsMix10M",
+     "TimesFM-2.5",
+     "Timer-S1",
+     "TiRex",
+     "Toto",
+     "Moirai2",
+     "Eidos",
+     "TimesFM-2.0",
+     "Chronos-bolt"
+    ]
+   }
+  },
+  {
+   "commit": "d6d1916a",
+   "date": "2026-04-03",
+   "subject": "Submit evaluation results for PatchTST-FM-R1 (#14)",
+   "pool": 17,
+   "top10": {
+    "mase_gmean": [
+     "PatchTST-FM-TsMix10M",
+     "Chronos-2",
+     "TimesFM-2.5",
+     "PatchTST-FM-R1",
+     "Timer-S1",
+     "TiRex",
+     "Toto",
+     "Moirai2",
+     "Eidos",
+     "TimesFM-2.0"
+    ],
+    "crps_gmean": [
+     "Chronos-2",
+     "PatchTST-FM-TsMix10M",
+     "PatchTST-FM-R1",
+     "TimesFM-2.5",
+     "TiRex",
+     "Timer-S1",
+     "Toto",
+     "Moirai2",
+     "Eidos",
+     "Chronos-bolt"
+    ],
+    "mase_rank": [
+     "PatchTST-FM-TsMix10M",
+     "Chronos-2",
+     "TimesFM-2.5",
+     "PatchTST-FM-R1",
+     "Timer-S1",
+     "TiRex",
+     "Eidos",
+     "Toto",
+     "Moirai2",
+     "TimesFM-2.0"
+    ],
+    "crps_rank": [
+     "Chronos-2",
+     "PatchTST-FM-TsMix10M",
+     "PatchTST-FM-R1",
+     "TimesFM-2.5",
+     "Timer-S1",
+     "TiRex",
+     "Toto",
+     "Moirai2",
+     "Eidos",
+     "TimesFM-2.0"
+    ]
+   }
+  },
+  {
+   "commit": "25e9cf50",
+   "date": "2026-04-03",
+   "subject": "Submit evaluation results for Eidos (#13)",
+   "pool": 17,
+   "top10": {
+    "mase_gmean": [
+     "PatchTST-FM-TsMix10M",
+     "Chronos-2",
+     "TimesFM-2.5",
+     "PatchTST-FM-R1",
+     "Timer-S1",
+     "TiRex",
+     "Toto",
+     "Eidos",
+     "Moirai2",
+     "TimesFM-2.0"
+    ],
+    "crps_gmean": [
+     "Chronos-2",
+     "PatchTST-FM-TsMix10M",
+     "PatchTST-FM-R1",
+     "TimesFM-2.5",
+     "TiRex",
+     "Timer-S1",
+     "Toto",
+     "Eidos",
+     "Moirai2",
+     "Chronos-bolt"
+    ],
+    "mase_rank": [
+     "PatchTST-FM-TsMix10M",
+     "Chronos-2",
+     "TimesFM-2.5",
+     "PatchTST-FM-R1",
+     "Timer-S1",
+     "TiRex",
+     "Eidos",
+     "Toto",
+     "Moirai2",
+     "TimesFM-2.0"
+    ],
+    "crps_rank": [
+     "Chronos-2",
+     "PatchTST-FM-TsMix10M",
+     "PatchTST-FM-R1",
+     "TimesFM-2.5",
+     "Timer-S1",
+     "TiRex",
+     "Eidos",
+     "Toto",
+     "Moirai2",
+     "TimesFM-2.0"
+    ]
+   }
+  },
+  {
+   "commit": "0d1f7a63",
+   "date": "2026-05-15",
+   "subject": "Submit evaluation results for Toto-2.0-4m (#25)",
+   "pool": 18,
+   "top10": {
+    "mase_gmean": [
+     "PatchTST-FM-TsMix10M",
+     "Chronos-2",
+     "TimesFM-2.5",
+     "PatchTST-FM-R1",
+     "Timer-S1",
+     "TiRex",
+     "Toto-2.0-4m",
+     "Toto",
+     "Eidos",
+     "Moirai2"
+    ],
+    "crps_gmean": [
+     "Chronos-2",
+     "PatchTST-FM-TsMix10M",
+     "PatchTST-FM-R1",
+     "TimesFM-2.5",
+     "TiRex",
+     "Timer-S1",
+     "Toto-2.0-4m",
+     "Toto",
+     "Eidos",
+     "Moirai2"
+    ],
+    "mase_rank": [
+     "PatchTST-FM-TsMix10M",
+     "Chronos-2",
+     "TimesFM-2.5",
+     "PatchTST-FM-R1",
+     "Timer-S1",
+     "TiRex",
+     "Toto-2.0-4m",
+     "Eidos",
+     "Toto",
+     "Moirai2"
+    ],
+    "crps_rank": [
+     "Chronos-2",
+     "PatchTST-FM-TsMix10M",
+     "PatchTST-FM-R1",
+     "TimesFM-2.5",
+     "Timer-S1",
+     "TiRex",
+     "Toto-2.0-4m",
+     "Eidos",
+     "Toto",
+     "Moirai2"
+    ]
+   }
+  },
+  {
+   "commit": "f5115615",
+   "date": "2026-05-15",
+   "subject": "Submit evaluation results for Toto-2.0-22m (#24)",
+   "pool": 19,
+   "top10": {
+    "mase_gmean": [
+     "PatchTST-FM-TsMix10M",
+     "Chronos-2",
+     "TimesFM-2.5",
+     "Toto-2.0-22m",
+     "PatchTST-FM-R1",
+     "Timer-S1",
+     "TiRex",
+     "Toto-2.0-4m",
+     "Toto",
+     "Eidos"
+    ],
+    "crps_gmean": [
+     "Chronos-2",
+     "PatchTST-FM-TsMix10M",
+     "Toto-2.0-22m",
+     "PatchTST-FM-R1",
+     "TimesFM-2.5",
+     "TiRex",
+     "Timer-S1",
+     "Toto-2.0-4m",
+     "Toto",
+     "Eidos"
+    ],
+    "mase_rank": [
+     "PatchTST-FM-TsMix10M",
+     "Chronos-2",
+     "TimesFM-2.5",
+     "PatchTST-FM-R1",
+     "Toto-2.0-22m",
+     "Timer-S1",
+     "TiRex",
+     "Toto-2.0-4m",
+     "Eidos",
+     "Toto"
+    ],
+    "crps_rank": [
+     "Chronos-2",
+     "PatchTST-FM-TsMix10M",
+     "Toto-2.0-22m",
+     "PatchTST-FM-R1",
+     "TimesFM-2.5",
+     "Timer-S1",
+     "TiRex",
+     "Toto-2.0-4m",
+     "Eidos",
+     "Toto"
+    ]
+   }
+  },
+  {
+   "commit": "7a1b5500",
+   "date": "2026-05-15",
+   "subject": "Submit evaluation results for Toto-2.0-313m (#23)",
+   "pool": 20,
+   "top10": {
+    "mase_gmean": [
+     "Toto-2.0-313m",
+     "PatchTST-FM-TsMix10M",
+     "Chronos-2",
+     "TimesFM-2.5",
+     "Toto-2.0-22m",
+     "PatchTST-FM-R1",
+     "Timer-S1",
+     "TiRex",
+     "Toto-2.0-4m",
+     "Toto"
+    ],
+    "crps_gmean": [
+     "Toto-2.0-313m",
+     "Chronos-2",
+     "PatchTST-FM-TsMix10M",
+     "Toto-2.0-22m",
+     "PatchTST-FM-R1",
+     "TimesFM-2.5",
+     "TiRex",
+     "Timer-S1",
+     "Toto-2.0-4m",
+     "Toto"
+    ],
+    "mase_rank": [
+     "Toto-2.0-313m",
+     "PatchTST-FM-TsMix10M",
+     "Chronos-2",
+     "TimesFM-2.5",
+     "PatchTST-FM-R1",
+     "Toto-2.0-22m",
+     "Timer-S1",
+     "TiRex",
+     "Toto-2.0-4m",
+     "Eidos"
+    ],
+    "crps_rank": [
+     "Toto-2.0-313m",
+     "Chronos-2",
+     "PatchTST-FM-TsMix10M",
+     "Toto-2.0-22m",
+     "PatchTST-FM-R1",
+     "TimesFM-2.5",
+     "Timer-S1",
+     "TiRex",
+     "Toto-2.0-4m",
+     "Eidos"
+    ]
+   }
+  },
+  {
+   "commit": "3d7c681e",
+   "date": "2026-05-15",
+   "subject": "Submit evaluation results for Toto-2.0-1B (#22)",
+   "pool": 21,
+   "top10": {
+    "mase_gmean": [
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "PatchTST-FM-TsMix10M",
+     "Chronos-2",
+     "TimesFM-2.5",
+     "Toto-2.0-22m",
+     "PatchTST-FM-R1",
+     "Timer-S1",
+     "TiRex",
+     "Toto-2.0-4m"
+    ],
+    "crps_gmean": [
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Chronos-2",
+     "PatchTST-FM-TsMix10M",
+     "Toto-2.0-22m",
+     "PatchTST-FM-R1",
+     "TimesFM-2.5",
+     "TiRex",
+     "Timer-S1",
+     "Toto-2.0-4m"
+    ],
+    "mase_rank": [
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "PatchTST-FM-TsMix10M",
+     "Chronos-2",
+     "TimesFM-2.5",
+     "PatchTST-FM-R1",
+     "Toto-2.0-22m",
+     "Timer-S1",
+     "TiRex",
+     "Toto-2.0-4m"
+    ],
+    "crps_rank": [
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Chronos-2",
+     "PatchTST-FM-TsMix10M",
+     "PatchTST-FM-R1",
+     "Toto-2.0-22m",
+     "TimesFM-2.5",
+     "Timer-S1",
+     "TiRex",
+     "Eidos"
+    ]
+   }
+  },
+  {
+   "commit": "297ae66a",
+   "date": "2026-05-15",
+   "subject": "Submit evaluation results for Toto-2.0-2.5B (#21)",
+   "pool": 22,
+   "top10": {
+    "mase_gmean": [
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "PatchTST-FM-TsMix10M",
+     "Chronos-2",
+     "TimesFM-2.5",
+     "Toto-2.0-22m",
+     "PatchTST-FM-R1",
+     "Timer-S1",
+     "TiRex"
+    ],
+    "crps_gmean": [
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Chronos-2",
+     "PatchTST-FM-TsMix10M",
+     "Toto-2.0-22m",
+     "PatchTST-FM-R1",
+     "TimesFM-2.5",
+     "TiRex",
+     "Timer-S1"
+    ],
+    "mase_rank": [
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "PatchTST-FM-TsMix10M",
+     "Chronos-2",
+     "TimesFM-2.5",
+     "PatchTST-FM-R1",
+     "Toto-2.0-22m",
+     "Timer-S1",
+     "TiRex"
+    ],
+    "crps_rank": [
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Chronos-2",
+     "PatchTST-FM-TsMix10M",
+     "PatchTST-FM-R1",
+     "Toto-2.0-22m",
+     "TimesFM-2.5",
+     "Timer-S1",
+     "TiRex"
+    ]
+   }
+  },
+  {
+   "commit": "c43961bb",
+   "date": "2026-06-02",
+   "subject": "Update Crypto/D and Global_Influenza/W results (#34)",
+   "pool": 22,
+   "top10": {
+    "mase_gmean": [
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "PatchTST-FM-TsMix10M",
+     "Toto-2.0-22m",
+     "PatchTST-FM-R1",
+     "Chronos-2",
+     "Timer-S1",
+     "TimesFM-2.5",
+     "Toto-2.0-4m"
+    ],
+    "crps_gmean": [
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Chronos-2",
+     "PatchTST-FM-TsMix10M",
+     "Toto-2.0-22m",
+     "PatchTST-FM-R1",
+     "TimesFM-2.5",
+     "TiRex",
+     "Timer-S1"
+    ],
+    "mase_rank": [
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "PatchTST-FM-TsMix10M",
+     "Chronos-2",
+     "PatchTST-FM-R1",
+     "TimesFM-2.5",
+     "Toto-2.0-22m",
+     "Timer-S1",
+     "TiRex"
+    ],
+    "crps_rank": [
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Chronos-2",
+     "PatchTST-FM-TsMix10M",
+     "PatchTST-FM-R1",
+     "Toto-2.0-22m",
+     "TimesFM-2.5",
+     "Timer-S1",
+     "TiRex"
+    ]
+   }
+  },
+  {
+   "commit": "4d7793e9",
+   "date": "2026-06-02",
+   "subject": "Correct Toto 2.0 results for TIME Crypto and Global Influenza refresh (#33)",
+   "pool": 22,
+   "top10": {
+    "mase_gmean": [
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "PatchTST-FM-TsMix10M",
+     "PatchTST-FM-R1",
+     "Chronos-2",
+     "Timer-S1",
+     "TimesFM-2.5",
+     "Toto-2.0-22m",
+     "TiRex"
+    ],
+    "crps_gmean": [
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Chronos-2",
+     "PatchTST-FM-TsMix10M",
+     "Toto-2.0-22m",
+     "PatchTST-FM-R1",
+     "TimesFM-2.5",
+     "TiRex",
+     "Timer-S1"
+    ],
+    "mase_rank": [
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "PatchTST-FM-TsMix10M",
+     "Chronos-2",
+     "PatchTST-FM-R1",
+     "TimesFM-2.5",
+     "Timer-S1",
+     "Toto-2.0-22m",
+     "TiRex"
+    ],
+    "crps_rank": [
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Chronos-2",
+     "PatchTST-FM-TsMix10M",
+     "PatchTST-FM-R1",
+     "Toto-2.0-22m",
+     "TimesFM-2.5",
+     "Timer-S1",
+     "TiRex"
+    ]
+   }
+  },
+  {
+   "commit": "a2d8c250",
+   "date": "2026-06-02",
+   "subject": "Update evaluation results for Timer-S1 (#31)",
+   "pool": 22,
+   "top10": {
+    "mase_gmean": [
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "PatchTST-FM-TsMix10M",
+     "PatchTST-FM-R1",
+     "Chronos-2",
+     "TimesFM-2.5",
+     "Toto-2.0-22m",
+     "TiRex",
+     "Eidos"
+    ],
+    "crps_gmean": [
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Chronos-2",
+     "PatchTST-FM-TsMix10M",
+     "Toto-2.0-22m",
+     "PatchTST-FM-R1",
+     "TimesFM-2.5",
+     "TiRex",
+     "Toto-2.0-4m"
+    ],
+    "mase_rank": [
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "PatchTST-FM-TsMix10M",
+     "Chronos-2",
+     "PatchTST-FM-R1",
+     "TimesFM-2.5",
+     "Toto-2.0-22m",
+     "TiRex",
+     "Timer-S1"
+    ],
+    "crps_rank": [
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Chronos-2",
+     "PatchTST-FM-TsMix10M",
+     "PatchTST-FM-R1",
+     "Toto-2.0-22m",
+     "TimesFM-2.5",
+     "Timer-S1",
+     "TiRex"
+    ]
+   }
+  },
+  {
+   "commit": "d086573e",
+   "date": "2026-06-02",
+   "subject": "Submit evaluation results for Eidos (#29)",
+   "pool": 22,
+   "top10": {
+    "mase_gmean": [
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "PatchTST-FM-TsMix10M",
+     "PatchTST-FM-R1",
+     "Chronos-2",
+     "TimesFM-2.5",
+     "Toto-2.0-22m",
+     "TiRex",
+     "Toto-2.0-4m"
+    ],
+    "crps_gmean": [
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Chronos-2",
+     "PatchTST-FM-TsMix10M",
+     "Toto-2.0-22m",
+     "PatchTST-FM-R1",
+     "TimesFM-2.5",
+     "TiRex",
+     "Toto-2.0-4m"
+    ],
+    "mase_rank": [
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "PatchTST-FM-TsMix10M",
+     "Chronos-2",
+     "PatchTST-FM-R1",
+     "TimesFM-2.5",
+     "Toto-2.0-22m",
+     "TiRex",
+     "Timer-S1"
+    ],
+    "crps_rank": [
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Chronos-2",
+     "PatchTST-FM-TsMix10M",
+     "PatchTST-FM-R1",
+     "Toto-2.0-22m",
+     "TimesFM-2.5",
+     "Timer-S1",
+     "TiRex"
+    ]
+   }
+  },
+  {
+   "commit": "3963cf80",
+   "date": "2026-06-02",
+   "subject": "Submit evaluation results for PatchTST-FM-R1 (#27)",
+   "pool": 22,
+   "top10": {
+    "mase_gmean": [
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "PatchTST-FM-TsMix10M",
+     "Chronos-2",
+     "TimesFM-2.5",
+     "Toto-2.0-22m",
+     "PatchTST-FM-R1",
+     "TiRex",
+     "Toto-2.0-4m"
+    ],
+    "crps_gmean": [
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Chronos-2",
+     "PatchTST-FM-TsMix10M",
+     "Toto-2.0-22m",
+     "PatchTST-FM-R1",
+     "TimesFM-2.5",
+     "TiRex",
+     "Toto-2.0-4m"
+    ],
+    "mase_rank": [
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "PatchTST-FM-TsMix10M",
+     "Chronos-2",
+     "TimesFM-2.5",
+     "PatchTST-FM-R1",
+     "Toto-2.0-22m",
+     "TiRex",
+     "Timer-S1"
+    ],
+    "crps_rank": [
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Chronos-2",
+     "PatchTST-FM-TsMix10M",
+     "PatchTST-FM-R1",
+     "Toto-2.0-22m",
+     "TimesFM-2.5",
+     "TiRex",
+     "Timer-S1"
+    ]
+   }
+  },
+  {
+   "commit": "e14243f8",
+   "date": "2026-06-02",
+   "subject": "Submit evaluation results for PatchTST-FM-Extended (#26)",
+   "pool": 23,
+   "top10": {
+    "mase_gmean": [
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "PatchTST-FM-TsMix10M",
+     "PatchTST-FM-Extended",
+     "Chronos-2",
+     "TimesFM-2.5",
+     "Toto-2.0-22m",
+     "PatchTST-FM-R1",
+     "TiRex"
+    ],
+    "crps_gmean": [
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Chronos-2",
+     "PatchTST-FM-Extended",
+     "PatchTST-FM-TsMix10M",
+     "Toto-2.0-22m",
+     "PatchTST-FM-R1",
+     "TimesFM-2.5",
+     "TiRex"
+    ],
+    "mase_rank": [
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "PatchTST-FM-TsMix10M",
+     "Chronos-2",
+     "PatchTST-FM-Extended",
+     "TimesFM-2.5",
+     "PatchTST-FM-R1",
+     "Toto-2.0-22m",
+     "TiRex"
+    ],
+    "crps_rank": [
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Chronos-2",
+     "PatchTST-FM-TsMix10M",
+     "PatchTST-FM-Extended",
+     "PatchTST-FM-R1",
+     "Toto-2.0-22m",
+     "TimesFM-2.5",
+     "Timer-S1"
+    ]
+   }
+  },
+  {
+   "commit": "8ec9db10",
+   "date": "2026-06-02",
+   "subject": "Rename to PatchTST-FM-Extended (#35)",
+   "pool": 22,
+   "top10": {
+    "mase_gmean": [
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "PatchTST-FM-Extended",
+     "Chronos-2",
+     "TimesFM-2.5",
+     "Toto-2.0-22m",
+     "PatchTST-FM-R1",
+     "TiRex",
+     "Toto-2.0-4m"
+    ],
+    "crps_gmean": [
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Chronos-2",
+     "PatchTST-FM-Extended",
+     "Toto-2.0-22m",
+     "PatchTST-FM-R1",
+     "TimesFM-2.5",
+     "TiRex",
+     "Toto-2.0-4m"
+    ],
+    "mase_rank": [
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "PatchTST-FM-Extended",
+     "Chronos-2",
+     "TimesFM-2.5",
+     "PatchTST-FM-R1",
+     "Toto-2.0-22m",
+     "TiRex",
+     "Timer-S1"
+    ],
+    "crps_rank": [
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Chronos-2",
+     "PatchTST-FM-Extended",
+     "PatchTST-FM-R1",
+     "Toto-2.0-22m",
+     "TimesFM-2.5",
+     "TiRex",
+     "Timer-S1"
+    ]
+   }
+  },
+  {
+   "commit": "2ffa8721",
+   "date": "2026-07-11",
+   "subject": "Add OmniScient results (fine-tuned Chronos-2 derivative, 360 Labs) (#36)",
+   "pool": 23,
+   "top10": {
+    "mase_gmean": [
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "PatchTST-FM-Extended",
+     "Chronos-2",
+     "OmniScient",
+     "TimesFM-2.5",
+     "Toto-2.0-22m",
+     "PatchTST-FM-R1",
+     "TiRex"
+    ],
+    "crps_gmean": [
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Chronos-2",
+     "PatchTST-FM-Extended",
+     "Toto-2.0-22m",
+     "OmniScient",
+     "PatchTST-FM-R1",
+     "TimesFM-2.5",
+     "TiRex"
+    ],
+    "mase_rank": [
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "PatchTST-FM-Extended",
+     "Chronos-2",
+     "PatchTST-FM-R1",
+     "TimesFM-2.5",
+     "OmniScient",
+     "Toto-2.0-22m",
+     "TiRex"
+    ],
+    "crps_rank": [
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Chronos-2",
+     "PatchTST-FM-Extended",
+     "OmniScient",
+     "PatchTST-FM-R1",
+     "Toto-2.0-22m",
+     "TimesFM-2.5",
+     "Timer-S1"
+    ]
+   }
+  },
+  {
+   "commit": "42495a47",
+   "date": "2026-07-14",
+   "subject": "whenxuan: update the benchmark results for litespecformer (#37)",
+   "pool": 24,
+   "top10": {
+    "mase_gmean": [
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "PatchTST-FM-Extended",
+     "Chronos-2",
+     "OmniScient",
+     "TimesFM-2.5",
+     "Toto-2.0-22m",
+     "PatchTST-FM-R1",
+     "TiRex"
+    ],
+    "crps_gmean": [
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Chronos-2",
+     "PatchTST-FM-Extended",
+     "Toto-2.0-22m",
+     "OmniScient",
+     "PatchTST-FM-R1",
+     "TimesFM-2.5",
+     "TiRex"
+    ],
+    "mase_rank": [
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "PatchTST-FM-Extended",
+     "Chronos-2",
+     "TimesFM-2.5",
+     "PatchTST-FM-R1",
+     "OmniScient",
+     "Toto-2.0-22m",
+     "TiRex"
+    ],
+    "crps_rank": [
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Chronos-2",
+     "PatchTST-FM-Extended",
+     "OmniScient",
+     "PatchTST-FM-R1",
+     "Toto-2.0-22m",
+     "TimesFM-2.5",
+     "TiRex"
+    ]
+   }
+  },
+  {
+   "commit": "73a177cb",
+   "date": "2026-08-05",
+   "subject": "Submit evaluation results for TS-ICL (#38)",
+   "pool": 25,
+   "top10": {
+    "mase_gmean": [
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "PatchTST-FM-Extended",
+     "Chronos-2",
+     "OmniScient",
+     "TimesFM-2.5",
+     "Toto-2.0-22m",
+     "PatchTST-FM-R1",
+     "TiRex"
+    ],
+    "crps_gmean": [
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Chronos-2",
+     "PatchTST-FM-Extended",
+     "Toto-2.0-22m",
+     "OmniScient",
+     "PatchTST-FM-R1",
+     "TimesFM-2.5",
+     "TiRex"
+    ],
+    "mase_rank": [
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "PatchTST-FM-Extended",
+     "Chronos-2",
+     "PatchTST-FM-R1",
+     "TimesFM-2.5",
+     "OmniScient",
+     "Toto-2.0-22m",
+     "TiRex"
+    ],
+    "crps_rank": [
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Chronos-2",
+     "PatchTST-FM-Extended",
+     "OmniScient",
+     "PatchTST-FM-R1",
+     "Toto-2.0-22m",
+     "TimesFM-2.5",
+     "TiRex"
+    ]
+   }
+  },
+  {
+   "commit": "e308bbc7",
+   "date": "2026-08-28",
+   "subject": "Submit evaluation results for TimesFM-3 (#39)",
+   "pool": 26,
+   "top10": {
+    "mase_gmean": [
+     "TimesFM-3",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "PatchTST-FM-Extended",
+     "Chronos-2",
+     "OmniScient",
+     "TimesFM-2.5",
+     "Toto-2.0-22m",
+     "PatchTST-FM-R1"
+    ],
+    "crps_gmean": [
+     "TimesFM-3",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Chronos-2",
+     "PatchTST-FM-Extended",
+     "Toto-2.0-22m",
+     "OmniScient",
+     "PatchTST-FM-R1",
+     "TimesFM-2.5"
+    ],
+    "mase_rank": [
+     "TimesFM-3",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "PatchTST-FM-Extended",
+     "Chronos-2",
+     "PatchTST-FM-R1",
+     "TimesFM-2.5",
+     "OmniScient",
+     "Toto-2.0-22m"
+    ],
+    "crps_rank": [
+     "TimesFM-3",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Chronos-2",
+     "PatchTST-FM-Extended",
+     "OmniScient",
+     "PatchTST-FM-R1",
+     "Toto-2.0-22m",
+     "TimesFM-2.5"
+    ]
+   }
+  },
+  {
+   "commit": "bb420f38",
+   "date": "2026-09-16",
+   "subject": "Submit evaluation results for Tabby (#40)",
+   "pool": 27,
+   "top10": {
+    "mase_gmean": [
+     "TimesFM-3",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "PatchTST-FM-Extended",
+     "Chronos-2",
+     "OmniScient",
+     "TimesFM-2.5",
+     "Toto-2.0-22m",
+     "PatchTST-FM-R1"
+    ],
+    "crps_gmean": [
+     "TimesFM-3",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Chronos-2",
+     "PatchTST-FM-Extended",
+     "Toto-2.0-22m",
+     "OmniScient",
+     "PatchTST-FM-R1",
+     "Tabby"
+    ],
+    "mase_rank": [
+     "TimesFM-3",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Chronos-2",
+     "PatchTST-FM-Extended",
+     "PatchTST-FM-R1",
+     "TimesFM-2.5",
+     "OmniScient",
+     "Tabby"
+    ],
+    "crps_rank": [
+     "TimesFM-3",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Chronos-2",
+     "Tabby",
+     "PatchTST-FM-Extended",
+     "OmniScient",
+     "PatchTST-FM-R1",
+     "Toto-2.0-22m"
+    ]
+   }
+  },
+  {
+   "commit": "82e43a1e",
+   "date": "2026-09-23",
+   "subject": "Submit evaluation results for t0_beta (#41)",
+   "pool": 28,
+   "top10": {
+    "mase_gmean": [
+     "TimesFM-3",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "PatchTST-FM-Extended",
+     "Chronos-2",
+     "t0_beta",
+     "OmniScient",
+     "TimesFM-2.5",
+     "Toto-2.0-22m"
+    ],
+    "crps_gmean": [
+     "TimesFM-3",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "t0_beta",
+     "Chronos-2",
+     "PatchTST-FM-Extended",
+     "Toto-2.0-22m",
+     "OmniScient",
+     "PatchTST-FM-R1"
+    ],
+    "mase_rank": [
+     "TimesFM-3",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "PatchTST-FM-Extended",
+     "Chronos-2",
+     "t0_beta",
+     "PatchTST-FM-R1",
+     "TimesFM-2.5",
+     "OmniScient"
+    ],
+    "crps_rank": [
+     "TimesFM-3",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Chronos-2",
+     "t0_beta",
+     "Tabby",
+     "PatchTST-FM-Extended",
+     "OmniScient",
+     "PatchTST-FM-R1"
+    ]
+   }
+  },
+  {
+   "commit": "65119f56",
+   "date": "2026-09-26",
+   "subject": "Submit evaluation results for Fracast-0 (#42)",
+   "pool": 29,
+   "top10": {
+    "mase_gmean": [
+     "TimesFM-3",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "PatchTST-FM-Extended",
+     "Chronos-2",
+     "t0_beta",
+     "OmniScient",
+     "TimesFM-2.5",
+     "Toto-2.0-22m"
+    ],
+    "crps_gmean": [
+     "TimesFM-3",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "t0_beta",
+     "Chronos-2",
+     "PatchTST-FM-Extended",
+     "Toto-2.0-22m",
+     "OmniScient",
+     "PatchTST-FM-R1"
+    ],
+    "mase_rank": [
+     "TimesFM-3",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "PatchTST-FM-Extended",
+     "Chronos-2",
+     "t0_beta",
+     "PatchTST-FM-R1",
+     "TimesFM-2.5",
+     "OmniScient"
+    ],
+    "crps_rank": [
+     "TimesFM-3",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Chronos-2",
+     "t0_beta",
+     "Tabby",
+     "PatchTST-FM-Extended",
+     "OmniScient",
+     "PatchTST-FM-R1"
+    ]
+   }
+  },
+  {
+   "commit": "03ab980c",
+   "date": "2026-09-28",
+   "subject": "Submit evaluation results for QiYao-M (#43)",
+   "pool": 30,
+   "top10": {
+    "mase_gmean": [
+     "QiYao-M",
+     "TimesFM-3",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "PatchTST-FM-Extended",
+     "Chronos-2",
+     "t0_beta",
+     "OmniScient",
+     "TimesFM-2.5"
+    ],
+    "crps_gmean": [
+     "QiYao-M",
+     "TimesFM-3",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "t0_beta",
+     "Chronos-2",
+     "PatchTST-FM-Extended",
+     "Toto-2.0-22m",
+     "OmniScient"
+    ],
+    "mase_rank": [
+     "QiYao-M",
+     "TimesFM-3",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Chronos-2",
+     "PatchTST-FM-Extended",
+     "t0_beta",
+     "PatchTST-FM-R1",
+     "TimesFM-2.5"
+    ],
+    "crps_rank": [
+     "TimesFM-3",
+     "QiYao-M",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Chronos-2",
+     "t0_beta",
+     "Tabby",
+     "PatchTST-FM-Extended",
+     "OmniScient"
+    ]
+   }
+  },
+  {
+   "commit": "66eea9da",
+   "date": "2026-09-30",
+   "subject": "Refresh Tabby TIME results: seed 42, max(H, 128) (#44)",
+   "pool": 30,
+   "top10": {
+    "mase_gmean": [
+     "QiYao-M",
+     "TimesFM-3",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "PatchTST-FM-Extended",
+     "Chronos-2",
+     "t0_beta",
+     "Tabby",
+     "OmniScient"
+    ],
+    "crps_gmean": [
+     "QiYao-M",
+     "TimesFM-3",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Tabby",
+     "t0_beta",
+     "Chronos-2",
+     "PatchTST-FM-Extended",
+     "Toto-2.0-22m"
+    ],
+    "mase_rank": [
+     "QiYao-M",
+     "TimesFM-3",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "PatchTST-FM-Extended",
+     "Chronos-2",
+     "Tabby",
+     "t0_beta",
+     "PatchTST-FM-R1"
+    ],
+    "crps_rank": [
+     "TimesFM-3",
+     "QiYao-M",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Tabby",
+     "Chronos-2",
+     "t0_beta",
+     "PatchTST-FM-Extended",
+     "OmniScient"
+    ]
+   }
+  },
+  {
+   "commit": "5787f898",
+   "date": "2026-09-30",
+   "subject": "Refresh Tabby-Pretrain TIME results: max(H, 128) (#45)",
+   "pool": 31,
+   "top10": {
+    "mase_gmean": [
+     "QiYao-M",
+     "TimesFM-3",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "PatchTST-FM-Extended",
+     "Chronos-2",
+     "t0_beta",
+     "Tabby",
+     "OmniScient"
+    ],
+    "crps_gmean": [
+     "QiYao-M",
+     "TimesFM-3",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Tabby",
+     "t0_beta",
+     "Chronos-2",
+     "PatchTST-FM-Extended",
+     "Toto-2.0-22m"
+    ],
+    "mase_rank": [
+     "QiYao-M",
+     "TimesFM-3",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "PatchTST-FM-Extended",
+     "Chronos-2",
+     "Tabby",
+     "t0_beta",
+     "PatchTST-FM-R1"
+    ],
+    "crps_rank": [
+     "TimesFM-3",
+     "QiYao-M",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Tabby",
+     "Toto-2.0-1B",
+     "Chronos-2",
+     "t0_beta",
+     "PatchTST-FM-Extended",
+     "OmniScient"
+    ]
+   }
+  },
+  {
+   "commit": "246dc3f1",
+   "date": "2026-10-05",
+   "subject": "Submit evaluation results for ChakraTS (#46)",
+   "pool": 32,
+   "top10": {
+    "mase_gmean": [
+     "QiYao-M",
+     "ChakraTS",
+     "TimesFM-3",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "PatchTST-FM-Extended",
+     "Chronos-2",
+     "t0_beta",
+     "Tabby"
+    ],
+    "crps_gmean": [
+     "QiYao-M",
+     "TimesFM-3",
+     "ChakraTS",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Tabby",
+     "t0_beta",
+     "Chronos-2",
+     "PatchTST-FM-Extended"
+    ],
+    "mase_rank": [
+     "QiYao-M",
+     "ChakraTS",
+     "TimesFM-3",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "PatchTST-FM-Extended",
+     "Chronos-2",
+     "Tabby",
+     "t0_beta"
+    ],
+    "crps_rank": [
+     "TimesFM-3",
+     "QiYao-M",
+     "ChakraTS",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Tabby",
+     "Chronos-2",
+     "t0_beta",
+     "PatchTST-FM-Extended"
+    ]
+   }
+  },
+  {
+   "commit": "4b07d9e5",
+   "date": "2026-10-09",
+   "subject": "Submit evaluation results for TimeRSI (#48)",
+   "pool": 33,
+   "top10": {
+    "mase_gmean": [
+     "TimeRSI",
+     "QiYao-M",
+     "ChakraTS",
+     "TimesFM-3",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "PatchTST-FM-Extended",
+     "Chronos-2",
+     "t0_beta"
+    ],
+    "crps_gmean": [
+     "TimeRSI",
+     "QiYao-M",
+     "TimesFM-3",
+     "ChakraTS",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Tabby",
+     "t0_beta",
+     "Chronos-2"
+    ],
+    "mase_rank": [
+     "TimeRSI",
+     "QiYao-M",
+     "TimesFM-3",
+     "ChakraTS",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Chronos-2",
+     "PatchTST-FM-Extended",
+     "Tabby"
+    ],
+    "crps_rank": [
+     "TimeRSI",
+     "TimesFM-3",
+     "QiYao-M",
+     "ChakraTS",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Tabby",
+     "Chronos-2",
+     "t0_beta"
+    ]
+   }
+  },
+  {
+   "commit": "751c9b42",
+   "date": "2026-10-13",
+   "subject": "Add Hart-36M evaluation results (#49)",
+   "pool": 34,
+   "top10": {
+    "mase_gmean": [
+     "TimeRSI",
+     "QiYao-M",
+     "ChakraTS",
+     "TimesFM-3",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "PatchTST-FM-Extended",
+     "Chronos-2",
+     "t0_beta"
+    ],
+    "crps_gmean": [
+     "TimeRSI",
+     "QiYao-M",
+     "TimesFM-3",
+     "ChakraTS",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Tabby",
+     "t0_beta",
+     "Chronos-2"
+    ],
+    "mase_rank": [
+     "TimeRSI",
+     "QiYao-M",
+     "TimesFM-3",
+     "ChakraTS",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Chronos-2",
+     "PatchTST-FM-Extended",
+     "Tabby"
+    ],
+    "crps_rank": [
+     "TimeRSI",
+     "TimesFM-3",
+     "QiYao-M",
+     "ChakraTS",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Tabby",
+     "Chronos-2",
+     "t0_beta"
+    ]
+   }
+  },
+  {
+   "commit": "1ebbe655",
+   "date": "2026-10-14",
+   "subject": "Submit evaluation results for t0_gamma (#50)",
+   "pool": 35,
+   "top10": {
+    "mase_gmean": [
+     "TimeRSI",
+     "t0_gamma",
+     "QiYao-M",
+     "ChakraTS",
+     "TimesFM-3",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "PatchTST-FM-Extended",
+     "Chronos-2"
+    ],
+    "crps_gmean": [
+     "TimeRSI",
+     "t0_gamma",
+     "QiYao-M",
+     "TimesFM-3",
+     "ChakraTS",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Tabby",
+     "t0_beta"
+    ],
+    "mase_rank": [
+     "TimeRSI",
+     "QiYao-M",
+     "TimesFM-3",
+     "t0_gamma",
+     "ChakraTS",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Chronos-2",
+     "PatchTST-FM-Extended"
+    ],
+    "crps_rank": [
+     "TimeRSI",
+     "TimesFM-3",
+     "t0_gamma",
+     "QiYao-M",
+     "ChakraTS",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Tabby",
+     "Chronos-2"
+    ]
+   }
+  },
+  {
+   "commit": "3d63e2a1",
+   "date": "2026-10-16",
+   "subject": "Submit evaluation results for Timestral-5M (#51)",
+   "pool": 36,
+   "top10": {
+    "mase_gmean": [
+     "TimeRSI",
+     "t0_gamma",
+     "QiYao-M",
+     "ChakraTS",
+     "TimesFM-3",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Timestral-5M",
+     "PatchTST-FM-Extended"
+    ],
+    "crps_gmean": [
+     "TimeRSI",
+     "t0_gamma",
+     "QiYao-M",
+     "TimesFM-3",
+     "ChakraTS",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Timestral-5M",
+     "Toto-2.0-1B",
+     "Tabby"
+    ],
+    "mase_rank": [
+     "TimeRSI",
+     "QiYao-M",
+     "TimesFM-3",
+     "t0_gamma",
+     "ChakraTS",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Timestral-5M",
+     "Toto-2.0-1B",
+     "Chronos-2"
+    ],
+    "crps_rank": [
+     "TimeRSI",
+     "TimesFM-3",
+     "t0_gamma",
+     "QiYao-M",
+     "ChakraTS",
+     "Timestral-5M",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Tabby"
+    ]
+   }
+  },
+  {
+   "commit": "9a5e670d",
+   "date": "2026-10-16",
+   "subject": "Submit evaluation results for Timestral-28M (#52)",
+   "pool": 37,
+   "top10": {
+    "mase_gmean": [
+     "TimeRSI",
+     "t0_gamma",
+     "Timestral-28M",
+     "QiYao-M",
+     "ChakraTS",
+     "TimesFM-3",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Timestral-5M"
+    ],
+    "crps_gmean": [
+     "TimeRSI",
+     "t0_gamma",
+     "Timestral-28M",
+     "QiYao-M",
+     "TimesFM-3",
+     "ChakraTS",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Timestral-5M",
+     "Toto-2.0-1B"
+    ],
+    "mase_rank": [
+     "Timestral-28M",
+     "TimeRSI",
+     "QiYao-M",
+     "TimesFM-3",
+     "t0_gamma",
+     "ChakraTS",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B",
+     "Timestral-5M"
+    ],
+    "crps_rank": [
+     "Timestral-28M",
+     "TimeRSI",
+     "TimesFM-3",
+     "t0_gamma",
+     "QiYao-M",
+     "ChakraTS",
+     "Timestral-5M",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B"
+    ]
+   }
+  },
+  {
+   "commit": "a3cc65c0",
+   "date": "2026-10-16",
+   "subject": "Submit evaluation results for Timestral-123M (#53)",
+   "pool": 38,
+   "top10": {
+    "mase_gmean": [
+     "Timestral-123M",
+     "TimeRSI",
+     "t0_gamma",
+     "Timestral-28M",
+     "QiYao-M",
+     "ChakraTS",
+     "TimesFM-3",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B"
+    ],
+    "crps_gmean": [
+     "Timestral-123M",
+     "TimeRSI",
+     "t0_gamma",
+     "Timestral-28M",
+     "QiYao-M",
+     "TimesFM-3",
+     "ChakraTS",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Timestral-5M"
+    ],
+    "mase_rank": [
+     "Timestral-123M",
+     "Timestral-28M",
+     "TimeRSI",
+     "QiYao-M",
+     "TimesFM-3",
+     "t0_gamma",
+     "ChakraTS",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m",
+     "Toto-2.0-1B"
+    ],
+    "crps_rank": [
+     "Timestral-123M",
+     "Timestral-28M",
+     "TimeRSI",
+     "TimesFM-3",
+     "t0_gamma",
+     "QiYao-M",
+     "ChakraTS",
+     "Timestral-5M",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m"
+    ]
+   }
+  },
+  {
+   "commit": "a69910a2",
+   "date": "2026-10-16",
+   "subject": "Submit evaluation results for Timestral-209M (#54)",
+   "pool": 39,
+   "top10": {
+    "mase_gmean": [
+     "Timestral-209M",
+     "Timestral-123M",
+     "TimeRSI",
+     "t0_gamma",
+     "Timestral-28M",
+     "QiYao-M",
+     "ChakraTS",
+     "TimesFM-3",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m"
+    ],
+    "crps_gmean": [
+     "Timestral-209M",
+     "Timestral-123M",
+     "TimeRSI",
+     "t0_gamma",
+     "Timestral-28M",
+     "QiYao-M",
+     "TimesFM-3",
+     "ChakraTS",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m"
+    ],
+    "mase_rank": [
+     "Timestral-209M",
+     "Timestral-123M",
+     "Timestral-28M",
+     "TimeRSI",
+     "QiYao-M",
+     "TimesFM-3",
+     "t0_gamma",
+     "ChakraTS",
+     "Toto-2.0-2.5B",
+     "Toto-2.0-313m"
+    ],
+    "crps_rank": [
+     "Timestral-209M",
+     "Timestral-123M",
+     "Timestral-28M",
+     "TimeRSI",
+     "TimesFM-3",
+     "t0_gamma",
+     "QiYao-M",
+     "ChakraTS",
+     "Timestral-5M",
+     "Toto-2.0-2.5B"
+    ]
+   }
+  },
+  {
+   "commit": "4c93deaa",
+   "date": "2026-10-19",
+   "subject": "Submit evaluation results for TimeRSI-1.5 (#55)",
+   "pool": 40,
+   "top10": {
+    "mase_gmean": [
+     "TimeRSI-1.5",
+     "Timestral-209M",
+     "Timestral-123M",
+     "TimeRSI",
+     "t0_gamma",
+     "Timestral-28M",
+     "QiYao-M",
+     "ChakraTS",
+     "TimesFM-3",
+     "Toto-2.0-2.5B"
+    ],
+    "crps_gmean": [
+     "TimeRSI-1.5",
+     "Timestral-209M",
+     "Timestral-123M",
+     "TimeRSI",
+     "t0_gamma",
+     "Timestral-28M",
+     "QiYao-M",
+     "TimesFM-3",
+     "ChakraTS",
+     "Toto-2.0-2.5B"
+    ],
+    "mase_rank": [
+     "Timestral-209M",
+     "TimeRSI-1.5",
+     "Timestral-123M",
+     "Timestral-28M",
+     "TimeRSI",
+     "QiYao-M",
+     "TimesFM-3",
+     "t0_gamma",
+     "ChakraTS",
+     "Toto-2.0-2.5B"
+    ],
+    "crps_rank": [
+     "TimeRSI-1.5",
+     "Timestral-209M",
+     "Timestral-123M",
+     "Timestral-28M",
+     "TimeRSI",
+     "TimesFM-3",
+     "t0_gamma",
+     "QiYao-M",
+     "ChakraTS",
+     "Timestral-5M"
+    ]
+   }
+  },
+  {
+   "commit": "6d5ab8de",
+   "date": "2026-10-31",
+   "subject": "Add Flashmind PDM-Femto results (#56)",
+   "pool": 41,
+   "top10": {
+    "mase_gmean": [
+     "TimeRSI-1.5",
+     "Timestral-209M",
+     "Timestral-123M",
+     "TimeRSI",
+     "t0_gamma",
+     "Timestral-28M",
+     "QiYao-M",
+     "ChakraTS",
+     "TimesFM-3",
+     "Toto-2.0-2.5B"
+    ],
+    "crps_gmean": [
+     "TimeRSI-1.5",
+     "Timestral-209M",
+     "Timestral-123M",
+     "TimeRSI",
+     "t0_gamma",
+     "Timestral-28M",
+     "QiYao-M",
+     "TimesFM-3",
+     "ChakraTS",
+     "Toto-2.0-2.5B"
+    ],
+    "mase_rank": [
+     "Timestral-209M",
+     "TimeRSI-1.5",
+     "Timestral-123M",
+     "Timestral-28M",
+     "TimeRSI",
+     "QiYao-M",
+     "TimesFM-3",
+     "t0_gamma",
+     "ChakraTS",
+     "Toto-2.0-2.5B"
+    ],
+    "crps_rank": [
+     "TimeRSI-1.5",
+     "Timestral-209M",
+     "Timestral-123M",
+     "Timestral-28M",
+     "TimeRSI",
+     "TimesFM-3",
+     "t0_gamma",
+     "QiYao-M",
+     "ChakraTS",
+     "Timestral-5M"
+    ]
+   }
+  },
+  {
+   "commit": "9713c37d",
+   "date": "2026-10-31",
+   "subject": "Add Flashmind PDM-Pico results (#57)",
+   "pool": 42,
+   "top10": {
+    "mase_gmean": [
+     "TimeRSI-1.5",
+     "Timestral-209M",
+     "Timestral-123M",
+     "TimeRSI",
+     "PDM-Pico",
+     "t0_gamma",
+     "Timestral-28M",
+     "QiYao-M",
+     "ChakraTS",
+     "TimesFM-3"
+    ],
+    "crps_gmean": [
+     "TimeRSI-1.5",
+     "Timestral-209M",
+     "Timestral-123M",
+     "TimeRSI",
+     "PDM-Pico",
+     "t0_gamma",
+     "Timestral-28M",
+     "QiYao-M",
+     "TimesFM-3",
+     "ChakraTS"
+    ],
+    "mase_rank": [
+     "Timestral-209M",
+     "TimeRSI-1.5",
+     "Timestral-123M",
+     "PDM-Pico",
+     "Timestral-28M",
+     "TimeRSI",
+     "QiYao-M",
+     "TimesFM-3",
+     "t0_gamma",
+     "ChakraTS"
+    ],
+    "crps_rank": [
+     "TimeRSI-1.5",
+     "Timestral-209M",
+     "Timestral-123M",
+     "Timestral-28M",
+     "PDM-Pico",
+     "TimeRSI",
+     "TimesFM-3",
+     "t0_gamma",
+     "QiYao-M",
+     "ChakraTS"
+    ]
+   }
+  },
+  {
+   "commit": "3bf103cb",
+   "date": "2026-10-31",
+   "subject": "Add Flashmind PDM-Nano results (#58)",
+   "pool": 43,
+   "top10": {
+    "mase_gmean": [
+     "TimeRSI-1.5",
+     "PDM-Nano",
+     "Timestral-209M",
+     "Timestral-123M",
+     "TimeRSI",
+     "PDM-Pico",
+     "t0_gamma",
+     "Timestral-28M",
+     "QiYao-M",
+     "ChakraTS"
+    ],
+    "crps_gmean": [
+     "TimeRSI-1.5",
+     "Timestral-209M",
+     "PDM-Nano",
+     "Timestral-123M",
+     "TimeRSI",
+     "PDM-Pico",
+     "t0_gamma",
+     "Timestral-28M",
+     "QiYao-M",
+     "TimesFM-3"
+    ],
+    "mase_rank": [
+     "Timestral-209M",
+     "TimeRSI-1.5",
+     "Timestral-123M",
+     "PDM-Nano",
+     "PDM-Pico",
+     "Timestral-28M",
+     "TimeRSI",
+     "QiYao-M",
+     "TimesFM-3",
+     "t0_gamma"
+    ],
+    "crps_rank": [
+     "TimeRSI-1.5",
+     "Timestral-209M",
+     "Timestral-123M",
+     "PDM-Nano",
+     "Timestral-28M",
+     "PDM-Pico",
+     "TimeRSI",
+     "TimesFM-3",
+     "t0_gamma",
+     "QiYao-M"
+    ]
+   }
+  }
+ ]
+}

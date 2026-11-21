@@ -1,0 +1,2 @@
+dataset,model,eval_metrics/MSE[mean],eval_metrics/MSE[0.5],eval_metrics/MAE[0.5],eval_metrics/MASE[0.5],eval_metrics/MAPE[0.5],eval_metrics/sMAPE[0.5],eval_metrics/MSIS,eval_metrics/RMSE[mean],eval_metrics/NRMSE[mean],eval_metrics/ND[0.5],eval_metrics/mean_weighted_sum_quantile_loss,domain,num_variates
+loop_seattle/5T/long,timestral209m,69.63014225719527,69.63014225719527,4.605836038728357,0.7327290729934189,0.1416143155652932,0.10512304732291308,5.634137053867934,8.344467763566186,0.14753189734613045,0.08143212352328365,0.06443128388852448,Transport,1

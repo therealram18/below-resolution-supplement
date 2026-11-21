@@ -1,0 +1,8 @@
+{
+ "neighbours_of_9": 1,
+ "pairs_of_45": 12,
+ "holm_9": 0,
+ "holm_45": 1,
+ "pair_9_10_mine": 0.1637990102171898,
+ "pair_9_10_scipy_exact": 0.1637990102171898
+}
