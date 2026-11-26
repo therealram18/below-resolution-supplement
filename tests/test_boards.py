@@ -104,6 +104,7 @@ CHECKED = {  # sha256 of each snapshot table as it was when it was compared with
     "fev-bench": "0a0500979680449385ee5fa162cd40b29617841c415a599657a1ea52447b13ec",
     "fev-bench-mini": "019df88ba4d2ce0e0756a660d308c00bae0092b5295dd7a5ef2de3f7768cdaf9",
     "chronos-bench-ii": "5324d46e01cf07bb27b22b3b4da6fccf18aa974a136c8685837637e150584a95",
+    "time": "079e8a4853e88d6cda3cf0458a6ee5131a0abaa38e68b4adf5230ef71c8991d4",
     "boom": "609df6e5c307ae0dabb2db04762d37303e86f72928f9c9ece11b0544afac8160",
 }
 
