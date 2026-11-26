@@ -1,2 +1,0 @@
-# first round, envs/toto, install step 3: uv pip install -e ./vendor/toto --no-deps
-# from grid_results_h100/provenance_h100/setup_logs/setup.log

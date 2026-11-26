@@ -1,2 +1,0 @@
-dataset,model,eval_metrics/MSE[mean],eval_metrics/MSE[0.5],eval_metrics/MAE[0.5],eval_metrics/MASE[0.5],eval_metrics/MAPE[0.5],eval_metrics/sMAPE[0.5],eval_metrics/MSIS,eval_metrics/RMSE[mean],eval_metrics/NRMSE[mean],eval_metrics/ND[0.5],eval_metrics/mean_weighted_sum_quantile_loss,domain,num_variates
-bizitobs_l2c/H/medium,timesfm25,70.47015438988095,70.47015438988095,4.955647786458333,0.5055642964035536,0.49363954018921335,0.7154494065504807,3.905737598301705,8.394650343515265,0.5083088290415049,0.3000720006667876,0.23719880387569603,Web/CloudOps,7

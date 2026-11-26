@@ -1,2 +1,0 @@
-[FAILED] m_dense/H/short: FileNotFoundError: Directory <WORKDIR>/harness/data/m_dense/H not found
-[failed] m_dense/H/short -> results/moirai2_small/ctx_default/all_results.csv

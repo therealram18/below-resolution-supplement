@@ -1,2 +1,0 @@
-dataset,model,eval_metrics/MSE[mean],eval_metrics/MSE[0.5],eval_metrics/MAE[0.5],eval_metrics/MASE[0.5],eval_metrics/MAPE[0.5],eval_metrics/sMAPE[0.5],eval_metrics/MSIS,eval_metrics/RMSE[mean],eval_metrics/NRMSE[mean],eval_metrics/ND[0.5],eval_metrics/mean_weighted_sum_quantile_loss,domain,num_variates
-ett1/H/medium,toto__A__seed43,8334.083333333334,155.80420386904763,6.971427408854167,1.2907203681444204,4266287307522.9526,0.45257898966471355,10.827983802238162,91.29120074428495,4.372632110623174,0.33391484717373027,0.2655440640284837,Energy,7

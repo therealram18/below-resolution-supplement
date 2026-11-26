@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use Vernier, please cite the paper."
+title: "Vernier"
+type: software
+authors:
+  - family-names: Sikder
+    given-names: Arya
+  - family-names: Pillutla
+    given-names: Sriram
+repository-code: "https://github.com/therealram18/vernier"
+license: Apache-2.0
+preferred-citation:
+  type: conference-paper
+  title: "What a Forecasting Leaderboard Can Establish: Resolution Reporting for Zero-Shot Time-Series Models"
+  authors:
+    - family-names: Sikder
+      given-names: Arya
+    - family-names: Pillutla
+      given-names: Sriram
+  collection-title: "NeurIPS 2026 Workshop: Foundation Models for Temporal Systems"
+  year: 2026
+  url: "https://arxiv.org/abs/2611.31619"
+  identifiers:
+    - type: other
+      value: "arXiv:2611.31619"

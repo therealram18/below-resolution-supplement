@@ -1,2 +1,0 @@
-dataset,model,eval_metrics/MSE[mean],eval_metrics/MSE[0.5],eval_metrics/MAE[0.5],eval_metrics/MASE[0.5],eval_metrics/MAPE[0.5],eval_metrics/sMAPE[0.5],eval_metrics/MSIS,eval_metrics/RMSE[mean],eval_metrics/NRMSE[mean],eval_metrics/ND[0.5],eval_metrics/mean_weighted_sum_quantile_loss,domain,num_variates
-us_births/W/short,toto__A__seed43,3134481.1428571427,3042858.0,1317.809291294643,1.1979112108109846,0.017750124846185957,0.01779919011252267,8.114934386557282,1770.4465941838355,0.024033638915921612,0.01788913191229159,0.014126930492798569,Healthcare,1

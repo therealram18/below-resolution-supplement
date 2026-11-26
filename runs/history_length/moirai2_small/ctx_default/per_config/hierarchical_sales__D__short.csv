@@ -1,2 +1,0 @@
-dataset,model,eval_metrics/MSE[mean],eval_metrics/MSE[0.5],eval_metrics/MAE[0.5],eval_metrics/MASE[0.5],eval_metrics/MAPE[0.5],eval_metrics/sMAPE[0.5],eval_metrics/MSIS,eval_metrics/RMSE[mean],eval_metrics/NRMSE[mean],eval_metrics/ND[0.5],eval_metrics/mean_weighted_sum_quantile_loss,domain,num_variates
-hierarchical_sales/D/short,moirai2_small,29.793951529557667,29.793951529557667,2.318257802811079,0.7480218327348793,0.6206584142310243,1.0916662764184581,7.331117753806865,5.458383600440488,1.6745716406632347,0.7112158207459828,0.5770318683691705,Sales,1

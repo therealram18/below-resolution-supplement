@@ -1,71 +1,0 @@
-<WORKDIR>/harness/envs/toto/lib/python3.11/site-packages/lightning/fabric/__init__.py:41: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
-<WORKDIR>/harness/gift-eval/src/gift_eval/data.py:151: FutureWarning: 'T' is deprecated and will be removed in a future version, please use 'min' instead.
-  freq = norm_freq_str(to_offset(self.freq).name)
-<WORKDIR>/harness/envs/toto/lib/python3.11/site-packages/gluonts/time_feature/seasonality.py:47: FutureWarning: 'T' is deprecated and will be removed in a future version, please use 'min' instead.
-  offset = pd.tseries.frequencies.to_offset(freq)
-<WORKDIR>/harness/envs/toto/lib/python3.11/site-packages/gluonts/dataset/common.py:263: FutureWarning: 'T' is deprecated and will be removed in a future version, please use 'min' instead.
-  return pd.Period(val, freq)
-0it [00:00, ?it/s]
-  0%|          | 0/172 [00:00<?, ?it/s][A
-  1%|          | 1/172 [00:00<01:04,  2.67it/s][A
-  3%|▎         | 5/172 [00:00<00:13, 12.45it/s][A
-  6%|▌         | 10/172 [00:00<00:07, 21.34it/s][A
-  9%|▊         | 15/172 [00:00<00:05, 27.54it/s][A256it [00:02, 88.90it/s]
- 11%|█         | 19/172 [00:02<00:30,  4.97it/s][A
- 14%|█▍        | 24/172 [00:02<00:19,  7.49it/s][A
- 17%|█▋        | 29/172 [00:03<00:13, 10.55it/s][A512it [00:05, 99.14it/s]
- 19%|█▉        | 33/172 [00:05<00:30,  4.60it/s][A
- 22%|██▏       | 38/172 [00:05<00:20,  6.58it/s][A
- 25%|██▌       | 43/172 [00:05<00:14,  9.07it/s][A768it [00:07, 102.76it/s]
- 28%|██▊       | 48/172 [00:07<00:25,  4.77it/s][A
- 31%|███       | 53/172 [00:07<00:18,  6.58it/s][A
- 34%|███▎      | 58/172 [00:07<00:12,  8.88it/s][A
- 37%|███▋      | 63/172 [00:07<00:09, 11.70it/s][A1024it [00:10, 104.38it/s]
- 39%|███▉      | 67/172 [00:09<00:20,  5.02it/s][A
- 42%|████▏     | 72/172 [00:10<00:14,  6.94it/s][A
- 45%|████▍     | 77/172 [00:10<00:10,  9.35it/s][A1280it [00:12, 104.49it/s]
- 47%|████▋     | 81/172 [00:12<00:20,  4.54it/s][A
- 49%|████▉     | 85/172 [00:12<00:14,  5.98it/s][A
- 52%|█████▏    | 90/172 [00:12<00:09,  8.32it/s][A
- 55%|█████▍    | 94/172 [00:12<00:07, 10.60it/s][A1536it [00:14, 105.23it/s]
- 57%|█████▋    | 98/172 [00:14<00:15,  4.65it/s][A
- 60%|█████▉    | 103/172 [00:14<00:10,  6.61it/s][A
- 63%|██████▎   | 108/172 [00:14<00:07,  9.08it/s][A1792it [00:17, 105.46it/s]
- 65%|██████▌   | 112/172 [00:17<00:13,  4.47it/s][A
- 67%|██████▋   | 116/172 [00:17<00:09,  5.93it/s][A
- 70%|███████   | 121/172 [00:17<00:06,  8.27it/s][A
- 73%|███████▎  | 126/172 [00:17<00:04, 11.13it/s][A2048it [00:19, 106.14it/s]
- 76%|███████▌  | 130/172 [00:19<00:08,  4.87it/s][A
- 78%|███████▊  | 135/172 [00:19<00:05,  6.81it/s][A
- 81%|████████▏ | 140/172 [00:19<00:03,  9.27it/s][A2304it [00:22, 106.51it/s]
- 84%|████████▎ | 144/172 [00:21<00:06,  4.58it/s][A
- 87%|████████▋ | 149/172 [00:22<00:03,  6.42it/s][A
- 90%|████████▉ | 154/172 [00:22<00:02,  8.72it/s][A
- 92%|█████████▏| 158/172 [00:22<00:01, 10.99it/s][A2560it [00:24, 106.35it/s]
- 94%|█████████▍| 162/172 [00:24<00:02,  4.73it/s][A
- 97%|█████████▋| 167/172 [00:24<00:00,  6.68it/s][A
-100%|██████████| 172/172 [00:24<00:00,  9.16it/s][A100%|██████████| 172/172 [00:24<00:00,  7.00it/s]
-2740it [00:26, 106.14it/s]2740it [00:26, 104.67it/s]
-<WORKDIR>/harness/run_grid.py:486: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
-  res["MSE[mean]"][0],
-<WORKDIR>/harness/run_grid.py:487: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
-  res["MSE[0.5]"][0],
-<WORKDIR>/harness/run_grid.py:488: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
-  res["MAE[0.5]"][0],
-<WORKDIR>/harness/run_grid.py:489: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
-  res["MASE[0.5]"][0],
-<WORKDIR>/harness/run_grid.py:490: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
-  res["MAPE[0.5]"][0],
-<WORKDIR>/harness/run_grid.py:491: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
-  res["sMAPE[0.5]"][0],
-<WORKDIR>/harness/run_grid.py:492: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
-  res["MSIS"][0],
-<WORKDIR>/harness/run_grid.py:493: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
-  res["RMSE[mean]"][0],
-<WORKDIR>/harness/run_grid.py:494: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
-  res["NRMSE[mean]"][0],
-<WORKDIR>/harness/run_grid.py:495: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
-  res["ND[0.5]"][0],
-<WORKDIR>/harness/run_grid.py:496: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
-  res["mean_weighted_sum_quantile_loss"][0],
-[ok] solar/10T/short -> results/toto/ctx_default/all_results.csv

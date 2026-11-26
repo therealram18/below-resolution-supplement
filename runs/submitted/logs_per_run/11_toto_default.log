@@ -1,149 +1,0 @@
-<WORKDIR>/harness/envs/toto/lib/python3.11/site-packages/lightning/fabric/__init__.py:41: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
-<WORKDIR>/harness/gift-eval/src/gift_eval/data.py:151: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
-  freq = norm_freq_str(to_offset(self.freq).name)
-<WORKDIR>/harness/envs/toto/lib/python3.11/site-packages/gluonts/time_feature/seasonality.py:47: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
-  offset = pd.tseries.frequencies.to_offset(freq)
-<WORKDIR>/harness/envs/toto/lib/python3.11/site-packages/gluonts/dataset/common.py:263: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
-  return pd.Period(val, freq)
-0it [00:00, ?it/s]
-  0%|          | 0/116 [00:00<?, ?it/s][A
-  1%|          | 1/116 [00:00<01:05,  1.77it/s][A
-  2%|▏         | 2/116 [00:00<00:40,  2.80it/s][A
-  3%|▎         | 3/116 [00:00<00:32,  3.46it/s][A
-  3%|▎         | 4/116 [00:01<00:28,  3.87it/s][A
-  4%|▍         | 5/116 [00:01<00:26,  4.17it/s][A
-  5%|▌         | 6/116 [00:01<00:25,  4.38it/s][A
-  6%|▌         | 7/116 [00:01<00:24,  4.52it/s][A
-  7%|▋         | 8/116 [00:02<00:23,  4.62it/s][A
-  8%|▊         | 9/116 [00:02<00:22,  4.68it/s][A
-  9%|▊         | 10/116 [00:02<00:22,  4.74it/s][A
-  9%|▉         | 11/116 [00:02<00:21,  4.77it/s][A
- 10%|█         | 12/116 [00:02<00:21,  4.78it/s][A
- 11%|█         | 13/116 [00:03<00:21,  4.78it/s][A
- 12%|█▏        | 14/116 [00:03<00:21,  4.79it/s][A
- 13%|█▎        | 15/116 [00:03<00:21,  4.81it/s][A256it [00:05, 50.49it/s]
- 14%|█▍        | 16/116 [00:04<00:57,  1.75it/s][A
- 15%|█▍        | 17/116 [00:05<00:45,  2.16it/s][A
- 16%|█▌        | 18/116 [00:05<00:38,  2.58it/s][A
- 16%|█▋        | 19/116 [00:05<00:32,  3.00it/s][A
- 17%|█▋        | 20/116 [00:05<00:28,  3.38it/s][A
- 18%|█▊        | 21/116 [00:05<00:25,  3.71it/s][A
- 19%|█▉        | 22/116 [00:06<00:23,  3.99it/s][A
- 20%|█▉        | 23/116 [00:06<00:22,  4.20it/s][A
- 21%|██        | 24/116 [00:06<00:21,  4.38it/s][A
- 22%|██▏       | 25/116 [00:06<00:20,  4.50it/s][A
- 22%|██▏       | 26/116 [00:06<00:19,  4.60it/s][A
- 23%|██▎       | 27/116 [00:07<00:19,  4.68it/s][A
- 24%|██▍       | 28/116 [00:07<00:18,  4.72it/s][A
- 25%|██▌       | 29/116 [00:07<00:18,  4.76it/s][A
- 26%|██▌       | 30/116 [00:07<00:18,  4.77it/s][A
- 27%|██▋       | 31/116 [00:08<00:17,  4.80it/s][A512it [00:09, 53.93it/s]
- 28%|██▊       | 32/116 [00:09<00:47,  1.77it/s][A
- 28%|██▊       | 33/116 [00:09<00:38,  2.18it/s][A
- 29%|██▉       | 34/116 [00:09<00:31,  2.60it/s][A
- 30%|███       | 35/116 [00:10<00:26,  3.02it/s][A
- 31%|███       | 36/116 [00:10<00:23,  3.39it/s][A
- 32%|███▏      | 37/116 [00:10<00:21,  3.71it/s][A
- 33%|███▎      | 38/116 [00:10<00:19,  3.98it/s][A
- 34%|███▎      | 39/116 [00:10<00:18,  4.19it/s][A
- 34%|███▍      | 40/116 [00:11<00:17,  4.36it/s][A
- 35%|███▌      | 41/116 [00:11<00:16,  4.48it/s][A
- 36%|███▌      | 42/116 [00:11<00:16,  4.57it/s][A
- 37%|███▋      | 43/116 [00:11<00:15,  4.64it/s][A
- 38%|███▊      | 44/116 [00:11<00:15,  4.69it/s][A
- 39%|███▉      | 45/116 [00:12<00:14,  4.73it/s][A
- 40%|███▉      | 46/116 [00:12<00:14,  4.75it/s][A
- 41%|████      | 47/116 [00:12<00:14,  4.77it/s][A768it [00:14, 55.03it/s]
- 41%|████▏     | 48/116 [00:13<00:38,  1.75it/s][A
- 42%|████▏     | 49/116 [00:14<00:30,  2.17it/s][A
- 43%|████▎     | 50/116 [00:14<00:25,  2.59it/s][A
- 44%|████▍     | 51/116 [00:14<00:21,  3.01it/s][A
- 45%|████▍     | 52/116 [00:14<00:18,  3.39it/s][A
- 46%|████▌     | 53/116 [00:14<00:16,  3.72it/s][A
- 47%|████▋     | 54/116 [00:15<00:15,  4.00it/s][A
- 47%|████▋     | 55/116 [00:15<00:14,  4.21it/s][A
- 48%|████▊     | 56/116 [00:15<00:13,  4.37it/s][A
- 49%|████▉     | 57/116 [00:15<00:13,  4.49it/s][A
- 50%|█████     | 58/116 [00:16<00:12,  4.59it/s][A
- 51%|█████     | 59/116 [00:16<00:12,  4.65it/s][A
- 52%|█████▏    | 60/116 [00:16<00:11,  4.71it/s][A
- 53%|█████▎    | 61/116 [00:16<00:11,  4.75it/s][A
- 53%|█████▎    | 62/116 [00:16<00:11,  4.76it/s][A
- 54%|█████▍    | 63/116 [00:17<00:11,  4.78it/s][A1024it [00:18, 55.67it/s]
- 55%|█████▌    | 64/116 [00:18<00:29,  1.76it/s][A
- 56%|█████▌    | 65/116 [00:18<00:23,  2.18it/s][A
- 57%|█████▋    | 66/116 [00:18<00:19,  2.60it/s][A
- 58%|█████▊    | 67/116 [00:19<00:16,  3.02it/s][A
- 59%|█████▊    | 68/116 [00:19<00:14,  3.40it/s][A
- 59%|█████▉    | 69/116 [00:19<00:12,  3.74it/s][A
- 60%|██████    | 70/116 [00:19<00:11,  4.01it/s][A
- 61%|██████    | 71/116 [00:19<00:10,  4.22it/s][A
- 62%|██████▏   | 72/116 [00:20<00:10,  4.39it/s][A
- 63%|██████▎   | 73/116 [00:20<00:09,  4.50it/s][A
- 64%|██████▍   | 74/116 [00:20<00:09,  4.58it/s][A
- 65%|██████▍   | 75/116 [00:20<00:08,  4.65it/s][A
- 66%|██████▌   | 76/116 [00:20<00:08,  4.71it/s][A
- 66%|██████▋   | 77/116 [00:21<00:08,  4.74it/s][A
- 67%|██████▋   | 78/116 [00:21<00:07,  4.75it/s][A
- 68%|██████▊   | 79/116 [00:21<00:07,  4.78it/s][A1280it [00:23, 55.99it/s]
- 69%|██████▉   | 80/116 [00:22<00:20,  1.75it/s][A
- 70%|██████▉   | 81/116 [00:23<00:16,  2.16it/s][A
- 71%|███████   | 82/116 [00:23<00:13,  2.59it/s][A
- 72%|███████▏  | 83/116 [00:23<00:10,  3.01it/s][A
- 72%|███████▏  | 84/116 [00:23<00:09,  3.39it/s][A
- 73%|███████▎  | 85/116 [00:24<00:08,  3.73it/s][A
- 74%|███████▍  | 86/116 [00:24<00:07,  3.99it/s][A
- 75%|███████▌  | 87/116 [00:24<00:06,  4.21it/s][A
- 76%|███████▌  | 88/116 [00:24<00:06,  4.38it/s][A
- 77%|███████▋  | 89/116 [00:24<00:05,  4.50it/s][A
- 78%|███████▊  | 90/116 [00:25<00:05,  4.60it/s][A
- 78%|███████▊  | 91/116 [00:25<00:05,  4.65it/s][A
- 79%|███████▉  | 92/116 [00:25<00:05,  4.69it/s][A
- 80%|████████  | 93/116 [00:25<00:04,  4.73it/s][A
- 81%|████████  | 94/116 [00:25<00:04,  4.75it/s][A
- 82%|████████▏ | 95/116 [00:26<00:04,  4.78it/s][A1536it [00:27, 56.27it/s]
- 83%|████████▎ | 96/116 [00:27<00:11,  1.78it/s][A
- 84%|████████▎ | 97/116 [00:27<00:08,  2.19it/s][A
- 84%|████████▍ | 98/116 [00:27<00:06,  2.61it/s][A
- 85%|████████▌ | 99/116 [00:28<00:05,  3.01it/s][A
- 86%|████████▌ | 100/116 [00:28<00:04,  3.38it/s][A
- 87%|████████▋ | 101/116 [00:28<00:04,  3.71it/s][A
- 88%|████████▊ | 102/116 [00:28<00:03,  3.98it/s][A
- 89%|████████▉ | 103/116 [00:28<00:03,  4.20it/s][A
- 90%|████████▉ | 104/116 [00:29<00:02,  4.36it/s][A
- 91%|█████████ | 105/116 [00:29<00:02,  4.47it/s][A
- 91%|█████████▏| 106/116 [00:29<00:02,  4.55it/s][A
- 92%|█████████▏| 107/116 [00:29<00:01,  4.61it/s][A
- 93%|█████████▎| 108/116 [00:30<00:01,  4.67it/s][A
- 94%|█████████▍| 109/116 [00:30<00:01,  4.70it/s][A
- 95%|█████████▍| 110/116 [00:30<00:01,  4.71it/s][A
- 96%|█████████▌| 111/116 [00:30<00:01,  4.73it/s][A1792it [00:32, 56.24it/s]
- 97%|█████████▋| 112/116 [00:32<00:02,  1.76it/s][A
- 97%|█████████▋| 113/116 [00:32<00:01,  2.17it/s][A
- 98%|█████████▊| 114/116 [00:32<00:00,  2.60it/s][A
- 99%|█████████▉| 115/116 [00:32<00:00,  3.01it/s][A
-100%|██████████| 116/116 [00:32<00:00,  3.46it/s][A100%|██████████| 116/116 [00:32<00:00,  3.53it/s]
-1850it [00:33, 55.89it/s]1850it [00:33, 55.50it/s]
-<WORKDIR>/harness/run_grid.py:486: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
-  res["MSE[mean]"][0],
-<WORKDIR>/harness/run_grid.py:487: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
-  res["MSE[0.5]"][0],
-<WORKDIR>/harness/run_grid.py:488: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
-  res["MAE[0.5]"][0],
-<WORKDIR>/harness/run_grid.py:489: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
-  res["MASE[0.5]"][0],
-<WORKDIR>/harness/run_grid.py:490: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
-  res["MAPE[0.5]"][0],
-<WORKDIR>/harness/run_grid.py:491: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
-  res["sMAPE[0.5]"][0],
-<WORKDIR>/harness/run_grid.py:492: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
-  res["MSIS"][0],
-<WORKDIR>/harness/run_grid.py:493: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
-  res["RMSE[mean]"][0],
-<WORKDIR>/harness/run_grid.py:494: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
-  res["NRMSE[mean]"][0],
-<WORKDIR>/harness/run_grid.py:495: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
-  res["ND[0.5]"][0],
-<WORKDIR>/harness/run_grid.py:496: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
-  res["mean_weighted_sum_quantile_loss"][0],
-[ok] electricity/H/long -> results/toto/ctx_default/all_results.csv

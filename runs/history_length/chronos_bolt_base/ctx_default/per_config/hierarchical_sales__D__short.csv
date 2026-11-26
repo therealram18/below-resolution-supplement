@@ -1,2 +1,0 @@
-dataset,model,eval_metrics/MSE[mean],eval_metrics/MSE[0.5],eval_metrics/MAE[0.5],eval_metrics/MASE[0.5],eval_metrics/MAPE[0.5],eval_metrics/sMAPE[0.5],eval_metrics/MSIS,eval_metrics/RMSE[mean],eval_metrics/NRMSE[mean],eval_metrics/ND[0.5],eval_metrics/mean_weighted_sum_quantile_loss,domain,num_variates
-hierarchical_sales/D/short,chronos_bolt_base,29.245548586709383,29.245548586709383,2.3077515506310715,0.7428404007931971,0.6283313585326036,1.0577111296636006,7.004999196863134,5.4079153642331885,1.659088544696836,0.7079926189268808,0.5761189017753517,Sales,1

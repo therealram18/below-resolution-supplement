@@ -1,0 +1,12 @@
+name: live
+on:
+  schedule:
+    - cron: "17 5 * * *"
+  workflow_dispatch:
+jobs:
+  boards:  # reads every board as it is today, and fails when a board's files change so that its loader cannot read them
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: astral-sh/setup-uv@v7
+      - run: uv run vernier report --board all

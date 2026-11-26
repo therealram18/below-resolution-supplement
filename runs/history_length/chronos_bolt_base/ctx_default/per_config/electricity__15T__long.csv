@@ -1,2 +1,0 @@
-dataset,model,eval_metrics/MSE[mean],eval_metrics/MSE[0.5],eval_metrics/MAE[0.5],eval_metrics/MASE[0.5],eval_metrics/MAPE[0.5],eval_metrics/sMAPE[0.5],eval_metrics/MSIS,eval_metrics/RMSE[mean],eval_metrics/NRMSE[mean],eval_metrics/ND[0.5],eval_metrics/mean_weighted_sum_quantile_loss,domain,num_variates
-electricity/15T/long,chronos_bolt_base,320697.12822381756,320697.12822381756,61.82811427980715,0.9460776480593365,0.1415659271131916,0.14234420952782617,11.270579137917455,566.3012698412547,0.8934097025941463,0.09754143268328473,0.08116658269805449,Energy,1

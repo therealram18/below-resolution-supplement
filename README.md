@@ -1,119 +1,159 @@
-# Vernier
+<h1 align="center">Vernier</h1>
 
-Vernier computes a report from a leaderboard's own table of scores. It gives the board's resolution, which is the smallest difference between two entries that the board's data can detect (a test at the 5% level finds it eight times in ten). It lists which pairs among the top ten entries the data can separate, and the tier of entries among the first 40 places that are not separated from the leader. It also replays the board's git history and lists the top-ten pairs whose order was reversed by other entries arriving or changing while their own results stayed the same. The repository also holds the history-length analysis: how much a model's error (MASE) changes when it is given 512 steps of history instead of its documented length.
+<p align="center"><b>How small a difference can a forecasting leaderboard detect?</b></p>
 
-In the board's table, a unit is one dataset configuration (dataset, frequency and horizon) and its source is the dataset it was cut from. Units of one source are correlated, so every test treats them as one cluster.
+<p align="center">
+  <a href="https://arxiv.org/abs/2611.31619"><img alt="arXiv 2611.31619" src="https://img.shields.io/badge/arXiv-2611.31619-b31b1b"></a>
+  <img alt="NeurIPS 2026, FMTS Workshop, oral" src="https://img.shields.io/badge/NeurIPS_2026-FMTS_Workshop_%C2%B7_Oral-68448b">
+  <a href="https://pypi.org/project/vernier-leaderboard/"><img alt="PyPI" src="https://img.shields.io/pypi/v/vernier-leaderboard"></a>
+  <a href="https://github.com/therealram18/vernier/actions/workflows/test.yml"><img alt="tests" src="https://github.com/therealram18/vernier/actions/workflows/test.yml/badge.svg"></a>
+  <a href="https://github.com/therealram18/vernier/blob/main/LICENSE"><img alt="License: Apache 2.0" src="https://img.shields.io/badge/license-Apache_2.0-blue"></a>
+</p>
+
+<p align="center">
+  <a href="https://arxiv.org/abs/2611.31619">Paper</a> ·
+  <a href="#one-line">One line</a> ·
+  <a href="#your-own-leaderboard">Your own leaderboard</a> ·
+  <a href="https://github.com/therealram18/vernier/blob/main/docs/reference.md">Reference</a> ·
+  <a href="#citation">Cite</a>
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/therealram18/vernier/main/docs/vernier.gif" alt="A new model joins a forecasting leaderboard and two other models swap places; the smallest gap that a leaderboard can detect; the result on five leaderboards" width="100%">
+</p>
+
+Vernier reads the scores that a leaderboard already publishes and reports the board's *resolution*: the smallest gap between two entries that the board's data can detect. On four of the five leaderboards in the paper, the resolution is 3.6 to 19 times the gap between neighbouring top-ten entries.
+
+The paper: [What a Forecasting Leaderboard Can Establish: Resolution Reporting for Zero-Shot Time-Series Models](https://arxiv.org/abs/2611.31619), by Arya Sikder and Sriram Pillutla.
+
+## One line
+
+```bash
+uvx vernier-leaderboard report --board gift-eval
+```
+
+The line needs [uv](https://docs.astral.sh/uv/) and no install step. It fetches the board's own result files as they are today, repeats the board's own arithmetic and tests the order that the board displays.
+
+| `--board` | Leaderboard | The board sorts by | Resolution | Gap | Resolution ÷ gap |
+|---|---|---|---|---|---|
+| `gift-eval` | [GIFT-Eval](https://huggingface.co/spaces/Salesforce/GIFT-Eval) | mean rank | 6.80 | 0.91 | 7.5 |
+| `fev-bench` | [fev-bench](https://github.com/autogluon/fev), 100 tasks | win rate | 7.51 | 2.08 | 3.6 |
+| `fev-bench-mini` | fev-bench, 20 tasks | win rate | 15.3 | 2.18 | 7.0 |
+| `chronos-bench-ii` | [Chronos Benchmark II](https://github.com/autogluon/fev) | mean rank | 4.24 | 0.22 | 19 |
+| `time` | [TIME](https://huggingface.co/datasets/Real-TSF/TIME-Output) | geometric mean | 0.0238 | 0.0021 | 11 |
+| `boom` | [BOOM](https://github.com/DataDog/toto) | mean rank | 0.196 | 0.312 | 0.63 |
+| `all` | every board, one row each | | | | |
+
+The numbers are those of the paper's snapshots, and `--pinned` reads a snapshot with no network. The gap is the median gap between neighbouring top-ten entries. A ratio above 1 means that the board cannot tell its neighbours apart.
+
+## The report
+
+`vernier report --board gift-eval --pinned` prints:
+
+```text
+GIFT-Eval, the paper's snapshot of 2026-09-07 (commit b61c48aa of https://huggingface.co/spaces/Salesforce/GIFT-Eval)
+mean-rank on MASE, ties first: 128 entries listed with all 97 units from 28 sources
+Values are rank places; a lower value is better
+place  entry                                  mean  gap to next         95% interval          p, cr2         p, wild
+    1  STRIDE w/ Synapse                   14.6186       4.2474   -2.3998 to 10.8947          0.1889          0.1783
+    2  EXAONE-Forecast-Agent               18.8660       0.4433   -6.6844 to 7.5710           0.8952          0.8968
+    3  LS-MoE                              19.3093       1.9381   -0.1473 to 4.0236           0.0665          0.0639
+    4  LS-Agent                            21.2474       0.9072   -3.8242 to 5.6386           0.6909          0.6894
+    5  Falcon-Agent                        22.1546       0.0722   -4.7538 to 4.8981           0.9752          0.9772
+    6  CastStar                            22.2268       0.0103   -2.9771 to 2.9977           0.9943          0.9999
+    7  limix_moe                           22.2371       1.4227   -4.1707 to 7.0160           0.5947          0.5872
+    8  TIMEHEDGE                           23.6598       0.6495   -6.6299 to 7.9289           0.8496          0.8537
+    9  RegLab-AH-1                         24.3093       1.3299    0.0945 to 2.5653           0.0364          0.0399
+   10  RacineCast-1-NC                     25.6392
+Resolution, the gap a 5% test detects 8 times in 10 (median over neighbours): 6.8010
+Median gap between neighbours: 0.9072, so the resolution is 7.5 times the gap
+Separated at 5%, and after Holm:  neighbouring pairs  all pairs           leading tier
+  CR2 t-test                      1 of 9, 0           12 of 45, 0         3
+  wild cluster bootstrap          1 of 9, 0           13 of 45, 1         3
+Leading tier: the leader and the entries not separated from it among the first 40 places
+  CR2 t-test: STRIDE w/ Synapse, EXAONE-Forecast-Agent, LS-MoE
+  wild cluster bootstrap: the same entries
+```
+
+- A *unit* is one evaluation task, and its *source* is the data that the task was cut from. Units of one source are correlated, so each test treats a source as one cluster.
+- Each row compares a place with the next place: the gap, its 95% interval and the p-value of each test.
+- The *leading tier* is the leader and the entries that the data cannot separate from it.
+
+| To | Add |
+|---|---|
+| read the paper's snapshot, with no network | `--pinned` |
+| read the board as of a commit | `--at COMMIT` |
+| use another rule, score or test | `--rule win-rate`, `--metric CRPS`, `--tests all` |
+| get JSON | `--json` |
+
+All options and tests: [docs/reference.md](https://github.com/therealram18/vernier/blob/main/docs/reference.md).
+
+## Your own leaderboard
+
+Write one row per entry and unit, then give the file to the same command:
+
+```csv
+entry,unit,source,score
+Auto_Arima,bitbrains_fast_storage/5T/long,bitbrains_fast_storage,1.14
+Auto_Arima,bitbrains_fast_storage/5T/medium,bitbrains_fast_storage,1.22
+```
+
+```bash
+vernier report scores.csv
+```
+
+A lower score is better; add `--higher-is-better` for accuracy and skill scores.
+
+## Does the order depend on who else submitted?
+
+`vernier replay` replays a board's history. It lists the top-ten pairs that swapped order in an update although neither entry's own results changed:
+
+```bash
+vernier replay --board fev-bench --until 9cf943c3
+```
+
+```text
+fev-bench, win-rate on SQL: 30 updates examined, 2 reversed 2 pairs of top-ten entries whose own results did not change
+date        update    placed higher before          placed lower before
+2026-10-14  83d347de  ChakraTS                      timesfm-3
+2026-10-15  4ae368ca  TiRex-2                       Toto-2.0-2.5B
+```
+
+Mean rank and win rate score an entry against the other entries, so new entries can reverse such pairs. Across four boards the paper counts 43 of these pairs.
+
+## For agents
+
+`report`, `replay` and `boards` take `--json`. The exit status is 0 when the command ran and 2 for a wrong option. It is 1 when the command could not run, and stderr says why in one line. [AGENTS.md](https://github.com/therealram18/vernier/blob/main/AGENTS.md) lists the fields, and [skills/vernier](https://github.com/therealram18/vernier/blob/main/skills/vernier/SKILL.md) is a skill that an agent can load.
 
 ## Install
 
-Python 3.9 or later.
+```bash
+uv tool install vernier-leaderboard
+```
 
-    pip install -r requirements.txt
+or `pip install vernier-leaderboard`. The command is `vernier`. It needs Python 3.10 or later, and git to read a board's repository. The newest source: `uv tool install git+https://github.com/therealram18/vernier`.
 
-## Run
+## Reproduce the paper
 
-Run the commands from the repository's root folder. The report on the GIFT-Eval leaderboard as pinned on 2026-09-07, with entries ordered by mean rank on MASE as the board displays them (output shortened):
+```bash
+git clone https://github.com/therealram18/vernier && cd vernier
+uv sync && uv run pytest
+```
 
-    python -m vernier report snapshot/snapshot_2026-09-07/results
+The tests recompute each number of the paper from the snapshots in `src/vernier/pins/`. [docs/paper.md](https://github.com/therealram18/vernier/blob/main/docs/paper.md) gives the command for each row of the paper's tables and says what has been checked.
 
-    mean-rank, metric MASE, ties first: 128 entries shown with all 97 units from 28 sources
-    place  entry                                  mean  gap to next         95% interval       p
-        1  STRIDE w/ Synapse                   14.6186       4.2474   -2.3998 to 10.8947  0.1889
-        2  EXAONE-Forecast-Agent               18.8660       0.4433   -6.6844 to 7.5710   0.8952
-    ...
-        9  RegLab-AH-1                         24.3093       1.3299    0.0945 to 2.5653   0.0364
-       10  RacineCast-1-NC                     25.6392
-    Resolution, the gap a 5% test detects 8 times in 10 (median over neighbours): 6.8010
-    Median gap between neighbours: 0.9072
-    Neighbouring pairs separated at 5%: 1 of 9, 0 after Holm
-    All pairs separated at 5%: 12 of 45, 0 after Holm
-    Leading tier, not separated from the leader at 5% among the first 40 places: 3 (STRIDE w/ Synapse, EXAONE-Forecast-Agent, LS-MoE)
+## Citation
 
-Each row compares a place with the next one: the gap in mean rank, its 95% interval and the p-value of a t test whose standard error is clustered by source (CR2). `--rule geometric-mean` orders entries by the geometric mean of their error divided by the error of the entry `Seasonal_Naive`. `--metric CRPS` uses the board's CRPS column instead of MASE. `--ties average` gives tied entries the average of their ranks instead of breaking ties by entry name.
+```bibtex
+@inproceedings{sikder2026what,
+  title     = {What a Forecasting Leaderboard Can Establish: Resolution Reporting for Zero-Shot Time-Series Models},
+  author    = {Arya Sikder and Sriram Pillutla},
+  booktitle = {NeurIPS 2026 Workshop: Foundation Models for Temporal Systems -- From Forecasting to World Modeling},
+  year      = {2026},
+  eprint    = {2611.31619},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2611.31619}
+}
+```
 
-The replay of the board's history (output shortened):
-
-    python -m vernier replay <clone of the board's repository>
-
-    mean rank, ties first: 141 updates examined, 14 reversed 20 pairs of top-ten entries whose own results did not change
-    date        commit   placed higher before          placed lower before
-    2024-12-05  16367d7  Moirai_small                  TFT
-    2025-05-27  71fbbd0  YingLong_110m                 chronos_bolt_small
-    ...
-    2026-09-07  b61c48a  CastStar                      Falcon-Agent
-
-The board's history is not in this repository. Get it with `git clone https://huggingface.co/spaces/Salesforce/GIFT-Eval <clone of the board's repository>`, the GIFT-Eval leaderboard's Hugging Face Space. The paper's numbers use the history up to commit b61c48aa, so run `git checkout b61c48aa` inside the clone first; the replay reads the history up to the commit that is checked out. An update is a commit that changed `results/` and kept the same units as the commit before it.
-
-The effect of 512 steps of history on each model (full output):
-
-    python -m vernier history-length runs/history_length --eligible runs/eligible_configurations.json
-
-    MASE at 512 steps of history over MASE at the documented length, 70 eligible configurations
-    variant              units sources  effect  95% interval              p     Holm p
-    chronos_bolt_base       70      14   +2.7%   -0.9% to +6.2%      0.1146     0.1146
-    moirai2_small           70      14   +6.2%   +1.6% to +10.4%   0.005127    0.01025
-    timesfm25               70      14  +15.3%   +4.1% to +32.6%  0.0002441  0.0009766
-    toto__A__seed42         70      14  +15.3%   +4.0% to +27.1%  0.0002441  0.0009766
-
-A configuration is eligible when its median series length is at least 1,024 steps. For each model, d = log(MASE at 512 steps / MASE at the documented length) on each configuration, and the effect is exp(mean d) - 1, so +15.3% means MASE is 15.3% higher with 512 steps. The p-value comes from an exact test over all sign flips of the sources' totals of d, and the Holm p-value adjusts it over the models shown. Only models with results on every eligible configuration are shown.
-
-## Use on another board
-
-Write the board's table as a CSV file with the columns `entry`, `unit`, `source` and `score`, one row per entry and unit. Lower scores are better. A source groups the units that share data, such as the frequencies and horizons cut from one dataset. Only entries with a score on every unit are compared, and at least ten are needed.
-
-    entry,unit,source,score
-    Auto_Arima,bitbrains_fast_storage/5T/long,bitbrains_fast_storage,1.14
-    Auto_Arima,bitbrains_fast_storage/5T/medium,bitbrains_fast_storage,1.22
-
-    python -m vernier report scores.csv
-
-`--metric` applies only to GIFT-Eval folders, and `--rule geometric-mean` needs an entry named `Seasonal_Naive`.
-
-## Use from Python
-
-    from vernier import gift_eval_order, load_gift_eval, ranks, report
-
-    board = load_gift_eval("snapshot/snapshot_2026-09-07/results")
-    values = ranks(board.scores, ties="first")
-    result = report(values, board.sources, board.entries, gift_eval_order(board, values))
-    print(result.resolution, result.tier)
-
-## The paper's numbers
-
-Each command below starts with `python -m vernier`, and each test is in `tests/test_paper_numbers.py`.
-
-| Number in the paper | Command | Test |
-|---|---|---|
-| Resolution 6.80 and median gap 0.91 between neighbours (mean rank on MASE) | `report snapshot/snapshot_2026-09-07/results` | `test_mean_rank_on_mase` |
-| 1 of 9 neighbouring pairs and 12 of 45 pairs separated at 5%, none after Holm | `report snapshot/snapshot_2026-09-07/results` | `test_mean_rank_on_mase` |
-| Leading tier of 3 (mean rank on MASE) | `report snapshot/snapshot_2026-09-07/results` | `test_mean_rank_on_mase` |
-| Leading tier of 17 (geometric mean of scaled error) | `report snapshot/snapshot_2026-09-07/results --rule geometric-mean` | `test_geometric_mean_of_scaled_error` |
-| 20 reversed pairs in 14 of 141 updates | `replay <clone of the board's repository>` | `test_replay_of_the_leaderboard_history` |
-| 18 reversed pairs with tied ranks averaged | `replay <clone of the board's repository> --ties average` | `test_replay_of_the_leaderboard_history` |
-| History-length effects +2.7%, +6.2%, +15.3%, +15.3% on 70 configurations | `history-length runs/history_length --eligible runs/eligible_configurations.json` | `test_history_length_on_70_eligible_configurations` |
-
-The tests also check the report on CRPS and the history-length effects on the 12 configurations of the submitted paper. Run them with:
-
-    python -m pytest tests
-
-The replay test needs the board's history: it runs only when the environment variable `GIFT_EVAL_CLONE` names a clone of the board's repository, and is skipped otherwise. It reads the history up to commit b61c48aa whatever is checked out.
-
-    GIFT_EVAL_CLONE=<clone of the board's repository> python -m pytest tests
-
-## Folders
-
-- `vernier/`: the tool.
-- `tests/`: the paper's key numbers, recomputed from the files in this repository.
-- `snapshot/`: the GIFT-Eval leaderboard's results and app files as of 2026-09-07 (commit b61c48aa), unchanged; `results/` holds one folder per entry.
-- `runs/`: the model runs' results: `history_length/` for the history-length analysis, `submitted/` for the submitted paper's runs on 12 configurations, and the list of eligible configurations.
-- `experiments/history_length/`: the code that ran the models, with its logic unchanged; only its input paths, the options of make_jobs.py that name them (`--eligible`, `--selected`) and some comments were updated for this layout.
-- `paper/`: the camera-ready source, bibliographies, style file and figures.
-- `record/`: stored outputs (JSON, CSV and text files) and Markdown write-ups of the analyses the paper reports.
-
-## What is not rerunnable here
-
-The analyses of the other boards (fev-bench, BOOM, TIME and the GIFT-Eval sub-boards), the calibration simulations and the checks against reference software are stored as results in `record/`. The scripts that produced them are in this repository's history before this change. The model runs need a GPU, the GIFT-Eval data and one Python environment per model, whose requirements are in `experiments/history_length/requirements/`.
-
-## Licence
-
-Apache License 2.0, see `LICENSE`. The files in `snapshot/` are copied from the GIFT-Eval leaderboard's repository.
+Apache License 2.0. The tables in `src/vernier/pins/` are derived from the leaderboards' own repositories.

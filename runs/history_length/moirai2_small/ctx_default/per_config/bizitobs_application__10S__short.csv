@@ -1,2 +1,0 @@
-dataset,model,eval_metrics/MSE[mean],eval_metrics/MSE[0.5],eval_metrics/MAE[0.5],eval_metrics/MASE[0.5],eval_metrics/MAPE[0.5],eval_metrics/sMAPE[0.5],eval_metrics/MSIS,eval_metrics/RMSE[mean],eval_metrics/NRMSE[mean],eval_metrics/ND[0.5],eval_metrics/mean_weighted_sum_quantile_loss,domain,num_variates
-bizitobs_application/10S/short,moirai2_small,621852.3733333333,621852.3733333333,406.24055555555555,1.4386248808126207,0.01985733879937066,0.020211497412787542,18.094320696405084,788.5761683777498,0.030412230785302155,0.015667074437870514,0.013006283478220276,Web/CloudOps,2
