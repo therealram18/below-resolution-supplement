@@ -1,16 +1,0 @@
-Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-Loading weights:   0%|          | 0/269 [00:00<?, ?it/s]Loading weights:  68%|██████▊   | 182/269 [00:00<00:00, 1806.34it/s]Loading weights: 100%|██████████| 269/269 [00:00<00:00, 1732.56it/s]
-<WORKDIR>/harness/gift-eval/src/gift_eval/data.py:151: FutureWarning: 'T' is deprecated and will be removed in a future version, please use 'min' instead.
-  freq = norm_freq_str(to_offset(self.freq).name)
-<WORKDIR>/harness/envs/chronos_bolt_base/lib/python3.11/site-packages/gluonts/time_feature/seasonality.py:47: FutureWarning: 'T' is deprecated and will be removed in a future version, please use 'min' instead.
-  offset = pd.tseries.frequencies.to_offset(freq)
-<WORKDIR>/harness/envs/chronos_bolt_base/lib/python3.11/site-packages/gluonts/dataset/common.py:263: FutureWarning: 'T' is deprecated and will be removed in a future version, please use 'min' instead.
-  return pd.Period(val, freq)
-0it [00:00, ?it/s]<WORKDIR>/harness/envs/chronos_bolt_base/lib/python3.11/site-packages/chronos/chronos_bolt.py:550: UserWarning: We recommend keeping prediction length <= 64. The quality of longer predictions may degrade since the model is not optimized for it. 
-  warnings.warn(msg)
-[W912 14:27:08.873920607 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 14608760832 bytes (free: 1904410624, total: 85017493504).
-[W912 14:27:13.190115239 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 3653238784 bytes (free: 2307063808, total: 85017493504).
-[W912 14:27:13.190304733 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 3653238784 bytes (free: 2307063808, total: 85017493504).
-[FAILED] loop_seattle/5T/long: OutOfMemoryError: CUDA out of memory. Tried to allocate 3.40 GiB. GPU 0 has a total capacity of 79.18 GiB of which 2.15 GiB is free. Including non-PyTorch memory, this process has 77.02 GiB memory in use. Of the allocated memory 72.91 GiB is allocated by PyTorch, and 3.45 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
-0it [00:07, ?it/s]
-[failed] loop_seattle/5T/long -> results/chronos_bolt_base/ctx_default/all_results.csv

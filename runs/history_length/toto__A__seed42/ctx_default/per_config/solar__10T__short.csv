@@ -1,2 +1,0 @@
-dataset,model,eval_metrics/MSE[mean],eval_metrics/MSE[0.5],eval_metrics/MAE[0.5],eval_metrics/MASE[0.5],eval_metrics/MAPE[0.5],eval_metrics/sMAPE[0.5],eval_metrics/MSIS,eval_metrics/RMSE[mean],eval_metrics/NRMSE[mean],eval_metrics/ND[0.5],eval_metrics/mean_weighted_sum_quantile_loss,domain,num_variates
-solar/10T/short,toto__A__seed42,41.53217690275243,28.822163810637164,2.3282941460899482,1.0324368399981625,4.498906755087726,1.57816231906269,7.900220213443352,6.444546291458572,1.87471781828428,0.6773005149589697,0.5404479337610673,Energy,1

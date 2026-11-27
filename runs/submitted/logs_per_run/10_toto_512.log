@@ -1,2 +1,0 @@
-[FAILED] m4_daily/D/short: FileNotFoundError: Directory <WORKDIR>/harness/data/m4_daily/D not found
-[failed] m4_daily/D/short -> results/toto/ctx_512/all_results.csv

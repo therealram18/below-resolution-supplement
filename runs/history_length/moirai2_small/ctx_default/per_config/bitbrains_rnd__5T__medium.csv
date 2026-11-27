@@ -1,2 +1,0 @@
-dataset,model,eval_metrics/MSE[mean],eval_metrics/MSE[0.5],eval_metrics/MAE[0.5],eval_metrics/MASE[0.5],eval_metrics/MAPE[0.5],eval_metrics/sMAPE[0.5],eval_metrics/MSIS,eval_metrics/RMSE[mean],eval_metrics/NRMSE[mean],eval_metrics/ND[0.5],eval_metrics/mean_weighted_sum_quantile_loss,domain,num_variates
-bitbrains_rnd/5T/medium,moirai2_small,2298316.005819939,2298316.005819939,147.2624269316838,4.399678168790489,0.5052017798995346,0.7080381163743225,163.87174850524934,1516.0197907085312,6.378668376728627,0.6196081288031403,0.5960801740465406,Web/CloudOps,2

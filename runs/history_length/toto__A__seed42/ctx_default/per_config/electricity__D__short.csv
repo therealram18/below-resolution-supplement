@@ -1,2 +1,0 @@
-dataset,model,eval_metrics/MSE[mean],eval_metrics/MSE[0.5],eval_metrics/MAE[0.5],eval_metrics/MASE[0.5],eval_metrics/MAPE[0.5],eval_metrics/sMAPE[0.5],eval_metrics/MSIS,eval_metrics/RMSE[mean],eval_metrics/NRMSE[mean],eval_metrics/ND[0.5],eval_metrics/mean_weighted_sum_quantile_loss,domain,num_variates
-electricity/D/short,toto__A__seed42,4341497962.496,1511941787.9063063,4536.21109009009,1.484631869511398,0.5382604353192437,0.10148175378747888,12.350666860251055,65890.04448697846,1.0827922549449083,0.07454501318655872,0.059188731766310884,Energy,1

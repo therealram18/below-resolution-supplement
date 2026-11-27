@@ -4,7 +4,6 @@ Each expected number is written as the paper prints it, and a computed value pas
 The replay reads the leaderboard's git history, which is not in this repository: its test runs only when the
 environment variable GIFT_EVAL_CLONE names a local clone of the GIFT-Eval leaderboard.
 """
-import json
 import os
 import warnings
 from pathlib import Path
@@ -12,16 +11,12 @@ from pathlib import Path
 import numpy as np
 import pytest
 
-from vernier import (effects, eligible_units, gift_eval_order, load_csv, load_gift_eval, log_scaled_error, ranks,
+from vernier import (gift_eval_order, load_csv, load_pin, log_scaled_error, ranks,
                      report, reversals, snapshots_from_git)
 from vernier.board import CRPS, MASE
 from vernier.stats import holm, holm_adjusted
 
 ROOT = Path(__file__).resolve().parent.parent
-SNAPSHOT = ROOT / "snapshot" / "snapshot_2026-09-07" / "results"
-RUNS = ROOT / "runs"
-SUBMITTED = ROOT / "record" / "submitted" / "selection" / "selected_configs.json"
-HEADLINE = ["chronos_bolt_base", "moirai2_small", "timesfm25", "toto__A__seed42"]
 PIN = "b61c48aa3197a1a111e405c0e6f600128a1efee3"  # the commit the snapshot was taken from
 
 
@@ -31,7 +26,7 @@ def printed(*texts):
 
 
 def mean_rank_report(metric):
-    board = load_gift_eval(SNAPSHOT, metric)
+    board = load_pin("gift-eval", {MASE: "MASE", CRPS: "CRPS"}[metric])
     values = ranks(board.scores, ties="first")
     return report(values, board.sources, board.entries, gift_eval_order(board, values))
 
@@ -60,7 +55,7 @@ def test_mean_rank_on_crps():
 
 
 def test_geometric_mean_of_scaled_error():
-    board = load_gift_eval(SNAPSHOT)
+    board = load_pin("gift-eval", "MASE")
     errors = log_scaled_error(board.scores, board.entries.index("Seasonal_Naive"))
     own_order = report(errors, board.sources, board.entries, gift_eval_order(board, errors))
     assert [own_order.resolution, own_order.median_gap] == printed("0.0497", "0.0045")
@@ -69,27 +64,6 @@ def test_geometric_mean_of_scaled_error():
     mean_rank_top = report(errors, board.sources, board.entries, mean_rank_order)
     assert (mean_rank_top.neighbours_separated, mean_rank_top.neighbours_after_holm) == (0, 0)
     assert (mean_rank_top.pairs_separated, mean_rank_top.pairs_after_holm) == (10, 0)
-
-
-def submitted_units():
-    return [unit["config"] for unit in json.loads(SUBMITTED.read_text())["selected"]]
-
-
-def test_history_length_on_70_eligible_configurations():
-    found = effects(RUNS / "history_length", HEADLINE, eligible_units(RUNS / "eligible_configurations.json"))
-    assert [(e.n_units, e.n_sources) for e in found] == [(70, 14)] * 4
-    assert [100 * e.effect for e in found] == printed("2.7", "6.2", "15.3", "15.3")
-    assert [e.p for e in found] == printed("0.1146", "0.0051", "0.000244", "0.000244")
-    assert [e.p_holm for e in found] == printed("0.1146", "0.0103", "0.000977", "0.000977")
-    assert [100 * e.low for e in found] == printed("-0.9", "1.6", "4.1", "4.0")
-    assert [100 * e.high for e in found] == printed("6.2", "10.4", "32.6", "27.1")
-
-
-def test_history_length_on_12_submitted_configurations():
-    found = effects(RUNS / "history_length", HEADLINE + ["timesfm3", "timestral209m"], submitted_units())
-    assert [e.n_units for e in found] == [12] * 6
-    assert [100 * e.effect for e in found] == printed("-2.0", "6.8", "22.2", "22.0", "31.8", "28.9")
-    assert [e.p for e in found[4:]] == printed("0.0156", "0.0039")
 
 
 def test_holm_on_fixed_p_values():

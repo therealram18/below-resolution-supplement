@@ -1,0 +1,46 @@
+[project]
+name = "vernier-leaderboard"
+dynamic = ["version"]  # read from src/vernier/__init__.py
+description = "Reports what a forecasting leaderboard's own scores can establish: its resolution, its leading tier, and whether its order depends on who else submitted."
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+authors = [{ name = "Arya Sikder" }, { name = "Sriram Pillutla" }]
+keywords = ["time series", "forecasting", "leaderboard", "benchmark", "foundation models", "statistical testing"]
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.13",  # 1.11 and 1.12 rank a missing result as a whole number, not as missing
+    "pyyaml>=6",  # reads fev-bench's task and model lists
+    "huggingface_hub>=0.24",  # downloads TIME's score files, which its repository keeps outside git
+]
+
+[project.scripts]
+vernier = "vernier.__main__:main"
+vernier-leaderboard = "vernier.__main__:main"  # the same command under the package's name, so that `uvx vernier-leaderboard` runs it
+
+[project.urls]
+Repository = "https://github.com/therealram18/vernier"
+Paper = "https://arxiv.org/abs/2611.31619"
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "src/vernier/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/vernier"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "paper/code"]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint.per-file-ignores]
+"tests/test_paper_numbers.py" = ["I001"]

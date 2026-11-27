@@ -1,2 +1,0 @@
-dataset,model,eval_metrics/MSE[mean],eval_metrics/MSE[0.5],eval_metrics/MAE[0.5],eval_metrics/MASE[0.5],eval_metrics/MAPE[0.5],eval_metrics/sMAPE[0.5],eval_metrics/MSIS,eval_metrics/RMSE[mean],eval_metrics/NRMSE[mean],eval_metrics/ND[0.5],eval_metrics/mean_weighted_sum_quantile_loss,domain,num_variates
-hierarchical_sales/D/short,toto__A__seed42,94.9999134456387,29.670003100454732,2.2927204310278007,0.7363811866628943,0.5854830172581991,1.0549110617604123,6.875585690225853,9.746789904662904,2.9902072035637186,0.7033812378922053,0.5705880684290645,Sales,1

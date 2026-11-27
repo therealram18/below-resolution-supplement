@@ -1,2 +1,0 @@
-dataset,model,eval_metrics/MSE[mean],eval_metrics/MSE[0.5],eval_metrics/MAE[0.5],eval_metrics/MASE[0.5],eval_metrics/MAPE[0.5],eval_metrics/sMAPE[0.5],eval_metrics/MSIS,eval_metrics/RMSE[mean],eval_metrics/NRMSE[mean],eval_metrics/ND[0.5],eval_metrics/mean_weighted_sum_quantile_loss,domain,num_variates
-kdd_cup_2018/H/medium,chronos_bolt_base,3966.091456845976,3966.091456845976,17.63237887407687,0.7363394606261764,0.7849117140046992,0.4060795891088417,7.470775108178136,62.976912093607574,1.3182208304042207,0.3690776246196223,0.30419622066052837,Nature,1

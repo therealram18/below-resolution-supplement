@@ -1,2 +1,0 @@
-dataset,model,eval_metrics/MSE[mean],eval_metrics/MSE[0.5],eval_metrics/MAE[0.5],eval_metrics/MASE[0.5],eval_metrics/MAPE[0.5],eval_metrics/sMAPE[0.5],eval_metrics/MSIS,eval_metrics/RMSE[mean],eval_metrics/NRMSE[mean],eval_metrics/ND[0.5],eval_metrics/mean_weighted_sum_quantile_loss,domain,num_variates
-electricity/15T/medium,moirai2_small,298928.130588964,298928.130588964,58.64965040822072,0.8936107293433366,0.14208855611113316,0.14029531887844876,11.056424564566088,546.7432035141945,0.9420936149521529,0.10105925563156302,0.08459817606752963,Energy,1

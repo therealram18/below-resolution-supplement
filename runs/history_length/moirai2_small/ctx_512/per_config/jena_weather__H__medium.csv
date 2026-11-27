@@ -1,2 +1,0 @@
-dataset,model,eval_metrics/MSE[mean],eval_metrics/MSE[0.5],eval_metrics/MAE[0.5],eval_metrics/MASE[0.5],eval_metrics/MAPE[0.5],eval_metrics/sMAPE[0.5],eval_metrics/MSIS,eval_metrics/RMSE[mean],eval_metrics/NRMSE[mean],eval_metrics/ND[0.5],eval_metrics/mean_weighted_sum_quantile_loss,domain,num_variates
-jena_weather/H/medium,moirai2_small,1445.887003968254,1445.887003968254,10.70542224702381,0.8338913018351002,2.2901327507094127,0.6795171828497024,10.244306475800737,38.02482089330933,0.23268062286581662,0.06550837736930312,0.055009687562849324,Nature,21

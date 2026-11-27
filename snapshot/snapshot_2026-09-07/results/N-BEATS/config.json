@@ -1,8 +1,0 @@
-{
-    "model": "N-BEATS",
-    "model_type": "deep-learning",
-    "model_dtype": "float32",
-    "org": "ServiceNow",
-    "testdata_leakage": "No",
-    "replication_code_available": "No"
-}
