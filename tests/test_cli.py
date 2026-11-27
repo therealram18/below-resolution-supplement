@@ -154,7 +154,7 @@ def test_json_from_replay_and_boards_and_the_version(tmp_path):
     assert (replay["updates"], replay["rule"], replay["schema"]) == (1, "mean-rank", 1)
     boards = json.loads(vernier("boards", "--json").stdout)
     assert boards["time"]["url"].startswith("https://huggingface.co/") and boards["boom"]["pinned"] == "2026-11-11"
-    assert vernier("--version").stdout.strip() == "vernier 1.0.2"
+    assert vernier("--version").stdout.strip() == "vernier 1.0.3"
 
 
 def test_boards_lists_every_board():
@@ -168,3 +168,4 @@ def test_pinned_report_names_its_snapshot():
     first = "fev-bench, the paper's snapshot of 2026-11-11 (commit 9cf943c3 of https://github.com/autogluon/fev)"
     assert done.stdout.startswith(first)
     assert "win-rate on SQL: 40 entries listed with all 100 units from 39 sources" in done.stdout
+    assert "Values are the win rate in percentage points; a higher value is better" in done.stdout
