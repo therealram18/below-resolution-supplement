@@ -154,7 +154,7 @@ def test_json_from_replay_and_boards_and_the_version(tmp_path):
     assert (replay["updates"], replay["rule"], replay["schema"]) == (1, "mean-rank", 1)
     boards = json.loads(vernier("boards", "--json").stdout)
     assert boards["time"]["url"].startswith("https://huggingface.co/") and boards["boom"]["pinned"] == "2026-11-11"
-    assert vernier("--version").stdout.strip() == "vernier 1.0.1"
+    assert vernier("--version").stdout.strip() == "vernier 1.0.2"
 
 
 def test_boards_lists_every_board():

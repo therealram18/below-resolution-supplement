@@ -6,7 +6,7 @@ from .report import report
 from .sources import BoardError, Commit, Folder, clone_of
 from .stats import cr2_test, holm, resolution, sign_flip_interval, sign_flip_p
 
-__version__ = "1.0.1"
+__version__ = "1.0.2"
 gift_eval_order = listed_order
 
 __all__ = [
