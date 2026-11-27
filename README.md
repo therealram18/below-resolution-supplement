@@ -12,10 +12,10 @@
 
 <p align="center">
   <a href="https://arxiv.org/abs/2611.31619">Paper</a> ·
-  <a href="#quick-start">Quick start</a> ·
-  <a href="#your-own-leaderboard">Your own leaderboard</a> ·
-  <a href="#reproduce-the-paper">Reproduce the paper</a> ·
-  <a href="#citation">Cite</a>
+  <a href="https://github.com/therealram18/vernier#quick-start">Quick start</a> ·
+  <a href="https://github.com/therealram18/vernier#your-own-leaderboard">Your own leaderboard</a> ·
+  <a href="https://github.com/therealram18/vernier#reproduce-the-paper">Reproduce the paper</a> ·
+  <a href="https://github.com/therealram18/vernier#citation">Cite</a>
 </p>
 
 <p align="center">
@@ -136,7 +136,7 @@ Mean rank and win rate score an entry against the other entries, so new entries 
 
 ## For agents
 
-[skills/vernier](skills/vernier/SKILL.md) is a skill that an agent can load. `report`, `replay` and `boards` take `--json`. The exit status is 0 when the command ran, 1 when it could not (stderr says why in one line) and 2 for a wrong option.
+[skills/vernier](https://github.com/therealram18/vernier/blob/main/skills/vernier/SKILL.md) is a skill that an agent can load. `report`, `replay` and `boards` take `--json`. The exit status is 0 when the command ran, 1 when it could not (stderr says why in one line) and 2 for a wrong option.
 
 ## Reproduce the paper
 
@@ -173,7 +173,7 @@ The bystander test replays each board up to its snapshot:
 | Chronos Benchmark II, mean rank | `vernier replay --board chronos-bench-ii --until 9cf943c3` | 8 | 3 of 11 |
 | TIME, MASE rank column | `vernier replay --board time --rule mean-rank --until 3bf103cb` | 13 | 12 of 44 |
 
-`VERNIER_LIVE=github,huggingface pytest tests/test_live.py` runs these replays and compares each snapshot with the board's files at its commit. The history-length experiment and the disclosure checklist are in [paper/](paper/README.md).
+`VERNIER_LIVE=github,huggingface pytest tests/test_live.py` runs these replays and compares each snapshot with the board's files at its commit. The history-length experiment and the disclosure checklist are in [paper/](https://github.com/therealram18/vernier/blob/main/paper/README.md).
 
 ## Citation
 
