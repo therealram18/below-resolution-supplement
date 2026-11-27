@@ -3,7 +3,7 @@
 `code/history_length/effects.py` reads the model runs in `results/runs/` and gives the paper's table:
 
 ```bash
-uv run python paper/code/history_length/effects.py paper/results/runs/history_length paper/results/runs/eligible_configurations.json
+python paper/code/history_length/effects.py paper/results/runs/history_length paper/results/runs/eligible_configurations.json
 ```
 
 ```text

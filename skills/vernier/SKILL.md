@@ -5,14 +5,14 @@ description: Tests whether the gaps on a time-series forecasting leaderboard are
 
 # Vernier
 
-A leaderboard ranks models by an average over tasks, but tasks cut from one dataset move together, so small gaps are often noise. Vernier repeats the board's own arithmetic on its published scores and tests each gap with the tasks clustered by dataset. It needs `uv`, and `git` for a board as it is today.
+A leaderboard ranks models by an average over tasks, but tasks cut from one dataset move together, so small gaps are often noise. Vernier repeats the board's own arithmetic on its published scores and tests each gap with the tasks clustered by dataset. Install it once with `pip install vernier-leaderboard`; the command is `vernier`. It needs Python 3.10 or later, and `git` for a board as it is today.
 
 ## 1. Run
 
 Who leads a public board, and which places its data can tell apart:
 
 ```bash
-uvx vernier-leaderboard report --board gift-eval --json
+vernier report --board gift-eval --json
 ```
 
 `--board` is `gift-eval`, `fev-bench`, `fev-bench-mini`, `chronos-bench-ii`, `time`, `boom`, or `all` for one row per board. Add `--pinned` for the paper's snapshot, which needs no network.
@@ -20,9 +20,9 @@ uvx vernier-leaderboard report --board gift-eval --json
 The report covers the top ten. For any two models, wherever they rank, export the board's scores, keep the two, and compare them on a geometric mean, which does not depend on the other models:
 
 ```bash
-uvx vernier-leaderboard export --board boom -o boom.csv
+vernier export --board boom -o boom.csv
 python3 -c "import pandas as pd; d = pd.read_csv('boom.csv'); d[d.entry.isin(['A', 'B'])].to_csv('pair.csv', index=False)"
-uvx vernier-leaderboard report pair.csv --board boom --rule geometric-mean --baseline A --json
+vernier report pair.csv --board boom --rule geometric-mean --baseline A --json
 ```
 
 For your own scores, write a long table with one row per model and task:
@@ -36,7 +36,7 @@ df.rename(columns={"model": "entry", "dataset": "unit", "MASE": "score"})[
 ```
 
 ```bash
-uvx vernier-leaderboard report scores.csv --json
+vernier report scores.csv --json
 ```
 
 Lower scores are better; add `--higher-is-better` for accuracy or skill scores. The `source` column matters most: tasks that share data must share a source, or every gap looks more certain than it is.
@@ -63,4 +63,4 @@ On `--rule geometric-mean`, read the `signed-rank` test instead of `cr2`; the ot
 - The board's rule answers "who ranks higher on this board"; the geometric mean answers "which of the two forecasts better". When they disagree, give both.
 - Name the board state from `board`. If `fallback` is `true`, say the result is of the snapshot, not of the board today.
 
-Exit status 1 means the command could not run; stderr says why in one line. `uvx vernier-leaderboard --help` lists every option, and `uvx vernier-leaderboard replay --board NAME` lists top-ten pairs that swapped order only because other models arrived.
+Exit status 1 means the command could not run; stderr says why in one line. `vernier --help` lists every option, and `vernier replay --board NAME` lists top-ten pairs that swapped order only because other models arrived.

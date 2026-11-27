@@ -12,7 +12,7 @@
 
 <p align="center">
   <a href="https://arxiv.org/abs/2611.31619">Paper</a> ·
-  <a href="#one-line">One line</a> ·
+  <a href="#quick-start">Quick start</a> ·
   <a href="#your-own-leaderboard">Your own leaderboard</a> ·
   <a href="#reproduce-the-paper">Reproduce the paper</a> ·
   <a href="#citation">Cite</a>
@@ -26,13 +26,14 @@ Vernier reads the scores that a leaderboard already publishes and reports the bo
 
 The paper: [What a Forecasting Leaderboard Can Establish: Resolution Reporting for Zero-Shot Time-Series Models](https://arxiv.org/abs/2611.31619), by Arya Sikder and Sriram Pillutla.
 
-## One line
+## Quick start
 
 ```bash
-uvx vernier-leaderboard report --board gift-eval
+pip install vernier-leaderboard
+vernier report --board gift-eval
 ```
 
-The line needs [uv](https://docs.astral.sh/uv/) and no install step. It fetches the board's own result files as they are today, repeats the board's own arithmetic and tests the order that the board displays.
+It needs Python 3.10 or later, and git to read a board's repository. The command fetches the board's own result files as they are today, repeats the board's own arithmetic and tests the order that the board displays.
 
 | `--board` | Leaderboard | The board sorts by | Resolution | Gap | Resolution ÷ gap |
 |---|---|---|---|---|---|
@@ -137,19 +138,11 @@ Mean rank and win rate score an entry against the other entries, so new entries 
 
 [skills/vernier](skills/vernier/SKILL.md) is a skill that an agent can load. `report`, `replay` and `boards` take `--json`. The exit status is 0 when the command ran, 1 when it could not (stderr says why in one line) and 2 for a wrong option.
 
-## Install
-
-```bash
-uv tool install vernier-leaderboard
-```
-
-or `pip install vernier-leaderboard`. The command is `vernier`. It needs Python 3.10 or later, and git to read a board's repository.
-
 ## Reproduce the paper
 
 ```bash
 git clone https://github.com/therealram18/vernier && cd vernier
-uv sync && uv run pytest
+pip install -e . pytest && pytest
 ```
 
 The tests recompute each number below from the snapshots in `src/vernier/pins/`. Each command starts with `vernier report --pinned --board`; add `--tests cr2,wild,percentile` for the last column.
@@ -180,7 +173,7 @@ The bystander test replays each board up to its snapshot:
 | Chronos Benchmark II, mean rank | `vernier replay --board chronos-bench-ii --until 9cf943c3` | 8 | 3 of 11 |
 | TIME, MASE rank column | `vernier replay --board time --rule mean-rank --until 3bf103cb` | 13 | 12 of 44 |
 
-`just test-live github,huggingface` runs these replays and compares each snapshot with the board's files at its commit. The history-length experiment and the disclosure checklist are in [paper/](paper/README.md).
+`VERNIER_LIVE=github,huggingface pytest tests/test_live.py` runs these replays and compares each snapshot with the board's files at its commit. The history-length experiment and the disclosure checklist are in [paper/](paper/README.md).
 
 ## Citation
 
