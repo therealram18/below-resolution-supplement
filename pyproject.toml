@@ -17,7 +17,6 @@ dependencies = [
 
 [project.scripts]
 vernier = "vernier.__main__:main"
-vernier-leaderboard = "vernier.__main__:main"  # the same command under the package's name, so that `uvx vernier-leaderboard` runs it
 
 [project.urls]
 Repository = "https://github.com/therealram18/vernier"
