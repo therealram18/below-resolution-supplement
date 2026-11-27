@@ -24,8 +24,8 @@ UNITS = {"mean-rank": "rank places",
          "win-rate": "the win rate in percentage points"}
 # The paper's Appendix A.2: on a geometric mean the CR2 test and the wild bootstrap reject a true zero about 16% of
 # the time, and the signed-rank test holds its level.
-CAUTION = ("On a geometric mean the CR2 test and the wild bootstrap separate too many pairs. "
-           "Read the signed-rank line: that test holds its level on this rule.")
+CAUTION = "On a geometric mean the CR2 test and the wild bootstrap separate too many pairs."
+SIGNED_RANK = " Read the signed-rank line: that test holds its level on this rule."
 
 
 def is_table(source) -> bool:
@@ -113,7 +113,8 @@ def one_report(args):
               f"{', entries ordered by ' + args.order_by if args.order_by else ''}: {len(order)} entries listed with "
               f"all {len(board.units)} units from {n_sources} sources")
     lines = [where, listed, f"Values are {UNITS[rule].format(baseline=baseline)}; a lower value is better",
-             as_text(result, board.entries, values, order, shown)] + [CAUTION] * (rule == "geometric-mean")
+             as_text(result, board.entries, values, order, shown)]
+    lines += [CAUTION + SIGNED_RANK * ("signed-rank" in tests)] * (rule == "geometric-mean")
     return facts, "\n".join(lines)
 
 
