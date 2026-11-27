@@ -19,9 +19,9 @@ from .report import TESTS, as_dict, as_text, report
 from .sources import BoardError, Commit, Folder, Unreachable, clone_of, git
 
 SCHEMA = 1  # of the --json output: it goes up when a field is renamed or removed
-UNITS = {"mean-rank": "rank places",
-         "geometric-mean": "the log of error over the error of {baseline}",
-         "win-rate": "the win rate in percentage points"}
+UNITS = {"mean-rank": "rank places; a lower value is better",
+         "geometric-mean": "the log of error over the error of {baseline}; a lower value is better",
+         "win-rate": "the win rate in percentage points; a higher value is better"}
 # The paper's Appendix A.2: on a geometric mean the CR2 test and the wild bootstrap reject a true zero about 16% of
 # the time, and the signed-rank test holds its level.
 CAUTION = "On a geometric mean the CR2 test and the wild bootstrap separate too many pairs."
@@ -112,7 +112,7 @@ def one_report(args):
     listed = (f"{rule} on {metric}{', ties ' + ties if rule == 'mean-rank' else ''}"
               f"{', entries ordered by ' + args.order_by if args.order_by else ''}: {len(order)} entries listed with "
               f"all {len(board.units)} units from {n_sources} sources")
-    lines = [where, listed, f"Values are {UNITS[rule].format(baseline=baseline)}; a lower value is better",
+    lines = [where, listed, f"Values are {UNITS[rule].format(baseline=baseline)}",
              as_text(result, board.entries, values, order, shown)]
     lines += [CAUTION + SIGNED_RANK * ("signed-rank" in tests)] * (rule == "geometric-mean")
     return facts, "\n".join(lines)
@@ -207,7 +207,8 @@ def board_options(command, source, boards):
     command.add_argument("--board", choices=boards, help="the leaderboard; `vernier boards` lists them")
     command.add_argument("--rule", choices=RULES, help="how per-unit scores become an order; default: the board's own")
     command.add_argument("--metric", help="the score: a metric of the board, or a column of the table (default: score)")
-    command.add_argument("--ties", choices=["first", "average"], help="tied ranks under mean-rank: by entry order, or averaged")
+    command.add_argument("--ties", choices=["first", "average"],
+                         help="tied ranks under mean-rank: by entry order, or averaged")
     command.add_argument("--baseline", help="the entry whose scores scale the others under the geometric mean")
     command.add_argument("--sources", help="what counts as a source: a definition of the board, or a column of the "
                                            "table (default: source)")
