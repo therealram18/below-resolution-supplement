@@ -22,8 +22,8 @@ SCHEMA = 1  # of the --json output: it goes up when a field is renamed or remove
 UNITS = {"mean-rank": "rank places",
          "geometric-mean": "the log of error over the error of {baseline}",
          "win-rate": "the win rate in percentage points"}
-# The paper's Appendix A.2: on GIFT-Eval's geometric mean the CR2 test and the wild bootstrap reject a true zero
-# about 16% of the time, and of the tests tried only the signed-rank test holds its level.
+# The paper's Appendix A.2: on a geometric mean the CR2 test and the wild bootstrap reject a true zero about 16% of
+# the time, and the signed-rank test holds its level.
 CAUTION = ("On a geometric mean the CR2 test and the wild bootstrap separate too many pairs. "
            "Read the signed-rank line: that test holds its level on this rule.")
 
@@ -40,7 +40,7 @@ def settings(args, tabular):
     """Return the named board a command reads, or None for tables, and its metric, sources, rule, ties and baseline."""
     if not (args.board or args.source):
         raise BoardError("name a leaderboard with --board or give a table of scores; `vernier boards` lists the boards")
-    # A folder or a git address with no --board holds GIFT-Eval's files, as in the first release.
+    # A folder or a git address with no --board is read as GIFT-Eval's files.
     named = BOARDS[args.board] if args.board else None if tabular else BOARDS["gift-eval"]
     if args.higher_is_better and not tabular:
         raise BoardError("--higher-is-better is for a table of scores, not for a board's own files")
@@ -86,7 +86,7 @@ def read_board(args, named, metric, sources):
         tree, where = open_tree(named, args.source, args.at)
         return named.load(tree, metric, sources), f"{named.title}, {where}", False
     except Unreachable as error:
-        if args.source or args.at or not pin_file(args.board).exists():
+        if args.source or args.at:
             raise
         # The board as it is now was asked for and cannot be had: the snapshot is shown, and every output says so.
         print(f"vernier: {error}; this report is of {snapshot}", file=sys.stderr)
@@ -183,15 +183,14 @@ def run_replay(args):
 
 def run_boards(args):
     if args.json:
-        print(json.dumps({name: {"schema": SCHEMA, "snapshot": pin_file(name).exists()}
-                                | {field: value for field, value in named._asdict().items()
-                                   if field not in ("load", "large")}  # all but the two functions
+        print(json.dumps({name: {"schema": SCHEMA} | {field: value for field, value in named._asdict().items()
+                                                      if field not in ("load", "large")}  # all but the two functions
                           for name, named in BOARDS.items()}, indent=1))
         return
     print(f"{'--board':<18}{'sorts by':<16}{'other rules':<26}{'metrics':<12}{'sources':<28}{'snapshot':<12}files")
     for name, named in BOARDS.items():
         print(f"{name:<18}{named.rules[0]:<16}{', '.join(named.rules[1:]) or '-':<26}{', '.join(named.metrics):<12}"
-              f"{', '.join(named.sources):<28}{named.pinned if pin_file(name).exists() else 'not held':<12}{named.url}")
+              f"{', '.join(named.sources):<28}{named.pinned:<12}{named.url}")
 
 
 def run_export(args):

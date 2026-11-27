@@ -1,5 +1,5 @@
 [project]
-name = "vernier-leaderboard"  # the name vernier on PyPI belongs to another project; the command and the import are vernier
+name = "vernier-leaderboard"
 dynamic = ["version"]  # read from src/vernier/__init__.py
 description = "Reports what a forecasting leaderboard's own scores can establish: its resolution, its leading tier, and whether its order depends on who else submitted."
 readme = "README.md"
@@ -43,4 +43,4 @@ testpaths = ["tests", "paper/code"]
 line-length = 120
 
 [tool.ruff.lint.per-file-ignores]
-"tests/test_paper_numbers.py" = ["I001"]  # the first release's tests, kept as they were
+"tests/test_paper_numbers.py" = ["I001"]

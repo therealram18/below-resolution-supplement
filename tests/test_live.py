@@ -38,8 +38,6 @@ def reachable(name):
 @pytest.mark.parametrize("name", [pytest.param(name, marks=reachable(name)) for name in GITHUB + HUGGING_FACE])
 def test_snapshot_is_the_boards_files_at_the_pinned_commit(name, tmp_path):
     named = BOARDS[name]
-    if not pin_file(name).exists():
-        pytest.skip(f"no snapshot of {name} in src/vernier/pins: write it with `just pin {name}`")
     write_table(tmp_path / "table.csv.gz", name, Commit(clone_of(named.url), named.pin, named.path, named.large))
     with gzip.open(tmp_path / "table.csv.gz") as written, gzip.open(pin_file(name)) as held:
         assert written.read() == held.read()

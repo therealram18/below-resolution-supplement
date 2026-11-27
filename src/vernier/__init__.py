@@ -7,7 +7,7 @@ from .sources import BoardError, Commit, Folder, clone_of
 from .stats import cr2_test, holm, resolution, sign_flip_interval, sign_flip_p
 
 __version__ = "1.0.0"
-gift_eval_order = listed_order  # the name this function had when GIFT-Eval was the only board
+gift_eval_order = listed_order
 
 __all__ = [
     "BOARDS", "Board", "BoardError", "Commit", "Folder", "clone_of", "cr2_test",

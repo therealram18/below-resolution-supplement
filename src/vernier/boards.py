@@ -68,8 +68,6 @@ def pin_file(name) -> Path:
 
 def load_pin(name, metric, sources="source") -> Board:
     """Return the paper's snapshot of a board from the table kept in this package."""
-    if not pin_file(name).exists():
-        raise BoardError(f"this copy of Vernier holds no snapshot of {BOARDS[name].title}")
     return load_csv(pin_file(name), metric, sources)
 
 

@@ -129,7 +129,7 @@ def test_a_request_that_cannot_run_says_why(tmp_path, arguments, message):
 def test_every_board_in_one_command():
     done = vernier("report", "--board", "all", "--pinned", "--json")
     rows = json.loads(done.stdout)
-    assert done.returncode == any("error" in row for row in rows.values())  # 1 until TIME's snapshot is held
+    assert done.returncode == 0 and not any("error" in row for row in rows.values())
     assert list(rows) == ["gift-eval", "fev-bench", "fev-bench-mini", "chronos-bench-ii", "time", "boom"]
     assert rows["gift-eval"]["resolution"] == pytest.approx(6.801, abs=5e-4) and rows["boom"]["sources"] == 2554
     assert all(row["schema"] == 1 for row in rows.values())
@@ -153,7 +153,7 @@ def test_json_from_replay_and_boards_and_the_version(tmp_path):
     replay = json.loads(vernier("replay", tmp_path, "--json").stdout)
     assert (replay["updates"], replay["rule"], replay["schema"]) == (1, "mean-rank", 1)
     boards = json.loads(vernier("boards", "--json").stdout)
-    assert boards["time"]["url"].startswith("https://huggingface.co/") and boards["boom"]["snapshot"] is True
+    assert boards["time"]["url"].startswith("https://huggingface.co/") and boards["boom"]["pinned"] == "2026-11-11"
     assert vernier("--version").stdout.strip() == "vernier 1.0.0"
 
 

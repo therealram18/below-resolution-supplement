@@ -3,7 +3,7 @@
 cr2_test is a t test whose standard error is clustered by source, and resolution turns that standard error into
 the smallest difference the test detects. The sign-flip tests give each source's differences one sign: wild_p
 draws the signs, sign_flip_t_p and sign_flip_p list every pattern, and signed_rank_p lists them on the ranks of
-the sources' means. percentile_separated is the bootstrap rule of the submitted paper, kept for comparison.
+the sources' means. percentile_separated is the percentile-bootstrap rule that the paper compares against.
 """
 import math
 from typing import NamedTuple
@@ -218,8 +218,8 @@ def _excludes_zero(means) -> np.ndarray:
 def percentile_separated(differences, sources, draws=BOOTSTRAP_DRAWS) -> np.ndarray:
     """Return, for each row of `differences`, whether two 95% percentile bootstrap intervals both exclude zero.
 
-    One bootstrap resamples units and the other whole sources. This is the rule of the submitted paper. It
-    rejects too often when units of one source move together, so it is reported for comparison only.
+    One bootstrap resamples units and the other whole sources. The rule rejects too often when units of one
+    source move together.
     """
     differences = np.atleast_2d(np.asarray(differences, float))
     _, index = np.unique(sources, return_inverse=True)

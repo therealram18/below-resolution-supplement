@@ -39,8 +39,6 @@ PAPER = [
 
 
 def pinned_report(name, rule, sources="source", metric=None, order_by=None, tests=("cr2",)):
-    if not pin_file(name).exists():
-        pytest.skip(f"no snapshot of {name} in src/vernier/pins: write it with `just pin {name}`")
     named = BOARDS[name]
     board = load_pin(name, metric or named.metrics[0], sources)
     values = values_under(rule, board, named.ties, named.baseline)
@@ -99,7 +97,7 @@ def test_gift_eval_counts_under_the_exact_t_test(metric, rule, order_by, counts)
                       exact.pairs_separated, exact.pairs_after_holm)
 
 
-CHECKED = {  # sha256 of each snapshot table as it was when it was compared with the board's own files at the pinned commit
+CHECKED = {  # sha256 of each snapshot table; `just test-live` compares its content with the board's files
     "gift-eval": "911f8db873d9561dc37650eadedf56d0ee9e845f4bff19c642d05ab54d9dd027",
     "fev-bench": "0a0500979680449385ee5fa162cd40b29617841c415a599657a1ea52447b13ec",
     "fev-bench-mini": "019df88ba4d2ce0e0756a660d308c00bae0092b5295dd7a5ef2de3f7768cdaf9",
@@ -110,7 +108,7 @@ CHECKED = {  # sha256 of each snapshot table as it was when it was compared with
 
 
 @pytest.mark.parametrize("name", CHECKED)
-def test_a_pinned_table_is_the_file_that_was_compared_with_its_board(name):
+def test_a_pinned_table_has_its_checksum(name):
     assert hashlib.sha256(pin_file(name).read_bytes()).hexdigest() == CHECKED[name]
 
 
